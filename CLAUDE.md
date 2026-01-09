@@ -6,6 +6,47 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **Awesome Claude Skills** repository - a curated collection of practical Claude Skills for enhancing productivity across Claude.ai, Claude Code, and the Claude API. The repository serves as both a marketplace of skills and a resource for creating new skills.
 
+## Tool Usage for Code Operations
+
+This project uses **Serena MCP server** for all file and code operations, along with **GitHub MCP server** for repository interactions.
+
+### Serena for File and Code Operations
+
+**ALWAYS use Serena tools** for working with code in this repository:
+
+- **Symbolic code navigation**: Use `find_symbol`, `get_symbols_overview`, and `find_referencing_symbols` to understand Python code structure
+- **Reading files**: Use `read_file` for reading skill files, scripts, and documentation
+- **Editing code**: Use `replace_symbol_body`, `insert_after_symbol`, `insert_before_symbol` for precise code modifications
+- **Pattern-based editing**: Use `replace_content` with regex for targeted changes (especially useful for YAML frontmatter updates)
+- **Searching code**: Use `search_for_pattern` for finding patterns across skill files
+- **File operations**: Use `list_dir`, `find_file`, `create_text_file` for file management
+
+**Benefits of Serena**:
+- Semantic understanding of Python code structure in utility scripts
+- Efficient markdown and YAML parsing for SKILL.md files
+- Symbol-level precision for editing functions and classes
+- Progressive loading minimizes context usage
+
+### GitHub for Repository Operations
+
+Use GitHub MCP tools for all repository interactions:
+
+- **Issues**: `list_issues`, `issue_read`, `issue_write` for tracking skill requests and bugs
+- **Pull Requests**: `list_pull_requests`, `pull_request_read`, `create_pull_request` for skill contributions
+- **Code search**: `search_code` for finding similar skills across GitHub
+- **File operations**: `get_file_contents`, `create_or_update_file` for remote skill management
+- **Repository info**: `get_commit`, `list_commits` for tracking skill changes
+
+**Example workflow for adding a skill**:
+```
+1. Use Serena to explore existing skills: list_dir("skill-name")
+2. Use Serena to read skill structure: read_file("skill-name/SKILL.md")
+3. Use Serena to create new skill: create_text_file("new-skill/SKILL.md", ...)
+4. Use Serena to update marketplace: replace_content(".claude-plugin/marketplace.json", ...)
+5. Use Bash for git: git add, git commit, git push
+6. Use GitHub to create PR: create_pull_request(...)
+```
+
 ## Skill Structure and Architecture
 
 ### Core Skill Anatomy

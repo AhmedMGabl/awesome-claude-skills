@@ -105,6 +105,12 @@
       "category": "development"
     },
     {
+      "name": "feishu-mcp",
+      "description": "Feishu (Lark) integration for Claude Code with MCP server for messaging, chat management, and workflow automation.",
+      "source": "./feishu-mcp",
+      "category": "development"
+    },
+    {
       "name": "mcp-builder",
       "description": "Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.",
       "source": "./mcp-builder",

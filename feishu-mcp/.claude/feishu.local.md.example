@@ -1,0 +1,49 @@
+---
+# Feishu MCP Plugin Configuration
+# Copy this file to .claude/feishu.local.md and fill in your credentials
+
+# Bot 1 Credentials (Primary bot - "AA")
+FEISHU_BOT1_APP_ID: "cli_a85833b3fc39900e"
+FEISHU_BOT1_APP_SECRET: "your_bot1_app_secret_here"
+
+# Bot 2 Credentials (Secondary bot - optional)
+FEISHU_BOT2_APP_ID: "cli_a9dc89f5d6389bc7"
+FEISHU_BOT2_APP_SECRET: "your_bot2_app_secret_here"
+
+# Default Bot Selection (bot1 or bot2)
+FEISHU_DEFAULT_BOT: "bot1"
+
+# User Email (for direct messaging)
+FEISHU_USER_EMAIL: "ahmedmoah@51talk.com"
+---
+
+# Feishu MCP Plugin Settings
+
+This file stores your Feishu bot credentials and preferences.
+
+## Setup Instructions
+
+1. **Copy this file**:
+   ```bash
+   cp .claude/feishu.local.md.example .claude/feishu.local.md
+   ```
+
+2. **Fill in credentials**: Replace the placeholder values with your actual Feishu bot credentials
+
+3. **Never commit**: This file is gitignored to protect your credentials
+
+## Getting Bot Credentials
+
+1. Go to [Feishu Open Platform](https://open.feishu.cn/)
+2. Create or select your app
+3. Find **App ID** and **App Secret** in the app credentials section
+4. Copy them to this configuration file
+
+## Bot Selection
+
+- **bot1**: Primary bot with full permissions (recommended)
+- **bot2**: Secondary bot for fallback or testing
+
+## Environment Variables
+
+These settings are passed as environment variables to the Feishu MCP server.

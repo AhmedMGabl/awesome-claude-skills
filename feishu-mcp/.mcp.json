@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "feishu": {
+      "command": "python",
+      "args": ["C:\\Users\\eng20\\feishu-ultimate-mcp\\server.py"],
+      "env": {
+        "FEISHU_BOT1_APP_ID": "${FEISHU_BOT1_APP_ID}",
+        "FEISHU_BOT1_APP_SECRET": "${FEISHU_BOT1_APP_SECRET}",
+        "FEISHU_BOT2_APP_ID": "${FEISHU_BOT2_APP_ID}",
+        "FEISHU_BOT2_APP_SECRET": "${FEISHU_BOT2_APP_SECRET}",
+        "FEISHU_DEFAULT_BOT": "${FEISHU_DEFAULT_BOT:-bot1}",
+        "FEISHU_USER_EMAIL": "${FEISHU_USER_EMAIL}"
+      }
+    }
+  }
+}
