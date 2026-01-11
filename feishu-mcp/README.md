@@ -4,12 +4,21 @@ Integrate Feishu (Lark) messaging and collaboration into Claude Code. Send messa
 
 ## Features
 
+### API-Based Features
 - 🚀 **Send messages** to Feishu chats and users
 - 📋 **List and search** your Feishu chats
 - 👥 **Create group chats** with team members
 - 🤖 **Dual-bot support** for flexibility
 - 🔐 **OAuth user authentication** for full access
 - ⚡ **MCP-powered** for seamless integration
+
+### Browser Automation Features (NEW!)
+- 🌐 **Full web access** via Playwright integration
+- 💬 **Send messages as yourself** (no bot required)
+- 📖 **Read message history** from any chat
+- 🔍 **Scrape and analyze** conversations
+- ✅ **Bypass API limitations** completely
+- 🎯 **Access ANY chat** you can see in web app
 
 ## Prerequisites
 
@@ -84,23 +93,57 @@ Your Feishu bot needs these permissions:
 
 ### Commands
 
-#### Send Message
+#### API-Based Commands
+
+##### Send Message
 ```bash
 /feishu:send-message
 ```
-Interactively send a message to a Feishu chat.
+Interactively send a message to a Feishu chat using bot API.
 
-#### List Chats
+##### List Chats
 ```bash
 /feishu:list-chats
 ```
-List all your accessible Feishu chats.
+List all your accessible Feishu chats via API.
 
-#### Create Chat
+##### Create Chat
 ```bash
 /feishu:create-chat
 ```
 Create a new group chat with team members.
+
+#### Browser Automation Commands (NEW!)
+
+##### Send Message via Browser
+```bash
+/feishu:send-message-browser
+```
+Send messages through Feishu web interface using Playwright. **Benefits**:
+- No API scope issues
+- Send as yourself (not as bot)
+- Access ANY chat you can see
+- Works immediately without bot setup
+
+##### Read Messages via Browser
+```bash
+/feishu:read-messages-browser
+```
+Read and scrape messages from any chat. **Use cases**:
+- Get conversation context
+- Archive message history
+- Search for specific content
+- Monitor important chats
+
+##### List Chats via Browser
+```bash
+/feishu:list-chats-browser
+```
+View all your chats exactly as they appear in Feishu web app. Shows:
+- Unread message counts
+- Last message previews
+- Pinned chats
+- All accessible conversations
 
 ### Skills
 
