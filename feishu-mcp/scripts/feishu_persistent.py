@@ -41,7 +41,7 @@ async def setup_session():
         page = context.pages[0] if context.pages else await context.new_page()
 
         print(f"[*] Opening Feishu...")
-        await page.goto(FEISHU_URL)
+        await page.goto(FEISHU_URL, wait_until='domcontentloaded')
 
         print("\n[!] Please log into Feishu in the browser window")
         print("[!] Waiting 60 seconds for you to log in...")
@@ -73,10 +73,11 @@ async def send_message(chat_name: str, message: str):
         # Go to Feishu (already logged in!)
         if "feishu.cn" not in page.url:
             print("[*] Opening Feishu...")
-            await page.goto(FEISHU_URL)
-            await asyncio.sleep(2)
+            await page.goto(FEISHU_URL, wait_until='domcontentloaded')
+            await asyncio.sleep(3)
         else:
             print("[OK] Using existing Feishu session")
+            await asyncio.sleep(1)
 
         # Navigate to chat
         print(f"[*] Opening chat: {chat_name}")
@@ -122,7 +123,7 @@ async def read_messages(chat_name: str, limit: int = 20):
         page = context.pages[0] if context.pages else await context.new_page()
 
         if "feishu.cn" not in page.url:
-            await page.goto(FEISHU_URL)
+            await page.goto(FEISHU_URL, wait_until='domcontentloaded')
             await asyncio.sleep(2)
 
         # Navigate to chat
@@ -171,7 +172,7 @@ async def list_chats():
         page = context.pages[0] if context.pages else await context.new_page()
 
         if "feishu.cn" not in page.url:
-            await page.goto(FEISHU_URL)
+            await page.goto(FEISHU_URL, wait_until='domcontentloaded')
             await asyncio.sleep(2)
 
         print("[*] Getting chat list...")
