@@ -1,19 +1,27 @@
 #!/usr/bin/env python3
 """
 Simple Feishu Browser Control
-Uses the already-open Feishu web session
+Uses the already-open Feishu web session via Chrome DevTools Protocol
+Run start_chrome_debug.bat first!
 """
 
 import asyncio
 import sys
 from playwright.async_api import async_playwright
 
+CDP_URL = "http://localhost:9222"
+
 
 async def add_reaction_to_message(message_text, emoji="👍"):
     """Add reaction to a message in the currently open Feishu tab"""
     async with async_playwright() as p:
-        # Connect to existing Chrome via CDP
-        browser = await p.chromium.connect_over_cdp("http://localhost:9222")
+        try:
+            # Connect to existing Chrome via CDP
+            browser = await p.chromium.connect_over_cdp(CDP_URL)
+        except Exception as e:
+            print(f"Error: Could not connect to Chrome: {e}")
+            print("\nPlease run: start_chrome_debug.bat")
+            return False
 
         # Get the active context and page
         contexts = browser.contexts
@@ -86,18 +94,25 @@ async def add_reaction_to_message(message_text, emoji="👍"):
 async def send_message(chat_name, message):
     """Send a message to a chat"""
     async with async_playwright() as p:
-        browser = await p.chromium.connect_over_cdp("http://localhost:9222")
-        context = browser.contexts[0]
-        pages = context.pages
+        try:
+            browser = await p.chromium.connect_over_cdp(CDP_URL)
+        except Exception as e:
+            print(f"Error: Could not connect to Chrome: {e}")
+            print("\nPlease run: start_chrome_debug.bat")
+            return False
 
         feishu_page = None
-        for page in pages:
-            if "feishu.cn" in page.url:
-                feishu_page = page
+        for context in browser.contexts:
+            for page in context.pages:
+                if "feishu.cn" in page.url:
+                    feishu_page = page
+                    break
+            if feishu_page:
                 break
 
         if not feishu_page:
             print("Error: Feishu page not found")
+            print("Please open: https://qcn9ppuir8al.feishu.cn/next/messenger/")
             return False
 
         print(f"Sending message to {chat_name}...")
