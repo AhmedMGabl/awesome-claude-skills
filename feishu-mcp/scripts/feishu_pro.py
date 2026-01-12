@@ -97,30 +97,41 @@ class FeishuPro:
         except Exception as e:
             print(f"Warning: Could not save templates: {e}")
 
-    async def start(self, headless: bool = False):
-        """Start browser with persistent context"""
+    async def start(self, headless: bool = False, use_persistent: bool = False):
+        """Start browser - use_persistent=True for session persistence (may conflict)"""
         print("[*] Starting Feishu Pro browser...")
         self.playwright = await async_playwright().start()
 
-        self.context = await self.playwright.chromium.launch_persistent_context(
-            user_data_dir=str(USER_DATA_DIR),
-            headless=headless,
-            channel="chrome",
-            args=[
-                '--disable-blink-features=AutomationControlled',
-                '--disable-dev-shm-usage',
-                '--disable-notifications'
-            ]
-        )
+        if use_persistent:
+            # Persistent context - maintains login but may conflict
+            self.context = await self.playwright.chromium.launch_persistent_context(
+                user_data_dir=str(USER_DATA_DIR),
+                headless=headless,
+                channel="chrome",
+                args=[
+                    '--disable-blink-features=AutomationControlled',
+                    '--disable-dev-shm-usage',
+                    '--disable-notifications'
+                ]
+            )
 
-        if len(self.context.pages) > 0:
-            self.page = self.context.pages[0]
+            if len(self.context.pages) > 0:
+                self.page = self.context.pages[0]
+            else:
+                self.page = await self.context.new_page()
         else:
+            # Regular browser launch - no conflicts, requires login first time
+            self.browser = await self.playwright.chromium.launch(
+                headless=headless,
+                channel="chrome"
+            )
+            self.context = await self.browser.new_context()
             self.page = await self.context.new_page()
 
         await self.page.goto(FEISHU_URL, wait_until='domcontentloaded')
-        await asyncio.sleep(2)
+        await asyncio.sleep(3)
         print(f"[OK] Browser ready: {self.page.url}")
+        print("[*] Please log in if needed, then messages will be sent")
         return True
 
     async def navigate_to_chat(self, chat_name: str) -> bool:
@@ -532,7 +543,9 @@ class FeishuPro:
 
     async def close(self):
         """Close browser"""
-        if self.context:
+        if self.browser:
+            await self.browser.close()
+        elif self.context:
             await self.context.close()
         if self.playwright:
             await self.playwright.stop()
