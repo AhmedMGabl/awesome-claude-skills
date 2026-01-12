@@ -6,45 +6,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the **Awesome Claude Skills** repository - a curated collection of practical Claude Skills for enhancing productivity across Claude.ai, Claude Code, and the Claude API. The repository serves as both a marketplace of skills and a resource for creating new skills.
 
-## Tool Usage for Code Operations
+## Repository Commands
 
-This project uses **Serena MCP server** for all file and code operations, along with **GitHub MCP server** for repository interactions.
+### Skill Management
 
-### Serena for File and Code Operations
-
-**ALWAYS use Serena tools** for working with code in this repository:
-
-- **Symbolic code navigation**: Use `find_symbol`, `get_symbols_overview`, and `find_referencing_symbols` to understand Python code structure
-- **Reading files**: Use `read_file` for reading skill files, scripts, and documentation
-- **Editing code**: Use `replace_symbol_body`, `insert_after_symbol`, `insert_before_symbol` for precise code modifications
-- **Pattern-based editing**: Use `replace_content` with regex for targeted changes (especially useful for YAML frontmatter updates)
-- **Searching code**: Use `search_for_pattern` for finding patterns across skill files
-- **File operations**: Use `list_dir`, `find_file`, `create_text_file` for file management
-
-**Benefits of Serena**:
-- Semantic understanding of Python code structure in utility scripts
-- Efficient markdown and YAML parsing for SKILL.md files
-- Symbol-level precision for editing functions and classes
-- Progressive loading minimizes context usage
-
-### GitHub for Repository Operations
-
-Use GitHub MCP tools for all repository interactions:
-
-- **Issues**: `list_issues`, `issue_read`, `issue_write` for tracking skill requests and bugs
-- **Pull Requests**: `list_pull_requests`, `pull_request_read`, `create_pull_request` for skill contributions
-- **Code search**: `search_code` for finding similar skills across GitHub
-- **File operations**: `get_file_contents`, `create_or_update_file` for remote skill management
-- **Repository info**: `get_commit`, `list_commits` for tracking skill changes
-
-**Example workflow for adding a skill**:
+Create zip files for all skills (for distribution):
+```bash
+python create_skill_zips.py
 ```
-1. Use Serena to explore existing skills: list_dir("skill-name")
-2. Use Serena to read skill structure: read_file("skill-name/SKILL.md")
-3. Use Serena to create new skill: create_text_file("new-skill/SKILL.md", ...)
-4. Use Serena to update marketplace: replace_content(".claude-plugin/marketplace.json", ...)
-5. Use Bash for git: git add, git commit, git push
-6. Use GitHub to create PR: create_pull_request(...)
+
+Verify all skill zip files have correct structure:
+```bash
+python verify_skills.py
+```
+
+### Git Operations
+
+This is a standard git repository. Common operations:
+```bash
+git status                    # Check repository status
+git add <skill-name>/         # Stage new skill
+git commit -m "message"       # Commit changes
+git push                      # Push to remote
 ```
 
 ## Skill Structure and Architecture
@@ -126,7 +109,7 @@ Update `.claude-plugin/marketplace.json` with:
 }
 ```
 
-Categories must match: `business-marketing`, `communication-writing`, `creative-media`, `development`, or `productivity-organization`.
+**Important**: The `name` field must match the folder name exactly, and the `description` should match the description in the SKILL.md frontmatter. Categories must be one of: `business-marketing`, `communication-writing`, `creative-media`, `development`, or `productivity-organization`.
 
 ## Repository-Specific Conventions
 
@@ -162,14 +145,63 @@ or
 - `README.md` - Main documentation with skill listings
 - `CONTRIBUTING.md` - Detailed contribution guidelines and skill template
 - `.claude-plugin/marketplace.json` - Marketplace configuration for Claude Code
+- `create_skill_zips.py` - Utility to create zip files for skill distribution
+- `verify_skills.py` - Utility to verify skill zip file structure and integrity
 - Individual skill folders - Each contains SKILL.md and optional resources
 
-## Document Processing Skills
+## Repository Architecture
 
-Several skills in this repository work with Office documents (DOCX, PPTX, XLSX, PDF). These skills contain Python scripts in `scripts/` directories and OOXML validation tools for working with document formats programmatically.
+### Skill Distribution
 
-## External vs. Repository-Hosted Skills
+Skills are distributed in two ways:
 
-- **Repository-hosted skills** are in folders at the root level
-- **External skills** are linked from README.md with GitHub URLs and author attribution
-- Both types follow the same SKILL.md structure and requirements
+1. **Repository-hosted skills** - Folders at root level, included in marketplace.json
+2. **External skills** - Listed in README.md with GitHub URLs and author attribution
+
+Both types follow the same SKILL.md structure and requirements.
+
+### Marketplace Integration
+
+The `.claude-plugin/marketplace.json` file defines which skills appear in Claude Code's marketplace. When adding a new skill:
+
+1. Create the skill folder with SKILL.md
+2. Add entry to marketplace.json with matching name and description
+3. Update README.md in the appropriate category
+4. Optionally run `create_skill_zips.py` to generate distributable zip files
+
+### Document Processing Skills
+
+Several skills in this repository work with Office documents (DOCX, PPTX, XLSX, PDF). These skills:
+
+- Contain Python scripts in `scripts/` directories
+- Use OOXML validation tools for working with document formats programmatically
+- Are self-contained and can be executed without loading full scripts into context
+
+## Working with Skills
+
+### Reading Skills
+
+When examining or modifying skills:
+
+1. Always read the SKILL.md file first to understand the skill's purpose
+2. Check the YAML frontmatter for name and description
+3. Look for bundled resources in subdirectories (scripts/, references/, assets/)
+4. Verify the skill is listed in marketplace.json
+
+### Creating New Skills
+
+1. Create a new folder with lowercase hyphenated name
+2. Add SKILL.md with required YAML frontmatter (name, description)
+3. Write clear instructions for Claude (not end users)
+4. Add bundled resources as needed
+5. Update marketplace.json
+6. Update README.md in appropriate category
+7. Test the skill across platforms
+
+### Modifying Existing Skills
+
+1. Read the entire SKILL.md file before making changes
+2. Preserve the YAML frontmatter structure
+3. If changing the skill name or description, update marketplace.json
+4. If description changes, also update README.md
+5. Maintain consistency with the repository's writing style
