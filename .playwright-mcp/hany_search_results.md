@@ -1,0 +1,339 @@
+### Page state
+- Page URL: https://qcn9ppuir8al.feishu.cn/next/messenger/
+- Page Title: Messenger - Feishu (8)
+- Page Snapshot:
+```yaml
+- generic [ref=e1]:
+  - button "开启读屏标签" [ref=e2]
+  - generic: 读屏标签已关闭
+  - generic [ref=e3]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e12]:
+        - text: We strongly recommend enabling desktop notifications so you don't miss out on any updates from Feishu.
+        - emphasis [ref=e13] [cursor=pointer]: Enable desktop notifications.
+      - img [ref=e15] [cursor=pointer]
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - img [ref=e31] [cursor=pointer]
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e36]
+          - paragraph [ref=e38]: Search
+          - paragraph [ref=e39]: (Ctrl+K)
+        - generic [ref=e40]:
+          - generic [ref=e41] [cursor=pointer]:
+            - img [ref=e43]
+            - generic [ref=e46]: Messenger
+            - superscript [ref=e48]:
+              - generic [ref=e49]: "8"
+          - generic [ref=e50] [cursor=pointer]:
+            - img "knowledge-icon" [ref=e52]
+            - generic [ref=e53]: Knowledge AI
+          - generic [ref=e54] [cursor=pointer]:
+            - img [ref=e56]
+            - generic [ref=e58]: Meetings
+          - generic [ref=e59] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e63]: Calendar
+          - generic [ref=e64] [cursor=pointer]:
+            - img [ref=e66]
+            - generic [ref=e69]: Docs
+          - generic [ref=e70] [cursor=pointer]:
+            - img [ref=e72]
+            - generic [ref=e74]: Contacts
+          - generic [ref=e75] [cursor=pointer]:
+            - img [ref=e77]
+            - generic [ref=e80]: Email
+          - generic [ref=e81] [cursor=pointer]:
+            - img [ref=e83]
+            - generic [ref=e85]: Tasks
+          - generic [ref=e86] [cursor=pointer]:
+            - img [ref=e88]
+            - generic [ref=e90]: Workplace
+        - generic [ref=e91]:
+          - img [ref=e98] [cursor=pointer]
+          - generic [ref=e100] [cursor=pointer]:
+            - img [ref=e102]
+            - generic [ref=e104]: Download Feishu
+      - main [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - button [ref=e117] [cursor=pointer]:
+                - img [ref=e119]
+              - generic [ref=e124]: Chats
+            - generic [ref=e126]:
+              - region "scrollable content" [ref=e132]:
+                - generic [ref=e134]:
+                  - generic [ref=e139] [cursor=pointer]:
+                    - img [ref=e142]
+                    - generic [ref=e143]: Knowledge AI
+                  - generic [ref=e150] [cursor=pointer]: Ahmed Abogabl
+                  - generic [ref=e157] [cursor=pointer]: Calendar Assistant
+                  - generic [ref=e164] [cursor=pointer]: Mohamad Atef
+                  - generic [ref=e171] [cursor=pointer]: 王东
+                  - generic [ref=e178] [cursor=pointer]: 罗悦兰Lorraine
+                  - generic [ref=e185] [cursor=pointer]: Moustafa Mohamed
+                  - generic [ref=e192] [cursor=pointer]: Qays Basim
+                  - generic [ref=e196] [cursor=pointer]:
+                    - superscript [ref=e200]:
+                      - generic [ref=e201]: "1"
+                    - generic [ref=e202]: Hany
+                  - generic [ref=e209] [cursor=pointer]: Youssef Reda
+                  - generic [ref=e216] [cursor=pointer]: 孙可
+                  - generic [ref=e223] [cursor=pointer]: CM Training AI support
+                  - generic [ref=e230] [cursor=pointer]: Remonda Zakhary
+                  - generic [ref=e237] [cursor=pointer]: MUNA Mohammad Mahmoud Hussein
+                  - generic [ref=e244] [cursor=pointer]: AI support
+                  - generic [ref=e251] [cursor=pointer]: Operation Dashboard
+                  - generic [ref=e258] [cursor=pointer]: Reimbursement November
+                  - generic [ref=e265] [cursor=pointer]: AIEC ME
+                  - generic [ref=e272] [cursor=pointer]: Developer Assistant
+              - generic [ref=e275]:
+                - generic:
+                  - generic:
+                    - generic [ref=e282] [cursor=pointer]:
+                      - superscript [ref=e287]:
+                        - generic [ref=e288]: "5"
+                      - generic [ref=e289]:
+                        - generic [ref=e290]:
+                          - generic [ref=e292]:
+                            - generic [ref=e293]: Account Security Center
+                            - generic [ref=e296]: BOT
+                          - generic [ref=e298]: 3:59 PM
+                        - generic [ref=e304]: Login security notice
+                      - img [ref=e310]
+                    - generic [ref=e317] [cursor=pointer]:
+                      - superscript [ref=e322]:
+                        - generic [ref=e323]: "1"
+                      - generic [ref=e324]:
+                        - generic [ref=e325]:
+                          - generic [ref=e327]:
+                            - generic [ref=e328]: Hany
+                            - generic [ref=e331]: External
+                          - generic [ref=e333]: 3:18 PM
+                        - generic [ref=e339]: Operation hub new features:1. Allocation 2. Achievement Tracking 3. Report automation 4. Email Sending
+                      - img [ref=e345]
+                    - generic [ref=e352] [cursor=pointer]:
+                      - generic [ref=e356]:
+                        - generic [ref=e357]:
+                          - generic [ref=e359]:
+                            - generic [ref=e360]: Hassan Alkarmy
+                            - generic [ref=e363]: External
+                          - generic [ref=e365]: 1:20 PM
+                        - generic [ref=e371]: "Call ended: 19m 23s"
+                      - img [ref=e377]
+                    - generic [ref=e384] [cursor=pointer]:
+                      - superscript [ref=e389]:
+                        - generic [ref=e390]: "1"
+                      - generic [ref=e391]:
+                        - generic [ref=e392]:
+                          - generic [ref=e394]:
+                            - generic [ref=e395]: AI Hackers
+                            - generic [ref=e398]: External
+                          - generic [ref=e400]: 12:58 PM
+                        - generic [ref=e406]: "Qays Basim: [Link]GitHub - ZeframLou/call-me: Minimal plugin that lets Claude Code call you on the phone. [Image] CallMe — Let Claude Code literally call you on the phone Minimal but insanely powerful plugin for Claude Code that does one thing brilliantly: 📞 Claude starts a long task (debugging, refactoring, search, compiling docs…) ➡️ You walk away ➡️ Your phone/watch rings when Claude finishes/stalls/needs feedback ➡️ You talk verbatim, Claude hears, understands, responds, and keeps the session going in natural multi-turn convo."
+                      - img [ref=e412]
+                    - generic [ref=e419] [cursor=pointer]:
+                      - generic [ref=e423]:
+                        - generic [ref=e424]:
+                          - generic [ref=e426]:
+                            - generic [ref=e427]: Muhammad Ashraf
+                            - generic [ref=e430]: External
+                          - generic [ref=e432]: 12:36 PM
+                        - generic [ref=e437]:
+                          - img [ref=e439]
+                          - generic [ref=e441]: نص ساعه ل ساعه إلا تلت كدا
+                      - img [ref=e447]
+                    - generic [ref=e454] [cursor=pointer]:
+                      - superscript [ref=e459]:
+                        - generic [ref=e460]: "1"
+                      - generic [ref=e461]:
+                        - generic [ref=e462]:
+                          - generic [ref=e464]:
+                            - generic [ref=e465]: AA
+                            - generic [ref=e468]: BOT
+                          - generic [ref=e470]: 12:25 PM
+                        - generic [ref=e476]:
+                          - text: "Hello Ahmed! BREAKTHROUGH: After deep research, I found the solution! Key Findings:"
+                          - img "OK" [ref=e478]
+                          - text: The scope 'im:message.send_as_user' is NOT generally available yet
+                          - img "OK" [ref=e480]
+                          - text: GitHub issue confirms it's "in beta testing"
+                          - img "OK" [ref=e482]
+                          - text: All working examples use tenant_access_token
+                          - img "OK" [ref=e484]
+                          - text: "Tenant token works reliably for messaging Technical Details: - Researched official Feishu SDK code - Analyzed working implementations on GitHub - Found error 230027 reported by others - Confirmed scope availability limitations The Feishu MCP plugin IS operational and works with tenant authentication! - Claude Code via Feishu MCP Plugin"
+                      - img [ref=e490]
+                    - generic [ref=e497] [cursor=pointer]:
+                      - generic [ref=e501]:
+                        - generic [ref=e502]:
+                          - generic [ref=e504]:
+                            - generic [ref=e505]: Calendar Assistant
+                            - generic [ref=e508]: BOT
+                          - generic [ref=e510]: Yesterday
+                        - generic [ref=e516]: Hassan Alkarmy updated the time of event “roll-play plan ”
+                      - img [ref=e522]
+                    - generic [ref=e529] [cursor=pointer]:
+                      - generic [ref=e533]:
+                        - generic [ref=e534]:
+                          - generic [ref=e536]:
+                            - generic [ref=e537]: AI Efficient Center
+                            - generic [ref=e540]: External
+                          - generic [ref=e542]: Jan 9
+                        - generic [ref=e548]:
+                          - text: "王东: 项目太多怎么办 自助"
+                          - img "Proud" [ref=e550]
+                          - text: 自强
+                          - img "FightOn" [ref=e552]
+                          - text: 自救
+                          - img "Lol" [ref=e554]
+                      - img [ref=e560]
+                    - generic [ref=e567] [cursor=pointer]:
+                      - generic [ref=e571]:
+                        - generic [ref=e572]:
+                          - generic [ref=e574]:
+                            - generic [ref=e575]: Developer Assistant
+                            - generic [ref=e578]: BOT
+                          - generic [ref=e580]: Jan 8
+                        - generic [ref=e586]: App release request approved
+                      - img [ref=e592]
+                    - generic [ref=e599] [cursor=pointer]:
+                      - generic [ref=e603]:
+                        - generic [ref=e604]:
+                          - generic [ref=e607]: Moustafa Mohamed
+                          - generic [ref=e609]: Jan 7
+                        - generic [ref=e614]:
+                          - generic [ref=e615]:
+                            - img "Lol" [ref=e618]
+                            - img "FingerHeart" [ref=e621]
+                          - generic [ref=e623]: "[Image]"
+                      - img [ref=e629]
+                    - generic [ref=e636] [cursor=pointer]:
+                      - generic [ref=e640]:
+                        - generic [ref=e641]:
+                          - generic [ref=e643]:
+                            - generic [ref=e644]: ARRT - Automatically Report Refresher Toolkit
+                            - generic [ref=e647]: External
+                          - generic [ref=e649]: Jan 7
+                        - generic [ref=e655]:
+                          - text: "Hany: @张海光 thanks"
+                          - img "BeamingFace" [ref=e657]
+                      - img [ref=e663]
+                    - generic [ref=e670] [cursor=pointer]:
+                      - generic [ref=e674]:
+                        - generic [ref=e675]:
+                          - generic [ref=e678]: Ahmed Abogabl
+                          - generic [ref=e680]: Jan 7
+                        - generic [ref=e686]: "[Link]GitHub - opencode-ai/opencode: A powerful AI coding agent. Built for the terminal. [Link]GitHub - code-yeongyu/oh-my-opencode: The Best Agent Harness. Meet Sisyphus: The Batteries-Included"
+                      - img [ref=e692]
+                    - generic [ref=e699] [cursor=pointer]:
+                      - generic [ref=e703]:
+                        - generic [ref=e704]:
+                          - generic [ref=e706]:
+                            - generic [ref=e707]: 王东
+                            - generic [ref=e710]: External
+                          - generic [ref=e712]: Jan 7
+                        - generic [ref=e717]:
+                          - img "FingerHeart" [ref=e721]
+                          - generic [ref=e723]: yes it is from China team
+                      - img [ref=e729]
+                    - generic [ref=e736] [cursor=pointer]:
+                      - generic [ref=e740]:
+                        - generic [ref=e741]:
+                          - generic [ref=e743]:
+                            - generic [ref=e744]: Mostafa Mahmoud 白杨
+                            - generic [ref=e747]: External
+                          - generic [ref=e749]: Jan 5
+                        - generic [ref=e754]:
+                          - img [ref=e756]
+                          - generic [ref=e758]: "Vapi Client Analytics Dashboard Test User Account: - Email: test@51talk.com - Password: Test123!@# - Role: User (standard access)"
+                      - img [ref=e764]
+                    - generic [ref=e771] [cursor=pointer]:
+                      - generic [ref=e775]:
+                        - generic [ref=e776]:
+                          - generic [ref=e778]:
+                            - generic [ref=e779]: Hadeel Manaseer 李姝
+                            - generic [ref=e782]: External
+                          - generic [ref=e784]: Jan 5
+                        - generic [ref=e789]:
+                          - img "Like" [ref=e793]
+                          - generic [ref=e795]: Hello Ahmed! please next time attach all your invoices in one application[Image]
+                      - img [ref=e801]
+          - generic [ref=e820]: Set off on a delightful journey with Feishu
+  - generic [ref=e824]:
+    - generic [ref=e825]:
+      - generic [ref=e826]:
+        - generic [ref=e827]:
+          - img [ref=e829]
+          - generic [ref=e834]:
+            - generic:
+              - generic:
+                - generic: One search, find everything.
+        - button [ref=e837] [cursor=pointer]:
+          - img [ref=e839]
+      - generic [ref=e841]:
+        - generic [ref=e844]:
+          - button "Messages" [ref=e845] [cursor=pointer]:
+            - generic [ref=e848]: Messages
+          - button "Docs" [ref=e849] [cursor=pointer]:
+            - generic [ref=e852]: Docs
+          - button "Apps" [ref=e853] [cursor=pointer]:
+            - generic [ref=e856]: Apps
+          - button "Email" [ref=e857] [cursor=pointer]:
+            - generic [ref=e860]: Email
+          - button "Contacts" [ref=e861] [cursor=pointer]:
+            - generic [ref=e864]: Contacts
+          - button "Groups" [ref=e865] [cursor=pointer]:
+            - generic [ref=e868]: Groups
+          - button "Calendar" [ref=e869] [cursor=pointer]:
+            - generic [ref=e872]: Calendar
+          - button "Help Desk" [ref=e873] [cursor=pointer]:
+            - generic [ref=e876]: Help Desk
+          - button "More" [ref=e877] [cursor=pointer]:
+            - generic [ref=e880]: More
+            - img [ref=e883]
+        - button "Filters" [ref=e887] [cursor=pointer]:
+          - img [ref=e890]
+          - generic [ref=e892]: Filters
+    - region "scrollable content" [ref=e898]:
+      - generic [ref=e902]:
+        - generic [ref=e903]:
+          - generic [ref=e904]:
+            - text: Search history
+            - button [ref=e905] [cursor=pointer]:
+              - img [ref=e907]
+          - generic [ref=e909]:
+            - generic [ref=e910] [cursor=pointer]: mos
+            - generic [ref=e911] [cursor=pointer]: omar
+            - generic [ref=e912] [cursor=pointer]: reda
+            - generic [ref=e913] [cursor=pointer]: training
+            - generic [ref=e914] [cursor=pointer]: calend
+            - generic [ref=e915] [cursor=pointer]: qa
+            - generic [ref=e916] [cursor=pointer]: mous
+            - generic [ref=e917] [cursor=pointer]: atef
+            - generic [ref=e918] [cursor=pointer]: ahmed
+            - generic [ref=e919] [cursor=pointer]: you
+        - generic [ref=e920]:
+          - generic [ref=e921]: Frequently used
+          - generic [ref=e922]:
+            - generic [ref=e926] [cursor=pointer]: Moustafa Mohamed
+            - generic [ref=e930] [cursor=pointer]: Ahmed Abogabl
+            - generic [ref=e934] [cursor=pointer]: Yosseif Reda
+            - generic [ref=e938] [cursor=pointer]: Mohamad Atef
+            - generic [ref=e942] [cursor=pointer]: 刘京楠
+            - generic [ref=e946] [cursor=pointer]: Youssef Khalifa | AIBP
+    - generic [ref=e947]:
+      - button "Help and Feedback" [ref=e948] [cursor=pointer]:
+        - text: Help and Feedback
+        - img [ref=e950]
+        - img [ref=e955]
+      - generic [ref=e957]:
+        - generic [ref=e958]:
+          - img [ref=e961]
+          - text: to navigate
+        - generic [ref=e963]:
+          - img [ref=e966]
+          - text: to select
+        - generic [ref=e968]: escto quit
+```
