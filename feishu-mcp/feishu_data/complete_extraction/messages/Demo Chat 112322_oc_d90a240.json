@@ -1,0 +1,92 @@
+[
+  {
+    "body": {
+      "content": "{\"template\":\"Welcome to {group_type}\",\"from_user\":[],\"to_chatters\":[],\"divider_text\":{}}"
+    },
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "create_time": "1767518603943",
+    "deleted": false,
+    "message_id": "om_x100b5a975673c4b4b22a16a008b32ed",
+    "msg_type": "system",
+    "sender": {
+      "id": "",
+      "id_type": "",
+      "sender_type": "",
+      "tenant_key": ""
+    },
+    "update_time": "1767518603943",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"template\":\"{from_user} started the group chat.\",\"from_user\":[\"AA\"],\"to_chatters\":[],\"divider_text\":{}}"
+    },
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "create_time": "1767518604028",
+    "deleted": false,
+    "message_id": "om_x100b5a97560db8acb2672074be717f9",
+    "msg_type": "system",
+    "sender": {
+      "id": "",
+      "id_type": "",
+      "sender_type": "",
+      "tenant_key": ""
+    },
+    "update_time": "1767518604028",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Hello! This is demo message #1 from Feishu MCP 🎉\"}"
+    },
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "create_time": "1767518607982",
+    "deleted": false,
+    "message_id": "om_x100b5a9756319ca4b23053dbc8146be",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1767518607982",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Demo message #2: The bot is working perfectly!\"}"
+    },
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "create_time": "1767518609259",
+    "deleted": false,
+    "message_id": "om_x100b5a9757dc5080b3d7c581efb0ada",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1767518609259",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Demo message #3: All features are operational! ✓\"}"
+    },
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "create_time": "1767518610561",
+    "deleted": false,
+    "message_id": "om_x100b5a9757eb1080b3f2ea560fcb9b7",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1767518610561",
+    "updated": false
+  }
+]

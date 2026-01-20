@@ -1,0 +1,142 @@
+[
+  {
+    "chat_id": "unknown_hany_chat",
+    "chat_name": "王东 (Hany)",
+    "chat_type": "1-on-1",
+    "extraction_method": "manual_from_browser_snapshot",
+    "extraction_date": "2026-01-19",
+    "messages": [
+      {
+        "date": "Recent",
+        "sender": "王东 (Hany)",
+        "msg_type": "meeting_share",
+        "content": "Hany shared a meeting.",
+        "timestamp": "1:55 PM"
+      },
+      {
+        "date": "Unknown",
+        "sender": "王东 (Hany)",
+        "msg_type": "text",
+        "content": "im in the meeting room where we met in the morning"
+      },
+      {
+        "date": "Unknown",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "3min"
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "51Remonda. (4121750) 50"
+      },
+      {
+        "date": "Jan 4",
+        "sender": "王东 (Hany)",
+        "msg_type": "text",
+        "content": "550 CRM: 51ahmedmoah employee ID:4120486",
+        "reactions": [
+          {
+            "type": "OK",
+            "from": "Ahmed Abogabl"
+          }
+        ]
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "are u sure this is for one of cairo team ?",
+        "reply_to": "王东"
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "this is ours",
+        "reply_to": "王东"
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "but not this apify this is a web scraper",
+        "reply_to": "王东"
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "if not let me check with china team",
+        "reactions": [
+          {
+            "type": "Like",
+            "from": "Ahmed Abogabl"
+          }
+        ]
+      },
+      {
+        "date": "Jan 4",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "actually i can not tell"
+      },
+      {
+        "date": "Jan 6",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "image",
+        "content": "[Image]",
+        "reactions": [
+          {
+            "type": "Like",
+            "from": "Ahmed Abogabl"
+          }
+        ]
+      },
+      {
+        "date": "Jan 6",
+        "sender": "Ahmed Abogabl",
+        "msg_type": "text",
+        "content": "did u find if this is for china team?",
+        "reply_to": "王东"
+      },
+      {
+        "date": "Jan 6",
+        "sender": "王东 (Hany)",
+        "msg_type": "text",
+        "content": "not yet，will do",
+        "reactions": [
+          {
+            "type": "FistBump",
+            "from": "Ahmed Abogabl"
+          }
+        ]
+      },
+      {
+        "date": "Jan 7",
+        "sender": "王东 (Hany)",
+        "msg_type": "text",
+        "content": "yes it is from China team",
+        "reply_to": "Ahmed Abogabl: did u find if this is for china team?",
+        "reactions": [
+          {
+            "type": "FingerHeart",
+            "from": "Ahmed Abogabl"
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "total_extracted_messages": 14,
+      "date_range": "Jan 4 - Recent (Jan 19)",
+      "key_topics": [
+        "CRM accounts and employee IDs",
+        "Team assignment clarification (Cairo vs China team)",
+        "Apify web scraper discussion",
+        "Meeting coordination"
+      ],
+      "communication_style": "Professional, quick responses, clarification-oriented"
+    }
+  }
+]

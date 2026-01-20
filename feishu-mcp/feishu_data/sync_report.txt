@@ -1,0 +1,19 @@
+============================================================
+FEISHU DATA SYNC SUMMARY
+============================================================
+
+Sync Date: 2026-01-19 12:18:52
+
+Total Chats: 2
+Total Messages: 11
+
+------------------------------------------------------------
+Chat Statistics:
+------------------------------------------------------------
+Test Chat (will delete)                  |     6 messages
+Demo Chat 11:23:22                       |     5 messages
+
+============================================================
+Data Location: W:\WS\AhmedGabl\awesome-claude-skills\feishu-mcp\feishu_data
+Database: W:\WS\AhmedGabl\awesome-claude-skills\feishu-mcp\feishu_data\feishu.db
+============================================================

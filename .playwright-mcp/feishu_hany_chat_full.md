@@ -1,0 +1,556 @@
+### Page state
+- Page URL: https://qcn9ppuir8al.feishu.cn/next/messenger/
+- Page Title: Messenger - Feishu
+- Page Snapshot:
+```yaml
+- generic [ref=e1]:
+  - button "开启读屏标签" [ref=e2]
+  - generic: 读屏标签已关闭
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - img [ref=e18] [cursor=pointer]
+      - generic [ref=e21] [cursor=pointer]:
+        - img [ref=e23]
+        - paragraph [ref=e25]: Search
+        - paragraph [ref=e26]: (Ctrl+K)
+      - generic [ref=e54]:
+        - generic [ref=e55] [cursor=pointer]:
+          - img [ref=e57]
+          - generic [ref=e60]: Messenger
+        - generic [ref=e61] [cursor=pointer]:
+          - img "knowledge-icon" [ref=e63]
+          - generic [ref=e64]: Knowledge AI
+        - generic [ref=e65] [cursor=pointer]:
+          - img [ref=e67]
+          - generic [ref=e69]: Meetings
+        - generic [ref=e70] [cursor=pointer]:
+          - img [ref=e72]
+          - generic [ref=e75]: Calendar
+        - generic [ref=e76] [cursor=pointer]:
+          - img [ref=e78]
+          - generic [ref=e81]: Docs
+        - generic [ref=e82] [cursor=pointer]:
+          - img [ref=e84]
+          - generic [ref=e86]: Contacts
+        - generic [ref=e87] [cursor=pointer]:
+          - img [ref=e89]
+          - generic [ref=e92]: Email
+        - generic [ref=e93] [cursor=pointer]:
+          - img [ref=e95]
+          - generic [ref=e97]: Tasks
+        - generic [ref=e98] [cursor=pointer]:
+          - img [ref=e100]
+          - generic [ref=e102]: Workplace
+      - generic [ref=e27]:
+        - img [ref=e109] [cursor=pointer]
+        - generic [ref=e29] [cursor=pointer]:
+          - img [ref=e31]
+          - generic [ref=e33]: Download Feishu
+    - main [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e110]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - button [ref=e115] [cursor=pointer]:
+                  - img [ref=e117]
+                - text: Filter
+              - button [ref=e119] [cursor=pointer]:
+                - img [ref=e121]
+            - generic [ref=e125]:
+              - generic:
+                - generic:
+                  - generic [ref=e129] [cursor=pointer]:
+                    - img [ref=e132]
+                    - generic [ref=e135]: Chats
+                  - generic [ref=e138] [cursor=pointer]:
+                    - img [ref=e141]
+                    - generic [ref=e144]: Unread
+                  - generic [ref=e148] [cursor=pointer]:
+                    - img [ref=e151]
+                    - generic [ref=e153]: Flagged
+                  - generic [ref=e156] [cursor=pointer]:
+                    - img [ref=e159]
+                    - generic [ref=e161]: Mentions
+                  - generic [ref=e164] [cursor=pointer]:
+                    - button [ref=e166]:
+                      - img [ref=e168]
+                    - generic [ref=e170]: Labels
+                  - generic [ref=e173] [cursor=pointer]:
+                    - img [ref=e176]
+                    - generic [ref=e178]: Private
+                  - generic [ref=e181] [cursor=pointer]:
+                    - img [ref=e184]
+                    - generic [ref=e186]: Groups
+                  - generic [ref=e189] [cursor=pointer]:
+                    - img [ref=e192]
+                    - generic [ref=e195]: Docs
+                  - generic [ref=e198] [cursor=pointer]:
+                    - img [ref=e201]
+                    - generic [ref=e204]: Threads & Topics
+                  - generic [ref=e207] [cursor=pointer]:
+                    - img [ref=e210]
+                    - generic [ref=e213]: Done
+          - generic [ref=e218]:
+            - generic [ref=e223]: Chats
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - region "scrollable content" [ref=e231]:
+                  - generic [ref=e233]:
+                    - generic [ref=e238] [cursor=pointer]:
+                      - img [ref=e241]
+                      - generic [ref=e242]: Knowledge AI
+                    - generic [ref=e249] [cursor=pointer]: Ahmed Abogabl
+                    - generic [ref=e256] [cursor=pointer]: Calendar Assistant
+                    - generic [ref=e263] [cursor=pointer]: Mohamad Atef
+                    - generic [ref=e270] [cursor=pointer]: 王东
+                    - generic [ref=e277] [cursor=pointer]: 罗悦兰Lorraine
+                    - generic [ref=e284] [cursor=pointer]: Moustafa Mohamed
+                    - generic [ref=e291] [cursor=pointer]: Qays Basim
+                    - generic [ref=e298] [cursor=pointer]: Hany
+                    - generic [ref=e305] [cursor=pointer]: Youssef Reda
+                    - generic [ref=e312] [cursor=pointer]: 孙可
+                    - generic [ref=e319] [cursor=pointer]: CM Training AI support
+                    - generic [ref=e326] [cursor=pointer]: Remonda Zakhary
+                    - generic [ref=e333] [cursor=pointer]: MUNA Mohammad Mahmoud Hussein
+                - generic [ref=e334] [cursor=pointer]:
+                  - img [ref=e337]
+                  - generic [ref=e339]: Show
+              - generic [ref=e342]:
+                - generic:
+                  - generic:
+                    - generic [ref=e349] [cursor=pointer]:
+                      - generic [ref=e353]:
+                        - generic [ref=e354]:
+                          - generic [ref=e356]:
+                            - generic [ref=e357]: Hany
+                            - generic [ref=e360]: External
+                          - generic [ref=e362]: 1:55 PM
+                        - generic [ref=e367]:
+                          - img [ref=e4205]
+                          - generic [ref=e1747]: Hany shared a meeting.
+                      - img [ref=e377]
+                    - generic [ref=e384] [cursor=pointer]:
+                      - generic [ref=e388]:
+                        - generic [ref=e389]:
+                          - generic [ref=e391]:
+                            - generic [ref=e392]: AI Efficient Center
+                            - generic [ref=e395]: External
+                          - generic [ref=e397]: 8:11 AM
+                        - generic [ref=e403]: 陈宇光 invited 袁悦轩 to the group. New members can view all chat history.
+                      - img [ref=e409]
+                    - generic [ref=e416] [cursor=pointer]:
+                      - generic [ref=e420]:
+                        - generic [ref=e421]:
+                          - generic [ref=e423]:
+                            - generic [ref=e424]: AIEC ME
+                            - generic [ref=e427]: External
+                          - generic [ref=e429]: Yesterday
+                        - generic [ref=e435]: "Yusuf Rageh: [Link]GitHub - jarrodwatts/claude-stt: Speech-to-text input for Claude Code with live streaming dictation"
+                      - img [ref=e441]
+                    - generic [ref=e448] [cursor=pointer]:
+                      - generic [ref=e452]:
+                        - generic [ref=e453]:
+                          - generic [ref=e455]:
+                            - generic [ref=e456]: Hassan Alkarmy
+                            - generic [ref=e459]: External
+                          - generic [ref=e461]: Yesterday
+                        - generic [ref=e466]:
+                          - img [ref=e468]
+                          - generic [ref=e470]: تمام ان شاء الله
+                      - img [ref=e476]
+                    - generic [ref=e483] [cursor=pointer]:
+                      - generic [ref=e487]:
+                        - generic [ref=e488]:
+                          - generic [ref=e490]:
+                            - generic [ref=e491]: AI Hackers
+                            - generic [ref=e494]: External
+                          - generic [ref=e496]: Jan 16
+                        - generic [ref=e502]:
+                          - text: "谢雯萱: 是！我也成功了"
+                          - img "Laugh" [ref=e504]
+                      - img [ref=e510]
+                    - generic [ref=e517] [cursor=pointer]:
+                      - generic [ref=e521]:
+                        - generic [ref=e522]:
+                          - generic [ref=e524]:
+                            - generic [ref=e525]: EA Hub
+                            - generic [ref=e528]: BOT
+                          - generic [ref=e530]: Jan 14
+                        - generic [ref=e536]: "🧪 Test Notification This is a test notification to prove that your account is linked and working! Package #12345 has been activated. Status: Completed ✅ Date: 14/01/2026"
+                      - img [ref=e542]
+                    - generic [ref=e549] [cursor=pointer]:
+                      - generic [ref=e553]:
+                        - generic [ref=e554]:
+                          - generic [ref=e556]:
+                            - generic [ref=e557]: ARRT - Automatically Report Refresher Toolkit
+                            - generic [ref=e560]: External
+                          - generic [ref=e562]: Jan 13
+                        - generic [ref=e568]: "余可亮: @张海光 This is just a stopgap measure, but specifically, depending on the direction you're taking, we can discuss it. Also, Hany has an automated report generator we're operating that's currently under research"
+                      - img [ref=e574]
+                    - generic [ref=e581] [cursor=pointer]:
+                      - generic [ref=e585]:
+                        - generic [ref=e586]:
+                          - generic [ref=e588]:
+                            - generic [ref=e589]: Ahmed Abogabl, Hany
+                            - generic [ref=e592]: External
+                          - generic [ref=e594]: Jan 13
+                        - img [ref=e603]
+                      - img [ref=e610]
+                    - generic [ref=e617] [cursor=pointer]:
+                      - generic [ref=e621]:
+                        - generic [ref=e622]:
+                          - generic [ref=e624]:
+                            - generic [ref=e625]: Account Security Center
+                            - generic [ref=e628]: BOT
+                          - generic [ref=e630]: Jan 12
+                        - generic [ref=e636]: Login security notice
+                      - img [ref=e642]
+                    - generic [ref=e649] [cursor=pointer]:
+                      - generic [ref=e653]:
+                        - generic [ref=e654]:
+                          - generic [ref=e657]: Ahmed Abogabl
+                          - generic [ref=e659]: Jan 12
+                        - generic [ref=e665]: "@Qays Basim add ur company email as secondary email to use ur account"
+                      - img [ref=e671]
+                    - generic [ref=e678] [cursor=pointer]:
+                      - generic [ref=e682]:
+                        - generic [ref=e683]:
+                          - generic [ref=e685]:
+                            - generic [ref=e686]: Calendar Assistant
+                            - generic [ref=e689]: BOT
+                          - generic [ref=e691]: Jan 12
+                        - generic [ref=e697]: 王东 invites you to join event “AIEC ME team meeting”
+                      - img [ref=e703]
+                    - generic [ref=e710] [cursor=pointer]:
+                      - generic [ref=e714]:
+                        - generic [ref=e715]:
+                          - generic [ref=e717]:
+                            - generic [ref=e718]: AA
+                            - generic [ref=e721]: BOT
+                          - generic [ref=e723]: Jan 11
+                        - generic [ref=e729]:
+                          - text: "Hello Ahmed! BREAKTHROUGH: After deep research, I found the solution! Key Findings:"
+                          - img "OK" [ref=e731]
+                          - text: The scope 'im:message.send_as_user' is NOT generally available yet
+                          - img "OK" [ref=e733]
+                          - text: GitHub issue confirms it's "in beta testing"
+                          - img "OK" [ref=e735]
+                          - text: All working examples use tenant_access_token
+                          - img "OK" [ref=e737]
+                          - text: "Tenant token works reliably for messaging Technical Details: - Researched official Feishu SDK code - Analyzed working implementations on GitHub - Found error 230027 reported by others - Confirmed scope availability limitations The Feishu MCP plugin IS operational and works with tenant authentication! - Claude Code via Feishu MCP Plugin"
+                      - img [ref=e743]
+                    - generic [ref=e750] [cursor=pointer]:
+                      - generic [ref=e754]:
+                        - generic [ref=e755]:
+                          - generic [ref=e757]:
+                            - generic [ref=e758]: Ahmed Ezzat
+                            - generic [ref=e761]: External
+                          - generic [ref=e763]: Jan 11
+                        - generic [ref=e769]: "Call ended: 23s"
+                      - img [ref=e775]
+                    - generic [ref=e782] [cursor=pointer]:
+                      - generic [ref=e786]:
+                        - generic [ref=e787]:
+                          - generic [ref=e789]:
+                            - generic [ref=e790]: Muhammad Ashraf
+                            - generic [ref=e793]: External
+                          - generic [ref=e795]: Jan 11
+                        - generic [ref=e800]:
+                          - img [ref=e802]
+                          - generic [ref=e804]: نص ساعه ل ساعه إلا تلت كدا
+                      - img [ref=e810]
+                    - generic [ref=e817] [cursor=pointer]:
+                      - generic [ref=e821]:
+                        - generic [ref=e822]:
+                          - generic [ref=e824]:
+                            - generic [ref=e825]: Developer Assistant
+                            - generic [ref=e828]: BOT
+                          - generic [ref=e830]: Jan 8
+                        - generic [ref=e836]: App release request approved
+                      - img [ref=e842]
+                    - generic [ref=e3141] [cursor=pointer]:
+                      - generic [ref=e3145]:
+                        - generic [ref=e3146]:
+                          - generic [ref=e3149]: Moustafa Mohamed
+                          - generic [ref=e3151]: Jan 7
+                        - generic [ref=e3156]:
+                          - generic [ref=e3157]:
+                            - img "Lol" [ref=e3160]
+                            - img "FingerHeart" [ref=e3163]
+                          - generic [ref=e3165]: "[Image]"
+                      - img [ref=e3171]
+                    - generic [ref=e3178] [cursor=pointer]:
+                      - generic [ref=e3182]:
+                        - generic [ref=e3183]:
+                          - generic [ref=e3185]:
+                            - generic [ref=e3186]: 王东
+                            - generic [ref=e3189]: External
+                          - generic [ref=e3191]: Jan 7
+                        - generic [ref=e3196]:
+                          - img "FingerHeart" [ref=e3200]
+                          - generic [ref=e3202]: yes it is from China team
+                      - img [ref=e3208]
+                    - generic [ref=e3215] [cursor=pointer]:
+                      - generic [ref=e3219]:
+                        - generic [ref=e3220]:
+                          - generic [ref=e3222]:
+                            - generic [ref=e3223]: Mostafa Mahmoud 白杨
+                            - generic [ref=e3226]: External
+                          - generic [ref=e3228]: Jan 5
+                        - generic [ref=e3233]:
+                          - img [ref=e3235]
+                          - generic [ref=e3237]: "Vapi Client Analytics Dashboard Test User Account: - Email: test@51talk.com - Password: Test123!@# - Role: User (standard access)"
+                      - img [ref=e3243]
+                    - generic [ref=e3250] [cursor=pointer]:
+                      - generic [ref=e3254]:
+                        - generic [ref=e3255]:
+                          - generic [ref=e3257]:
+                            - generic [ref=e3258]: Hadeel Manaseer 李姝
+                            - generic [ref=e3261]: External
+                          - generic [ref=e3263]: Jan 5
+                        - generic [ref=e3268]:
+                          - img "Like" [ref=e3272]
+                          - generic [ref=e3274]: Hello Ahmed! please next time attach all your invoices in one application[Image]
+                      - img [ref=e3280]
+                    - generic [ref=e3287] [cursor=pointer]:
+                      - generic [ref=e3291]:
+                        - generic [ref=e3292]:
+                          - generic [ref=e3295]: Yosseif Reda
+                          - generic [ref=e3297]: Jan 5
+                        - generic [ref=e3302]:
+                          - img "FistBump" [ref=e3306]
+                          - generic [ref=e3308]: vote y boss
+                      - img [ref=e3314]
+                    - generic [ref=e3321] [cursor=pointer]:
+                      - generic [ref=e3325]:
+                        - generic [ref=e3326]:
+                          - generic [ref=e3328]:
+                            - generic [ref=e3329]: Poll Assistant
+                            - generic [ref=e3332]: BOT
+                          - generic [ref=e3334]: Jan 5
+                        - generic [ref=e3340]: "[Poll Message]"
+                      - img [ref=e3346]
+                    - generic [ref=e3353] [cursor=pointer]:
+                      - generic [ref=e3357]:
+                        - generic [ref=e3358]:
+                          - generic [ref=e3360]:
+                            - generic [ref=e3361]: Omar Abdelghany
+                            - generic [ref=e3364]: External
+                          - generic [ref=e3366]: Jan 4
+                        - generic [ref=e3372]: "No"
+                      - img [ref=e3378]
+                    - generic [ref=e3385] [cursor=pointer]:
+                      - generic [ref=e3389]:
+                        - generic [ref=e3390]:
+                          - generic [ref=e3393]: Mohamad Atef
+                          - generic [ref=e3395]: Jan 4
+                        - generic [ref=e3401]: pg_dump "PUBLIC_URL_SOURCE" | psql "PUBLIC_URL_DESTINATION"
+                      - img [ref=e3407]
+                    - generic [ref=e3414] [cursor=pointer]:
+                      - img [ref=e3418]
+                      - generic [ref=e3423]: Knowledge AI
+                      - img [ref=e3434]
+                    - generic [ref=e3441] [cursor=pointer]:
+                      - generic [ref=e3445]:
+                        - generic [ref=e3446]:
+                          - generic [ref=e3448]:
+                            - generic [ref=e3449]: 陈玲
+                            - generic [ref=e3452]: External
+                          - generic [ref=e3454]: Jan 1
+                        - generic [ref=e3459]:
+                          - img "FistBump" [ref=e3463]
+                          - generic [ref=e3465]: oh, got it
+                      - img [ref=e3471]
+                    - generic [ref=e4213] [cursor=pointer]:
+                      - generic [ref=e4217]:
+                        - generic [ref=e4218]:
+                          - generic [ref=e4220]:
+                            - generic [ref=e4221]: FSD-Atomic-CM
+                            - generic [ref=e4224]: External
+                          - generic [ref=e4226]: Dec 31, 2025
+                        - generic [ref=e4232]: "陈玲: [Sticker]"
+                      - img [ref=e4238]
+        - generic [ref=e855]:
+          - generic [ref=e862]:
+            - generic [ref=e863]:
+              - generic [ref=e865] [cursor=pointer]: 王东
+              - generic [ref=e3475]: External
+              - generic:
+                - generic:
+                  - button [ref=e871] [cursor=pointer]:
+                    - img [ref=e873]
+                  - button [ref=e3478] [cursor=pointer]:
+                    - img [ref=e3480]
+                  - button [ref=e3484] [cursor=pointer]:
+                    - img [ref=e3486]
+                  - button [ref=e3489] [cursor=pointer]:
+                    - img [ref=e3491]
+                  - generic [ref=e3496]:
+                    - button [ref=e3499] [cursor=pointer]:
+                      - img [ref=e3501]
+                    - button [ref=e3505] [cursor=pointer]:
+                      - img [ref=e3507]
+            - generic [ref=e1760]:
+              - generic [ref=e3513] [cursor=pointer]:
+                - img [ref=e3516]
+                - generic [ref=e3518]: Chat
+              - generic [ref=e3523] [cursor=pointer]:
+                - img [ref=e3526]
+                - generic [ref=e3529]: File
+              - generic [ref=e3534] [cursor=pointer]:
+                - img [ref=e3537]
+                - generic [ref=e3541]: Docs
+              - generic [ref=e3546] [cursor=pointer]:
+                - img [ref=e3550]
+                - generic [ref=e3552]: Pinned
+              - img [ref=e1786] [cursor=pointer]
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+          - generic [ref=e966]:
+            - generic [ref=e967]:
+              - generic [ref=e3556] [cursor=pointer]:
+                - generic [ref=e3557]:
+                  - img [ref=e3560]
+                  - generic [ref=e3565]:
+                    - img [ref=e3567]
+                    - generic [ref=e3569]: 
+                - generic [ref=e3570]:
+                  - paragraph [ref=e3571]:
+                    - generic [ref=e3572]: "Ahmed Abogabl :"
+                    - text: "[Video]"
+                  - paragraph [ref=e3573]: Clipped by Ahmed Abogabl
+                - generic [ref=e3574]:
+                  - button [ref=e3575]:
+                    - img [ref=e3577]
+                  - button [ref=e3579]:
+                    - img [ref=e3581]
+              - generic [ref=e3585]:
+                - generic:
+                  - generic:
+                    - generic [ref=e3599]:
+                      - generic [ref=e3601]:
+                        - generic [ref=e3610]: im in the meeting room where we met in the morning
+                        - generic [ref=e3612]:
+                          - img "OK" [ref=e3616] [cursor=pointer]
+                          - generic [ref=e3618]: 王东
+                      - img [ref=e3626]
+                    - generic [ref=e3642]:
+                      - generic [ref=e3651]: 3min
+                      - generic [ref=e3653]:
+                        - img "OK" [ref=e3657] [cursor=pointer]
+                        - generic [ref=e3659]: Ahmed Abogabl
+                    - generic [ref=e3673]:
+                      - generic [ref=e3676]:
+                        - link "https://vibecoder-bhkaw-u56467.vm.elestio.app:2108/signup?token=e19723cf-0127-45b1-810f-e94031a46753" [ref=e3685] [cursor=pointer]:
+                          - /url: https://vibecoder-bhkaw-u56467.vm.elestio.app:2108/signup?token=e19723cf-0127-45b1-810f-e94031a46753
+                        - generic [ref=e3692] [cursor=pointer]:
+                          - generic [ref=e3695]:
+                            - generic [ref=e3696]:
+                              - img [ref=e3699]
+                              - generic [ref=e3702]: vibecoder-bhkaw-u56467.vm.elestio.app:2108
+                            - button [ref=e3705]:
+                              - img [ref=e3707]
+                          - generic [ref=e3712]:
+                            - generic [ref=e3714]: Vibecoder
+                            - generic [ref=e3716]: Create your account Validating invitation...
+                      - img [ref=e3724]
+                    - generic [ref=e3738]:
+                      - generic [ref=e3749]: 51Remonda. (4121750) 50
+                      - img [ref=e3757]
+                    - generic [ref=e3767]:
+                      - generic [ref=e3769]:
+                        - generic [ref=e3778]: "550 CRM: 51ahmedmoah employee ID:4120486."
+                        - generic [ref=e3780]:
+                          - img "OK" [ref=e3784] [cursor=pointer]
+                          - generic [ref=e3786]: 王东
+                      - img [ref=e3794]
+                    - generic [ref=e3800]: Jan 4
+                    - generic [ref=e3811]:
+                      - generic [ref=e3815]:
+                        - img [ref=e3819]
+                        - generic [ref=e3821]:
+                          - img "Like" [ref=e3825] [cursor=pointer]
+                          - generic [ref=e3827]: Ahmed Abogabl
+                      - generic [ref=e3831] [cursor=pointer]:
+                        - img [ref=e3834]
+                        - generic [ref=e3837]: 4 replies
+                    - generic [ref=e3848]:
+                      - generic [ref=e3858]:
+                        - img "Like" [ref=e3862] [cursor=pointer]
+                        - generic [ref=e3864]: Ahmed Abogabl
+                      - generic [ref=e3868] [cursor=pointer]:
+                        - img [ref=e3871]
+                        - generic [ref=e3874]: 1 reply
+                    - generic [ref=e3887]:
+                      - generic [ref=e3889]:
+                        - generic [ref=e3891] [cursor=pointer]:
+                          - generic [ref=e3893]: "Reply to 王东:"
+                          - img [ref=e3898]
+                        - generic [ref=e3907]: are u sure this is for one of cairo team ?
+                      - img [ref=e3915]
+                    - generic [ref=e3925]:
+                      - generic [ref=e3927]:
+                        - generic [ref=e3931] [cursor=pointer]: "Reply to 王东:"
+                        - generic [ref=e3945]: this is ours
+                      - img [ref=e3953]
+                    - generic [ref=e3963]:
+                      - generic [ref=e3965]:
+                        - generic [ref=e3967] [cursor=pointer]:
+                          - generic [ref=e3969]: "Reply to 王东:"
+                          - img [ref=e3974]
+                        - generic [ref=e3983]: but not this apify this is a web scraper
+                      - img [ref=e3991]
+                    - generic [ref=e4007]:
+                      - generic [ref=e4016]: if not let me check with china team
+                      - generic [ref=e4018]:
+                        - img "Like" [ref=e4022] [cursor=pointer]
+                        - generic [ref=e4024]: Ahmed Abogabl
+                    - generic [ref=e4045]: actually i can not tell
+                    - generic [ref=e4051]: Jan 6
+                    - generic [ref=e4066]:
+                      - img [ref=e4070]
+                      - generic [ref=e4072]:
+                        - img "Like" [ref=e4076] [cursor=pointer]
+                        - generic [ref=e4078]: Ahmed Abogabl
+                    - generic [ref=e4092]:
+                      - generic [ref=e4094]:
+                        - generic [ref=e4096] [cursor=pointer]:
+                          - generic [ref=e4098]: "Reply to 王东:"
+                          - img [ref=e4103]
+                        - generic [ref=e4112]: did u find if this is for china team?
+                      - img [ref=e4120]
+                    - generic [ref=e4136]:
+                      - generic [ref=e4145]: not yet，will do
+                      - generic [ref=e4147]:
+                        - img "FistBump" [ref=e4151] [cursor=pointer]
+                        - generic [ref=e4153]: Ahmed Abogabl
+                    - generic [ref=e4159]: Jan 7
+                    - generic [ref=e4174]:
+                      - generic [ref=e4176] [cursor=pointer]:
+                        - generic [ref=e4178]: "Reply to Ahmed Abogabl:"
+                        - generic [ref=e4181]: did u find if this is for china team?
+                      - generic [ref=e4190]: yes it is from China team
+                      - generic [ref=e4192]:
+                        - img "FingerHeart" [ref=e4196] [cursor=pointer]
+                        - generic [ref=e4198]: Ahmed Abogabl
+            - generic [ref=e1700]:
+              - generic [ref=e1702]:
+                - generic [ref=e2380]: Message 王东
+                - generic [ref=e1709]:
+                  - button [ref=e1712] [cursor=pointer]:
+                    - img [ref=e1714]
+                  - button [ref=e1718] [cursor=pointer]:
+                    - img [ref=e1720]
+                  - button [ref=e1724] [cursor=pointer]:
+                    - img [ref=e1726]
+                  - button [ref=e1730] [cursor=pointer]:
+                    - img [ref=e1732]
+                  - button [ref=e1736] [cursor=pointer]:
+                    - img [ref=e1738]
+                  - button [ref=e1742]:
+                    - img [ref=e1744]
+              - generic [ref=e1746]: Shift + Enter to add a new line
+```

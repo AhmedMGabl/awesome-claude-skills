@@ -1,0 +1,30 @@
+[
+  {
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "name": "Test Chat (will delete)",
+    "description": "",
+    "owner_id": null,
+    "owner_name": null,
+    "chat_mode": null,
+    "chat_type": null,
+    "member_count": 0,
+    "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_9fb72564-d52a-49b0-9de8-f79071a02286~?image_size=100x100&cut_type=&quality=&format=jpeg&sticker_format=.webp",
+    "created_at": null,
+    "synced_at": "2026-01-19 19:04:50",
+    "last_message_time": null
+  },
+  {
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "name": "Demo Chat 11:23:22",
+    "description": "Created by Feishu MCP Demo",
+    "owner_id": null,
+    "owner_name": null,
+    "chat_mode": null,
+    "chat_type": null,
+    "member_count": 0,
+    "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_100f43a5-7dfc-4cba-8eac-93ca9496a96d~?image_size=100x100&cut_type=&quality=&format=jpeg&sticker_format=.webp",
+    "created_at": null,
+    "synced_at": "2026-01-19 19:04:50",
+    "last_message_time": null
+  }
+]

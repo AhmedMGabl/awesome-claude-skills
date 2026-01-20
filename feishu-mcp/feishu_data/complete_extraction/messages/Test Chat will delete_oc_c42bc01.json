@@ -1,0 +1,110 @@
+[
+  {
+    "body": {
+      "content": "{\"template\":\"Welcome to {group_type}\",\"from_user\":[],\"to_chatters\":[],\"divider_text\":{}}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1767515665056",
+    "deleted": false,
+    "message_id": "om_x100b5a962fddecb0b3ba9e80e35c3da",
+    "msg_type": "system",
+    "sender": {
+      "id": "",
+      "id_type": "",
+      "sender_type": "",
+      "tenant_key": ""
+    },
+    "update_time": "1767515665056",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"template\":\"{from_user} started the group chat.\",\"from_user\":[\"AA\"],\"to_chatters\":[],\"divider_text\":{}}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1767515665144",
+    "deleted": false,
+    "message_id": "om_x100b5a962fdfacb0b4c874fd5bf6b90",
+    "msg_type": "system",
+    "sender": {
+      "id": "",
+      "id_type": "",
+      "sender_type": "",
+      "tenant_key": ""
+    },
+    "update_time": "1767515665144",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Hello from Claude Code! This is a test message from your Ultimate Feishu MCP server. The bot is working perfectly! 🚀\"}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1767517999929",
+    "deleted": false,
+    "message_id": "om_x100b5a96bc366cacb49f8088583c424",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1767517999929",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Bot API Test - SUCCESS!\"}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1768399081797",
+    "deleted": false,
+    "message_id": "om_x100b594e40542ca4c2c8be510924bf6",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1768399081797",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"🎉 Feishu Bot API - FULLY OPERATIONAL!\\n\\n✅ Sent via official Bot API\\n✅ No browser required\\n✅ Works from anywhere\\n✅ Production ready\\n\\nBot: AA (cli_a85833b3fc39900e)\\nMethod: Feishu Open Platform API\"}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1768399097865",
+    "deleted": false,
+    "message_id": "om_x100b594e4157fca4c39c67a9b3d48e0",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1768399097865",
+    "updated": false
+  },
+  {
+    "body": {
+      "content": "{\"text\":\"Final Test: Bot API is production-ready! Ready to message Hany once bot is added to that chat. 🚀\"}"
+    },
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "create_time": "1768399361240",
+    "deleted": false,
+    "message_id": "om_x100b594e6edf98b4c385254b4931ff8",
+    "msg_type": "text",
+    "sender": {
+      "id": "cli_a85833b3fc39900e",
+      "id_type": "app_id",
+      "sender_type": "app",
+      "tenant_key": "1b63a13de851d740"
+    },
+    "update_time": "1768399361240",
+    "updated": false
+  }
+]

@@ -1,0 +1,24 @@
+Hey Hany! 👋
+
+Quick question - can you try asking Claude Code this:
+"List my Render services"
+
+If it works, you already have Render MCP access! 🎉
+
+We're using the same account, so you might already have everything set up.
+
+If it works, I've prepared a complete guide showing you what you can do with Render MCP:
+• Create/deploy web services
+• Create databases (PostgreSQL, Redis)
+• Monitor logs and metrics
+• Manage environment variables
+
+Check out these files in the awesome-claude-skills folder:
+📄 render-mcp-guide.md - Full guide with all tools and examples
+📄 message-for-hany.md - Quick reference
+
+If it DOESN'T work, let me know and I'll help you set it up (takes 5 mins).
+
+Try it and let me know! 🚀
+
+Ahmed

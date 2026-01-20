@@ -1,0 +1,57 @@
+Hey Hany! 👋
+
+Ahmed asked me to share the Render MCP setup guide with you.
+
+📦 What is Render MCP?
+Render MCP connects Claude Code with Render's cloud platform so you can:
+• Create and deploy web services
+• Create databases (PostgreSQL, Redis)
+• Monitor logs and metrics
+• Manage environment variables
+• Deploy static sites
+
+All directly from Claude Code!
+
+⚡ Quick Setup (5 minutes):
+
+1️⃣ Get Render API Key
+   → Go to dashboard.render.com
+   → Profile → Account Settings → API Keys
+   → Create new key and copy it
+
+2️⃣ Install MCP Server
+   → Run: npx @render/mcp
+
+3️⃣ Configure Claude Code
+   → Edit config file:
+   • Windows: %APPDATA%\claude-code\claude_desktop_config.json
+   • Mac/Linux: ~/.config/claude-code/claude_desktop_config.json
+
+   → Add this:
+   {
+     "mcpServers": {
+       "render": {
+         "command": "npx",
+         "args": ["@render/mcp"],
+         "env": {
+           "RENDER_API_KEY": "YOUR_API_KEY_HERE"
+         }
+       }
+     }
+   }
+
+4️⃣ Restart Claude Code
+
+That's it! Now you can ask Claude:
+• "List my Render services"
+• "Create a Node.js web service on Render"
+• "Show logs from my service"
+
+📚 Full Documentation:
+Ahmed has created two comprehensive guides in the awesome-claude-skills folder:
+1. render-mcp-guide.md - Complete guide (8000+ words) with all tools, examples, troubleshooting
+2. message-for-hany.md - Quick reference version
+
+Need help? Just reach out! 🚀
+
+Ahmed

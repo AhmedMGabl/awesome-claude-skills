@@ -1,0 +1,22 @@
+======================================================================
+COMPLETE FEISHU DATA SYNC REPORT
+======================================================================
+
+Sync Date: 2026-01-19 21:05:00
+
+Total Chats: 2
+Total Messages: 11
+Unique Senders: 2
+
+----------------------------------------------------------------------
+Chat Details (Top 30):
+----------------------------------------------------------------------
+Chat Name                                     Type         Messages
+----------------------------------------------------------------------
+Test Chat (will delete)                       Unknown             6
+Demo Chat 11:23:22                            Unknown             5
+
+======================================================================
+Database: W:\WS\AhmedGabl\awesome-claude-skills\feishu-mcp\feishu_data\feishu_complete.db
+JSON Exports: W:\WS\AhmedGabl\awesome-claude-skills\feishu-mcp\feishu_data
+======================================================================

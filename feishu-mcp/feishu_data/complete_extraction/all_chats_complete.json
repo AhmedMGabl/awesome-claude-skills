@@ -1,0 +1,20 @@
+[
+  {
+    "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_9fb72564-d52a-49b0-9de8-f79071a02286~?image_size=100x100&cut_type=&quality=&format=jpeg&sticker_format=.webp",
+    "chat_id": "oc_c42bc012f4778c0f8238d6aa21831b6a",
+    "chat_status": "normal",
+    "description": "",
+    "external": false,
+    "name": "Test Chat (will delete)",
+    "tenant_key": "1b63a13de851d740"
+  },
+  {
+    "avatar": "https://s3-imfile.feishucdn.com/static-resource/v1/default-avatar_100f43a5-7dfc-4cba-8eac-93ca9496a96d~?image_size=100x100&cut_type=&quality=&format=jpeg&sticker_format=.webp",
+    "chat_id": "oc_d90a240d328253f1d7c758fe2e1e596c",
+    "chat_status": "normal",
+    "description": "Created by Feishu MCP Demo",
+    "external": false,
+    "name": "Demo Chat 11:23:22",
+    "tenant_key": "1b63a13de851d740"
+  }
+]
