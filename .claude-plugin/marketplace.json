@@ -129,6 +129,12 @@
       "category": "development"
     },
     {
+      "name": "skill-share",
+      "description": "Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.",
+      "source": "./skill-share",
+      "category": "development"
+    },
+    {
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
