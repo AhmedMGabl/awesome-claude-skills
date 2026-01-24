@@ -83,7 +83,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
 - [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
-- [Feishu MCP](./feishu-mcp/) - Feishu (Lark) integration for Claude Code with MCP server for messaging, chat management, and workflow automation.
+- [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
@@ -268,6 +268,44 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 3. Follow the skill structure template
 4. Test your skill across platforms
 5. Submit a pull request with clear documentation
+
+## MCP Servers
+
+This repository integrates with several MCP (Model Context Protocol) servers that extend Claude's capabilities with external services:
+
+### Available MCP Servers
+
+- **GitHub** (✅ Authenticated) - Full GitHub integration for repositories, issues, PRs, and code management
+- **Serena** (✅ Active) - Semantic code intelligence with project-specific memories and code navigation
+- **Context7** - Up-to-date documentation search for any programming library or framework
+- **Playwright** - Browser automation and web application testing
+- **Greptile** - Code search, custom context, and PR review analysis
+- **Pinecone** - Vector database for AI applications with embedding and reranking
+- **Supabase** - Database integration for Supabase projects
+- **Notion** - Workspace integration for creating and managing Notion content
+- **Render** - Cloud deployment platform for web services, databases, and cron jobs
+- **Railway** - Cloud platform for deploying applications and services
+
+### Setting Up MCP Servers
+
+For detailed setup instructions, see [MCP_SETUP.md](MCP_SETUP.md).
+
+Quick start for common servers:
+
+1. **GitHub** - Already configured and authenticated
+2. **Serena** - Activate with `mcp__plugin_serena_serena__activate_project` for semantic code intelligence
+3. **Context7** - Ready to use for library documentation queries
+4. **Playwright** - Available for webapp testing (requires browser installation)
+
+### MCP Server Documentation
+
+Each MCP server provides specialized tools:
+- Use GitHub MCP for repository management, PR reviews, and issue tracking
+- Use Serena MCP for understanding codebases with semantic search and symbol navigation
+- Use Context7 MCP to get up-to-date library documentation and code examples
+- Use Greptile MCP for code reviews and custom context across your codebase
+
+For authentication requirements and troubleshooting, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
 
 ## Resources
 

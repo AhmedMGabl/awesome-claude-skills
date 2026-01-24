@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "feishu": {
+    "feishu-enhanced": {
       "command": "python",
-      "args": ["C:\\Users\\eng20\\feishu-ultimate-mcp\\server.py"],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server.py"],
       "env": {
         "FEISHU_APP_ID": "cli_a85833b3fc39900e",
         "FEISHU_APP_SECRET": "fiFRoqlAFX7ASY9iUt7Evb2aUx6Qurkd"

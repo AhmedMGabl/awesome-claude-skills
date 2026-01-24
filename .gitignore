@@ -8,6 +8,10 @@ feishu-message-*.txt
 message-for-*.md
 render-mcp-guide.md
 
+# Claude Code and Serena directories
+.claude/
+.playwright-mcp/
+
 # Skill archives
 skill-zips/
 

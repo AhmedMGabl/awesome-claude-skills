@@ -4,6 +4,7 @@ from pathlib import Path
 
 # Skills to zip (excluding non-skill directories)
 skills = [
+    'algorithmic-art',
     'artifacts-builder',
     'brand-guidelines',
     'canvas-design',

@@ -4,7 +4,16 @@ Integrate Feishu (Lark) messaging and collaboration into Claude Code. Send messa
 
 ## Features
 
-### API-Based Features
+### Document Management (NEW in v1.0.0!)
+- 🔍 **Find documents** - Search across all Feishu content (Docs, Bases, Wikis, Chats)
+- 📄 **Read Feishu Docs** - Access rich document content
+- 📝 **Modify documents** - Update specific blocks in Feishu Docs
+- 📊 **Manage Feishu Bases** - Query, update, and create spreadsheet records
+- 📖 **Search Wikis** - Find and read knowledge base pages
+- 📌 **Track documents** - Keep organized list of important files
+- 🔧 **Fix data** - Correct errors anywhere in Feishu content
+
+### Messaging Features
 - 🚀 **Send messages** to Feishu chats and users
 - 📋 **List and search** your Feishu chats
 - 👥 **Create group chats** with team members
@@ -12,7 +21,7 @@ Integrate Feishu (Lark) messaging and collaboration into Claude Code. Send messa
 - 🔐 **OAuth user authentication** for full access
 - ⚡ **MCP-powered** for seamless integration
 
-### Browser Automation Features (NEW!)
+### Browser Automation Features
 - 🌐 **Full web access** via Playwright integration
 - 💬 **Send messages as yourself** (no bot required)
 - 📖 **Read message history** from any chat
@@ -77,10 +86,20 @@ FEISHU_USER_EMAIL: "your.email@company.com"
 
 Your Feishu bot needs these permissions:
 
-**Tenant Token (Bot-level)**:
+**Messaging Permissions (Basic)**:
 - `im:message` - Send and receive messages
 - `im:chat` - Create and manage chats
 - `im:chat:readonly` - Read chat information
+
+**Document Management Permissions (For v1.0.0 features)**:
+- `drive:drive` - Full drive access (required for search)
+- `drive:drive:readonly` - Read-only drive access
+- `docx:document` - Modify Feishu Docs
+- `docx:document:readonly` - Read Feishu Docs
+- `bitable:app` - Modify Feishu Bases (spreadsheets)
+- `bitable:app:readonly` - Read Feishu Bases
+- `wiki:wiki` - Modify wiki pages
+- `wiki:wiki:readonly` - Read wiki pages
 
 **User Access Token (OAuth - Optional)**:
 - `im:message` - Send messages as user
@@ -147,20 +166,47 @@ View all your chats exactly as they appear in Feishu web app. Shows:
 
 ### Skills
 
-The plugin includes the **feishu-setup** skill which automatically activates when discussing:
+The plugin includes two skills:
+
+**feishu-setup** - Automatically activates when discussing:
 - Bot setup and configuration
 - OAuth authentication troubleshooting
 - Permission management
 - API integration guidance
 
+**feishu-document-manager** (NEW!) - Automatically activates when you need to:
+- Find documents across Feishu
+- Read or modify Feishu Docs
+- Query or update Feishu Bases (spreadsheets)
+- Search or access wiki pages
+- Track important documents
+- Fix incorrect data in Feishu content
+
+See [QUICK_START_DOCUMENT_MANAGEMENT.md](./QUICK_START_DOCUMENT_MANAGEMENT.md) for 15-minute setup guide.
+
 ### MCP Server
 
 The plugin automatically starts a FastMCP server that provides these tools:
+
+**Messaging Tools**:
 - `send_message` - Send messages to chats
 - `list_chats` - List available chats
 - `create_chat` - Create group chats
 - `get_chat_info` - Get chat details
 - `add_reaction` - React to messages
+
+**Document Management Tools (NEW!)**:
+- `search_all_content` - Search across all Feishu content types
+- `list_bases` - List all accessible Feishu Bases (spreadsheets)
+- `search_base_records` - Find records matching criteria
+- `update_base_record` - Update existing spreadsheet records
+- `create_base_record` - Create new spreadsheet records
+- `read_document` - Read Feishu Doc content
+- `update_document_block` - Modify specific blocks in documents
+- `search_wiki` - Search wiki pages
+- `read_wiki_page` - Read wiki page content
+- `track_document` - Add documents to tracking system
+- `test_enhanced_connection` - Verify permissions and connectivity
 
 ## Architecture
 
@@ -260,8 +306,32 @@ Built with:
 - [Feishu Open API](https://open.feishu.cn/) - Feishu/Lark API
 - [Claude Code](https://claude.com/code) - AI-powered IDE
 
+## What's New in v1.0.0
+
+### Enhanced Document Management
+
+The plugin now includes comprehensive document management capabilities:
+
+- **Universal Search**: Find any document across Docs, Bases, Wikis, and Chats
+- **Content Access**: Read Feishu Docs, spreadsheets, and wiki pages
+- **Data Modification**: Update spreadsheet records and document content
+- **Document Tracking**: Keep track of important documents
+- **Data Correction**: Fix incorrect data anywhere in Feishu
+
+### Quick Start Guide
+
+1. **Restart Claude** to load the enhanced server
+2. **Test document search**: "Search for documents in Feishu"
+3. **Add permissions** (optional, for full features): See [QUICK_START_DOCUMENT_MANAGEMENT.md](./QUICK_START_DOCUMENT_MANAGEMENT.md)
+
+### Documentation
+
+- [Quick Start Guide](./QUICK_START_DOCUMENT_MANAGEMENT.md) - 15-minute setup
+- [Complete Setup Guide](./DOCUMENT_MANAGEMENT_SETUP.md) - Comprehensive documentation
+- [Deployment Status](../DEPLOYMENT_STATUS.md) - Current deployment info
+
 ---
 
-**Version**: 0.1.0
+**Version**: 1.0.0
 **Author**: Ahmed Gabl
 **Email**: ahmedmoah@51talk.com

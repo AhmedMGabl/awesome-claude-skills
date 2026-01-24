@@ -1,10 +1,10 @@
 {
   "name": "feishu-mcp",
-  "version": "0.1.0",
-  "description": "Feishu (Lark) integration for Claude Code - send messages, manage chats, and automate workflows",
+  "version": "1.0.0",
+  "description": "Comprehensive Feishu (Lark) integration - find documents, modify Feishu Docs/Bases, search wikis, manage chats, and fix data",
   "author": {
     "name": "Ahmed Gabl",
     "email": "ahmedmoah@51talk.com"
   },
-  "keywords": ["feishu", "lark", "messaging", "collaboration", "mcp", "integration"]
+  "keywords": ["feishu", "lark", "documents", "bases", "spreadsheets", "wiki", "messaging", "collaboration", "mcp", "search", "data-management"]
 }
