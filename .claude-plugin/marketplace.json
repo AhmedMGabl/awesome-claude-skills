@@ -147,6 +147,18 @@
       "category": "development"
     },
     {
+      "name": "jest-testing",
+      "description": "Write and configure JavaScript/TypeScript tests using Jest or Vitest, covering unit tests, integration tests, mocking, and coverage.",
+      "source": "./jest-testing",
+      "category": "development"
+    },
+    {
+      "name": "mysql-operations",
+      "description": "MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.",
+      "source": "./mysql-operations",
+      "category": "development"
+    },
+    {
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
