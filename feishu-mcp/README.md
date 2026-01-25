@@ -2,6 +2,19 @@
 
 Integrate Feishu (Lark) messaging and collaboration into Claude Code. Send messages, manage chats, and automate workflows directly from your development environment.
 
+## 🚀 Quick Start
+
+**New to Feishu Enhanced?** Start here:
+- **Simple guide**: Read [HOW_TO_USE.md](./HOW_TO_USE.md) (5 min)
+- **Visual examples**: Read [FEISHU_ENHANCED_GUIDE.md](./FEISHU_ENHANCED_GUIDE.md) (15 min)
+- **Test server**: Run `python scripts/test_feishu_enhanced.py` for standalone testing
+- **Latest updates**: See [WHATS_NEW.md](./WHATS_NEW.md)
+
+**Just want to try it?**
+1. Restart Claude CLI
+2. Ask: `"Search for documents in Feishu"`
+3. Done!
+
 ## Features
 
 ### Document Management (NEW in v1.0.0!)
@@ -184,6 +197,23 @@ The plugin includes two skills:
 
 See [QUICK_START_DOCUMENT_MANAGEMENT.md](./QUICK_START_DOCUMENT_MANAGEMENT.md) for 15-minute setup guide.
 
+### Testing & Debugging (NEW!)
+
+**Interactive Test Server** - Test all features without Claude Code:
+```bash
+cd scripts
+python test_feishu_enhanced.py
+```
+
+**Features:**
+- 7-option interactive menu
+- 5 comprehensive test suites
+- Colored output (visual feedback)
+- Permission verification
+- Standalone operation
+
+See [scripts/README_TEST_SERVER.md](./scripts/README_TEST_SERVER.md) for complete guide.
+
 ### MCP Server
 
 The plugin automatically starts a FastMCP server that provides these tools:
@@ -318,6 +348,23 @@ The plugin now includes comprehensive document management capabilities:
 - **Document Tracking**: Keep track of important documents
 - **Data Correction**: Fix incorrect data anywhere in Feishu
 
+### Interactive Test Server (NEW!)
+
+Test all Feishu features independently:
+```bash
+cd scripts
+python test_feishu_enhanced.py
+```
+
+**Menu options:**
+- Search documents across all Feishu
+- List all spreadsheets
+- Read document content
+- Verify permissions
+- Run automated test suite
+
+See [scripts/README_TEST_SERVER.md](./scripts/README_TEST_SERVER.md) for complete guide.
+
 ### Quick Start Guide
 
 1. **Restart Claude** to load the enhanced server
@@ -326,9 +373,19 @@ The plugin now includes comprehensive document management capabilities:
 
 ### Documentation
 
+**Getting Started:**
+- [How to Use](./HOW_TO_USE.md) - Simple 5-minute guide
+- [What's New](./WHATS_NEW.md) - Latest features and updates
+- [Visual Guide](./FEISHU_ENHANCED_GUIDE.md) - Examples and workflows
+
+**Setup:**
 - [Quick Start Guide](./QUICK_START_DOCUMENT_MANAGEMENT.md) - 15-minute setup
 - [Complete Setup Guide](./DOCUMENT_MANAGEMENT_SETUP.md) - Comprehensive documentation
 - [Deployment Status](../DEPLOYMENT_STATUS.md) - Current deployment info
+
+**Testing:**
+- [Test Server Guide](./scripts/README_TEST_SERVER.md) - Interactive testing
+- [Test After Restart](./TEST_AFTER_RESTART.md) - Quick verification
 
 ---
 
