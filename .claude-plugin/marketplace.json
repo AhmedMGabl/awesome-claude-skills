@@ -171,6 +171,12 @@
       "category": "development"
     },
     {
+      "name": "monitoring-observability",
+      "description": "Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.",
+      "source": "./monitoring-observability",
+      "category": "development"
+    },
+    {
       "name": "jest-testing",
       "description": "Write and configure JavaScript/TypeScript tests using Jest or Vitest, covering unit tests, integration tests, mocking, and coverage.",
       "source": "./jest-testing",
