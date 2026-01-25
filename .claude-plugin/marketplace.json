@@ -183,6 +183,12 @@
       "category": "development"
     },
     {
+      "name": "security-scanning",
+      "description": "Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.",
+      "source": "./security-scanning",
+      "category": "development"
+    },
+    {
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
