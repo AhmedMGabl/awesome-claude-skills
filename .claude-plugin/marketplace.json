@@ -105,6 +105,12 @@
       "category": "development"
     },
     {
+      "name": "docker-compose-orchestration",
+      "description": "Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.",
+      "source": "./docker-compose-orchestration",
+      "category": "development"
+    },
+    {
       "name": "feishu-mcp",
       "description": "Feishu (Lark) integration for Claude Code with MCP server for messaging, chat management, and workflow automation.",
       "source": "./feishu-mcp",
