@@ -135,6 +135,18 @@
       "category": "development"
     },
     {
+      "name": "github-actions-generator",
+      "description": "Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.",
+      "source": "./github-actions-generator",
+      "category": "development"
+    },
+    {
+      "name": "mongodb-operations",
+      "description": "MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.",
+      "source": "./mongodb-operations",
+      "category": "development"
+    },
+    {
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
