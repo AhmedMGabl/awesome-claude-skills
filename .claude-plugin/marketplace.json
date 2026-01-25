@@ -111,6 +111,12 @@
       "category": "development"
     },
     {
+      "name": "feishu-automation",
+      "description": "Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.",
+      "source": "./feishu-automation",
+      "category": "development"
+    },
+    {
       "name": "feishu-direct-api",
       "description": "Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.",
       "source": "./feishu-direct-api",
