@@ -375,11 +375,11 @@ async def main_loop():
 
 if __name__ == "__main__":
     print(f"{Colors.BOLD}{Colors.BLUE}")
-    print("╔════════════════════════════════════════════════════════════╗")
-    print("║     Feishu Enhanced MCP Server - Interactive Tester       ║")
-    print("║                                                            ║")
-    print("║  Test all document management features interactively      ║")
-    print("╚════════════════════════════════════════════════════════════╝")
+    print("=" * 62)
+    print("  Feishu Enhanced MCP Server - Interactive Tester")
+    print("")
+    print("  Test all document management features interactively")
+    print("=" * 62)
     print(Colors.RESET)
 
     # Check credentials
