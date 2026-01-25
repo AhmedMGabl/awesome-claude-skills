@@ -87,6 +87,12 @@
       "category": "creative-media"
     },
     {
+      "name": "api-documentation-generator",
+      "description": "Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.",
+      "source": "./api-documentation-generator",
+      "category": "development"
+    },
+    {
       "name": "artifacts-builder",
       "description": "Builds elaborate, multi-component Claude.ai HTML artifacts using modern frontend technologies including React, Tailwind CSS, and shadcn/ui.",
       "source": "./artifacts-builder",
