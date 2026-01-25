@@ -171,6 +171,12 @@
       "category": "development"
     },
     {
+      "name": "redis-caching",
+      "description": "Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.",
+      "source": "./redis-caching",
+      "category": "development"
+    },
+    {
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
