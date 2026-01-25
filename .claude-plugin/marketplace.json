@@ -183,6 +183,12 @@
       "category": "development"
     },
     {
+      "name": "kubernetes-manifests",
+      "description": "Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, ConfigMaps, secrets, RBAC, auto-scaling, and production-ready orchestration patterns.",
+      "source": "./kubernetes-manifests",
+      "category": "development"
+    },
+    {
       "name": "mysql-operations",
       "description": "MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.",
       "source": "./mysql-operations",

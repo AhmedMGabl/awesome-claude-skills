@@ -91,6 +91,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
+- [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
