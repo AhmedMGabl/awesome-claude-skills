@@ -171,6 +171,12 @@
       "category": "development"
     },
     {
+      "name": "microservices-architecture",
+      "description": "Microservices architecture patterns including service design, API gateways, service mesh, inter-service communication, event-driven architecture, circuit breakers, distributed systems, and production deployment.",
+      "source": "./microservices-architecture",
+      "category": "development"
+    },
+    {
       "name": "mongodb-operations",
       "description": "MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.",
       "source": "./mongodb-operations",
