@@ -1,59 +1,61 @@
 ---
 name: github-api
-description: GitHub API integration covering Octokit client, REST and GraphQL APIs, repository management, pull request automation, GitHub Actions workflow dispatch, webhook handling, GitHub Apps authentication, release management, and issue/project board automation patterns.
+description: GitHub API integration covering REST and GraphQL APIs, Octokit client, repository management, pull request automation, issue workflows, GitHub Apps authentication, webhook handling, Actions API, release management, and code search with the GitHub API.
 ---
 
-# GitHub API Integration
+# GitHub API
 
-This skill should be used when automating GitHub workflows, building GitHub integrations, or interacting with the GitHub API programmatically. It covers Octokit, webhooks, GitHub Apps, and CI automation.
+This skill should be used when integrating with the GitHub API. It covers REST/GraphQL APIs, Octokit, webhooks, GitHub Apps, and automation workflows.
 
 ## When to Use This Skill
 
 Use this skill when you need to:
 
-- Automate pull request workflows
-- Build GitHub integrations or bots
-- Manage repositories programmatically
+- Automate repository and PR workflows
+- Build GitHub Apps or integrations
 - Handle GitHub webhooks
-- Create GitHub Actions with API calls
-- Automate release management
+- Query repositories with the GraphQL API
+- Manage releases and deployments programmatically
 
-## Octokit REST API
+## Octokit REST Client
 
 ```typescript
 import { Octokit } from "@octokit/rest";
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-const owner = "myorg";
-const repo = "myrepo";
 
-// List pull requests
-const { data: pulls } = await octokit.rest.pulls.list({
-  owner, repo, state: "open", sort: "updated", direction: "desc", per_page: 30,
+// List repositories
+const { data: repos } = await octokit.repos.listForAuthenticatedUser({
+  sort: "updated",
+  per_page: 30,
 });
 
 // Create a pull request
-const { data: pr } = await octokit.rest.pulls.create({
-  owner, repo,
-  title: "feat: Add new feature",
-  body: "## Summary\n\n- Added feature X\n- Updated docs",
-  head: "feature/new-feature",
+const { data: pr } = await octokit.pulls.create({
+  owner: "org",
+  repo: "repo",
+  title: "feat: add new feature",
+  body: "## Summary\n\nAdds the new feature.",
+  head: "feature-branch",
   base: "main",
 });
 
-// Add labels and reviewers
-await octokit.rest.issues.addLabels({ owner, repo, issue_number: pr.number, labels: ["enhancement"] });
-await octokit.rest.pulls.requestReviewers({ owner, repo, pull_number: pr.number, reviewers: ["teammate"] });
-
-// Create a comment on a PR
-await octokit.rest.issues.createComment({
-  owner, repo, issue_number: pr.number,
-  body: "Automated check passed. Ready for review.",
+// Add reviewers
+await octokit.pulls.requestReviewers({
+  owner: "org",
+  repo: "repo",
+  pull_number: pr.number,
+  reviewers: ["reviewer1"],
 });
 
-// Merge a pull request
-await octokit.rest.pulls.merge({
-  owner, repo, pull_number: pr.number, merge_method: "squash",
+// Create an issue
+const { data: issue } = await octokit.issues.create({
+  owner: "org",
+  repo: "repo",
+  title: "Bug: login fails on mobile",
+  body: "Steps to reproduce...",
+  labels: ["bug", "priority:high"],
+  assignees: ["developer1"],
 });
 ```
 
@@ -62,11 +64,12 @@ await octokit.rest.pulls.merge({
 ```typescript
 import { graphql } from "@octokit/graphql";
 
-const gql = graphql.defaults({ headers: { authorization: `token ${process.env.GITHUB_TOKEN}` } });
+const graphqlWithAuth = graphql.defaults({
+  headers: { authorization: `token ${process.env.GITHUB_TOKEN}` },
+});
 
-// Get PR with reviews and checks
-const { repository } = await gql(`
-  query($owner: String!, $repo: String!, $number: Int!) {
+const { repository } = await graphqlWithAuth(`
+  query ($owner: String!, $repo: String!, $number: Int!) {
     repository(owner: $owner, name: $repo) {
       pullRequest(number: $number) {
         title
@@ -77,125 +80,13 @@ const { repository } = await gql(`
         }
         commits(last: 1) {
           nodes {
-            commit {
-              statusCheckRollup {
-                state
-                contexts(first: 20) {
-                  nodes {
-                    ... on CheckRun { name conclusion }
-                    ... on StatusContext { context state }
-                  }
-                }
-              }
-            }
+            commit { statusCheckRollup { state } }
           }
         }
       }
     }
   }
-`, { owner, repo, number: 42 });
-```
-
-## Webhook Handler
-
-```typescript
-import { Webhooks, createNodeMiddleware } from "@octokit/webhooks";
-
-const webhooks = new Webhooks({ secret: process.env.GITHUB_WEBHOOK_SECRET! });
-
-// Pull request opened
-webhooks.on("pull_request.opened", async ({ payload }) => {
-  const { pull_request: pr, repository } = payload;
-
-  // Auto-assign reviewer based on files changed
-  if (pr.changed_files > 0) {
-    await octokit.rest.pulls.requestReviewers({
-      owner: repository.owner.login,
-      repo: repository.name,
-      pull_number: pr.number,
-      reviewers: getReviewersForPR(pr),
-    });
-  }
-
-  // Add size label
-  const sizeLabel = pr.additions + pr.deletions < 50 ? "size/S"
-    : pr.additions + pr.deletions < 200 ? "size/M" : "size/L";
-  await octokit.rest.issues.addLabels({
-    owner: repository.owner.login,
-    repo: repository.name,
-    issue_number: pr.number,
-    labels: [sizeLabel],
-  });
-});
-
-// Issue commented
-webhooks.on("issue_comment.created", async ({ payload }) => {
-  const { comment, issue } = payload;
-  if (comment.body.includes("/deploy") && issue.pull_request) {
-    await triggerDeployment(payload);
-  }
-});
-
-// Check run completed
-webhooks.on("check_run.completed", async ({ payload }) => {
-  if (payload.check_run.conclusion === "failure") {
-    await notifyTeam(payload);
-  }
-});
-
-// Express middleware
-app.use("/api/webhooks/github", createNodeMiddleware(webhooks));
-```
-
-## Release Automation
-
-```typescript
-// Create a release with auto-generated notes
-async function createRelease(tag: string) {
-  const { data: release } = await octokit.rest.repos.createRelease({
-    owner, repo,
-    tag_name: tag,
-    name: tag,
-    generate_release_notes: true,
-    draft: false,
-    prerelease: tag.includes("-rc") || tag.includes("-beta"),
-  });
-
-  return release;
-}
-
-// Upload release assets
-async function uploadAsset(releaseId: number, filePath: string) {
-  const fs = await import("fs");
-  const path = await import("path");
-
-  const data = fs.readFileSync(filePath);
-  await octokit.rest.repos.uploadReleaseAsset({
-    owner, repo, release_id: releaseId,
-    name: path.basename(filePath),
-    data: data as unknown as string,
-  });
-}
-```
-
-## GitHub Actions Workflow Dispatch
-
-```typescript
-// Trigger a workflow from code
-await octokit.rest.actions.createWorkflowDispatch({
-  owner, repo,
-  workflow_id: "deploy.yml",
-  ref: "main",
-  inputs: {
-    environment: "production",
-    version: "1.2.3",
-  },
-});
-
-// List workflow runs
-const { data: runs } = await octokit.rest.actions.listWorkflowRuns({
-  owner, repo, workflow_id: "ci.yml", branch: "main", status: "completed", per_page: 5,
-});
+`, { owner: "org", repo: "repo", number: 123 });
 ```
 
 ## GitHub App Authentication
@@ -203,23 +94,62 @@ const { data: runs } = await octokit.rest.actions.listWorkflowRuns({
 ```typescript
 import { createAppAuth } from "@octokit/auth-app";
 
-const appOctokit = new Octokit({
-  authStrategy: createAppAuth,
-  auth: {
-    appId: process.env.GITHUB_APP_ID!,
-    privateKey: process.env.GITHUB_APP_PRIVATE_KEY!,
-    installationId: process.env.GITHUB_INSTALLATION_ID!,
-  },
+const auth = createAppAuth({
+  appId: process.env.GITHUB_APP_ID!,
+  privateKey: process.env.GITHUB_APP_PRIVATE_KEY!,
+  installationId: Number(process.env.GITHUB_INSTALLATION_ID),
 });
 
-// Now use appOctokit for API calls with app permissions
-const { data: repos } = await appOctokit.rest.apps.listReposAccessibleToInstallation();
+const { token } = await auth({ type: "installation" });
+const octokit = new Octokit({ auth: token });
+```
+
+## Webhook Handler
+
+```typescript
+import { Webhooks } from "@octokit/webhooks";
+
+const webhooks = new Webhooks({ secret: process.env.WEBHOOK_SECRET! });
+
+webhooks.on("pull_request.opened", async ({ payload }) => {
+  const { pull_request, repository } = payload;
+  await octokit.pulls.requestReviewers({
+    owner: repository.owner.login,
+    repo: repository.name,
+    pull_number: pull_request.number,
+    reviewers: ["lead-dev"],
+  });
+});
+
+webhooks.on("issues.opened", async ({ payload }) => {
+  const labels: string[] = [];
+  if (payload.issue.title.toLowerCase().includes("bug")) labels.push("bug");
+  if (labels.length > 0) {
+    await octokit.issues.addLabels({
+      owner: payload.repository.owner.login,
+      repo: payload.repository.name,
+      issue_number: payload.issue.number,
+      labels,
+    });
+  }
+});
+```
+
+## Release Management
+
+```typescript
+const { data: release } = await octokit.repos.createRelease({
+  owner: "org",
+  repo: "repo",
+  tag_name: "v1.2.0",
+  name: "Release v1.2.0",
+  body: "## What's Changed\n\n- Feature A\n- Bug fix B",
+  generate_release_notes: true,
+});
 ```
 
 ## Additional Resources
 
-- Octokit.js: https://github.com/octokit/octokit.js
 - GitHub REST API: https://docs.github.com/en/rest
-- GitHub GraphQL API: https://docs.github.com/en/graphql
-- GitHub Apps: https://docs.github.com/en/apps
-- Webhooks events: https://docs.github.com/en/webhooks/webhook-events-and-payloads
+- GitHub GraphQL: https://docs.github.com/en/graphql
+- Octokit: https://github.com/octokit/octokit.js
