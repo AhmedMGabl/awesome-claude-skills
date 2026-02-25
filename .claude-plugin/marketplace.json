@@ -1453,6 +1453,30 @@
       "description": "Biome toolchain covering linting, formatting, import sorting, configuration, rule customization, IDE integration, migration from ESLint and Prettier, CI setup, and monorepo support.",
       "source": "./biome-linting",
       "category": "development"
+    },
+    {
+      "name": "sse-streaming",
+      "description": "Server-Sent Events (SSE) covering event stream protocol, Node.js/Express/Hono implementations, reconnection handling, event types, React hooks for consuming streams, and comparison with WebSockets and polling.",
+      "source": "./sse-streaming",
+      "category": "development"
+    },
+    {
+      "name": "openai-api",
+      "description": "OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, image generation, text-to-speech, Whisper transcription, assistants API, and token management.",
+      "source": "./openai-api",
+      "category": "development"
+    },
+    {
+      "name": "claude-api",
+      "description": "Anthropic Claude API integration covering messages API, streaming, tool use, vision, system prompts, prompt caching, extended thinking, batch processing, and TypeScript/Python SDK patterns.",
+      "source": "./claude-api",
+      "category": "development"
+    },
+    {
+      "name": "stripe-billing",
+      "description": "Stripe billing covering subscription management, usage-based metering, customer portal, invoicing, proration, trial periods, webhook handling, and SaaS pricing model implementation.",
+      "source": "./stripe-billing",
+      "category": "development"
     }
   ]
 }

@@ -105,6 +105,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Chaos Engineering](./chaos-engineering/) - Chaos engineering and resilience testing with LitmusChaos, Toxiproxy, circuit breakers, fault injection, and gameday planning.
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
+- [Claude API](./claude-api/) - Anthropic Claude API integration covering messages API, streaming, tool use, vision, prompt caching, extended thinking, and SDK patterns.
 - [Clerk Authentication](./clerk-authentication/) - Clerk auth with sign-in components, organizations, RBAC, webhook sync, and Next.js App Router integration.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
@@ -210,6 +211,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
 - [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
 - [OpenAPI Specification](./openapi-spec/) - OpenAPI 3.1 authoring, schema design, code generation with openapi-typescript, Zod validation, and API-first development.
+- [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
@@ -264,8 +266,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
 - [SWR Data Fetching](./swr-data-fetching/) - SWR with stale-while-revalidate caching, optimistic mutations, useSWRInfinite pagination, and prefetching.
 - [Strapi CMS](./strapi-cms/) - Strapi headless CMS covering content types, REST and GraphQL APIs, lifecycle hooks, authentication, custom plugins, and deployment.
+- [Stripe Billing](./stripe-billing/) - Stripe billing covering subscriptions, usage-based metering, customer portal, invoicing, webhooks, and SaaS pricing patterns.
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
+- [SSE Streaming](./sse-streaming/) - Server-Sent Events covering event stream protocol, Express/Node.js implementations, AI token streaming, reconnection, and React hooks.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
 - [Sanity CMS](./sanity-cms/) - Sanity headless CMS with GROQ queries, schema definition, image handling, portable text, and Next.js integration.
