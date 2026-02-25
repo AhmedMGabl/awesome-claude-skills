@@ -1207,6 +1207,30 @@
       "description": "CSS Grid and Flexbox layout mastery covering grid template areas, auto-fill and auto-fit, subgrid, flexbox alignment, responsive layouts without media queries, container queries, named grid lines, aspect-ratio, and common layout patterns.",
       "source": "./css-grid-flexbox",
       "category": "development"
+    },
+    {
+      "name": "pnpm-workspaces",
+      "description": "pnpm workspace management covering workspace protocol, shared dependencies, filtering commands, catalogs for version alignment, peer dependency handling, .npmrc configuration, publishing packages, and migration from npm or yarn.",
+      "source": "./pnpm-workspaces",
+      "category": "development"
+    },
+    {
+      "name": "github-actions-cicd",
+      "description": "GitHub Actions CI/CD workflows covering reusable workflows, composite actions, matrix strategies, caching, artifact management, environment deployments, OIDC authentication, monorepo change detection, and security best practices.",
+      "source": "./github-actions-cicd",
+      "category": "development"
+    },
+    {
+      "name": "swr-data-fetching",
+      "description": "SWR data fetching library covering stale-while-revalidate pattern, global configuration, mutation and optimistic updates, pagination with useSWRInfinite, conditional fetching, middleware, prefetching, error handling, and comparison with TanStack Query.",
+      "source": "./swr-data-fetching",
+      "category": "development"
+    },
+    {
+      "name": "lucia-auth",
+      "description": "Lucia authentication library covering session management, database adapters for Prisma and Drizzle, OAuth integration with Arctic, password hashing with Argon2, email verification, password reset flows, session cookies, and CSRF protection.",
+      "source": "./lucia-auth",
+      "category": "development"
     }
   ]
 }

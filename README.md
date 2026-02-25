@@ -157,6 +157,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
 - [Git Workflows](./git-workflows/) - Git branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, cherry-pick, bisect, worktrees, hooks, and monorepo management.
 - [GitHub Actions Advanced](./github-actions-advanced/) - Advanced GitHub Actions with reusable workflows, composite actions, matrix strategies, OIDC, and caching optimization.
+- [GitHub Actions CI/CD](./github-actions-cicd/) - GitHub Actions with reusable workflows, composite actions, OIDC, environment gates, and monorepo change detection.
 - [GitHub Copilot Setup](./github-copilot-setup/) - GitHub Copilot configuration with custom instructions, Copilot Chat, context variables, and team productivity patterns.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
@@ -172,6 +173,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
+- [Lucia Authentication](./lucia-auth/) - Lucia session auth with Prisma/Drizzle adapters, OAuth via Arctic, password hashing, and email verification.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
@@ -195,6 +197,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
+- [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
 - [PostgreSQL Operations](./postgresql-operations/) - PostgreSQL operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, and performance tuning.
 - [Prompt Improver Hook](https://github.com/severity1/claude-code-prompt-improver) - Intelligent hook that intercepts and refines vague prompts into precise, actionable instructions. *By [@severity1](https://github.com/severity1)*
@@ -232,6 +235,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
+- [SWR Data Fetching](./swr-data-fetching/) - SWR with stale-while-revalidate caching, optimistic mutations, useSWRInfinite pagination, and prefetching.
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
