@@ -2221,6 +2221,66 @@
       "description": "React Native Skia patterns covering canvas drawing, paths, shaders, image filters, blur effects, gradient fills, animated transitions, and high-performance 2D graphics rendering on mobile.",
       "source": "./react-native-skia",
       "category": "development"
+    },
+    {
+      "name": "tanstack-form",
+      "description": "TanStack Form patterns covering type-safe form state, field validation with Zod/Valibot, async validators, field arrays, form composition, side effects, and framework-agnostic React/Vue/Solid integration.",
+      "source": "./tanstack-form",
+      "category": "development"
+    },
+    {
+      "name": "ark-ui-react",
+      "description": "Ark UI React patterns covering headless accessible components, state machine-driven behavior, polymorphic rendering, form controls, dialogs, menus, date pickers, and Panda CSS styling integration.",
+      "source": "./ark-ui-react",
+      "category": "development"
+    },
+    {
+      "name": "shadcn-sidebar",
+      "description": "shadcn/ui sidebar patterns covering collapsible navigation, sidebar provider, menu items, groups, submenus, mobile responsive drawer, keyboard shortcuts, and persistent state management.",
+      "source": "./shadcn-sidebar",
+      "category": "development"
+    },
+    {
+      "name": "sonner-v2",
+      "description": "Sonner v2 toast patterns covering toast types, promise-based toasts, custom JSX rendering, action buttons, rich content, positioning, theming, dismiss behavior, and Next.js App Router integration.",
+      "source": "./sonner-v2",
+      "category": "development"
+    },
+    {
+      "name": "nuxt-ui",
+      "description": "Nuxt UI patterns covering component library setup, form validation with Zod, table components, modal and slideover overlays, command palette, theming with Tailwind, and Nuxt 3 integration.",
+      "source": "./nuxt-ui",
+      "category": "development"
+    },
+    {
+      "name": "vuetify-v3",
+      "description": "Vuetify 3 patterns covering Material Design 3 components, virtual scrolling tables, form validation with Vuelidate, responsive grid system, theme customization, locale support, and Vue 3 Composition API integration.",
+      "source": "./vuetify-v3",
+      "category": "development"
+    },
+    {
+      "name": "quasar-framework",
+      "description": "Quasar Framework patterns covering cross-platform Vue 3 apps, Material/iOS components, Quasar CLI with Vite, SSR mode, PWA configuration, Electron/Capacitor builds, and responsive layout system.",
+      "source": "./quasar-framework",
+      "category": "development"
+    },
+    {
+      "name": "ionic-capacitor",
+      "description": "Ionic Capacitor patterns covering cross-platform mobile apps, native device APIs, Ionic React/Angular/Vue components, navigation with IonRouter, native plugins, app lifecycle, and iOS/Android deployment.",
+      "source": "./ionic-capacitor",
+      "category": "development"
+    },
+    {
+      "name": "electron-forge",
+      "description": "Electron Forge patterns covering desktop app scaffolding, IPC communication, BrowserWindow management, auto-updates, tray icons, native menus, system integration, and packaging for Windows/macOS/Linux.",
+      "source": "./electron-forge",
+      "category": "development"
+    },
+    {
+      "name": "neutralino-apps",
+      "description": "Neutralinojs patterns covering lightweight desktop apps, native OS API access, file system operations, system info, window management, tray menus, process spawning, and cross-platform distribution without bundled browser.",
+      "source": "./neutralino-apps",
+      "category": "development"
     }
   ]
 }

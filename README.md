@@ -96,6 +96,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [AWS Lambda](./aws-lambda/) - Serverless functions with API Gateway, S3/SQS/DynamoDB event sources, SAM/CDK deployment, and cold start optimization.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
+- [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
@@ -145,6 +146,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
 - [Electric SQL](./electric-sql/) - ElectricSQL local-first sync with Shape streams, real-time Postgres replication, offline support, optimistic mutations, and React hooks.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
+- [Electron Forge](./electron-forge/) - Electron Forge desktop app scaffolding with IPC communication, BrowserWindow management, auto-updates, tray icons, and cross-platform packaging.
 - [Expo Router](./expo-router/) - Expo Router file-based routing for React Native with layouts, typed routes, deep linking, authentication flows, and universal app patterns.
 - [Express.js](./express-js/) - Express.js with routing, middleware, Zod validation, JWT auth, error handling patterns, graceful shutdown, and supertest testing.
 - [Elysia Patterns](./elysia-patterns/) - Elysia Bun API framework with type-safe validation, Eden Treaty client, WebSockets, guards, and derive middleware.
@@ -222,6 +224,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Jotai State](./jotai-state/) - Jotai atomic state management with primitive atoms, derived atoms, async atoms, atom families, persistence, and DevTools.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [Inngest](./inngest/) - Inngest event-driven functions with step functions, scheduled tasks, fan-out patterns, retries, concurrency, and Next.js integration.
+- [Ionic Capacitor](./ionic-capacitor/) - Ionic Capacitor cross-platform mobile apps with native device APIs, Ionic React components, navigation, push notifications, and iOS/Android deployment.
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
@@ -259,10 +262,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
 - [Nuxt Server](./nuxt-server/) - Nuxt server-side patterns with defineEventHandler, middleware, server utilities, caching, WebSocket support, and Nitro integration.
+- [Nuxt UI](./nuxt-ui/) - Nuxt UI component library with Zod form validation, table components, modal and slideover overlays, command palette, and Nuxt 3 integration.
 - [nuqs URL State](./nuqs-url-state/) - nuqs type-safe URL search param state with parsers, shallow routing, history modes, and Next.js server-side access.
 - [Nanostores](./nanostores/) - Nanostores lightweight state management with atoms, computed stores, maps, lifecycle events, and React/Vue/Svelte/Solid integration.
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
+- [Neutralinojs](./neutralino-apps/) - Neutralinojs lightweight desktop apps with native OS APIs, file system operations, window management, tray menus, and cross-platform distribution.
 - [Nitro Server](./nitro-server/) - Nitro server engine with event handlers, middleware, storage drivers, caching, scheduled tasks, WebSockets, and multi-platform deployment.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
@@ -331,6 +336,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
 - [Pulumi Infrastructure as Code](./pulumi-iac/) - Pulumi IaC with TypeScript covering AWS/GCP/Azure, stack management, component resources, testing, and CI/CD integration.
+- [Quasar Framework](./quasar-framework/) - Quasar cross-platform Vue 3 apps with Material/iOS components, SSR mode, PWA configuration, Electron/Capacitor builds, and responsive layouts.
 - [Puppeteer Scraping](./puppeteer-scraping/) - Puppeteer browser automation covering page navigation, form filling, screenshots, PDF generation, network interception, and stealth mode.
 - [Python Development](./python-development/) - Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns.
 - [Ruby on Rails](./ruby-on-rails/) - Ruby on Rails development covering MVC architecture, Active Record, Hotwire/Turbo, background jobs, and RSpec testing.
@@ -344,6 +350,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [shadcn/ui](./shadcn-ui/) - shadcn/ui components with forms, data tables, theming, dark mode, and React Hook Form + Zod validation.
 - [shadcn/ui Patterns](./shadcn-patterns/) - shadcn/ui advanced patterns with form integration, data tables, command palette, toast notifications, and custom component variants.
 - [shadcn Charts](./shadcn-charts/) - shadcn/ui chart patterns with bar, line, area, pie charts using Recharts, custom tooltips, and themes.
+- [shadcn Sidebar](./shadcn-sidebar/) - shadcn/ui sidebar navigation with collapsible groups, menu items, submenus, mobile responsive drawer, and persistent state management.
 - [Skill Creator](./skill-creator/) - Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.
 - [Supabase Development](./supabase-development/) - Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, and Row Level Security policies.
 - [Supabase Realtime](./supabase-realtime/) - Supabase Realtime with Postgres changes, broadcast channels, presence tracking, RLS filters, and React subscription patterns.
@@ -353,6 +360,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
 - [SolidStart](./solid-start/) - SolidStart full-stack framework with file-based routing, server functions, createAsync, middleware, sessions, and SSR/SSG modes.
 - [Sonner Toasts](./sonner-toasts/) - Sonner toast notifications with promise toasts, action buttons, custom components, positioning, and React/Next.js integration.
+- [Sonner v2](./sonner-v2/) - Sonner v2 toast patterns with promise-based toasts, custom JSX rendering, action buttons, rich content, theming, and Next.js App Router integration.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Stimulus & Hotwire](./stimulus-hotwire/) - Stimulus controllers, Turbo Drive, Turbo Frames, Turbo Streams, and progressive enhancement of server-rendered HTML.
@@ -384,6 +392,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Temporal Workflows](./temporal-workflows/) - Temporal durable workflows with activities, signals, queries, timers, child workflows, saga compensation, and TypeScript SDK.
 - [Tamagui](./tamagui/) - Tamagui cross-platform styling with design tokens, themes, responsive media queries, and React Native/web components.
 - [Tailwind CSS Styling](./tailwindcss-styling/) - Tailwind CSS utility-first styling with responsive design, dark mode, custom themes, component patterns, animations, and production optimization.
+- [TanStack Form](./tanstack-form/) - TanStack Form type-safe forms with field validation, Zod/Valibot adapters, async validators, field arrays, and React/Vue/Solid integration.
 - [TanStack Query](./tanstack-query/) - TanStack Query (React Query) with queries, mutations, optimistic updates, infinite scrolling, prefetching, and cache management.
 - [TanStack Router](./tanstack-router/) - TanStack Router covering type-safe routing, file-based routes, search params validation, data loading, and auth guards.
 - [TanStack Table](./tanstack-table/) - TanStack Table with column definitions, sorting, filtering, pagination, row selection, and virtual scrolling.
@@ -410,6 +419,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vitest Patterns](./vitest-patterns/) - Vitest testing with mocking, snapshots, concurrent tests, coverage, workspace projects, and React Testing Library.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
+- [Vuetify 3](./vuetify-v3/) - Vuetify 3 Material Design components with data tables, form validation, navigation drawers, dialogs, theming, and Vue 3 Composition API.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unistyles](./unistyles/) - React Native Unistyles with createStyleSheet, breakpoints, themes, runtime theming, and responsive cross-platform styling.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
