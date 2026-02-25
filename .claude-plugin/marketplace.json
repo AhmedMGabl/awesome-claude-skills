@@ -745,6 +745,18 @@
       "description": "File upload with Multer, presigned S3 URLs, chunked uploads, file validation, image processing pipelines, drag-and-drop UI, and progress tracking.",
       "source": "./file-upload",
       "category": "development"
+    },
+    {
+      "name": "email-sending",
+      "description": "Transactional email sending with Resend, SendGrid, AWS SES, queue management, bounce handling, SPF/DKIM/DMARC authentication, and deliverability.",
+      "source": "./email-sending",
+      "category": "development"
+    },
+    {
+      "name": "dns-networking",
+      "description": "DNS and networking covering record types, domain configuration, Cloudflare/Route 53, SSL/TLS certificates, CDN setup, and network troubleshooting.",
+      "source": "./dns-networking",
+      "category": "development"
     }
   ]
 }
