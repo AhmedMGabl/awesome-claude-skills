@@ -825,6 +825,12 @@
       "category": "development"
     },
     {
+      "name": "date-handling",
+      "description": "Date and time handling covering date-fns, dayjs, Temporal API proposal, timezone management with Luxon, formatting, parsing, duration calculations, relative time, and internationalization with Intl.DateTimeFormat.",
+      "source": "./date-handling",
+      "category": "development"
+    },
+    {
       "name": "unit-testing-patterns",
       "description": "Unit testing patterns and strategies covering test structure (Arrange-Act-Assert), mocking and stubbing, test doubles, parameterized tests, snapshot testing, coverage analysis, test naming conventions, testing async code, and writing maintainable test suites across JavaScript, TypeScript, and Python.",
       "source": "./unit-testing-patterns",
@@ -1314,6 +1320,48 @@
       "name": "netlify-deployment",
       "description": "Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects and headers, forms, identity authentication, and CI/CD with deploy previews.",
       "source": "./netlify-deployment",
+      "category": "development"
+    },
+    {
+      "name": "ruby-on-rails",
+      "description": "Ruby on Rails development covering MVC architecture, Active Record models, migrations, associations, validations, controllers, routing, Action Mailer, Active Job, Hotwire/Turbo, Stimulus, testing with RSpec, and production deployment.",
+      "source": "./ruby-on-rails",
+      "category": "development"
+    },
+    {
+      "name": "laravel-development",
+      "description": "Laravel PHP development covering Eloquent ORM, migrations, controllers, routing, Blade templates, middleware, authentication with Sanctum, queues, event broadcasting, testing with Pest, and deployment.",
+      "source": "./laravel-development",
+      "category": "development"
+    },
+    {
+      "name": "solid-js",
+      "description": "SolidJS reactive UI framework covering signals, effects, memos, stores, context, control flow components, resource fetching, routing with solid-router, and SolidStart SSR/SSG deployment.",
+      "source": "./solid-js",
+      "category": "development"
+    },
+    {
+      "name": "web-workers",
+      "description": "Web Workers for parallel processing covering dedicated workers, shared workers, worker pools, Comlink RPC, transferable objects, OffscreenCanvas, and integration with React, Vite, and webpack bundlers.",
+      "source": "./web-workers",
+      "category": "development"
+    },
+    {
+      "name": "webassembly",
+      "description": "WebAssembly (Wasm) development covering Rust-to-Wasm compilation with wasm-pack, AssemblyScript, JavaScript interop, memory management, WASI, streaming compilation, and integration with React and bundlers.",
+      "source": "./webassembly",
+      "category": "development"
+    },
+    {
+      "name": "strapi-cms",
+      "description": "Strapi headless CMS covering content type creation, REST and GraphQL APIs, custom controllers, lifecycle hooks, authentication, role-based access, media handling, custom plugins, and deployment patterns.",
+      "source": "./strapi-cms",
+      "category": "development"
+    },
+    {
+      "name": "puppeteer-scraping",
+      "description": "Puppeteer browser automation covering page navigation, element selection, form filling, screenshot capture, PDF generation, network interception, stealth mode, cookie management, and headless Chrome scripting.",
+      "source": "./puppeteer-scraping",
       "category": "development"
     }
   ]

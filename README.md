@@ -142,6 +142,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Data Visualization](./data-visualization/) - Data visualization with Chart.js, Recharts, D3.js, dashboard layouts, responsive charts, and real-time data updates.
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
 - [Database Seeding](./database-seeding/) - Database seed scripts with Prisma, Drizzle, SQLAlchemy, factory patterns, Faker, and deterministic test data.
+- [Date Handling](./date-handling/) - Date and time handling with date-fns, dayjs, Temporal API, Luxon timezone management, duration calculations, relative time, and Intl.DateTimeFormat internationalization.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
 - [Feature Flags](./feature-flags/) - Feature flags with LaunchDarkly, percentage rollouts, A/B testing, user targeting, and flag lifecycle management.
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
@@ -176,6 +177,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
+- [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
@@ -233,7 +235,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
 - [Pulumi Infrastructure as Code](./pulumi-iac/) - Pulumi IaC with TypeScript covering AWS/GCP/Azure, stack management, component resources, testing, and CI/CD integration.
+- [Puppeteer Scraping](./puppeteer-scraping/) - Puppeteer browser automation covering page navigation, form filling, screenshots, PDF generation, network interception, and stealth mode.
 - [Python Development](./python-development/) - Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns.
+- [Ruby on Rails](./ruby-on-rails/) - Ruby on Rails development covering MVC architecture, Active Record, Hotwire/Turbo, background jobs, and RSpec testing.
 - [Rust Development](./rust-development/) - Rust systems programming with ownership/borrowing, lifetimes, traits, async Tokio, Axum web framework, error handling, and production patterns.
 - [Security Audit Skills (Trail of Bits)](https://github.com/trailofbits/skills) - Professional security research skills with CodeQL, Semgrep, variant analysis, and smart contract auditing across 6 blockchain platforms. *By [@trailofbits](https://github.com/trailofbits)*
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
@@ -243,10 +247,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Supabase Development](./supabase-development/) - Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, and Row Level Security policies.
 - [Skill Share](./skill-share/) - Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.
 - [Socket.IO](./socket-io/) - Socket.IO real-time communication with rooms, namespaces, typed events, auth middleware, React hooks, and Redis adapter scaling.
+- [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
 - [SWR Data Fetching](./swr-data-fetching/) - SWR with stale-while-revalidate caching, optimistic mutations, useSWRInfinite pagination, and prefetching.
+- [Strapi CMS](./strapi-cms/) - Strapi headless CMS covering content types, REST and GraphQL APIs, lifecycle hooks, authentication, custom plugins, and deployment.
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
@@ -280,8 +286,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [WebAssembly](./webassembly/) - WebAssembly (Wasm) development covering Rust-to-Wasm with wasm-pack, AssemblyScript, JavaScript interop, memory management, and WASI.
 - [Webpack Configuration](./webpack-config/) - Webpack 5 with loaders, code splitting, Module Federation, production optimization, and bundle analysis.
 - [Web Components](./web-components/) - Web Components with Custom Elements, Shadow DOM, Lit framework, slots, form-associated elements, and framework interop.
+- [Web Workers](./web-workers/) - Web Workers for parallel processing covering dedicated workers, worker pools, Comlink RPC, transferable objects, and OffscreenCanvas.
 - [Web Accessibility](./web-accessibility/) - Web accessibility (a11y) covering WCAG 2.2 compliance, ARIA attributes, keyboard navigation, screen reader optimization, focus management, and automated testing with axe-core.
 - [Web Animation](./web-animation/) - Web animation with Framer Motion, GSAP, CSS transitions, scroll effects, spring physics, and reduced-motion accessibility.
 - [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
