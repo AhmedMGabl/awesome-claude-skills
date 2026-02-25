@@ -83,6 +83,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
 - [API Gateway](./api-gateway/) - API gateway patterns with request routing, rate limiting, auth middleware, BFF pattern, and AWS/Kong configuration.
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
+- [AI SDK (Vercel)](./ai-sdk-vercel/) - Vercel AI SDK with streaming chat, tool calling, structured output, multi-provider support, RAG, and useChat hooks.
 - [API Mocking](./api-mocking/) - API mocking with MSW, Nock, JSON Server, test data factories with Faker, and contract testing with Pact.
 - [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
@@ -104,6 +105,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Clerk Authentication](./clerk-authentication/) - Clerk auth with sign-in components, organizations, RBAC, webhook sync, and Next.js App Router integration.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
+- [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
 - [Deno Development](./deno-development/) - Deno runtime with permissions, HTTP servers, built-in TypeScript, npm compatibility, Fresh framework, Deploy, and KV store.
 - [Dependency Injection](./dependency-injection/) - DI patterns with tsyringe, InversifyJS, Python dependency-injector, constructor injection, and testing strategies.
@@ -251,7 +253,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Three.js 3D Graphics](./three-js/) - Three.js with scene setup, GLTF models, React Three Fiber, Rapier physics, animations, and performance optimization.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
-- [Turborepo Monorepo](./turborepo-monorepo/) - Turborepo with workspace setup, task pipelines, remote caching, shared packages, and CI optimization.
+- [Turborepo Monorepo](./turborepo-monorepo/)
+- [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI. - Turborepo with workspace setup, task pipelines, remote caching, shared packages, and CI optimization.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.

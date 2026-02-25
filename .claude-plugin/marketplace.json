@@ -1189,6 +1189,24 @@
       "description": "AWS S3 and CloudFront covering file operations with SDK v3, presigned URLs, multipart uploads, CloudFront distributions, cache invalidation, bucket policies, static hosting, Lambda@Edge, and CDK infrastructure.",
       "source": "./aws-s3-cloudfront",
       "category": "development"
+    },
+    {
+      "name": "turborepo-pipelines",
+      "description": "Turborepo monorepo build orchestration covering task pipelines, remote caching, workspace dependencies, turbo.json configuration, environment variables, pruned Docker builds, GitHub Actions integration, and migration from Lerna or Nx.",
+      "source": "./turborepo-pipelines",
+      "category": "development"
+    },
+    {
+      "name": "ai-sdk-vercel",
+      "description": "Vercel AI SDK development covering streaming text generation, chat interfaces, tool calling, structured outputs with Zod, multi-provider support (OpenAI, Anthropic, Google), RAG patterns, middleware, useChat and useCompletion hooks, and edge runtime deployment.",
+      "source": "./ai-sdk-vercel",
+      "category": "development"
+    },
+    {
+      "name": "css-grid-flexbox",
+      "description": "CSS Grid and Flexbox layout mastery covering grid template areas, auto-fill and auto-fit, subgrid, flexbox alignment, responsive layouts without media queries, container queries, named grid lines, aspect-ratio, and common layout patterns.",
+      "source": "./css-grid-flexbox",
+      "category": "development"
     }
   ]
 }
