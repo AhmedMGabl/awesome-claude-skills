@@ -375,6 +375,12 @@
       "category": "development"
     },
     {
+      "name": "incident-response",
+      "description": "Incident response and SRE patterns covering incident classification, triage workflows, runbook creation, postmortem templates, on-call procedures, service level objectives (SLOs), error budgets, chaos engineering, and production reliability practices.",
+      "source": "./incident-response",
+      "category": "development"
+    },
+    {
       "name": "django-development",
       "description": "Django web development covering project structure, models, views, templates, Django REST Framework, authentication, middleware, signals, Celery task queues, database optimization, testing, and production deployment patterns with Python.",
       "source": "./django-development",
@@ -390,6 +396,18 @@
       "name": "prisma-orm",
       "description": "Prisma ORM for TypeScript/Node.js covering schema design, migrations, CRUD operations, relations, transactions, raw queries, middleware, seeding, testing patterns, and production database management.",
       "source": "./prisma-orm",
+      "category": "development"
+    },
+    {
+      "name": "seo-optimization",
+      "description": "SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemap generation, robots.txt, Core Web Vitals, semantic HTML, canonical URLs, internationalization (hreflang), and performance optimization for search engine visibility.",
+      "source": "./seo-optimization",
+      "category": "development"
+    },
+    {
+      "name": "test-driven-development",
+      "description": "Test-driven development methodology covering the red-green-refactor cycle, writing tests before implementation, test design patterns, behavior-driven development, property-based testing, mutation testing, and maintaining test quality across TypeScript, Python, and Go projects.",
+      "source": "./test-driven-development",
       "category": "development"
     },
     {

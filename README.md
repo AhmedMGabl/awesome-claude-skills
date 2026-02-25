@@ -101,6 +101,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
+- [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
@@ -128,12 +129,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Supabase Development](./supabase-development/) - Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, and Row Level Security policies.
 - [Skill Share](./skill-share/) - Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
+- [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [Tailwind CSS Styling](./tailwindcss-styling/) - Tailwind CSS utility-first styling with responsive design, dark mode, custom themes, component patterns, animations, and production optimization.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
+- [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
