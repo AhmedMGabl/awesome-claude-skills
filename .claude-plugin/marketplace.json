@@ -2821,6 +2821,66 @@
       "description": "HashiCorp Vault patterns covering secret engines, dynamic secrets, authentication methods, policies, transit encryption, PKI certificates, and Kubernetes integration.",
       "source": "./vault-secrets",
       "category": "development"
+    },
+    {
+      "name": "mongodb-mongoose",
+      "description": "MongoDB with Mongoose patterns covering schema definitions, validation, middleware hooks, population, aggregation pipelines, transactions, and TypeScript integration.",
+      "source": "./mongodb-mongoose",
+      "category": "development"
+    },
+    {
+      "name": "rabbitmq-messaging",
+      "description": "RabbitMQ messaging patterns covering exchanges, queues, routing keys, dead letter queues, pub/sub, RPC, and Node.js/Python integration.",
+      "source": "./rabbitmq-messaging",
+      "category": "development"
+    },
+    {
+      "name": "dynamodb-patterns",
+      "description": "DynamoDB patterns covering single-table design, GSI/LSI indexes, query and scan operations, transactions, TTL, batch operations, and SDK integration.",
+      "source": "./dynamodb-patterns",
+      "category": "development"
+    },
+    {
+      "name": "mysql-patterns",
+      "description": "MySQL patterns covering schema design, indexes, joins, window functions, stored procedures, transactions, replication, and performance optimization.",
+      "source": "./mysql-patterns",
+      "category": "development"
+    },
+    {
+      "name": "sqlite-patterns",
+      "description": "SQLite patterns covering WAL mode, FTS5 full-text search, JSON functions, CTEs, triggers, virtual tables, and Node.js/Python integration.",
+      "source": "./sqlite-patterns",
+      "category": "development"
+    },
+    {
+      "name": "nats-messaging",
+      "description": "NATS messaging patterns covering pub/sub, request/reply, JetStream persistent messaging, key-value store, object store, and microservice communication.",
+      "source": "./nats-messaging",
+      "category": "development"
+    },
+    {
+      "name": "grpc-go",
+      "description": "Go gRPC patterns covering protobuf definitions, server/client implementation, streaming RPCs, interceptors, error handling, health checks, and TLS configuration.",
+      "source": "./grpc-go",
+      "category": "development"
+    },
+    {
+      "name": "clickhouse-analytics",
+      "description": "ClickHouse analytics patterns covering table engines, MergeTree family, materialized views, aggregating functions, partitioning, and real-time analytics queries.",
+      "source": "./clickhouse-analytics",
+      "category": "development"
+    },
+    {
+      "name": "timescaledb-timeseries",
+      "description": "TimescaleDB time-series patterns covering hypertables, continuous aggregates, compression, retention policies, real-time analytics, and PostgreSQL integration.",
+      "source": "./timescaledb-timeseries",
+      "category": "development"
+    },
+    {
+      "name": "neo4j-graph",
+      "description": "Neo4j graph database patterns covering Cypher queries, node/relationship modeling, indexes, path algorithms, APOC procedures, and JavaScript/Python driver integration.",
+      "source": "./neo4j-graph",
+      "category": "development"
     }
   ]
 }

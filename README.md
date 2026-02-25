@@ -128,6 +128,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Claude API](./claude-api/) - Anthropic Claude API integration covering messages API, streaming, tool use, vision, prompt caching, extended thinking, and SDK patterns.
 - [Clerk Authentication](./clerk-authentication/) - Clerk auth with sign-in components, organizations, RBAC, webhook sync, and Next.js App Router integration.
 - [Clerk Webhooks](./clerk-webhooks/) - Clerk webhook integration with user lifecycle events, organization events, Svix signature verification, and user sync patterns.
+- [ClickHouse Analytics](./clickhouse-analytics/) - ClickHouse analytics patterns covering table engines, MergeTree family, materialized views, aggregating functions, partitioning, and real-time analytics queries.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Conform Forms](./conform-forms/) - Conform progressive enhancement forms with Zod validation, server actions, field arrays, and React/Remix/Next.js integration.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
@@ -150,6 +151,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Drizzle ORM](./drizzle-orm/) - Drizzle ORM for TypeScript with schema definition, migrations, type-safe queries, joins, transactions, and multi-database support.
 - [Drizzle Migrations](./drizzle-migrations/) - Drizzle ORM migration patterns with schema changes, generate/push commands, custom SQL, seed scripts, and CI/CD integration.
 - [DynamoDB Operations](./dynamodb-operations/) - Amazon DynamoDB operations with single-table design, SDK v3 CRUD, GSIs, batch operations, transactions, and streams.
+- [DynamoDB Patterns](./dynamodb-patterns/) - DynamoDB patterns covering single-table design, GSI/LSI indexes, query and scan operations, transactions, TTL, batch operations, and SDK integration.
 - [Fumadocs](./fumadocs/) - Fumadocs documentation framework with content collections, MDX components, sidebar, search, and Next.js App Router integration.
 - [Event Sourcing & CQRS](./event-sourcing/) - Event sourcing with event stores, aggregate roots, command handlers, projections, and saga orchestration.
 - [Elasticsearch](./elasticsearch/) - Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, and query DSL.
@@ -219,6 +221,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
 - [gRPC APIs](./grpc-apis/) - gRPC API development with Connect protocol, streaming RPCs, interceptors, error handling, and gRPC-Web browser support.
 - [gRPC & Protocol Buffers](./grpc-protobuf/) - gRPC and Protocol Buffers with proto3 schemas, code generation, streaming RPCs, interceptors, and Node.js/Go/Python patterns.
+- [gRPC Go](./grpc-go/) - Go gRPC patterns covering protobuf definitions, server/client implementation, streaming RPCs, interceptors, error handling, health checks, and TLS configuration.
 - [GitHub Actions](./github-actions/) - GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, and deployments.
 - [GitHub API Integration](./github-api/) - GitHub API with Octokit, REST/GraphQL, PR automation, webhooks, GitHub Apps, and release management.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
@@ -288,6 +291,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Motion One](./motion-one/) - Motion One animations with animate API, spring physics, scroll-triggered effects, timelines, and React integration.
 - [Monaco Editor](./monaco-editor/) - Monaco VS Code-based web editor with IntelliSense, language services, custom themes, diff editor, markers, and React integration.
 - [MongoDB](./mongodb/) - MongoDB with Mongoose schemas, aggregation pipeline, transactions, change streams, population, and connection management.
+- [MongoDB Mongoose](./mongodb-mongoose/) - MongoDB with Mongoose patterns covering schema definitions, validation, middleware hooks, population, aggregation pipelines, transactions, and TypeScript integration.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Migration Patterns](./migration-patterns/) - Framework migration (CRA to Vite/Next.js), API versioning, gradual TypeScript adoption, and zero-downtime strategies.
 - [Mantine UI](./mantine-ui/) - Mantine React component library with useForm, notifications, modals manager, theme customization, and hooks.
@@ -298,12 +302,15 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Multi-Tenant SaaS](./multi-tenant-saas/) - Multi-tenant architecture with row-level security, subdomain routing, tenant-scoped queries, Stripe billing, and isolation strategies.
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
+- [MySQL Patterns](./mysql-patterns/) - MySQL patterns covering schema design, indexes, joins, window functions, stored procedures, transactions, replication, and performance optimization.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
 - [Nuxt Server](./nuxt-server/) - Nuxt server-side patterns with defineEventHandler, middleware, server utilities, caching, WebSocket support, and Nitro integration.
 - [Nuxt UI](./nuxt-ui/) - Nuxt UI component library with Zod form validation, table components, modal and slideover overlays, command palette, and Nuxt 3 integration.
 - [nuqs URL State](./nuqs-url-state/) - nuqs type-safe URL search param state with parsers, shallow routing, history modes, and Next.js server-side access.
 - [Nanostores](./nanostores/) - Nanostores lightweight state management with atoms, computed stores, maps, lifecycle events, and React/Vue/Svelte/Solid integration.
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
+- [NATS Messaging](./nats-messaging/) - NATS messaging patterns covering pub/sub, request/reply, JetStream persistent messaging, key-value store, object store, and microservice communication.
+- [Neo4j Graph](./neo4j-graph/) - Neo4j graph database patterns covering Cypher queries, node/relationship modeling, indexes, path algorithms, APOC procedures, and JavaScript/Python driver integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
 - [Neutralinojs](./neutralino-apps/) - Neutralinojs lightweight desktop apps with native OS APIs, file system operations, window management, tray menus, and cross-platform distribution.
 - [Nile Postgres](./nile-postgres/) - Nile tenant-aware Postgres with virtual tenant databases, isolation, Drizzle ORM integration, and multi-tenant SaaS patterns.
@@ -353,6 +360,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Quill Editor](./quill-editor/) - Quill rich text editor with Delta document model, toolbar modules, custom formats/blots, clipboard handling, and React integration.
 - [Qwik Framework](./qwik-framework/) - Qwik framework covering resumability, signals, routeLoader$/routeAction$, server$ functions, and Qwik City deployment.
 - [RabbitMQ](./rabbitmq/) - RabbitMQ message broker covering exchanges, queues, routing, pub/sub, work queues, RPC, and dead letter handling.
+- [RabbitMQ Messaging](./rabbitmq-messaging/) - RabbitMQ messaging patterns covering exchanges, queues, routing keys, dead letter queues, pub/sub, RPC, and Node.js/Python integration.
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [Radix UI](./radix-ui/) - Radix UI headless components with accessible dialogs, dropdowns, tabs, tooltips, Tailwind styling, and ARIA compliance.
@@ -453,6 +461,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [SST Ion](./sst-ion/) - SST Ion infrastructure as TypeScript with resource linking, Next.js/Astro deployment, queues, crons, and AWS/Cloudflare.
 - [SSE Streaming](./sse-streaming/) - Server-Sent Events covering event stream protocol, Express/Node.js implementations, AI token streaming, reconnection, and React hooks.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
+- [SQLite Patterns](./sqlite-patterns/) - SQLite patterns covering WAL mode, FTS5 full-text search, JSON functions, CTEs, triggers, virtual tables, and Node.js/Python integration.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
 - [Spring Boot Kotlin](./spring-boot-kotlin/) - Spring Boot with Kotlin coroutines, WebFlux, data classes, Spring Security DSL, and testing with MockK.
 - [Sanity CMS](./sanity-cms/) - Sanity headless CMS with GROQ queries, schema definition, image handling, portable text, and Next.js integration.
@@ -485,6 +494,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
 - [Three.js 3D Graphics](./three-js/) - Three.js with scene setup, GLTF models, React Three Fiber, Rapier physics, animations, and performance optimization.
 - [Tigris Data](./tigris-search/) - Tigris serverless NoSQL database with full-text search, faceted search, real-time subscriptions, and S3-compatible object storage.
+- [TimescaleDB Time-Series](./timescaledb-timeseries/) - TimescaleDB time-series patterns covering hypertables, continuous aggregates, compression, retention policies, real-time analytics, and PostgreSQL integration.
 - [Tiptap Editor](./tiptap-editor/) - Tiptap ProseMirror-based rich text editor with extensions, custom nodes, collaborative editing, bubble menus, and React/Vue integration.
 - [Tinybird Analytics](./tinybird-analytics/) - Tinybird real-time analytics with data sources, pipes, API endpoints, materialized views, and SQL transformations.
 - [TinyMCE](./tinymce/) - TinyMCE WYSIWYG editor with plugin ecosystem, custom toolbar buttons, content formatting, image uploads, templates, and React/Vue integration.
