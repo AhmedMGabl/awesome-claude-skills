@@ -2401,6 +2401,66 @@
       "description": "Plate editor patterns covering Slate-based rich text, plugin system, custom elements, serialization, toolbar components, mention/emoji plugins, and shadcn/ui styled editor components.",
       "source": "./plate-editor",
       "category": "development"
+    },
+    {
+      "name": "prosemirror-core",
+      "description": "ProseMirror patterns covering document model, schemas, transactions, plugins, decorations, input rules, node views, collaborative editing, and custom commands.",
+      "source": "./prosemirror-core",
+      "category": "development"
+    },
+    {
+      "name": "codemirror-v6",
+      "description": "CodeMirror 6 patterns covering modular editor architecture, extensions, syntax highlighting, language support, autocompletion, linting, themes, keybindings, and React integration.",
+      "source": "./codemirror-v6",
+      "category": "development"
+    },
+    {
+      "name": "monaco-editor",
+      "description": "Monaco Editor patterns covering VS Code-based web editor, IntelliSense, language services, custom themes, diff editor, markers, actions, and React integration.",
+      "source": "./monaco-editor",
+      "category": "development"
+    },
+    {
+      "name": "ace-editor",
+      "description": "Ace editor patterns covering syntax highlighting, language modes, themes, autocompletion, snippets, search/replace, annotations, custom commands, and React integration.",
+      "source": "./ace-editor",
+      "category": "development"
+    },
+    {
+      "name": "blocknote-editor",
+      "description": "BlockNote editor patterns covering block-based Notion-style editing, custom block types, slash menu, drag-and-drop, collaborative editing, theming, and React integration.",
+      "source": "./blocknote-editor",
+      "category": "development"
+    },
+    {
+      "name": "novel-editor",
+      "description": "Novel editor patterns covering Notion-style WYSIWYG editing, Tiptap-based architecture, slash commands, bubble menu, AI completions, image uploads, and Next.js integration.",
+      "source": "./novel-editor",
+      "category": "development"
+    },
+    {
+      "name": "editorjs",
+      "description": "Editor.js patterns covering block-style editing, custom tool plugins, inline tools, output data parsing, server-side validation, image/embed tools, and React integration.",
+      "source": "./editorjs",
+      "category": "development"
+    },
+    {
+      "name": "quill-editor",
+      "description": "Quill editor patterns covering Delta document model, toolbar modules, custom formats/blots, content change events, clipboard handling, themes, and React integration.",
+      "source": "./quill-editor",
+      "category": "development"
+    },
+    {
+      "name": "draft-js",
+      "description": "Draft.js patterns covering rich text editing, content state model, entity maps, custom block components, decorator patterns, inline styles, and React integration.",
+      "source": "./draft-js",
+      "category": "development"
+    },
+    {
+      "name": "tinymce",
+      "description": "TinyMCE patterns covering WYSIWYG configuration, plugin ecosystem, custom toolbar buttons, content formatting, image upload, templates, and React/Vue integration.",
+      "source": "./tinymce",
+      "category": "development"
     }
   ]
 }

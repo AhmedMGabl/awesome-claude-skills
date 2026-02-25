@@ -97,6 +97,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
+- [Ace Editor](./ace-editor/) - Ace code editor with syntax highlighting, language modes, themes, autocompletion, snippets, annotations, and React integration.
 - [Astro Content Collections](./astro-content/) - Astro Content Collections with type-safe schemas, Zod validation, MDX components, dynamic routing, RSS feeds, and static site generation.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
@@ -107,6 +108,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
 - [Biome Config](./biome-config/) - Biome advanced configuration with rule customization, per-file overrides, import sorting, CI integration, and ESLint/Prettier migration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
+- [BlockNote Editor](./blocknote-editor/) - BlockNote Notion-style block editor with custom block types, slash menu, drag-and-drop, collaborative editing, and React integration.
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
@@ -138,6 +140,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
 - [Docker & Kubernetes Production](./docker-kubernetes/) - Docker multi-stage builds, Docker Compose, Kubernetes Deployments, Helm charts, autoscaling, and CI/CD pipelines.
 - [Docker Development](./docker-development/) - Dockerfile best practices, multi-stage builds, layer caching, health checks, security hardening, and debugging containers.
+- [Draft.js](./draft-js/) - Draft.js rich text editor with content state model, entity maps, custom block components, decorator patterns, and React integration.
 - [Drizzle ORM Advanced](./drizzle-studio/) - Drizzle ORM with relational queries, prepared statements, migrations, Drizzle Studio, and framework integration.
 - [Drizzle ORM](./drizzle-orm/) - Drizzle ORM for TypeScript with schema definition, migrations, type-safe queries, joins, transactions, and multi-database support.
 - [Drizzle Migrations](./drizzle-migrations/) - Drizzle ORM migration patterns with schema changes, generate/push commands, custom SQL, seed scripts, and CI/CD integration.
@@ -148,6 +151,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Effect Schema](./effect-schema/) - Effect Schema with type-safe definitions, transformations, branded types, parsing, and JSON Schema generation.
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
 - [Electric SQL](./electric-sql/) - ElectricSQL local-first sync with Shape streams, real-time Postgres replication, offline support, optimistic mutations, and React hooks.
+- [Editor.js](./editorjs/) - Editor.js block-style editor with custom tool plugins, inline tools, structured JSON output, image/embed tools, and React integration.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
 - [Electron Forge](./electron-forge/) - Electron Forge desktop app scaffolding with IPC communication, BrowserWindow management, auto-updates, tray icons, and cross-platform packaging.
 - [Expo Router](./expo-router/) - Expo Router file-based routing for React Native with layouts, typed routes, deep linking, authentication flows, and universal app patterns.
@@ -166,6 +170,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Contentlayer](./contentlayer/) - Contentlayer and MDX content management with document type definitions, computed fields, MDX components, and Next.js integration.
 - [Coolify Self-Hosted](./coolify-selfhost/) - Coolify self-hosted PaaS covering server setup, GitHub deployment, database provisioning, custom domains, and Docker Compose.
+- [CodeMirror 6](./codemirror-v6/) - CodeMirror 6 modular code editor with extensions, syntax highlighting, autocompletion, linting, custom themes, and React integration.
 - [Convex Actions](./convex-actions/) - Convex server-side actions with HTTP endpoints, scheduled jobs, file storage, vector search, and external API integration.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
@@ -257,6 +262,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
 - [Motion One](./motion-one/) - Motion One animations with animate API, spring physics, scroll-triggered effects, timelines, and React integration.
+- [Monaco Editor](./monaco-editor/) - Monaco VS Code-based web editor with IntelliSense, language services, custom themes, diff editor, markers, and React integration.
 - [MongoDB](./mongodb/) - MongoDB with Mongoose schemas, aggregation pipeline, transactions, change streams, population, and connection management.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Migration Patterns](./migration-patterns/) - Framework migration (CRA to Vite/Next.js), API versioning, gradual TypeScript adoption, and zero-downtime strategies.
@@ -281,6 +287,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
 - [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
+- [Novel Editor](./novel-editor/) - Novel Notion-style WYSIWYG editor with Tiptap-based architecture, slash commands, bubble menu, AI completions, and Next.js integration.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [next-safe-action](./next-safe-action/) - next-safe-action type-safe server actions with Zod validation, middleware chains, optimistic updates, and React hooks.
 - [next-intl](./next-intl/) - next-intl internationalization with message definitions, locale routing, middleware, server/client translations, and Next.js App Router integration.
@@ -311,7 +318,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [PostHog Analytics](./posthog-analytics/) - PostHog product analytics with event tracking, feature flags, A/B testing, session replay, and React/Next.js integration.
 - [Prompt Improver Hook](https://github.com/severity1/claude-code-prompt-improver) - Intelligent hook that intercepts and refines vague prompts into precise, actionable instructions. *By [@severity1](https://github.com/severity1)*
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
+- [ProseMirror](./prosemirror-core/) - ProseMirror document model with schemas, transactions, plugins, decorations, input rules, node views, and collaborative editing.
 - [PWA Development](./pwa-development/) - Progressive Web Apps with service workers, Workbox, offline caching strategies, push notifications, and install prompts.
+- [Quill Editor](./quill-editor/) - Quill rich text editor with Delta document model, toolbar modules, custom formats/blots, clipboard handling, and React integration.
 - [Qwik Framework](./qwik-framework/) - Qwik framework covering resumability, signals, routeLoader$/routeAction$, server$ functions, and Qwik City deployment.
 - [RabbitMQ](./rabbitmq/) - RabbitMQ message broker covering exchanges, queues, routing, pub/sub, work queues, RPC, and dead letter handling.
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
@@ -422,6 +431,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tigris Data](./tigris-search/) - Tigris serverless NoSQL database with full-text search, faceted search, real-time subscriptions, and S3-compatible object storage.
 - [Tiptap Editor](./tiptap-editor/) - Tiptap ProseMirror-based rich text editor with extensions, custom nodes, collaborative editing, bubble menus, and React/Vue integration.
 - [Tinybird Analytics](./tinybird-analytics/) - Tinybird real-time analytics with data sources, pipes, API endpoints, materialized views, and SQL transformations.
+- [TinyMCE](./tinymce/) - TinyMCE WYSIWYG editor with plugin ecosystem, custom toolbar buttons, content formatting, image uploads, templates, and React/Vue integration.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [tRPC Patterns](./trpc-patterns/) - tRPC advanced patterns with router definitions, input validation, context, subscriptions, error handling, and Next.js App Router setup.
