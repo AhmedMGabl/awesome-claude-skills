@@ -111,6 +111,12 @@
       "category": "development"
     },
     {
+      "name": "context-management",
+      "description": "Context management and semantic understanding patterns for Claude Code sessions covering codebase navigation strategies, context window optimization, progressive code exploration, dependency tracing, maintaining working memory across long sessions, and avoiding context drift during complex tasks.",
+      "source": "./context-management",
+      "category": "development"
+    },
+    {
       "name": "cicd-pipelines",
       "description": "CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies (blue-green, canary, rolling), secrets management, pipeline optimization, and production deployment automation.",
       "source": "./cicd-pipelines",
@@ -357,6 +363,12 @@
       "category": "development"
     },
     {
+      "name": "autonomous-task-execution",
+      "description": "Autonomous task execution patterns for AI coding assistants covering goal decomposition, self-directed research, decision-making without hand-holding, progress tracking, error recovery, proactive tool and skill usage, and completing complex multi-step tasks independently.",
+      "source": "./autonomous-task-execution",
+      "category": "development"
+    },
+    {
       "name": "auth-patterns",
       "description": "Authentication and authorization patterns covering JWT tokens, OAuth 2.0 flows, session management, RBAC, passwordless auth, multi-factor authentication, API key management, and security best practices for web applications.",
       "source": "./auth-patterns",
@@ -378,6 +390,12 @@
       "name": "prisma-orm",
       "description": "Prisma ORM for TypeScript/Node.js covering schema design, migrations, CRUD operations, relations, transactions, raw queries, middleware, seeding, testing patterns, and production database management.",
       "source": "./prisma-orm",
+      "category": "development"
+    },
+    {
+      "name": "research-and-analysis",
+      "description": "Deep research and analysis patterns for Claude Code covering systematic codebase exploration, web research strategies, multi-source information synthesis, architecture analysis, technology comparison, decision documentation, and thorough investigation before implementation.",
+      "source": "./research-and-analysis",
       "category": "development"
     },
     {

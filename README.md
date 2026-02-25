@@ -76,12 +76,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
+- [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [Auth Patterns](./auth-patterns/) - Authentication and authorization patterns covering JWT, OAuth 2.0, session management, RBAC, passwordless auth, MFA, and security best practices.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
+- [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
@@ -115,6 +117,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
+- [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
