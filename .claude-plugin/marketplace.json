@@ -1921,6 +1921,66 @@
       "description": "Playwright Component Testing patterns covering mounting React, Vue, and Svelte components, prop and slot testing, event handling, visual regression, accessibility checks, and integration with Vite for isolated component testing.",
       "source": "./playwright-component",
       "category": "development"
+    },
+    {
+      "name": "sonner-toasts",
+      "description": "Sonner toast notification patterns covering toast types, promises, custom components, positioning, action buttons, rich content, dismissal, stacking, and integration with React and Next.js applications.",
+      "source": "./sonner-toasts",
+      "category": "development"
+    },
+    {
+      "name": "nuqs-url-state",
+      "description": "nuqs URL state management patterns covering type-safe search params, parsers for numbers/booleans/arrays/dates, shallow routing, history modes, server-side access, and Next.js App Router integration.",
+      "source": "./nuqs-url-state",
+      "category": "development"
+    },
+    {
+      "name": "next-safe-action",
+      "description": "next-safe-action patterns covering type-safe server actions, Zod input validation, middleware chains, optimistic updates, action state management, error handling, and React hook integration for Next.js App Router.",
+      "source": "./next-safe-action",
+      "category": "development"
+    },
+    {
+      "name": "react-hook-form-v7",
+      "description": "React Hook Form v7 patterns covering useForm, Controller, Zod/Yup resolvers, nested fields, field arrays, multi-step forms, file uploads, conditional validation, and performance optimization for complex form management.",
+      "source": "./react-hook-form-v7",
+      "category": "development"
+    },
+    {
+      "name": "tanstack-table",
+      "description": "TanStack Table patterns covering column definitions, sorting, filtering, pagination, row selection, column visibility, grouping, virtual scrolling, and React integration for headless, type-safe data tables.",
+      "source": "./tanstack-table",
+      "category": "development"
+    },
+    {
+      "name": "oslo-auth",
+      "description": "Oslo authentication utility patterns covering password hashing with Argon2/bcrypt/scrypt, TOTP/HOTP two-factor authentication, OAuth 2.0 helpers, JWT creation and verification, session token generation, and PKCE flow implementation.",
+      "source": "./oslo-auth",
+      "category": "development"
+    },
+    {
+      "name": "conform-forms",
+      "description": "Conform form library patterns covering progressive enhancement, Zod schema validation, server actions, nested objects, field arrays, file uploads, and integration with React/Remix/Next.js for type-safe form handling.",
+      "source": "./conform-forms",
+      "category": "development"
+    },
+    {
+      "name": "uploadthing",
+      "description": "UploadThing file upload patterns covering route definitions, file type validation, size limits, middleware authentication, upload callbacks, React components, presigned URLs, and Next.js App Router integration.",
+      "source": "./uploadthing",
+      "category": "development"
+    },
+    {
+      "name": "react-aria-components",
+      "description": "React Aria Components patterns covering accessible form controls, menus, dialogs, date pickers, tables, drag and drop, collections, styling with Tailwind, and custom theme integration for production-ready accessible UIs.",
+      "source": "./react-aria-components",
+      "category": "development"
+    },
+    {
+      "name": "cmdk-command",
+      "description": "cmdk command palette patterns covering Command component setup, groups, items, search filtering, keyboard navigation, nested pages, async loading, custom rendering, and integration with shadcn/ui and Next.js.",
+      "source": "./cmdk-command",
+      "category": "development"
     }
   ]
 }

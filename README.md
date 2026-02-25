@@ -106,6 +106,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
+- [cmdk Command Palette](./cmdk-command/) - cmdk command palette with groups, keyboard navigation, nested pages, async search, and shadcn/ui integration.
 - [Callstack React Native Performance](https://github.com/callstackincubator/agent-skills) - React Native performance optimization skills from Callstack covering JS/React, Native, and bundling optimizations. *By [@callstackincubator](https://github.com/callstackincubator)*
 - [Chaos Engineering](./chaos-engineering/) - Chaos engineering and resilience testing with LitmusChaos, Toxiproxy, circuit breakers, fault injection, and gameday planning.
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
@@ -114,6 +115,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Clerk Authentication](./clerk-authentication/) - Clerk auth with sign-in components, organizations, RBAC, webhook sync, and Next.js App Router integration.
 - [Clerk Webhooks](./clerk-webhooks/) - Clerk webhook integration with user lifecycle events, organization events, Svix signature verification, and user sync patterns.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
+- [Conform Forms](./conform-forms/) - Conform progressive enhancement forms with Zod validation, server actions, field arrays, and React/Remix/Next.js integration.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
 - [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
@@ -238,6 +240,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
 - [Nuxt Server](./nuxt-server/) - Nuxt server-side patterns with defineEventHandler, middleware, server utilities, caching, WebSocket support, and Nitro integration.
+- [nuqs URL State](./nuqs-url-state/) - nuqs type-safe URL search param state with parsers, shallow routing, history modes, and Next.js server-side access.
 - [Nanostores](./nanostores/) - Nanostores lightweight state management with atoms, computed stores, maps, lifecycle events, and React/Vue/Svelte/Solid integration.
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
@@ -246,10 +249,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
 - [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
+- [next-safe-action](./next-safe-action/) - next-safe-action type-safe server actions with Zod validation, middleware chains, optimistic updates, and React hooks.
 - [NextAuth.js Authentication](./nextauth-authentication/) - Auth.js v5 authentication with OAuth providers, credentials, JWT sessions, RBAC, middleware protection, and Prisma adapter.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
 - [Nextra Docs](./nextra-docs/) - Nextra documentation framework with file-based routing, MDX pages, theme configuration, search, sidebar navigation, and i18n.
 - [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
+- [Oslo Auth](./oslo-auth/) - Oslo authentication utilities with Argon2/bcrypt password hashing, TOTP 2FA, OAuth 2.0 helpers, JWT, and session tokens.
 - [OpenAPI Specification](./openapi-spec/) - OpenAPI 3.1 authoring, schema design, code generation with openapi-typescript, Zod validation, and API-first development.
 - [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
@@ -278,9 +283,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Railway Deployment](./railway-deployment/) - Railway deployment covering Postgres/Redis provisioning, Nixpacks builds, custom domains, cron jobs, and GitHub integration.
 - [Rate Limiting & Throttling](./rate-limiting/) - Rate limiting with token bucket, sliding window, Redis distributed limits, Express middleware, and tiered API quotas.
 - [React Hook Form](./react-hook-form/) - React Hook Form with Zod validation, useFieldArray, Controller, multi-step wizards, and performance optimization.
+- [React Hook Form v7](./react-hook-form-v7/) - React Hook Form v7 with Zod/Yup resolvers, nested fields, field arrays, multi-step forms, and Controller patterns.
 - [React Router](./react-router/) - React Router v7 with file-based routing, nested layouts, loaders, actions, route protection, and search params.
 - [React Server Components](./react-server-components/) - React Server Components covering server vs client component patterns, data fetching, streaming with Suspense, server actions, and composition patterns.
 - [React Aria](./react-aria/) - React Aria accessible components covering hooks, pre-built components, collections, drag and drop, and internationalization.
+- [React Aria Components](./react-aria-components/) - React Aria Components with accessible form controls, dialogs, date pickers, tables, and Tailwind styling.
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
 - [React Email](./react-email/) - React Email templates with @react-email/components, responsive layouts, preview server, and sending with Resend or Nodemailer.
 - [Resend Email](./resend-email/) - Resend email API covering transactional emails, React Email templates, batch sending, webhooks, and audiences.
@@ -317,6 +324,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Socket.IO v4](./socket-io-v4/) - Socket.IO v4 with typed events, namespaces, rooms, acknowledgements, middleware, and Redis adapter for horizontal scaling.
 - [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
 - [SolidStart](./solid-start/) - SolidStart full-stack framework with file-based routing, server functions, createAsync, middleware, sessions, and SSR/SSG modes.
+- [Sonner Toasts](./sonner-toasts/) - Sonner toast notifications with promise toasts, action buttons, custom components, positioning, and React/Next.js integration.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
@@ -343,6 +351,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tailwind CSS Styling](./tailwindcss-styling/) - Tailwind CSS utility-first styling with responsive design, dark mode, custom themes, component patterns, animations, and production optimization.
 - [TanStack Query](./tanstack-query/) - TanStack Query (React Query) with queries, mutations, optimistic updates, infinite scrolling, prefetching, and cache management.
 - [TanStack Router](./tanstack-router/) - TanStack Router covering type-safe routing, file-based routes, search params validation, data loading, and auth guards.
+- [TanStack Table](./tanstack-table/) - TanStack Table with column definitions, sorting, filtering, pagination, row selection, and virtual scrolling.
 - [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
 - [Tauri v2](./tauri-v2/) - Tauri v2 desktop and mobile apps with IPC commands, event system, window management, system tray, plugins, and Rust backend.
 - [Trigger.dev](./trigger-dev/) - Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency, and AI/LLM integration.
@@ -367,6 +376,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
 - [Unplugin Patterns](./unplugin-patterns/) - Unplugin universal bundler plugins with auto-imports, component resolution, icon loading, virtual modules, and Vite/Webpack/Rollup support.
+- [UploadThing](./uploadthing/) - UploadThing file uploads with route definitions, file validation, auth middleware, React components, and Next.js integration.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
 - [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
 - [Valibot Schemas](./valibot-schemas/) - Valibot tree-shakeable validation with pipe transformations, custom rules, form validation, API parsing, and Zod migration.
