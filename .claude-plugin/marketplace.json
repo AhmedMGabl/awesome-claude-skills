@@ -1981,6 +1981,66 @@
       "description": "cmdk command palette patterns covering Command component setup, groups, items, search filtering, keyboard navigation, nested pages, async loading, custom rendering, and integration with shadcn/ui and Next.js.",
       "source": "./cmdk-command",
       "category": "development"
+    },
+    {
+      "name": "react-compiler",
+      "description": "React Compiler patterns covering automatic memoization, compiler directives, Babel and Next.js configuration, ESLint plugin, opt-in/opt-out strategies, and migration from manual useMemo/useCallback/React.memo.",
+      "source": "./react-compiler",
+      "category": "development"
+    },
+    {
+      "name": "server-components-patterns",
+      "description": "React Server Components patterns covering server/client component boundaries, Suspense streaming, server actions, composition patterns, data fetching, caching strategies, and progressive enhancement.",
+      "source": "./server-components-patterns",
+      "category": "development"
+    },
+    {
+      "name": "next-intl",
+      "description": "next-intl internationalization patterns covering message definitions, locale routing, middleware configuration, server and client translations, number and date formatting, and Next.js App Router integration.",
+      "source": "./next-intl",
+      "category": "development"
+    },
+    {
+      "name": "drizzle-migrations",
+      "description": "Drizzle ORM migration patterns covering schema changes, generate and push commands, custom SQL migrations, seed scripts, rollback strategies, CI/CD integration, and multi-environment deployment.",
+      "source": "./drizzle-migrations",
+      "category": "development"
+    },
+    {
+      "name": "svelte-v5",
+      "description": "Svelte 5 runes patterns covering $state, $derived, $effect, $props, $bindable, snippet blocks, fine-grained reactivity, class syntax, and migration from Svelte 4 stores and reactive declarations.",
+      "source": "./svelte-v5",
+      "category": "development"
+    },
+    {
+      "name": "angular-signals",
+      "description": "Angular Signals patterns covering signal(), computed(), effect(), input signals, model signals, output(), resource API, RxJS interop with toSignal/toObservable, and migration from zone-based change detection.",
+      "source": "./angular-signals",
+      "category": "development"
+    },
+    {
+      "name": "fumadocs",
+      "description": "Fumadocs documentation framework patterns covering content collections, MDX components, sidebar configuration, search integration, API reference generation, versioning, and Next.js App Router integration.",
+      "source": "./fumadocs",
+      "category": "development"
+    },
+    {
+      "name": "shadcn-charts",
+      "description": "shadcn/ui chart patterns covering bar, line, area, pie, radar, and radial charts with Recharts, custom tooltips, responsive containers, themes, stacked series, and data visualization best practices.",
+      "source": "./shadcn-charts",
+      "category": "development"
+    },
+    {
+      "name": "react-three-fiber",
+      "description": "React Three Fiber patterns covering scene setup, meshes, materials, lights, cameras, GLTF model loading, animations with useFrame, physics with Rapier, post-processing effects, and performance optimization.",
+      "source": "./react-three-fiber",
+      "category": "development"
+    },
+    {
+      "name": "paraglide-js",
+      "description": "Paraglide JS internationalization patterns covering message definitions, tree-shakeable translations, compiler-generated functions, language switching, SvelteKit/Next.js/Astro integration, and type-safe message parameters.",
+      "source": "./paraglide-js",
+      "category": "development"
     }
   ]
 }

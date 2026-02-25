@@ -79,6 +79,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
 - [Android Kotlin Development](./android-kotlin/) - Android development with Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
+- [Angular Signals](./angular-signals/) - Angular Signals patterns with signal(), computed(), effect(), input/output signals, RxJS interop, and resource API.
 - [Ansible Automation](./ansible-automation/) - Ansible automation covering playbooks, roles, inventory management, Vault secrets, Galaxy collections, and CI/CD integration.
 - [AI-Assisted Development](./github-copilot-patterns/) - AI coding assistant patterns with effective prompting, context management, code review, test generation, and team guidelines.
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
@@ -131,7 +132,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Docker Development](./docker-development/) - Dockerfile best practices, multi-stage builds, layer caching, health checks, security hardening, and debugging containers.
 - [Drizzle ORM Advanced](./drizzle-studio/) - Drizzle ORM with relational queries, prepared statements, migrations, Drizzle Studio, and framework integration.
 - [Drizzle ORM](./drizzle-orm/) - Drizzle ORM for TypeScript with schema definition, migrations, type-safe queries, joins, transactions, and multi-database support.
+- [Drizzle Migrations](./drizzle-migrations/) - Drizzle ORM migration patterns with schema changes, generate/push commands, custom SQL, seed scripts, and CI/CD integration.
 - [DynamoDB Operations](./dynamodb-operations/) - Amazon DynamoDB operations with single-table design, SDK v3 CRUD, GSIs, batch operations, transactions, and streams.
+- [Fumadocs](./fumadocs/) - Fumadocs documentation framework with content collections, MDX components, sidebar, search, and Next.js App Router integration.
 - [Event Sourcing & CQRS](./event-sourcing/) - Event sourcing with event stores, aggregate roots, command handlers, projections, and saga orchestration.
 - [Elasticsearch](./elasticsearch/) - Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, and query DSL.
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
@@ -250,6 +253,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [next-safe-action](./next-safe-action/) - next-safe-action type-safe server actions with Zod validation, middleware chains, optimistic updates, and React hooks.
+- [next-intl](./next-intl/) - next-intl internationalization with message definitions, locale routing, middleware, server/client translations, and Next.js App Router integration.
 - [NextAuth.js Authentication](./nextauth-authentication/) - Auth.js v5 authentication with OAuth providers, credentials, JWT sessions, RBAC, middleware protection, and Prisma adapter.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
 - [Nextra Docs](./nextra-docs/) - Nextra documentation framework with file-based routing, MDX pages, theme configuration, search, sidebar navigation, and i18n.
@@ -262,6 +266,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
 - [Panda CSS](./panda-css/) - Panda CSS type-safe styling with design tokens, recipes, patterns, conditional styles, responsive design, and zero-runtime CSS-in-JS.
 - [PartyKit Real-Time](./partykit-realtime/) - PartyKit real-time collaboration with party servers, WebSocket rooms, presence, broadcast, storage, and React integration.
+- [Paraglide JS](./paraglide-js/) - Paraglide JS tree-shakeable i18n with compiler-generated functions, language switching, and SvelteKit/Next.js integration.
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
 - [Payload CMS](./payload-cms/) - Payload CMS with collections, access control, hooks, Lexical rich text, file uploads, and Next.js integration.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
@@ -288,6 +293,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [React Server Components](./react-server-components/) - React Server Components covering server vs client component patterns, data fetching, streaming with Suspense, server actions, and composition patterns.
 - [React Aria](./react-aria/) - React Aria accessible components covering hooks, pre-built components, collections, drag and drop, and internationalization.
 - [React Aria Components](./react-aria-components/) - React Aria Components with accessible form controls, dialogs, date pickers, tables, and Tailwind styling.
+- [React Compiler](./react-compiler/) - React Compiler automatic memoization with directives, Babel/Next.js config, ESLint plugin, and migration from manual useMemo/useCallback.
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
 - [React Email](./react-email/) - React Email templates with @react-email/components, responsive layouts, preview server, and sending with Resend or Nodemailer.
 - [Resend Email](./resend-email/) - Resend email API covering transactional emails, React Email templates, batch sending, webhooks, and audiences.
@@ -299,6 +305,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
+- [React Three Fiber](./react-three-fiber/) - React Three Fiber 3D graphics with scene setup, GLTF loading, useFrame animations, physics with Rapier, and post-processing.
 - [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
@@ -313,9 +320,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
 - [Sentry Monitoring](./sentry-monitoring/) - Sentry error monitoring with SDK setup, error boundaries, performance tracing, breadcrumbs, release tracking, and source maps.
 - [Service Workers](./service-workers/) - Service Workers and PWA patterns with offline caching, push notifications, Workbox integration, and installable web app configuration.
+- [Server Components Patterns](./server-components-patterns/) - React Server Components with server/client boundaries, Suspense streaming, server actions, and caching strategies.
 - [Serverless Patterns](./serverless-patterns/) - Serverless architecture with Lambda, cold start optimization, Step Functions, DynamoDB, and Vercel functions.
 - [shadcn/ui](./shadcn-ui/) - shadcn/ui components with forms, data tables, theming, dark mode, and React Hook Form + Zod validation.
 - [shadcn/ui Patterns](./shadcn-patterns/) - shadcn/ui advanced patterns with form integration, data tables, command palette, toast notifications, and custom component variants.
+- [shadcn Charts](./shadcn-charts/) - shadcn/ui chart patterns with bar, line, area, pie charts using Recharts, custom tooltips, and themes.
 - [Skill Creator](./skill-creator/) - Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.
 - [Supabase Development](./supabase-development/) - Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, and Row Level Security policies.
 - [Supabase Realtime](./supabase-realtime/) - Supabase Realtime with Postgres changes, broadcast channels, presence tracking, RLS filters, and React subscription patterns.
@@ -345,6 +354,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sharp Image Processing](./sharp-image-processing/) - Sharp image processing covering resizing, format conversion, watermarks, metadata, batch processing, and upload pipelines.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
+- [Svelte 5](./svelte-v5/) - Svelte 5 runes with $state, $derived, $effect, $props, $bindable, snippets, and migration from Svelte 4.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
