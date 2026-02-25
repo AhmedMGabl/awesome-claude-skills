@@ -213,6 +213,12 @@
       "category": "development"
     },
     {
+      "name": "nodejs-api-development",
+      "description": "Node.js API development covering Express and Fastify frameworks, REST API design, middleware patterns, authentication (JWT/sessions), WebSockets, rate limiting, input validation, error handling, and production deployment.",
+      "source": "./nodejs-api-development",
+      "category": "development"
+    },
+    {
       "name": "postgresql-operations",
       "description": "PostgreSQL database operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, transactions, performance tuning, and PostgreSQL-specific best practices.",
       "source": "./postgresql-operations",
