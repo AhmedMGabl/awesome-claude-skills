@@ -339,6 +339,24 @@
       "category": "productivity-organization"
     },
     {
+      "name": "flutter-development",
+      "description": "Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, platform channels, Firebase integration, testing, and production deployment to iOS and Android.",
+      "source": "./flutter-development",
+      "category": "development"
+    },
+    {
+      "name": "llm-integration",
+      "description": "LLM and AI integration patterns covering the Anthropic Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, prompt engineering, streaming responses, and production AI application patterns.",
+      "source": "./llm-integration",
+      "category": "development"
+    },
+    {
+      "name": "supabase-development",
+      "description": "Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, Row Level Security policies, and full-stack TypeScript patterns with React and Next.js.",
+      "source": "./supabase-development",
+      "category": "development"
+    },
+    {
       "name": "vuejs-development",
       "description": "Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.",
       "source": "./vuejs-development",
