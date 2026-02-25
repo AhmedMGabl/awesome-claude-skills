@@ -553,6 +553,24 @@
       "description": "Git hooks and repository automation covering Husky, lint-staged, conventional commits, commitlint, semantic release, changesets, pre-commit hooks, and developer experience tooling.",
       "source": "./git-hooks-automation",
       "category": "development"
+    },
+    {
+      "name": "regex-patterns",
+      "description": "Regular expression patterns covering validation (email, URL, phone), text extraction, lookaheads/lookbehinds, named groups, performance optimization, and language-specific APIs for JavaScript, Python, and Go.",
+      "source": "./regex-patterns",
+      "category": "development"
+    },
+    {
+      "name": "logging-structured",
+      "description": "Structured logging patterns covering JSON logging, log levels, context propagation, correlation IDs, request tracing, Pino/Winston for Node.js, Python logging, and production observability.",
+      "source": "./logging-structured",
+      "category": "development"
+    },
+    {
+      "name": "design-system",
+      "description": "Design system and component library patterns covering design tokens, variant systems (CVA), accessibility, Storybook documentation, theming, and building maintainable UI component libraries.",
+      "source": "./design-system",
+      "category": "development"
     }
   ]
 }
