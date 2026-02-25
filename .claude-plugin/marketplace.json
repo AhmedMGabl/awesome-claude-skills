@@ -757,6 +757,30 @@
       "description": "DNS and networking covering record types, domain configuration, Cloudflare/Route 53, SSL/TLS certificates, CDN setup, and network troubleshooting.",
       "source": "./dns-networking",
       "category": "development"
+    },
+    {
+      "name": "serverless-patterns",
+      "description": "Serverless architecture with AWS Lambda, cold start optimization, Step Functions, DynamoDB single-table design, and Vercel/Netlify functions.",
+      "source": "./serverless-patterns",
+      "category": "development"
+    },
+    {
+      "name": "astro-framework",
+      "description": "Astro framework with content collections, island architecture, partial hydration, View Transitions, SSG/SSR, and MDX integration.",
+      "source": "./astro-framework",
+      "category": "development"
+    },
+    {
+      "name": "htmx-hypermedia",
+      "description": "HTMX and hypermedia patterns with server-rendered HTML, partial updates, infinite scroll, active search, inline editing, and progressive enhancement.",
+      "source": "./htmx-hypermedia",
+      "category": "development"
+    },
+    {
+      "name": "electron-desktop",
+      "description": "Electron desktop app development with main/renderer processes, IPC, BrowserWindow, auto-updates, native menus, system tray, and cross-platform packaging.",
+      "source": "./electron-desktop",
+      "category": "development"
     }
   ]
 }
