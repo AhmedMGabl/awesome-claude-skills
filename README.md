@@ -169,6 +169,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Convex Actions](./convex-actions/) - Convex server-side actions with HTTP endpoints, scheduled jobs, file storage, vector search, and external API integration.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
+- [Convex Schema](./convex-schema/) - Convex schema definitions with validators, indexes, query and mutation functions, real-time subscriptions, and React hooks.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [CSS Modules Patterns](./css-modules-patterns/) - CSS Modules with scoped class names, composition, theming with CSS variables, TypeScript integration, and Next.js configuration.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
@@ -239,6 +240,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Kysely Queries](./kysely-queries/) - Kysely type-safe SQL query builder with joins, transactions, migrations, and multi-dialect support.
 - [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
+- [Lexical Editor](./lexical-editor/) - Lexical extensible text editor with custom nodes, plugins, decorators, command system, Markdown support, and React integration.
 - [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
 - [Lit Web Components](./lit-web-components/) - Lit web components with reactive properties, shadow DOM styling, lifecycle callbacks, events, slots, and custom element registration.
 - [Liveblocks Real-time](./liveblocks-realtime/) - Liveblocks real-time collaboration with presence, cursors, conflict-free storage, and React hooks.
@@ -249,6 +251,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [MDX Content](./mdx-content/) - MDX content authoring with custom components, remark/rehype plugins, frontmatter parsing, syntax highlighting, and Next.js integration.
 - [Meilisearch](./meilisearch/) - Meilisearch full-text search with index management, filtering, faceting, sorting, typo tolerance, synonyms, and React InstantSearch integration.
+- [Milkdown Editor](./milkdown-editor/) - Milkdown plugin-driven Markdown editor with ProseMirror, custom nodes, slash commands, collaborative editing, and React/Vue integration.
 - [Million.js](./million-js/) - Million.js block virtual DOM optimization with compiler integration, automatic mode, For component, and React performance profiling.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
@@ -273,6 +276,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
 - [Neutralinojs](./neutralino-apps/) - Neutralinojs lightweight desktop apps with native OS APIs, file system operations, window management, tray menus, and cross-platform distribution.
+- [Nile Postgres](./nile-postgres/) - Nile tenant-aware Postgres with virtual tenant databases, isolation, Drizzle ORM integration, and multi-tenant SaaS patterns.
 - [Nitro Server](./nitro-server/) - Nitro server engine with event handlers, middleware, storage drivers, caching, scheduled tasks, WebSockets, and multi-platform deployment.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
@@ -299,6 +303,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
 - [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
 - [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
+- [Plate Editor](./plate-editor/) - Plate Slate-based rich text editor with plugins, custom elements, serialization, toolbar components, and shadcn/ui integration.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
 - [PocketBase](./pocketbase/) - PocketBase collection schemas, real-time subscriptions, authentication, file uploads, API rules, and single-binary deployment.
 - [PocketBase Backend](./pocketbase-backend/) - PocketBase backend with collections, real-time subscriptions, authentication, file storage, and JavaScript SDK integration.
@@ -414,11 +419,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
 - [Three.js 3D Graphics](./three-js/) - Three.js with scene setup, GLTF models, React Three Fiber, Rapier physics, animations, and performance optimization.
+- [Tigris Data](./tigris-search/) - Tigris serverless NoSQL database with full-text search, faceted search, real-time subscriptions, and S3-compatible object storage.
+- [Tiptap Editor](./tiptap-editor/) - Tiptap ProseMirror-based rich text editor with extensions, custom nodes, collaborative editing, bubble menus, and React/Vue integration.
 - [Tinybird Analytics](./tinybird-analytics/) - Tinybird real-time analytics with data sources, pipes, API endpoints, materialized views, and SQL transformations.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [tRPC Patterns](./trpc-patterns/) - tRPC advanced patterns with router definitions, input validation, context, subscriptions, error handling, and Next.js App Router setup.
 - [Turborepo](./turborepo/) - Turborepo monorepo with turbo.json pipelines, caching, remote cache, task filtering, pruning, and CI/CD optimization.
+- [Turso / libSQL](./turso-libsql/) - Turso edge-distributed SQLite with embedded replicas, multi-tenancy, Drizzle ORM integration, and offline-first sync.
 - [Turborepo Monorepo](./turborepo-monorepo/)
 - [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI.
 - [Turborepo v2](./turborepo-v2/) - Turborepo v2 covering task configuration, watch mode, boundary enforcement, remote caching, and migration from v1.
@@ -461,7 +469,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 - [Wrangler CLI](./wrangler-cli/) - Cloudflare Wrangler CLI with Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, and Pages deployment.
 - [WXT Browser Extensions](./wxt-extensions/) - WXT browser extension framework with manifest config, background/content scripts, storage, messaging, and cross-browser support.
+- [Xata Database](./xata-database/) - Xata serverless Postgres with full-text search, vector embeddings, file attachments, branching, and TypeScript SDK.
 - [XState v5](./xstate-v5/) - XState v5 state machines with guards, actions, actors, parallel states, invoked services, TypeScript types, and React hooks.
+- [Yjs Collaborative Editing](./y-js-collab/) - Yjs CRDT-based collaboration with shared types, awareness protocol, WebSocket providers, ProseMirror/CodeMirror bindings, and offline sync.
 
 ### Data & Analysis
 

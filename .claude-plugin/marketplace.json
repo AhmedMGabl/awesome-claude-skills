@@ -2341,6 +2341,66 @@
       "description": "better-sqlite3 patterns covering synchronous SQLite operations, prepared statements, transactions, WAL mode, migrations, full-text search, JSON support, and Node.js/Bun integration.",
       "source": "./better-sqlite3",
       "category": "development"
+    },
+    {
+      "name": "xata-database",
+      "description": "Xata database patterns covering serverless Postgres, full-text search, vector embeddings, file attachments, branching, transactions, TypeScript SDK, and edge-compatible queries.",
+      "source": "./xata-database",
+      "category": "development"
+    },
+    {
+      "name": "convex-schema",
+      "description": "Convex schema patterns covering table definitions, validators, indexes, relationships, query and mutation functions, real-time subscriptions, file storage, and React hooks integration.",
+      "source": "./convex-schema",
+      "category": "development"
+    },
+    {
+      "name": "turso-libsql",
+      "description": "Turso/libSQL patterns covering edge-distributed SQLite, embedded replicas, multi-tenancy with per-tenant databases, migrations, TypeScript SDK, Drizzle ORM integration, and offline-first sync.",
+      "source": "./turso-libsql",
+      "category": "development"
+    },
+    {
+      "name": "tigris-search",
+      "description": "Tigris Data patterns covering serverless NoSQL database, full-text search, real-time subscriptions, TypeScript SDK, schema definition, indexing, faceted search, and S3-compatible object storage.",
+      "source": "./tigris-search",
+      "category": "development"
+    },
+    {
+      "name": "nile-postgres",
+      "description": "Nile Postgres patterns covering tenant-aware database, virtual tenant databases, tenant isolation, row-level security, user management, Drizzle ORM integration, and multi-tenant SaaS development.",
+      "source": "./nile-postgres",
+      "category": "development"
+    },
+    {
+      "name": "milkdown-editor",
+      "description": "Milkdown editor patterns covering plugin-driven Markdown editing, ProseMirror integration, custom node schemas, collaborative editing, slash commands, toolbar customization, and React/Vue integration.",
+      "source": "./milkdown-editor",
+      "category": "development"
+    },
+    {
+      "name": "y-js-collab",
+      "description": "Yjs collaborative editing patterns covering CRDTs, shared types, awareness protocol, WebSocket/WebRTC providers, ProseMirror/CodeMirror bindings, undo manager, and offline-first sync.",
+      "source": "./y-js-collab",
+      "category": "development"
+    },
+    {
+      "name": "tiptap-editor",
+      "description": "Tiptap editor patterns covering ProseMirror-based rich text, extensions, custom nodes/marks, collaborative editing, bubble/floating menus, slash commands, and React/Vue integration.",
+      "source": "./tiptap-editor",
+      "category": "development"
+    },
+    {
+      "name": "lexical-editor",
+      "description": "Lexical editor patterns covering extensible text framework, custom nodes, plugins, decorators, command system, collaboration, markdown support, and React integration.",
+      "source": "./lexical-editor",
+      "category": "development"
+    },
+    {
+      "name": "plate-editor",
+      "description": "Plate editor patterns covering Slate-based rich text, plugin system, custom elements, serialization, toolbar components, mention/emoji plugins, and shadcn/ui styled editor components.",
+      "source": "./plate-editor",
+      "category": "development"
     }
   ]
 }
