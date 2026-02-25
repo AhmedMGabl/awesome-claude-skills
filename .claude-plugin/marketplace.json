@@ -1129,6 +1129,30 @@
       "description": "Semantic versioning and automated release management covering semantic-release configuration, conventional commits, commitlint, changesets for monorepos, GitHub Actions workflows, npm publishing, changelog generation, and pre-release channels.",
       "source": "./semantic-release",
       "category": "development"
+    },
+    {
+      "name": "eslint-biome",
+      "description": "Code linting and formatting covering ESLint flat config, Biome unified tooling, Prettier integration, custom rule development, TypeScript-aware linting, framework-specific plugins for React and Next.js, auto-fix strategies, and CI enforcement.",
+      "source": "./eslint-biome",
+      "category": "development"
+    },
+    {
+      "name": "radix-ui",
+      "description": "Radix UI headless component library covering accessible primitives for dialogs, dropdowns, tabs, tooltips, popovers, accordions, composition with Tailwind CSS, animation with CSS transitions, keyboard navigation, and ARIA compliance.",
+      "source": "./radix-ui",
+      "category": "development"
+    },
+    {
+      "name": "framer-motion",
+      "description": "Framer Motion animation library covering motion components, variants, gesture animations, layout animations, scroll-triggered animations, AnimatePresence for exit animations, spring physics, shared layout, and reduced motion accessibility.",
+      "source": "./framer-motion",
+      "category": "development"
+    },
+    {
+      "name": "webpack-config",
+      "description": "Webpack 5 configuration covering entry/output, loaders for TypeScript, CSS, and assets, code splitting with dynamic imports, Module Federation for micro-frontends, dev server with HMR, production optimization, caching strategies, and bundle analysis.",
+      "source": "./webpack-config",
+      "category": "development"
     }
   ]
 }
