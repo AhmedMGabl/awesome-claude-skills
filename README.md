@@ -118,6 +118,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [BlockNote Editor](./blocknote-editor/) - BlockNote Notion-style block editor with custom block types, slash menu, drag-and-drop, collaborative editing, and React integration.
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
+- [Bun Elysia](./bun-elysia/) - Elysia.js patterns for Bun covering type-safe routing, validation with TypeBox, plugins, WebSocket, authentication guards, and Eden Treaty client.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [Cheerio Scraping](./cheerio-scraping/) - Cheerio HTML parsing with jQuery-style selectors, DOM traversal, table scraping, paginated scraping, and Node.js integration.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
@@ -142,6 +143,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
 - [Deno Development](./deno-development/) - Deno runtime with permissions, HTTP servers, built-in TypeScript, npm compatibility, Fresh framework, Deploy, and KV store.
 - [Deno Patterns](./deno-patterns/) - Deno runtime patterns with Deno.serve, KV database, Fresh framework, testing, npm compatibility, and Deno Deploy.
+- [Deno Fresh](./deno-fresh/) - Deno Fresh patterns covering islands architecture, route handlers, middleware, Preact components, server-side rendering, and edge deployment.
 - [Dependency Injection](./dependency-injection/) - DI patterns with tsyringe, InversifyJS, Python dependency-injector, constructor injection, and testing strategies.
 - [Design System & Components](./design-system/) - Design system patterns with design tokens, CVA variants, accessible components, Storybook docs, and theming.
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
@@ -167,6 +169,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Editor.js](./editorjs/) - Editor.js block-style editor with custom tool plugins, inline tools, structured JSON output, image/embed tools, and React integration.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
 - [Electron Forge](./electron-forge/) - Electron Forge desktop app scaffolding with IPC communication, BrowserWindow management, auto-updates, tray icons, and cross-platform packaging.
+- [Elixir Phoenix](./elixir-phoenix/) - Elixir Phoenix patterns covering LiveView, Ecto schemas, channels, PubSub, GenServer, supervision trees, and real-time features.
 - [Expo Router](./expo-router/) - Expo Router file-based routing for React Native with layouts, typed routes, deep linking, authentication flows, and universal app patterns.
 - [Express.js](./express-js/) - Express.js with routing, middleware, Zod validation, JWT auth, error handling patterns, graceful shutdown, and supertest testing.
 - [Elysia Patterns](./elysia-patterns/) - Elysia Bun API framework with type-safe validation, Eden Treaty client, WebSockets, guards, and derive middleware.
@@ -254,6 +257,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Grafana Dashboards](./grafana-dashboards/) - Grafana dashboards with panel types, variables, Prometheus data sources, alerting, provisioning, and dashboard-as-code.
 - [GraphQL Code Generator](./graphql-codegen/) - GraphQL Code Generator covering TypeScript type generation, typed document nodes, React Query and Apollo hooks, and fragment colocation.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
+- [GraphQL Federation](./graphql-federation/) - GraphQL Federation patterns covering subgraph schemas, entity resolution, Apollo Router, shared types, migration strategies, and federated gateway configuration.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
 - [Inngest Functions](./inngest-functions/) - Inngest event-driven workflows with step functions, scheduling, retries, concurrency control, and Next.js integration.
 - [Helm Charts](./helm-charts/) - Helm chart templates, values, helpers, hooks, dependencies, testing, and Kubernetes deployment management.
@@ -261,6 +265,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
 - [HTMX Development](./htmx-development/) - HTMX development with hx-get/post/put/delete attributes, SSE, WebSocket integration, CSS transitions, and out-of-band swaps.
+- [HTMX Alpine](./htmx-alpine/) - HTMX with Alpine.js patterns covering server-driven UI, partial page updates, inline editing, infinite scroll, modals, form validation, and progressive enhancement.
 - [Hugging Face Transformers](./huggingface-transformers/) - Hugging Face Transformers patterns covering pipeline API, model fine-tuning, tokenizers, dataset loading, training with Trainer, inference optimization, and model hub integration.
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
@@ -360,6 +365,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Payload CMS](./payload-cms/) - Payload CMS with collections, access control, hooks, Lexical rich text, file uploads, and Next.js integration.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
+- [PHP Composer](./php-composer/) - PHP Composer patterns covering dependency management, autoloading, version constraints, scripts, publishing packages, and monorepo configuration.
+- [PHP Laravel Livewire](./php-laravel-livewire/) - Laravel Livewire patterns covering reactive components, form handling, real-time validation, file uploads, pagination, Alpine.js integration, and SPA-like interactivity.
 - [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
 - [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
 - [Plate Editor](./plate-editor/) - Plate Slate-based rich text editor with plugins, custom elements, serialization, toolbar components, and shadcn/ui integration.
@@ -410,6 +417,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
 - [Sanity Studio](./sanity-studio/) - Sanity Studio schema definitions, GROQ queries, image handling, portable text rendering, and Next.js/Remix integration.
+- [Scala Akka](./scala-akka/) - Scala Akka patterns covering typed actors, cluster sharding, event sourcing, Akka Streams, Akka HTTP, and distributed system design.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
@@ -444,6 +452,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
 - [Sentry Monitoring](./sentry-monitoring/) - Sentry error monitoring with SDK setup, error boundaries, performance tracing, breadcrumbs, release tracking, and source maps.
 - [Service Workers](./service-workers/) - Service Workers and PWA patterns with offline caching, push notifications, Workbox integration, and installable web app configuration.
+- [Service Workers PWA](./service-workers-pwa/) - Service Workers and PWA patterns covering caching strategies, offline support, background sync, push notifications, Web App Manifest, and Workbox integration.
 - [Shopify Hydrogen](./shopify-hydrogen/) - Shopify Hydrogen Remix-based storefront with Storefront API, cart management, collection pages, and Oxygen deployment.
 - [Server Components Patterns](./server-components-patterns/) - React Server Components with server/client boundaries, Suspense streaming, server actions, and caching strategies.
 - [Serverless Patterns](./serverless-patterns/) - Serverless architecture with Lambda, cold start optimization, Step Functions, DynamoDB, and Vercel functions.
@@ -564,6 +573,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Zeego Menus](./zeego-menus/) - Zeego cross-platform native menus with dropdown menus, context menus, checkboxes, submenus, and React Native/Expo.
 - [Zod Validation](./zod-validation/) - Zod schema validation with transforms, refinements, discriminated unions, React Hook Form integration, and shared client/server schemas.
 - [Zod Schemas](./zod-schemas/) - Zod advanced schema patterns with discriminated unions, recursive types, branded types, schema composition, and API contract validation.
+- [Zig Programming](./zig-programming/) - Zig programming patterns covering memory management, comptime, error handling, allocators, C interop, build system, testing, and systems programming.
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 - [Wrangler CLI](./wrangler-cli/) - Cloudflare Wrangler CLI with Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, and Pages deployment.

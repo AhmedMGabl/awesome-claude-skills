@@ -3001,6 +3001,66 @@
       "description": "Vector database patterns covering embedding generation, similarity search, metadata filtering, indexing strategies, RAG integration, and Pinecone/Weaviate/Chroma usage.",
       "source": "./vector-database-patterns",
       "category": "development"
+    },
+    {
+      "name": "php-laravel-livewire",
+      "description": "Laravel Livewire patterns covering reactive components, form handling, real-time validation, file uploads, pagination, Alpine.js integration, and SPA-like interactivity.",
+      "source": "./php-laravel-livewire",
+      "category": "development"
+    },
+    {
+      "name": "php-composer",
+      "description": "PHP Composer patterns covering dependency management, autoloading, version constraints, scripts, publishing packages, and monorepo configuration.",
+      "source": "./php-composer",
+      "category": "development"
+    },
+    {
+      "name": "elixir-phoenix",
+      "description": "Elixir Phoenix patterns covering LiveView, Ecto schemas, channels, PubSub, GenServer, supervision trees, and real-time features.",
+      "source": "./elixir-phoenix",
+      "category": "development"
+    },
+    {
+      "name": "scala-akka",
+      "description": "Scala Akka patterns covering typed actors, cluster sharding, event sourcing, Akka Streams, Akka HTTP, and distributed system design.",
+      "source": "./scala-akka",
+      "category": "development"
+    },
+    {
+      "name": "deno-fresh",
+      "description": "Deno Fresh patterns covering islands architecture, route handlers, middleware, Preact components, server-side rendering, and edge deployment.",
+      "source": "./deno-fresh",
+      "category": "development"
+    },
+    {
+      "name": "bun-elysia",
+      "description": "Elysia.js patterns for Bun covering type-safe routing, validation with TypeBox, plugins, WebSocket, authentication guards, and Eden Treaty client.",
+      "source": "./bun-elysia",
+      "category": "development"
+    },
+    {
+      "name": "htmx-alpine",
+      "description": "HTMX with Alpine.js patterns covering server-driven UI, partial page updates, inline editing, infinite scroll, modals, form validation, and progressive enhancement.",
+      "source": "./htmx-alpine",
+      "category": "development"
+    },
+    {
+      "name": "zig-programming",
+      "description": "Zig programming patterns covering memory management, comptime, error handling, allocators, C interop, build system, testing, and systems programming.",
+      "source": "./zig-programming",
+      "category": "development"
+    },
+    {
+      "name": "service-workers-pwa",
+      "description": "Service Workers and PWA patterns covering caching strategies, offline support, background sync, push notifications, Web App Manifest, and Workbox integration.",
+      "source": "./service-workers-pwa",
+      "category": "development"
+    },
+    {
+      "name": "graphql-federation",
+      "description": "GraphQL Federation patterns covering subgraph schemas, entity resolution, Apollo Router, shared types, migration strategies, and federated gateway configuration.",
+      "source": "./graphql-federation",
+      "category": "development"
     }
   ]
 }
