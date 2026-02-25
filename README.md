@@ -97,6 +97,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
+- [ArkType Validation](./arktype-validation/) - ArkType runtime validation with 1:1 TypeScript syntax, type inference, morphs, scoped types, and discriminated unions.
 - [Ace Editor](./ace-editor/) - Ace code editor with syntax highlighting, language modes, themes, autocompletion, snippets, annotations, and React integration.
 - [Astro Content Collections](./astro-content/) - Astro Content Collections with type-safe schemas, Zod validation, MDX components, dynamic routing, RSS feeds, and static site generation.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
@@ -115,6 +116,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Cheerio Scraping](./cheerio-scraping/) - Cheerio HTML parsing with jQuery-style selectors, DOM traversal, table scraping, paginated scraping, and Node.js integration.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
 - [CKEditor 5](./ckeditor5/) - CKEditor 5 modular WYSIWYG editor with plugin architecture, custom plugins, image upload adapters, content conversion, and React integration.
+- [class-validator](./class-validator/) - class-validator decorator-based validation with custom validators, validation groups, conditional rules, nested objects, and NestJS integration.
 - [cmdk Command Palette](./cmdk-command/) - cmdk command palette with groups, keyboard navigation, nested pages, async search, and shadcn/ui integration.
 - [Callstack React Native Performance](https://github.com/callstackincubator/agent-skills) - React Native performance optimization skills from Callstack covering JS/React, Native, and bundling optimizations. *By [@callstackincubator](https://github.com/callstackincubator)*
 - [Chakra UI v3](./chakra-ui-v3/) - Chakra UI v3 with style props, recipes, tokens, color mode, responsive design, and accessible components.
@@ -191,6 +193,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Date Handling](./date-handling/) - Date and time handling with date-fns, dayjs, Temporal API, Luxon timezone management, duration calculations, relative time, and Intl.DateTimeFormat internationalization.
 - [date-fns Patterns](./date-fns-patterns/) - date-fns utility patterns with formatting, parsing, comparison, interval operations, timezone handling, and locale-aware display.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
+- [Faker.js](./faker-js/) - Faker.js realistic test data generation with locale support, seeded reproducibility, factory patterns, and database seeding.
 - [Feature Flags](./feature-flags/) - Feature flags with LaunchDarkly, percentage rollouts, A/B testing, user targeting, and flag lifecycle management.
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
 - [Figma to Code](./figma-to-code/) - Figma-to-code translation with design tokens, auto-layout to flexbox/grid, variant-to-prop mapping, and responsive conversion.
@@ -241,6 +244,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Inngest](./inngest/) - Inngest event-driven functions with step functions, scheduled tasks, fan-out patterns, retries, concurrency, and Next.js integration.
 - [Ionic Capacitor](./ionic-capacitor/) - Ionic Capacitor cross-platform mobile apps with native device APIs, Ionic React components, navigation, push notifications, and iOS/Android deployment.
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
+- [io-ts Validation](./io-ts-validation/) - io-ts runtime type checking with codec composition, branded types, Either-based error handling, reporters, and fp-ts integration.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
 - [KeystoneJS](./keystonejs/) - KeystoneJS schema-driven CMS with list definitions, access control, hooks, GraphQL API, document fields, and admin UI customization.
@@ -292,6 +296,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Nitro Server](./nitro-server/) - Nitro server engine with event handlers, middleware, storage drivers, caching, scheduled tasks, WebSockets, and multi-platform deployment.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
+- [Nock Mocking](./nock-mocking/) - Nock HTTP mocking with request interception, response fixtures, query/body matching, error simulation, and recording/playback.
 - [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
 - [Novel Editor](./novel-editor/) - Novel Notion-style WYSIWYG editor with Tiptap-based architecture, slash commands, bubble menu, AI completions, and Next.js integration.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
@@ -307,6 +312,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
 - [OpenTelemetry JS](./opentelemetry-js/) - OpenTelemetry JavaScript SDK with custom spans, metrics, context propagation, auto-instrumentation, and OTLP exporter configuration.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
+- [Pact.js Contract Testing](./pactjs-contracts/) - Pact.js consumer-driven contracts with provider verification, matchers, Pact Broker integration, and CI/CD workflows.
 - [Panda CSS](./panda-css/) - Panda CSS type-safe styling with design tokens, recipes, patterns, conditional styles, responsive design, and zero-runtime CSS-in-JS.
 - [PartyKit Real-Time](./partykit-realtime/) - PartyKit real-time collaboration with party servers, WebSocket rooms, presence, broadcast, storage, and React integration.
 - [Paraglide JS](./paraglide-js/) - Paraglide JS tree-shakeable i18n with compiler-generated functions, language switching, and SvelteKit/Next.js integration.
@@ -385,6 +391,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Skill Creator](./skill-creator/) - Provides guidance for creating effective Claude Skills that extend capabilities with specialized knowledge, workflows, and tool integrations.
 - [Supabase Development](./supabase-development/) - Supabase backend-as-a-service covering PostgreSQL database, authentication, real-time subscriptions, storage, edge functions, and Row Level Security policies.
 - [Supabase Realtime](./supabase-realtime/) - Supabase Realtime with Postgres changes, broadcast channels, presence tracking, RLS filters, and React subscription patterns.
+- [Supertest API Testing](./supertest-api/) - Supertest HTTP assertions with request chaining, authentication flows, file upload testing, and Express/Fastify integration.
 - [Skill Share](./skill-share/) - Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.
 - [Socket.IO](./socket-io/) - Socket.IO real-time communication with rooms, namespaces, typed events, auth middleware, React hooks, and Redis adapter scaling.
 - [Socket.IO v4](./socket-io-v4/) - Socket.IO v4 with typed events, namespaces, rooms, acknowledgements, middleware, and Redis adapter for horizontal scaling.
@@ -442,6 +449,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tiptap Editor](./tiptap-editor/) - Tiptap ProseMirror-based rich text editor with extensions, custom nodes, collaborative editing, bubble menus, and React/Vue integration.
 - [Tinybird Analytics](./tinybird-analytics/) - Tinybird real-time analytics with data sources, pipes, API endpoints, materialized views, and SQL transformations.
 - [TinyMCE](./tinymce/) - TinyMCE WYSIWYG editor with plugin ecosystem, custom toolbar buttons, content formatting, image uploads, templates, and React/Vue integration.
+- [TypeBox Validation](./typebox-validation/) - TypeBox JSON Schema-compatible type definitions with compiled validators, default values, transformations, and Fastify integration.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [tRPC Patterns](./trpc-patterns/) - tRPC advanced patterns with router definitions, input validation, context, subscriptions, error handling, and Next.js App Router setup.
@@ -466,6 +474,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
 - [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
 - [Valibot Schemas](./valibot-schemas/) - Valibot tree-shakeable validation with pipe transformations, custom rules, form validation, API parsing, and Zod migration.
+- [Valibot Validation](./valibot-validation/) - Valibot tree-shakeable schema definitions with type inference, transformations, custom validators, error formatting, and React form integration.
 - [vanilla-extract](./vanilla-extract/) - vanilla-extract CSS-in-TypeScript with type-safe styles, theme contracts, Sprinkles utility classes, recipes, and build-time extraction.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vinxi Server](./vinxi-server/) - Vinxi meta-framework with app configuration, routers, server functions, middleware, API routes, and multi-framework SSR.
@@ -492,6 +501,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Xata Database](./xata-database/) - Xata serverless Postgres with full-text search, vector embeddings, file attachments, branching, and TypeScript SDK.
 - [XState v5](./xstate-v5/) - XState v5 state machines with guards, actions, actors, parallel states, invoked services, TypeScript types, and React hooks.
 - [Yjs Collaborative Editing](./y-js-collab/) - Yjs CRDT-based collaboration with shared types, awareness protocol, WebSocket providers, ProseMirror/CodeMirror bindings, and offline sync.
+- [Yup Validation](./yup-validation/) - Yup schema validation with type coercion, conditional validation, custom tests, error messages, and React Hook Form/Formik integration.
 
 ### Data & Analysis
 
