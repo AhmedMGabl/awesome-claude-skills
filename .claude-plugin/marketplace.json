@@ -1009,6 +1009,18 @@
       "description": "AI-assisted development patterns covering effective prompt engineering for code generation, Copilot Chat workflows, context management, code review with AI, test generation, documentation generation, refactoring suggestions, and maximizing AI coding assistant productivity.",
       "source": "./github-copilot-patterns",
       "category": "development"
+    },
+    {
+      "name": "graphql-subscriptions",
+      "description": "GraphQL subscriptions for real-time data covering WebSocket transport with graphql-ws, subscription resolvers, pub/sub with Redis, filtering subscriptions, authentication in WebSocket connections, client-side subscription hooks, and scaling subscriptions in production.",
+      "source": "./graphql-subscriptions",
+      "category": "development"
+    },
+    {
+      "name": "nextauth-authentication",
+      "description": "NextAuth.js (Auth.js) authentication covering OAuth providers (Google, GitHub, Discord), credentials provider, JWT and database sessions, role-based access control, middleware protection, custom sign-in pages, adapter configuration for Prisma and Drizzle, and App Router integration.",
+      "source": "./nextauth-authentication",
+      "category": "development"
     }
   ]
 }

@@ -1,125 +1,91 @@
 ---
 name: feature-flags
-description: Feature flag implementation covering LaunchDarkly and Unleash SDKs, custom flag services with percentage rollouts, A/B testing, user targeting, flag lifecycle management, kill switches, React hooks for flags, server-side evaluation, and gradual rollout strategies.
+description: Feature flag implementation covering LaunchDarkly and Unleash integration, percentage rollouts, A/B testing, user targeting, server-side and client-side evaluation, custom feature flag services with Redis, flag lifecycle management, and gradual release strategies.
 ---
 
 # Feature Flags
 
-This skill should be used when implementing feature flags, gradual rollouts, or A/B testing in applications. It covers flag services, targeting rules, and lifecycle management.
+This skill should be used when implementing feature flag systems for controlled releases. It covers flag providers, rollout strategies, A/B testing, targeting, and custom implementations.
 
 ## When to Use This Skill
 
 Use this skill when you need to:
 
-- Roll out features gradually to users
-- Implement A/B testing
-- Add kill switches for production features
-- Target features to specific user segments
-- Decouple deployment from release
+- Gradually roll out features to users
+- Implement A/B testing for experiments
+- Target specific user segments with features
+- Build a custom feature flag service
+- Manage flag lifecycle (create, test, retire)
 
 ## Custom Feature Flag Service
 
 ```typescript
+import { Redis } from "ioredis";
+
 interface FeatureFlag {
   key: string;
   enabled: boolean;
-  rolloutPercentage: number;          // 0-100
-  targetedUserIds: string[];          // Always enabled for these
-  targetedSegments: string[];         // e.g., "beta", "enterprise"
-  variants?: Record<string, number>;  // A/B variant weights
+  percentage?: number;
+  allowList?: string[];
+  rules?: Array<{
+    attribute: string;
+    operator: "eq" | "in" | "gt" | "lt";
+    value: string | string[] | number;
+  }>;
 }
 
 class FeatureFlagService {
-  private flags = new Map<string, FeatureFlag>();
+  constructor(private redis: Redis) {}
 
-  constructor(private store: FlagStore) {
-    this.refresh();
-  }
+  async isEnabled(
+    flagKey: string,
+    context: { userId: string; [key: string]: any },
+  ): Promise<boolean> {
+    const raw = await this.redis.get(`flag:${flagKey}`);
+    if (!raw) return false;
 
-  async refresh() {
-    const flags = await this.store.getAll();
-    this.flags.clear();
-    flags.forEach((f) => this.flags.set(f.key, f));
-  }
+    const flag: FeatureFlag = JSON.parse(raw);
+    if (!flag.enabled) return false;
 
-  isEnabled(key: string, context?: { userId?: string; segments?: string[] }): boolean {
-    const flag = this.flags.get(key);
-    if (!flag || !flag.enabled) return false;
+    // Check allow list
+    if (flag.allowList?.includes(context.userId)) return true;
 
-    // Always on for targeted users
-    if (context?.userId && flag.targetedUserIds.includes(context.userId)) return true;
-
-    // Segment targeting
-    if (context?.segments?.some((s) => flag.targetedSegments.includes(s))) return true;
-
-    // Percentage rollout (consistent per user)
-    if (flag.rolloutPercentage >= 100) return true;
-    if (flag.rolloutPercentage <= 0) return false;
-    if (context?.userId) {
-      const hash = this.hashUserId(key, context.userId);
-      return hash < flag.rolloutPercentage;
+    // Check targeting rules
+    if (flag.rules) {
+      const ruleMatch = flag.rules.every((rule) => {
+        const value = context[rule.attribute];
+        switch (rule.operator) {
+          case "eq": return value === rule.value;
+          case "in": return (rule.value as string[]).includes(value);
+          case "gt": return value > rule.value;
+          case "lt": return value < rule.value;
+          default: return false;
+        }
+      });
+      if (!ruleMatch) return false;
     }
 
-    return false;
-  }
-
-  getVariant(key: string, userId: string): string | null {
-    const flag = this.flags.get(key);
-    if (!flag?.enabled || !flag.variants) return null;
-
-    const hash = this.hashUserId(key, userId);
-    let cumulative = 0;
-    for (const [variant, weight] of Object.entries(flag.variants)) {
-      cumulative += weight;
-      if (hash < cumulative) return variant;
+    // Percentage rollout (consistent hashing)
+    if (flag.percentage !== undefined) {
+      const hash = this.consistentHash(`${flagKey}:${context.userId}`);
+      return hash < flag.percentage;
     }
-    return null;
+
+    return true;
   }
 
-  private hashUserId(flagKey: string, userId: string): number {
-    // Simple consistent hash (0-100)
+  private consistentHash(input: string): number {
     let hash = 0;
-    const str = `${flagKey}:${userId}`;
-    for (let i = 0; i < str.length; i++) {
-      hash = ((hash << 5) - hash + str.charCodeAt(i)) | 0;
+    for (let i = 0; i < input.length; i++) {
+      const char = input.charCodeAt(i);
+      hash = ((hash << 5) - hash + char) | 0;
     }
     return Math.abs(hash) % 100;
   }
-}
-```
 
-## React Integration
-
-```tsx
-import { createContext, useContext, ReactNode } from "react";
-
-const FlagContext = createContext<FeatureFlagService | null>(null);
-
-function FlagProvider({ service, children }: { service: FeatureFlagService; children: ReactNode }) {
-  return <FlagContext.Provider value={service}>{children}</FlagContext.Provider>;
-}
-
-function useFeatureFlag(key: string): boolean {
-  const service = useContext(FlagContext);
-  const user = useCurrentUser();
-  if (!service) return false;
-  return service.isEnabled(key, { userId: user?.id, segments: user?.segments });
-}
-
-function useVariant(key: string): string | null {
-  const service = useContext(FlagContext);
-  const user = useCurrentUser();
-  if (!service || !user) return null;
-  return service.getVariant(key, user.id);
-}
-
-// Usage
-function PricingPage() {
-  const showNewPricing = useFeatureFlag("new-pricing-page");
-  const ctaVariant = useVariant("cta-experiment"); // "A" | "B" | null
-
-  if (showNewPricing) return <NewPricingPage />;
-  return <CurrentPricingPage ctaVariant={ctaVariant} />;
+  async setFlag(flag: FeatureFlag): Promise<void> {
+    await this.redis.set(`flag:${flag.key}`, JSON.stringify(flag));
+  }
 }
 ```
 
@@ -128,47 +94,86 @@ function PricingPage() {
 ```typescript
 import * as LaunchDarkly from "@launchdarkly/node-server-sdk";
 
-const ldClient = LaunchDarkly.init(process.env.LAUNCHDARKLY_SDK_KEY!);
-await ldClient.waitForInitialization();
+const client = LaunchDarkly.init(process.env.LAUNCHDARKLY_SDK_KEY!);
+await client.waitForInitialization();
 
-// Evaluate flag
-const context = { kind: "user", key: userId, email: user.email, custom: { plan: user.plan } };
-const showFeature = await ldClient.variation("new-feature", context, false);
+const context = {
+  kind: "user",
+  key: user.id,
+  email: user.email,
+  custom: { plan: user.plan, region: user.region },
+};
 
-// React SDK
-import { LDProvider, useFlags } from "launchdarkly-react-client-sdk";
+const showNewDashboard = await client.variation("new-dashboard", context, false);
+```
 
-function App() {
-  return (
-    <LDProvider clientSideID={process.env.NEXT_PUBLIC_LD_CLIENT_ID!} context={{ kind: "user", key: userId }}>
-      <Dashboard />
-    </LDProvider>
-  );
-}
+## React Integration
 
+```tsx
 function Dashboard() {
-  const { newDashboard, betaFeatures } = useFlags();
-  return newDashboard ? <NewDashboard beta={betaFeatures} /> : <OldDashboard />;
+  const showNewChart = useFeatureFlag("new-chart-component");
+
+  return <div>{showNewChart ? <NewChart /> : <LegacyChart />}</div>;
 }
+
+// Hook implementation
+function useFeatureFlag(key: string, defaultValue: any = false) {
+  const [value, setValue] = useState(defaultValue);
+  const { user } = useAuth();
+
+  useEffect(() => {
+    fetch(`/api/flags/${key}?userId=${user.id}`)
+      .then((res) => res.json())
+      .then((data) => setValue(data.value));
+  }, [key, user.id]);
+
+  return value;
+}
+```
+
+## Express Middleware
+
+```typescript
+function featureFlagMiddleware(flagService: FeatureFlagService) {
+  return async (req: Request, _res: Response, next: NextFunction) => {
+    const context = {
+      userId: req.user?.id || "anonymous",
+      plan: req.user?.plan,
+      region: req.headers["x-region"] as string,
+    };
+
+    req.flags = {
+      isEnabled: (key: string) => flagService.isEnabled(key, context),
+    };
+
+    next();
+  };
+}
+
+// Usage in route
+app.get("/api/search", async (req, res) => {
+  const useNewAlgo = await req.flags.isEnabled("new-search-algorithm");
+  const results = useNewAlgo ? await newSearch(req.query) : await legacySearch(req.query);
+  res.json(results);
+});
+```
+
+## Rollout Strategies
+
+```
+STRATEGY          DESCRIPTION                   USE CASE
+──────────────────────────────────────────────────────────
+Boolean toggle    On/off for everyone           Kill switches
+Percentage        Gradual % rollout             New feature launch
+User targeting    Specific users/groups         Beta testers
+Rule-based        Attribute matching            Region, plan tier
+A/B experiment    Multiple variants             UI experiments
 ```
 
 ## Flag Lifecycle
 
 ```
-FLAG LIFECYCLE:
-  1. CREATE   — Add flag with default OFF
-  2. DEVELOP  — Code behind flag check
-  3. TEST     — Enable for internal team / staging
-  4. ROLLOUT  — 5% → 25% → 50% → 100% over days
-  5. MONITOR  — Watch error rates and metrics at each step
-  6. CLEANUP  — Remove flag and dead code path
-
-CLEANUP CHECKLIST:
-  [ ] Flag is at 100% for 2+ weeks with no issues
-  [ ] Remove flag checks from code
-  [ ] Remove old code path
-  [ ] Delete flag from flag service
-  [ ] Update tests
+CREATE → TEST (internal) → CANARY (1%) → ROLLOUT (10→50→100%) → PERMANENT → CLEANUP
 ```
 
 ## Additional Resources
@@ -176,4 +181,3 @@ CLEANUP CHECKLIST:
 - LaunchDarkly: https://docs.launchdarkly.com/
 - Unleash: https://docs.getunleash.io/
 - OpenFeature: https://openfeature.dev/
-- GrowthBook: https://docs.growthbook.io/
