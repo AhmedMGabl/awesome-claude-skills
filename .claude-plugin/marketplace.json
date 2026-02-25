@@ -3061,6 +3061,66 @@
       "description": "GraphQL Federation patterns covering subgraph schemas, entity resolution, Apollo Router, shared types, migration strategies, and federated gateway configuration.",
       "source": "./graphql-federation",
       "category": "development"
+    },
+    {
+      "name": "redis-streams",
+      "description": "Redis Streams patterns covering consumer groups, message acknowledgment, pending entry lists, stream trimming, event sourcing, and real-time data processing pipelines.",
+      "source": "./redis-streams",
+      "category": "development"
+    },
+    {
+      "name": "webpack-configuration",
+      "description": "Webpack configuration patterns covering entry/output, loaders, plugins, code splitting, tree shaking, dev server, module federation, and production optimization.",
+      "source": "./webpack-configuration",
+      "category": "development"
+    },
+    {
+      "name": "vite-configuration",
+      "description": "Vite configuration patterns covering plugins, build optimization, SSR, library mode, environment variables, proxy setup, and custom plugin development.",
+      "source": "./vite-configuration",
+      "category": "development"
+    },
+    {
+      "name": "rollup-bundler",
+      "description": "Rollup bundler patterns covering tree shaking, plugins, code splitting, library bundling, output formats, watch mode, and custom plugin development.",
+      "source": "./rollup-bundler",
+      "category": "development"
+    },
+    {
+      "name": "haskell-programming",
+      "description": "Haskell programming patterns covering type classes, monads, functors, algebraic data types, IO, Cabal/Stack build tools, and functional programming idioms.",
+      "source": "./haskell-programming",
+      "category": "development"
+    },
+    {
+      "name": "ocaml-programming",
+      "description": "OCaml programming patterns covering algebraic types, pattern matching, modules, functors, opam, dune build system, and functional programming with imperative features.",
+      "source": "./ocaml-programming",
+      "category": "development"
+    },
+    {
+      "name": "nim-programming",
+      "description": "Nim programming patterns covering type system, macros, metaprogramming, memory management, FFI, async/await, nimble packages, and systems programming.",
+      "source": "./nim-programming",
+      "category": "development"
+    },
+    {
+      "name": "crystal-programming",
+      "description": "Crystal programming patterns covering type inference, macros, concurrency with fibers, channels, C bindings, shards dependency manager, and web development with Lucky.",
+      "source": "./crystal-programming",
+      "category": "development"
+    },
+    {
+      "name": "gleam-programming",
+      "description": "Gleam programming patterns covering type-safe BEAM development, pattern matching, Result types, OTP processes, Lustre web framework, and JavaScript/Erlang targets.",
+      "source": "./gleam-programming",
+      "category": "development"
+    },
+    {
+      "name": "lua-programming",
+      "description": "Lua programming patterns covering tables, metatables, coroutines, C API, LuaRocks, embedding, game scripting, and Neovim plugin development.",
+      "source": "./lua-programming",
+      "category": "development"
     }
   ]
 }

@@ -198,6 +198,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [CSS Modules Patterns](./css-modules-patterns/) - CSS Modules with scoped class names, composition, theming with CSS variables, TypeScript integration, and Next.js configuration.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
 - [Cron & Job Scheduling](./cron-scheduling/) - Job scheduling with cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, and production patterns.
+- [Crystal Programming](./crystal-programming/) - Crystal programming patterns covering type inference, macros, concurrency with fibers, channels, C bindings, shards dependency manager, and web development with Lucky.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
 - [Dagger CI/CD](./dagger-ci/) - Dagger CI/CD programmable pipelines in TypeScript/Python/Go, container operations, caching, secrets management, and multi-platform builds.
 - [Data Engineering & ETL](./data-engineering/) - Data engineering and ETL pipeline patterns with Kafka, dbt, Airflow, data validation, and modern Python data stack.
@@ -237,6 +238,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [gRPC Go](./grpc-go/) - Go gRPC patterns covering protobuf definitions, server/client implementation, streaming RPCs, interceptors, error handling, health checks, and TLS configuration.
 - [GitHub Actions](./github-actions/) - GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, and deployments.
 - [GitHub API Integration](./github-api/) - GitHub API with Octokit, REST/GraphQL, PR automation, webhooks, GitHub Apps, and release management.
+- [Gleam Programming](./gleam-programming/) - Gleam programming patterns covering type-safe BEAM development, pattern matching, Result types, OTP processes, Lustre web framework, and JavaScript/Erlang targets.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
 - [Go Chi Router](./go-chi/) - Go Chi router patterns with lightweight routing, middleware stack, URL parameters, subrouters, and RESTful API patterns.
 - [Go Cobra CLI](./go-cobra-cli/) - Go Cobra CLI with command hierarchies, flags, arguments, Viper configuration, output formatting, and shell completions.
@@ -260,6 +262,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GraphQL Federation](./graphql-federation/) - GraphQL Federation patterns covering subgraph schemas, entity resolution, Apollo Router, shared types, migration strategies, and federated gateway configuration.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
 - [Inngest Functions](./inngest-functions/) - Inngest event-driven workflows with step functions, scheduling, retries, concurrency control, and Next.js integration.
+- [Haskell Programming](./haskell-programming/) - Haskell programming patterns covering type classes, monads, functors, algebraic data types, IO, Cabal/Stack build tools, and functional programming idioms.
 - [Helm Charts](./helm-charts/) - Helm chart templates, values, helpers, hooks, dependencies, testing, and Kubernetes deployment management.
 - [Hono API](./hono-api/) - Hono API patterns with Zod validation, JWT auth, CORS, streaming, RPC client, and multi-runtime deployment.
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
@@ -301,6 +304,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
 - [Lucia Authentication](./lucia-auth/) - Lucia session auth with Prisma/Drizzle adapters, OAuth via Arctic, password hashing, and email verification.
+- [Lua Programming](./lua-programming/) - Lua programming patterns covering tables, metatables, coroutines, C API, LuaRocks, embedding, game scripting, and Neovim plugin development.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [MDX Content](./mdx-content/) - MDX content authoring with custom components, remark/rehype plugins, frontmatter parsing, syntax highlighting, and Next.js integration.
@@ -338,6 +342,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Neutralinojs](./neutralino-apps/) - Neutralinojs lightweight desktop apps with native OS APIs, file system operations, window management, tray menus, and cross-platform distribution.
 - [Nile Postgres](./nile-postgres/) - Nile tenant-aware Postgres with virtual tenant databases, isolation, Drizzle ORM integration, and multi-tenant SaaS patterns.
 - [Nitro Server](./nitro-server/) - Nitro server engine with event handlers, middleware, storage drivers, caching, scheduled tasks, WebSockets, and multi-platform deployment.
+- [Nim Programming](./nim-programming/) - Nim programming patterns covering type system, macros, metaprogramming, memory management, FFI, async/await, nimble packages, and systems programming.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
 - [Nock Mocking](./nock-mocking/) - Nock HTTP mocking with request interception, response fixtures, query/body matching, error simulation, and recording/playback.
@@ -351,6 +356,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
 - [Nextra Docs](./nextra-docs/) - Nextra documentation framework with file-based routing, MDX pages, theme configuration, search, sidebar navigation, and i18n.
 - [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
+- [OCaml Programming](./ocaml-programming/) - OCaml programming patterns covering algebraic types, pattern matching, modules, functors, opam, dune build system, and functional programming with imperative features.
 - [Oslo Auth](./oslo-auth/) - Oslo authentication utilities with Argon2/bcrypt password hashing, TOTP 2FA, OAuth 2.0 helpers, JWT, and session tokens.
 - [OpenAPI Specification](./openapi-spec/) - OpenAPI 3.1 authoring, schema design, code generation with openapi-typescript, Zod validation, and API-first development.
 - [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
@@ -409,11 +415,13 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
 - [Redis Patterns](./redis-patterns/) - Advanced Redis patterns covering pub/sub, Streams, Lua scripting, RedisJSON, RediSearch, TimeSeries, and cluster configuration.
+- [Redis Streams](./redis-streams/) - Redis Streams patterns covering consumer groups, message acknowledgment, pending entry lists, stream trimming, event sourcing, and real-time data processing pipelines.
 - [Remix Auth](./remix-auth/) - Remix Auth with authentication strategies, session management, OAuth2/OIDC providers, form-based login, and protected route loaders.
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
 - [React Three Fiber](./react-three-fiber/) - React Three Fiber 3D graphics with scene setup, GLTF loading, useFrame animations, physics with Rapier, and post-processing.
+- [Rollup Bundler](./rollup-bundler/) - Rollup bundler patterns covering tree shaking, plugins, code splitting, library bundling, output formats, watch mode, and custom plugin development.
 - [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
 - [Sanity Studio](./sanity-studio/) - Sanity Studio schema definitions, GROQ queries, image handling, portable text rendering, and Next.js/Remix integration.
@@ -558,10 +566,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vinxi Server](./vinxi-server/) - Vinxi meta-framework with app configuration, routers, server functions, middleware, API routes, and multi-framework SSR.
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.
+- [Vite Configuration](./vite-configuration/) - Vite configuration patterns covering plugins, build optimization, SSR, library mode, environment variables, proxy setup, and custom plugin development.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 - [WebAssembly](./webassembly/) - WebAssembly (Wasm) development covering Rust-to-Wasm with wasm-pack, AssemblyScript, JavaScript interop, memory management, and WASI.
 - [Webpack Configuration](./webpack-config/) - Webpack 5 with loaders, code splitting, Module Federation, production optimization, and bundle analysis.
+- [Webpack Configuration Patterns](./webpack-configuration/) - Webpack configuration patterns covering entry/output, loaders, plugins, code splitting, tree shaking, dev server, module federation, and production optimization.
 - [Web Components](./web-components/) - Web Components with Custom Elements, Shadow DOM, Lit framework, slots, form-associated elements, and framework interop.
 - [Web Workers](./web-workers/) - Web Workers for parallel processing covering dedicated workers, worker pools, Comlink RPC, transferable objects, and OffscreenCanvas.
 - [Web Accessibility](./web-accessibility/) - Web accessibility (a11y) covering WCAG 2.2 compliance, ARIA attributes, keyboard navigation, screen reader optimization, focus management, and automated testing with axe-core.
