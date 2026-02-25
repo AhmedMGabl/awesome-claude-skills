@@ -2641,6 +2641,66 @@
       "description": "Go testing patterns covering table-driven tests, subtests, mocking with interfaces, HTTP handler testing, benchmarks, fuzz testing, testcontainers, and golden files.",
       "source": "./go-testing",
       "category": "development"
+    },
+    {
+      "name": "rust-actix-web",
+      "description": "Rust Actix Web patterns covering HTTP routing, extractors, middleware, JSON APIs, error handling, WebSockets, database integration, and production deployment.",
+      "source": "./rust-actix-web",
+      "category": "development"
+    },
+    {
+      "name": "rust-axum",
+      "description": "Rust Axum patterns covering routing, extractors, state management, middleware with Tower, error handling, WebSockets, and integration with SQLx and Tokio.",
+      "source": "./rust-axum",
+      "category": "development"
+    },
+    {
+      "name": "rust-tokio",
+      "description": "Rust Tokio async runtime patterns covering task spawning, channels, synchronization, TCP/UDP networking, timers, graceful shutdown, and concurrent programming.",
+      "source": "./rust-tokio",
+      "category": "development"
+    },
+    {
+      "name": "rust-serde",
+      "description": "Rust Serde patterns covering JSON/TOML/YAML serialization, custom derive attributes, field renaming, default values, enums, custom serializers, and zero-copy deserialization.",
+      "source": "./rust-serde",
+      "category": "development"
+    },
+    {
+      "name": "rust-sqlx",
+      "description": "Rust SQLx patterns covering compile-time checked queries, migrations, connection pools, transactions, custom types, PostgreSQL/MySQL/SQLite, and async database access.",
+      "source": "./rust-sqlx",
+      "category": "development"
+    },
+    {
+      "name": "rust-wasm",
+      "description": "Rust WebAssembly patterns covering wasm-bindgen, wasm-pack, JavaScript interop, DOM manipulation, web-sys, js-sys, and webpack/Vite integration.",
+      "source": "./rust-wasm",
+      "category": "development"
+    },
+    {
+      "name": "rust-testing",
+      "description": "Rust testing patterns covering unit tests, integration tests, property-based testing, mocking with mockall, async test utilities, test fixtures, and benchmarking.",
+      "source": "./rust-testing",
+      "category": "development"
+    },
+    {
+      "name": "rust-clap-cli",
+      "description": "Rust Clap CLI patterns covering derive-based argument parsing, subcommands, value enums, custom validation, shell completions, and colored output.",
+      "source": "./rust-clap-cli",
+      "category": "development"
+    },
+    {
+      "name": "rust-error-handling",
+      "description": "Rust error handling patterns covering thiserror, anyhow, custom error types, error conversion, Result chaining, context propagation, and error reporting.",
+      "source": "./rust-error-handling",
+      "category": "development"
+    },
+    {
+      "name": "rust-async",
+      "description": "Rust async programming patterns covering futures, async/await, streams, pin, select, join, async traits, concurrency limits, and runtime-agnostic design.",
+      "source": "./rust-async",
+      "category": "development"
     }
   ]
 }

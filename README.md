@@ -387,6 +387,16 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Python Development](./python-development/) - Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns.
 - [Ruby on Rails](./ruby-on-rails/) - Ruby on Rails development covering MVC architecture, Active Record, Hotwire/Turbo, background jobs, and RSpec testing.
 - [Rust Development](./rust-development/) - Rust systems programming with ownership/borrowing, lifetimes, traits, async Tokio, Axum web framework, error handling, and production patterns.
+- [Rust Actix Web](./rust-actix-web/) - Rust Actix Web with HTTP routing, extractors, middleware, JSON APIs, error handling, and database integration.
+- [Rust Async Programming](./rust-async/) - Rust async patterns with futures, async/await, streams, select, join, async traits, and concurrency limits.
+- [Rust Axum](./rust-axum/) - Rust Axum with routing, extractors, state management, Tower middleware, error handling, and SQLx integration.
+- [Rust Clap CLI](./rust-clap-cli/) - Rust Clap CLI with derive-based argument parsing, subcommands, value enums, validation, and shell completions.
+- [Rust Error Handling](./rust-error-handling/) - Rust error handling with thiserror, anyhow, custom error types, error conversion, and context propagation.
+- [Rust Serde](./rust-serde/) - Rust Serde serialization with JSON/TOML/YAML, derive attributes, field renaming, enums, and custom serializers.
+- [Rust SQLx](./rust-sqlx/) - Rust SQLx with compile-time checked queries, migrations, connection pools, transactions, and async database access.
+- [Rust Testing](./rust-testing/) - Rust testing with unit tests, integration tests, property-based testing, mockall mocking, and benchmarking.
+- [Rust Tokio](./rust-tokio/) - Rust Tokio async runtime with task spawning, channels, synchronization, TCP networking, and graceful shutdown.
+- [Rust WebAssembly](./rust-wasm/) - Rust WebAssembly with wasm-bindgen, wasm-pack, JavaScript interop, DOM manipulation, and bundler integration.
 - [Security Audit Skills (Trail of Bits)](https://github.com/trailofbits/skills) - Professional security research skills with CodeQL, Semgrep, variant analysis, and smart contract auditing across 6 blockchain platforms. *By [@trailofbits](https://github.com/trailofbits)*
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
 - [Sentry Monitoring](./sentry-monitoring/) - Sentry error monitoring with SDK setup, error boundaries, performance tracing, breadcrumbs, release tracking, and source maps.
