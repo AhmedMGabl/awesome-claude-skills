@@ -357,6 +357,48 @@
       "category": "development"
     },
     {
+      "name": "auth-patterns",
+      "description": "Authentication and authorization patterns covering JWT tokens, OAuth 2.0 flows, session management, RBAC, passwordless auth, multi-factor authentication, API key management, and security best practices for web applications.",
+      "source": "./auth-patterns",
+      "category": "development"
+    },
+    {
+      "name": "django-development",
+      "description": "Django web development covering project structure, models, views, templates, Django REST Framework, authentication, middleware, signals, Celery task queues, database optimization, testing, and production deployment patterns with Python.",
+      "source": "./django-development",
+      "category": "development"
+    },
+    {
+      "name": "elasticsearch-search",
+      "description": "Elasticsearch and search engine patterns covering index management, mappings, full-text search, aggregations, autocomplete, fuzzy matching, relevance tuning, OpenSearch compatibility, and production search architecture.",
+      "source": "./elasticsearch-search",
+      "category": "development"
+    },
+    {
+      "name": "rust-development",
+      "description": "Rust development covering ownership and borrowing, lifetimes, traits, error handling with Result/Option, async with tokio, structs and enums, pattern matching, cargo workspace, testing, and production-ready systems programming patterns.",
+      "source": "./rust-development",
+      "category": "development"
+    },
+    {
+      "name": "stripe-payments",
+      "description": "Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, customer management, invoicing, Connect for marketplaces, and production-ready payment patterns with TypeScript.",
+      "source": "./stripe-payments",
+      "category": "development"
+    },
+    {
+      "name": "sveltekit-development",
+      "description": "SvelteKit development covering Svelte 5 runes, reactivity, components, server-side rendering, load functions, form actions, API routes, authentication, deployment, and full-stack TypeScript patterns.",
+      "source": "./sveltekit-development",
+      "category": "development"
+    },
+    {
+      "name": "websocket-realtime",
+      "description": "WebSocket and real-time communication patterns covering Socket.IO, native WebSocket API, Server-Sent Events, pub/sub messaging, presence tracking, room management, reconnection strategies, and scalable real-time architecture.",
+      "source": "./websocket-realtime",
+      "category": "development"
+    },
+    {
       "name": "vuejs-development",
       "description": "Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.",
       "source": "./vuejs-development",
