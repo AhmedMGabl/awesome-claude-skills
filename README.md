@@ -385,6 +385,16 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Quasar Framework](./quasar-framework/) - Quasar cross-platform Vue 3 apps with Material/iOS components, SSR mode, PWA configuration, Electron/Capacitor builds, and responsive layouts.
 - [Puppeteer Scraping](./puppeteer-scraping/) - Puppeteer browser automation covering page navigation, form filling, screenshots, PDF generation, network interception, and stealth mode.
 - [Python Development](./python-development/) - Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns.
+- [Python asyncio](./python-asyncio/) - Python asyncio with coroutines, tasks, gather, semaphores, queues, streams, and concurrent programming patterns.
+- [Python Celery](./python-celery/) - Python Celery task queues with periodic tasks, chains, error handling, rate limiting, and monitoring.
+- [Python Click CLI](./python-click-cli/) - Python Click CLI with commands, groups, options, prompts, progress bars, testing, and distribution.
+- [Python Django](./python-django/) - Python Django with models, views, DRF serializers, authentication, middleware, signals, and testing.
+- [Python FastAPI](./python-fastapi/) - Python FastAPI with async endpoints, Pydantic models, dependency injection, OAuth2 auth, and OpenAPI docs.
+- [Python Flask](./python-flask/) - Python Flask with routing, blueprints, Jinja2 templates, SQLAlchemy integration, and authentication.
+- [Python Poetry](./python-poetry/) - Python Poetry dependency management with pyproject.toml, virtual environments, publishing, and CI/CD.
+- [Python Pydantic](./python-pydantic/) - Python Pydantic data validation with models, field validators, custom types, settings management, and JSON Schema.
+- [Python pytest](./python-pytest/) - Python pytest with fixtures, parametrize, mocking, async tests, markers, conftest, and coverage.
+- [Python SQLAlchemy](./python-sqlalchemy/) - Python SQLAlchemy ORM with models, relationships, queries, sessions, Alembic migrations, and async support.
 - [Ruby on Rails](./ruby-on-rails/) - Ruby on Rails development covering MVC architecture, Active Record, Hotwire/Turbo, background jobs, and RSpec testing.
 - [Rust Development](./rust-development/) - Rust systems programming with ownership/borrowing, lifetimes, traits, async Tokio, Axum web framework, error handling, and production patterns.
 - [Rust Actix Web](./rust-actix-web/) - Rust Actix Web with HTTP routing, extractors, middleware, JSON APIs, error handling, and database integration.

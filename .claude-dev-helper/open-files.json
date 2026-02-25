@@ -1,11 +1,5 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-django\\SKILL.md",
-    "timestamp": 1772038623713,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-flask\\SKILL.md",
     "timestamp": 1772038639753,
     "focus": false,
@@ -56,6 +50,12 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\.claude-plugin\\marketplace.json",
     "timestamp": 1772038808346,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772038874651,
     "focus": false,
     "openLocation": 1
   }
