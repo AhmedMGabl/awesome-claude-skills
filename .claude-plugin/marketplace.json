@@ -691,6 +691,30 @@
       "description": "Figma-to-code translation with design token extraction, auto-layout to flexbox/grid, variant-to-prop mapping, responsive conversion, and pixel-perfect implementation.",
       "source": "./figma-to-code",
       "category": "development"
+    },
+    {
+      "name": "event-sourcing",
+      "description": "Event sourcing and CQRS patterns with event stores, aggregate roots, command handlers, projections, snapshots, and saga orchestration.",
+      "source": "./event-sourcing",
+      "category": "development"
+    },
+    {
+      "name": "browser-extensions",
+      "description": "Browser extension development with Manifest V3, content scripts, service workers, popup UI, storage API, message passing, and cross-browser patterns.",
+      "source": "./browser-extensions",
+      "category": "development"
+    },
+    {
+      "name": "pdf-generation",
+      "description": "PDF generation with Playwright HTML-to-PDF, pdf-lib programmatic creation, invoice templates, watermarks, headers/footers, and ReportLab for Python.",
+      "source": "./pdf-generation",
+      "category": "development"
+    },
+    {
+      "name": "github-api",
+      "description": "GitHub API integration with Octokit, REST/GraphQL APIs, PR automation, webhook handling, GitHub Apps auth, release management, and workflow dispatch.",
+      "source": "./github-api",
+      "category": "development"
     }
   ]
 }
