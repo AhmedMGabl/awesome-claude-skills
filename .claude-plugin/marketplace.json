@@ -1801,6 +1801,66 @@
       "description": "Convex advanced query patterns covering paginated queries, search indexes, aggregate functions, joins, optimistic updates, file storage, and real-time subscription patterns.",
       "source": "./convex-queries",
       "category": "development"
+    },
+    {
+      "name": "hono-api",
+      "description": "Hono web framework patterns covering route definitions, middleware, context helpers, validation with Zod, JWT authentication, CORS, streaming, RPC client, and multi-runtime deployment to Cloudflare Workers, Deno, Bun, and Node.js.",
+      "source": "./hono-api",
+      "category": "development"
+    },
+    {
+      "name": "trpc-patterns",
+      "description": "tRPC patterns covering router definitions, procedures, input validation with Zod, middleware, context, subscriptions, React Query integration, error handling, and Next.js App Router setup for end-to-end type-safe APIs.",
+      "source": "./trpc-patterns",
+      "category": "development"
+    },
+    {
+      "name": "astro-db",
+      "description": "Astro DB patterns covering table definitions, column types, seed data, queries with the drizzle-based API, relationships, indexes, server-side data loading, and integration with Astro pages and API endpoints.",
+      "source": "./astro-db",
+      "category": "development"
+    },
+    {
+      "name": "nuxt-server",
+      "description": "Nuxt server patterns covering API routes with defineEventHandler, middleware, server utilities, database integration with Nitro, server plugins, caching with defineCachedFunction, WebSocket support, and server-side auth patterns.",
+      "source": "./nuxt-server",
+      "category": "development"
+    },
+    {
+      "name": "vinxi-server",
+      "description": "Vinxi meta-framework patterns covering app configuration, routers, server functions, middleware, API routes, static asset handling, and integration with React, Solid, and other UI frameworks for full-stack JavaScript applications.",
+      "source": "./vinxi-server",
+      "category": "development"
+    },
+    {
+      "name": "xstate-v5",
+      "description": "XState v5 state machine patterns covering machine definitions, transitions, guards, actions, actors, invoked services, parallel states, history states, TypeScript integration, and React usage with useMachine and useActor hooks.",
+      "source": "./xstate-v5",
+      "category": "development"
+    },
+    {
+      "name": "opentelemetry-js",
+      "description": "OpenTelemetry JavaScript SDK patterns covering trace instrumentation, span creation, context propagation, metrics collection, log correlation, auto-instrumentation for Express/Fastify/Next.js, custom exporters, and collector configuration.",
+      "source": "./opentelemetry-js",
+      "category": "development"
+    },
+    {
+      "name": "valibot-schemas",
+      "description": "Valibot schema validation patterns covering string, number, object, and array schemas, pipe transformations, custom validations, form validation, API input parsing, error formatting, and comparison with Zod for tree-shakeable type-safe validation.",
+      "source": "./valibot-schemas",
+      "category": "development"
+    },
+    {
+      "name": "nitro-server",
+      "description": "Nitro server engine patterns covering event handlers, route rules, middleware, storage drivers, caching, scheduled tasks, WebSocket support, and deployment presets for Cloudflare, Vercel, Deno, and Node.js.",
+      "source": "./nitro-server",
+      "category": "development"
+    },
+    {
+      "name": "capacitor-plugins",
+      "description": "Capacitor native plugin patterns covering Camera, Filesystem, Geolocation, Push Notifications, Haptics, App Launcher, Biometrics, Share, local notifications, and custom native plugin creation for iOS and Android.",
+      "source": "./capacitor-plugins",
+      "category": "development"
     }
   ]
 }
