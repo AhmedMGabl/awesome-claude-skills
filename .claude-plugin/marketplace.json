@@ -1597,6 +1597,54 @@
       "description": "PartyKit real-time collaboration covering party servers, WebSocket connections, room-based state, presence, broadcast, storage, scheduled tasks, and React integration for multiplayer applications.",
       "source": "./partykit-realtime",
       "category": "development"
+    },
+    {
+      "name": "fastapi-python",
+      "description": "FastAPI Python web framework covering async endpoints, Pydantic models, dependency injection, OAuth2 authentication, WebSocket support, background tasks, middleware, and OpenAPI documentation.",
+      "source": "./fastapi-python",
+      "category": "development"
+    },
+    {
+      "name": "htmx-development",
+      "description": "HTMX development covering hx-get/post/put/delete attributes, server-sent events, WebSocket integration, CSS transitions, out-of-band swaps, hyperscript, and server-side framework integration.",
+      "source": "./htmx-development",
+      "category": "development"
+    },
+    {
+      "name": "ionic-framework",
+      "description": "Ionic Framework covering cross-platform UI components, Capacitor native plugins, Angular/React/Vue integration, navigation patterns, theming, platform-specific styling, and app store deployment.",
+      "source": "./ionic-framework",
+      "category": "development"
+    },
+    {
+      "name": "kysely-orm",
+      "description": "Kysely type-safe SQL query builder covering select/insert/update/delete queries, joins, subqueries, transactions, migrations, raw SQL, and dialect support for PostgreSQL, MySQL, and SQLite.",
+      "source": "./kysely-orm",
+      "category": "development"
+    },
+    {
+      "name": "lit-web-components",
+      "description": "Lit web components covering reactive properties, decorators, templates, shadow DOM styling, lifecycle callbacks, events, context protocol, and SSR with custom element registration.",
+      "source": "./lit-web-components",
+      "category": "development"
+    },
+    {
+      "name": "meilisearch",
+      "description": "Meilisearch full-text search engine covering index management, document operations, search queries, filtering, faceting, sorting, typo tolerance, synonyms, and JavaScript/Python SDK integration.",
+      "source": "./meilisearch",
+      "category": "development"
+    },
+    {
+      "name": "panda-css",
+      "description": "Panda CSS covering type-safe styling, design tokens, recipes, patterns, conditional styles, responsive design, dark mode, and zero-runtime CSS-in-JS with build-time extraction.",
+      "source": "./panda-css",
+      "category": "development"
+    },
+    {
+      "name": "turso-database",
+      "description": "Turso embedded SQLite database covering libSQL client, embedded replicas, local-first development, schema migrations, vector search, multi-tenant databases, and edge deployment patterns.",
+      "source": "./turso-database",
+      "category": "development"
     }
   ]
 }
