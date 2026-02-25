@@ -5,13 +5,12 @@ description: This skill should be used when building production-ready APIs with 
 
 # FastAPI Development
 
-This skill should be used when building modern, high-performance APIs with FastAPI. It covers project architecture with repository and service layer patterns, async SQLAlchemy integration, Pydantic v2 validation, OAuth2 authentication, WebSocket support, background tasks, and production deployment.
+This skill should be used when building modern, high-performance APIs with FastAPI. It covers repository and service layer patterns, async SQLAlchemy, Pydantic v2, OAuth2/JWT, WebSockets, background tasks, and production deployment.
 
 ## When to Use This Skill
 
 - Build async REST APIs with FastAPI and Python 3.12+
-- Design Pydantic v2 models with dependency injection and custom validators
-- Integrate SQLAlchemy 2.0 async ORM with Alembic migrations
+- Integrate SQLAlchemy 2.0 async ORM, Pydantic v2, dependency injection
 - Add OAuth2/JWT auth, CORS, rate limiting, middleware, WebSockets
 - Handle background tasks, file uploads, and OpenAPI auto-docs
 - Test with httpx/pytest and deploy with uvicorn/gunicorn
@@ -20,46 +19,36 @@ This skill should be used when building modern, high-performance APIs with FastA
 
 ```
 app/
-├── main.py              # App factory, lifespan, CORS, middleware
-├── config.py            # pydantic-settings
-├── database.py          # Async engine and session factory
-├── dependencies.py      # DI: db session, auth, rate limiter
-├── models/user.py       # SQLAlchemy ORM models
-├── schemas/user.py      # Pydantic v2 schemas
-├── repositories/user.py # Data access layer
-├── services/            # auth.py, user.py (business logic)
-└── api/v1/              # auth.py, users.py, websocket.py
-tests/conftest.py
+├── main.py, config.py, database.py, dependencies.py
+├── models/user.py          # SQLAlchemy ORM
+├── schemas/user.py         # Pydantic v2 schemas
+├── repositories/user.py    # Data access layer
+├── services/auth.py, user.py
+└── api/v1/auth.py, users.py, websocket.py
+tests/conftest.py, test_users.py
 ```
 
 ## Config, Database, and App Factory
-
 ```python
 # app/config.py
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
-
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
     database_url: str = "postgresql+asyncpg://user:pass@localhost/mydb"
     secret_key: str = "change-me"
     access_token_expire_minutes: int = 30
     allowed_origins: list[str] = ["http://localhost:3000"]
-
 @lru_cache
 def get_settings() -> Settings:
     return Settings()
-```
 
-```python
 # app/database.py
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from app.config import get_settings
 engine = create_async_engine(get_settings().database_url, pool_size=20, pool_pre_ping=True)
 AsyncSessionLocal = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
-```
 
-```python
 # app/main.py
 from contextlib import asynccontextmanager
 from collections.abc import AsyncGenerator
@@ -69,12 +58,10 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from app.config import get_settings
 from app.database import engine
-
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None]:
     yield
     await engine.dispose()
-
 def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(title="My API", version="1.0.0", lifespan=lifespan)
@@ -89,22 +76,18 @@ def create_app() -> FastAPI:
     async def health() -> dict[str, str]:
         return {"status": "ok"}
     return app
-
 app = create_app()
 ```
 
 ## SQLAlchemy Model and Pydantic Schemas
-
 ```python
 # app/models/user.py
 from datetime import datetime
 from uuid import uuid4
 from sqlalchemy import String, Boolean, func
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-
 class Base(DeclarativeBase):
     pass
-
 class User(Base):
     __tablename__ = "users"
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=lambda: str(uuid4()))
@@ -115,13 +98,10 @@ class User(Base):
     is_superuser: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(server_default=func.now())
     updated_at: Mapped[datetime] = mapped_column(server_default=func.now(), onupdate=func.now())
-```
 
-```python
 # app/schemas/user.py
 from datetime import datetime
 from pydantic import BaseModel, EmailStr, Field, field_validator, ConfigDict
-
 class UserCreate(BaseModel):
     email: EmailStr
     username: str = Field(min_length=3, max_length=50, pattern=r"^[a-zA-Z0-9_-]+$")
@@ -132,11 +112,9 @@ class UserCreate(BaseModel):
         if not any(c.isupper() for c in v) or not any(c.isdigit() for c in v):
             raise ValueError("Must contain uppercase letter and digit")
         return v
-
 class UserUpdate(BaseModel):
     email: EmailStr | None = None
     username: str | None = Field(default=None, min_length=3, max_length=50)
-
 class UserResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     id: str
@@ -144,7 +122,6 @@ class UserResponse(BaseModel):
     username: str
     is_active: bool
     created_at: datetime
-
 class TokenResponse(BaseModel):
     access_token: str
     refresh_token: str
@@ -152,13 +129,11 @@ class TokenResponse(BaseModel):
 ```
 
 ## Repository and Service Layer
-
 ```python
 # app/repositories/user.py
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.models.user import User
-
 class UserRepository:
     def __init__(self, session: AsyncSession) -> None:
         self.session = session
@@ -182,9 +157,7 @@ class UserRepository:
         await self.session.flush()
         await self.session.refresh(user)
         return user
-```
 
-```python
 # app/services/user.py
 from fastapi import HTTPException, status
 from passlib.context import CryptContext
@@ -192,7 +165,6 @@ from app.repositories.user import UserRepository
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
 class UserService:
     def __init__(self, repo: UserRepository) -> None:
         self.repo = repo
@@ -213,7 +185,6 @@ class UserService:
 ```
 
 ## Dependency Injection, JWT Auth, and Token Service
-
 ```python
 # app/dependencies.py
 from collections.abc import AsyncGenerator
@@ -228,15 +199,11 @@ from app.config import Settings, get_settings
 from app.database import AsyncSessionLocal
 from app.repositories.user import UserRepository
 from app.models.user import User
-
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 limiter = Limiter(key_func=get_remote_address)
-
 async def get_db() -> AsyncGenerator[AsyncSession]:
     async with AsyncSessionLocal() as session:
-        async with session.begin():
-            yield session
-
+        async with session.begin(): yield session
 async def get_current_user(
     token: Annotated[str, Depends(oauth2_scheme)],
     settings: Annotated[Settings, Depends(get_settings)],
@@ -253,18 +220,14 @@ async def get_current_user(
     if not user or not user.is_active:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, "Inactive or missing user")
     return user
-
 DbSession = Annotated[AsyncSession, Depends(get_db)]
 CurrentUser = Annotated[User, Depends(get_current_user)]
-```
 
-```python
 # app/services/auth.py
 from datetime import datetime, timedelta, timezone
 from jose import jwt as jose_jwt
 from app.config import Settings
 from app.schemas.user import TokenResponse
-
 class AuthService:
     def __init__(self, settings: Settings) -> None:
         self.s = settings
@@ -277,8 +240,7 @@ class AuthService:
         return TokenResponse(access_token=access, refresh_token=refresh)
 ```
 
-## API Routes (Auth and Users)
-
+## API Routes
 ```python
 # app/api/v1/auth.py
 from fastapi import APIRouter, Depends
@@ -290,42 +252,33 @@ from app.repositories.user import UserRepository
 from app.services.user import UserService
 from app.services.auth import AuthService
 from app.schemas.user import TokenResponse, UserCreate, UserResponse
-
 router = APIRouter(prefix="/auth", tags=["Auth"])
-
 @router.post("/register", response_model=UserResponse, status_code=201)
 async def register(data: UserCreate, session: DbSession):
     return UserResponse.model_validate(
         await UserService(UserRepository(session)).create_user(data))
-
 @router.post("/login", response_model=TokenResponse)
 async def login(form: Annotated[OAuth2PasswordRequestForm, Depends()],
                 session: DbSession, settings: Annotated[Settings, Depends(get_settings)]):
     user = await UserService(UserRepository(session)).authenticate(form.username, form.password)
     return AuthService(settings).create_tokens(user.id)
-```
 
-```python
 # app/api/v1/users.py
 from fastapi import APIRouter, Query, Request
 from app.dependencies import DbSession, CurrentUser, limiter
 from app.repositories.user import UserRepository
 from app.services.user import UserService
 from app.schemas.user import UserResponse, UserUpdate
-
 router = APIRouter(prefix="/users", tags=["Users"])
-
 @router.get("/me", response_model=UserResponse)
 async def read_me(current_user: CurrentUser):
     return UserResponse.model_validate(current_user)
-
 @router.get("/", response_model=list[UserResponse])
 @limiter.limit("30/minute")
 async def list_users(request: Request, session: DbSession,
                      skip: int = Query(0, ge=0), limit: int = Query(20, ge=1, le=100)):
     return [UserResponse.model_validate(u)
             for u in await UserRepository(session).list_users(skip=skip, limit=limit)]
-
 @router.patch("/{user_id}", response_model=UserResponse)
 async def update_user(user_id: str, data: UserUpdate, session: DbSession, _: CurrentUser):
     return UserResponse.model_validate(
@@ -333,15 +286,13 @@ async def update_user(user_id: str, data: UserUpdate, session: DbSession, _: Cur
 ```
 
 ## Middleware, WebSocket, Background Tasks, File Uploads
-
 ```python
-# app/middleware.py - Add via app.add_middleware(RequestTimingMiddleware) in create_app
+# app/middleware.py - register via app.add_middleware(RequestTimingMiddleware)
 import time, logging
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
 logger = logging.getLogger(__name__)
-
 class RequestTimingMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next) -> Response:
         start = time.perf_counter()
@@ -350,13 +301,10 @@ class RequestTimingMiddleware(BaseHTTPMiddleware):
         response.headers["X-Process-Time"] = f"{dur:.4f}"
         if dur > 1.0: logger.warning("Slow: %s %s %.3fs", request.method, request.url.path, dur)
         return response
-```
 
-```python
 # WebSocket with room-based broadcasting
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from collections import defaultdict
-
 class ConnectionManager:
     def __init__(self) -> None:
         self.rooms: dict[str, list[WebSocket]] = defaultdict(list)
@@ -366,26 +314,21 @@ class ConnectionManager:
         self.rooms[room].remove(ws)
     async def broadcast(self, room: str, msg: dict) -> None:
         for ws in self.rooms[room]: await ws.send_json(msg)
-
 manager = ConnectionManager()
 ws_router = APIRouter(tags=["WebSocket"])
-
 @ws_router.websocket("/ws/{room}")
 async def ws_endpoint(websocket: WebSocket, room: str) -> None:
     await manager.connect(websocket, room)
     try:
         while True: await manager.broadcast(room, await websocket.receive_json())
     except WebSocketDisconnect: manager.disconnect(websocket, room)
-```
 
-```python
 # Background tasks: inject BackgroundTasks, call bg.add_task(send_email, user.email)
-# File uploads with validation
+# File uploads with type and size validation
 from fastapi import UploadFile, File, HTTPException
 import aiofiles
 from pathlib import Path
 ALLOWED = {"image/jpeg", "image/png", "application/pdf"}
-
 async def upload_file(file: UploadFile = File(...)) -> dict[str, str]:
     if file.content_type not in ALLOWED: raise HTTPException(400, "Type not allowed")
     contents = await file.read()
@@ -397,43 +340,33 @@ async def upload_file(file: UploadFile = File(...)) -> dict[str, str]:
 ```
 
 ## Testing with httpx and pytest
-
 ```python
-# tests/conftest.py
+# tests/conftest.py - Override get_db with in-memory SQLite for isolation
 import pytest
 from httpx import ASGITransport, AsyncClient
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
 from app.main import create_app
 from app.dependencies import get_db
 from app.models.user import Base
-
 @pytest.fixture
-async def db_session():
+async def client():
     engine = create_async_engine("sqlite+aiosqlite:///./test.db")
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    async with engine.begin() as conn: await conn.run_sync(Base.metadata.create_all)
     factory = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
     async with factory() as session:
         async with session.begin():
-            yield session
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
+            app = create_app()
+            app.dependency_overrides[get_db] = lambda: session
+            async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
+                yield ac
+    async with engine.begin() as conn: await conn.run_sync(Base.metadata.drop_all)
     await engine.dispose()
-
-@pytest.fixture
-async def client(db_session):
-    app = create_app()
-    app.dependency_overrides[get_db] = lambda: db_session
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as ac:
-        yield ac
-
 # tests/test_users.py
 @pytest.mark.anyio
 async def test_register(client):
     r = await client.post("/api/v1/auth/register", json={
         "email": "alice@example.com", "username": "alice", "password": "Secure1234"})
     assert r.status_code == 201 and r.json()["email"] == "alice@example.com"
-
 @pytest.mark.anyio
 async def test_login_and_protected_route(client):
     await client.post("/api/v1/auth/register", json={
@@ -444,33 +377,21 @@ async def test_login_and_protected_route(client):
     me = await client.get("/api/v1/users/me",
         headers={"Authorization": f"Bearer {login.json()['access_token']}"})
     assert me.status_code == 200 and me.json()["username"] == "bob"
-
 @pytest.mark.anyio
 async def test_unauthenticated(client):
     assert (await client.get("/api/v1/users/me")).status_code == 401
 ```
 
 ## Deployment
-
 ```bash
 # Local:   uvicorn app.main:app --reload --port 8000
 # Prod:    gunicorn app.main:app -k uvicorn.workers.UvicornWorker -w 4 --timeout 120
 # Migrate: alembic revision --autogenerate -m "init" && alembic upgrade head
-```
-
-```dockerfile
-FROM python:3.12-slim
-WORKDIR /app
-COPY pyproject.toml .
-RUN pip install --no-cache-dir .
-COPY app/ app/
-EXPOSE 8000
-CMD ["gunicorn", "app.main:app", "-k", "uvicorn.workers.UvicornWorker", \
-     "--bind", "0.0.0.0:8000", "--workers", "4"]
+# Docker:  FROM python:3.12-slim / COPY pyproject.toml . / RUN pip install . / COPY app/ app/
+#          CMD ["gunicorn", "app.main:app", "-k", "uvicorn.workers.UvicornWorker", "-w", "4"]
 ```
 
 ## Additional Resources
-
 - FastAPI: https://fastapi.tiangolo.com/
 - Pydantic v2: https://docs.pydantic.dev/latest/
 - SQLAlchemy async: https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html

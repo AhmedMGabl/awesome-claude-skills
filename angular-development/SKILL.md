@@ -166,7 +166,6 @@ export class RegisterComponent {
 ## HTTP Client with Interceptors
 
 ```typescript
-// services/users.service.ts
 @Injectable({ providedIn: 'root' })
 export class UsersService {
   private http = inject(HttpClient);
@@ -176,7 +175,6 @@ export class UsersService {
   delete(id: number) { return this.http.delete<void>(`/api/users/${id}`); }
 }
 
-// Functional interceptors
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const token = inject(AuthService).getToken();
   return next(token ? req.clone({ setHeaders: { Authorization: `Bearer ${token}` } }) : req);
@@ -190,7 +188,6 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
   }));
 };
 
-// app.config.ts
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -234,11 +231,9 @@ export const DASHBOARD_ROUTES: Routes = [
 ## Dependency Injection
 
 ```typescript
-import { InjectionToken, inject, Injectable } from '@angular/core';
-
 export interface AppConfig { apiUrl: string; featureFlags: Record<string, boolean> }
 export const APP_CONFIG = new InjectionToken<AppConfig>('app.config');
-// Provide: { provide: APP_CONFIG, useValue: { apiUrl: '/api', featureFlags: {} } }
+// Register: { provide: APP_CONFIG, useValue: { apiUrl: '/api', featureFlags: {} } }
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
@@ -375,15 +370,12 @@ describe('Users Page', () => {
 
 ## Internationalization (i18n)
 
-```html
-<h1 i18n="@@welcomeHeading">Welcome, {{ username }}</h1>
-<p i18n="@@introMessage">Manage your projects here.</p>
-```
+Mark templates: `<h1 i18n="@@welcomeHeading">Welcome, {{ username }}</h1>`
 
 ```bash
-ng extract-i18n --output-path src/locale
-ng build --localize
-ng serve --configuration=fr
+ng extract-i18n --output-path src/locale   # Extract translatable strings
+ng build --localize                         # Build all locales
+ng serve --configuration=fr                 # Dev-serve a specific locale
 ```
 
 angular.json: `{ "i18n": { "sourceLocale": "en", "locales": { "fr": "src/locale/messages.fr.xlf" } } }`
@@ -393,20 +385,16 @@ angular.json: `{ "i18n": { "sourceLocale": "en", "locales": { "fr": "src/locale/
 ```
 src/app/
 ├── app.config.ts / app.routes.ts / app.routes.server.ts
-├── components/           # Shared UI and layout components
-├── pages/                # Routed page components (lazy-loaded)
-├── services/             # Injectable services
-├── store/                # NgRx signal stores
-├── interceptors/         # HTTP interceptors
-├── pipes/ & directives/  # Custom pipes and directives
-└── models/               # TypeScript interfaces
+├── components/       # Shared UI and layout components
+├── pages/            # Routed page components (lazy-loaded)
+├── services/         # Injectable services
+├── store/            # NgRx signal stores
+├── interceptors/     # HTTP interceptors
+├── pipes/            # Custom pipes
+├── directives/       # Custom directives
+└── models/           # TypeScript interfaces
 ```
 
-## Additional Resources
+## Resources
 
-- Angular docs: https://angular.dev/
-- Angular Signals: https://angular.dev/guide/signals
-- NgRx SignalStore: https://ngrx.io/guide/signals
-- Angular Material: https://material.angular.io/
-- Angular SSR: https://angular.dev/guide/ssr
-- Angular i18n: https://angular.dev/guide/i18n
+[Angular](https://angular.dev/) | [Signals](https://angular.dev/guide/signals) | [NgRx SignalStore](https://ngrx.io/guide/signals) | [Material](https://material.angular.io/) | [SSR](https://angular.dev/guide/ssr) | [i18n](https://angular.dev/guide/i18n)

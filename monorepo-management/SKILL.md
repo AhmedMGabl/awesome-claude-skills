@@ -5,7 +5,7 @@ description: This skill should be used when setting up, configuring, or managing
 
 # Monorepo Management
 
-Guide for building production-grade TypeScript/JavaScript monorepos. To use this skill, describe the monorepo tool (Turborepo, Nx, or pnpm workspaces), the workspace structure, and the problem to solve.
+Guide for building production-grade TypeScript/JavaScript monorepos. Describe the monorepo tool (Turborepo, Nx, or pnpm workspaces), the workspace structure, and the problem to solve.
 
 ## When to Use This Skill
 
@@ -209,6 +209,8 @@ export default tseslint.config(
 
 ## 7. Versioning with Changesets
 
+Initialize with `pnpm changeset init`, then configure:
+
 ```jsonc
 // .changeset/config.json
 {
@@ -220,12 +222,7 @@ export default tseslint.config(
   "updateInternalDependencies": "patch",
   "ignore": ["web", "api", "docs"]
 }
-```
-
-```bash
-pnpm changeset              # Create a changeset (interactive)
-pnpm changeset version      # Consume changesets, bump versions, update changelogs
-pnpm changeset publish      # Publish to npm
+// Workflow: pnpm changeset -> pnpm changeset version -> pnpm changeset publish
 ```
 
 ### Automated Release PR
@@ -320,8 +317,6 @@ CMD ["node", "apps/web/server.js"]
 ---
 
 ## 9. Code Generation
-
-Define generators in `turbo/generators/config.ts` using Plop templates:
 
 ```typescript
 // turbo/generators/config.ts

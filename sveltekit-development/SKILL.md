@@ -1,84 +1,100 @@
 ---
 name: sveltekit-development
-description: SvelteKit development covering Svelte 5 runes, reactivity, components, server-side rendering, load functions, form actions, API routes, authentication, deployment, and full-stack TypeScript patterns.
+description: SvelteKit full-stack development covering Svelte 5 runes, component patterns, routing, load functions, form actions, server-side rendering, API endpoints, authentication, deployment adapters, and production-ready patterns.
 ---
 
 # SvelteKit Development
 
-This skill provides comprehensive guidance for building full-stack applications with SvelteKit and Svelte 5. Apply these patterns when scaffolding new projects, creating components with runes-based reactivity, implementing server-side data loading, handling forms with progressive enhancement, building API routes, adding authentication, and deploying to production.
+This skill should be used when building full-stack web applications with SvelteKit. It covers Svelte 5 runes reactivity, component architecture, file-based routing, server-side data loading, form actions, API endpoints, authentication, hooks, state management, styling, deployment, and testing.
+
+## When to Use This Skill
+
+Use this skill when you need to:
+
+- Scaffold and structure SvelteKit projects
+- Build reactive components with Svelte 5 runes ($state, $derived, $effect, $props)
+- Implement file-based routing with layouts, groups, and dynamic segments
+- Write load functions for server-side and universal data fetching
+- Handle forms with progressive enhancement and validation
+- Create REST API endpoints with +server.ts files
+- Implement authentication with cookies, sessions, and route guards
+- Configure hooks for request interception, error handling, and fetch customization
+- Deploy with adapter-auto, adapter-node, or adapter-vercel
+- Test applications with Vitest and Playwright
 
 ---
 
 ## 1. Project Setup
 
-### Scaffolding a New Project
+### Scaffold with sv
 
 ```bash
-# Create a new SvelteKit project
 npx sv create my-app
-cd my-app
-npm install
-npm run dev
+# Select: SvelteKit minimal, TypeScript, Tailwind CSS, Prettier, ESLint, Vitest, Playwright
+cd my-app && npm install && npm run dev
 ```
 
-### Project Structure
+### Directory Structure
 
 ```
 my-app/
 ├── src/
+│   ├── app.html                  # HTML shell template
+│   ├── app.css                   # Global styles
+│   ├── app.d.ts                  # App-level type declarations
+│   ├── hooks.server.ts           # Server hooks (handle, handleError, handleFetch)
+│   ├── hooks.client.ts           # Client hooks (handleError)
 │   ├── lib/
-│   │   ├── components/    # Reusable Svelte components
-│   │   ├── server/        # Server-only modules (DB, auth)
-│   │   ├── stores/        # Shared stores
-│   │   ├── types/         # TypeScript type definitions
-│   │   └── utils/         # Shared utility functions
-│   ├── routes/
-│   │   ├── +layout.svelte       # Root layout
-│   │   ├── +layout.server.ts    # Root layout server load
-│   │   ├── +page.svelte         # Home page
-│   │   ├── +page.server.ts      # Home page server load + actions
-│   │   ├── +error.svelte        # Error page
-│   │   ├── api/                  # API routes
-│   │   │   └── posts/
-│   │   │       └── +server.ts
-│   │   ├── dashboard/
-│   │   │   ├── +page.svelte
-│   │   │   └── +page.server.ts
-│   │   └── auth/
-│   │       ├── login/
-│   │       │   └── +page.svelte
-│   │       └── logout/
-│   │           └── +server.ts
-│   ├── app.html           # HTML template
-│   ├── app.css            # Global styles
-│   ├── app.d.ts           # Type declarations
-│   └── hooks.server.ts    # Server hooks (auth, logging)
-├── static/                # Static assets (favicon, images)
-├── svelte.config.js       # SvelteKit configuration
-├── vite.config.ts         # Vite configuration
-├── tsconfig.json          # TypeScript configuration
-└── package.json
+│   │   ├── components/           # Reusable components
+│   │   │   ├── ui/               # Primitives (Button, Input, Modal)
+│   │   │   └── features/         # Feature-specific components
+│   │   ├── server/               # Server-only modules ($lib/server/*)
+│   │   │   ├── db.ts             # Database client
+│   │   │   └── auth.ts           # Auth utilities
+│   │   ├── stores/               # Shared state (Svelte stores)
+│   │   ├── utils/                # Helper functions
+│   │   └── types/                # Shared TypeScript types
+│   │       └── index.ts
+│   ├── params/                   # Param matchers for routes
+│   │   └── integer.ts
+│   └── routes/
+│       ├── +layout.svelte        # Root layout
+│       ├── +layout.server.ts     # Root layout server load
+│       ├── +page.svelte          # Home page
+│       ├── +page.server.ts       # Home page server load + actions
+│       ├── +error.svelte         # Error page
+│       ├── (auth)/               # Route group (no URL segment)
+│       │   ├── login/+page.svelte
+│       │   └── register/+page.svelte
+│       ├── dashboard/
+│       │   ├── +layout.svelte
+│       │   ├── +layout.server.ts
+│       │   ├── +page.svelte
+│       │   └── [id]/+page.svelte # Dynamic route
+│       └── api/
+│           └── users/+server.ts  # API endpoint
+├── static/                       # Static assets (favicon, robots.txt)
+├── tests/                        # Playwright e2e tests
+├── svelte.config.js
+├── vite.config.ts
+└── tsconfig.json
 ```
 
 ### svelte.config.js
 
-```js
-import adapter from '@sveltejs/adapter-node';
+```javascript
+import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter({
-      out: 'build',
-      precompress: true
-    }),
+    adapter: adapter(),
     alias: {
       $components: 'src/lib/components',
-      $server: 'src/lib/server',
       $stores: 'src/lib/stores',
-      $types: 'src/lib/types'
+      $utils: 'src/lib/utils'
     },
     csrf: {
       checkOrigin: true
@@ -89,9 +105,33 @@ const config = {
 export default config;
 ```
 
-### Type Declarations (app.d.ts)
+### vite.config.ts
 
-```ts
+```typescript
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  plugins: [sveltekit()],
+  test: {
+    include: ['src/**/*.{test,spec}.{js,ts}']
+  },
+  server: {
+    port: 5173,
+    proxy: {
+      '/external-api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/external-api/, '')
+      }
+    }
+  }
+});
+```
+
+### app.d.ts
+
+```typescript
 declare global {
   namespace App {
     interface Error {
@@ -106,8 +146,12 @@ declare global {
       } | null;
     }
     interface PageData {
-      flash?: { type: 'success' | 'error'; message: string };
+      user: App.Locals['user'];
     }
+    interface PageState {
+      showModal?: boolean;
+    }
+    interface Platform {}
   }
 }
 
@@ -118,86 +162,95 @@ export {};
 
 ## 2. Svelte 5 Runes
 
-Svelte 5 replaces the implicit reactivity model with explicit **runes** -- compiler hints prefixed with `$`.
-
-### $state -- Reactive State
+### $state: Reactive State
 
 ```svelte
 <script lang="ts">
-  // Primitive reactive state
   let count = $state(0);
+  let name = $state('');
 
-  // Object reactive state (deeply reactive)
+  // Object state (deeply reactive)
   let user = $state({
     name: 'Alice',
-    preferences: { theme: 'dark', lang: 'en' }
+    email: 'alice@example.com',
+    preferences: { theme: 'dark', locale: 'en' }
   });
 
-  // Array reactive state
-  let items = $state<string[]>(['svelte', 'kit', 'runes']);
-
-  function increment() {
-    count++;
-  }
+  // Array state (deeply reactive -- push, splice, etc. all trigger updates)
+  let items = $state<string[]>([]);
 
   function addItem(item: string) {
-    items.push(item);  // Mutations are tracked automatically
+    items.push(item); // Mutating directly works with $state
   }
 
   function updateTheme(theme: string) {
-    user.preferences.theme = theme;  // Deep mutation tracked
+    user.preferences.theme = theme; // Deep mutation triggers reactivity
   }
 </script>
 
-<button onclick={increment}>Count: {count}</button>
-<p>Theme: {user.preferences.theme}</p>
+<p>Count: {count}</p>
+<button onclick={() => count++}>Increment</button>
+
+<input bind:value={name} placeholder="Name" />
+<p>Hello, {name || 'stranger'}</p>
+
+<button onclick={() => addItem('New item')}>Add Item</button>
 <ul>
-  {#each items as item}
-    <li>{item}</li>
+  {#each items as item, i}
+    <li>{i + 1}. {item}</li>
   {/each}
 </ul>
 ```
 
-### $derived -- Computed Values
+### $state.raw: Non-Deep Reactive State
+
+```svelte
+<script lang="ts">
+  // Use $state.raw for large datasets where deep reactivity is unnecessary.
+  // Only reassignment triggers updates, not mutation.
+  let rows = $state.raw<Array<{ id: number; value: string }>>([]);
+
+  function replaceRows(newRows: typeof rows) {
+    rows = newRows; // Triggers update
+  }
+</script>
+```
+
+### $derived: Computed Values
 
 ```svelte
 <script lang="ts">
   let items = $state([
-    { name: 'Apples', price: 2.5, quantity: 3 },
-    { name: 'Bread', price: 3.0, quantity: 1 }
+    { name: 'Apple', price: 1.5, quantity: 3 },
+    { name: 'Banana', price: 0.75, quantity: 5 }
   ]);
+  let taxRate = $state(0.08);
 
-  let searchQuery = $state('');
+  let totalItems = $derived(items.reduce((sum, i) => sum + i.quantity, 0));
 
-  // Simple derived value
-  let totalCost = $derived(
-    items.reduce((sum, item) => sum + item.price * item.quantity, 0)
-  );
-
-  // Complex derived with block syntax
-  let filteredItems = $derived.by(() => {
-    const query = searchQuery.toLowerCase().trim();
-    if (!query) return items;
-    return items.filter((item) =>
-      item.name.toLowerCase().includes(query)
-    );
+  // Derived with complex logic using $derived.by
+  let orderSummary = $derived.by(() => {
+    const subtotal = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
+    const tax = subtotal * taxRate;
+    const total = subtotal + tax;
+    return { subtotal, tax, total };
   });
-
-  let itemCount = $derived(filteredItems.length);
 </script>
 
-<input bind:value={searchQuery} placeholder="Search items..." />
-<p>Showing {itemCount} items -- Total: ${totalCost.toFixed(2)}</p>
+<p>Items in cart: {totalItems}</p>
+<p>Subtotal: ${orderSummary.subtotal.toFixed(2)}</p>
+<p>Tax: ${orderSummary.tax.toFixed(2)}</p>
+<p>Total: ${orderSummary.total.toFixed(2)}</p>
 ```
 
-### $effect -- Side Effects
+### $effect: Side Effects
 
 ```svelte
 <script lang="ts">
   let query = $state('');
   let results = $state<string[]>([]);
 
-  // Runs when any referenced $state changes
+  // $effect runs after DOM update whenever tracked dependencies change.
   $effect(() => {
     if (query.length < 2) {
       results = [];
@@ -206,20 +259,21 @@ Svelte 5 replaces the implicit reactivity model with explicit **runes** -- compi
 
     const controller = new AbortController();
 
-    fetch(`/api/search?q=${encodeURIComponent(query)}`, {
-      signal: controller.signal
-    })
+    fetch(`/api/search?q=${encodeURIComponent(query)}`, { signal: controller.signal })
       .then((r) => r.json())
       .then((data) => { results = data; })
       .catch(() => {});
 
-    // Cleanup function runs before re-execution and on destroy
+    // Cleanup runs before the next effect execution and on destroy
     return () => controller.abort();
   });
 
-  // Pre-effect: runs before DOM updates
+  // $effect.pre runs before DOM update (rare -- use for measuring DOM before paint)
+  let container: HTMLDivElement;
   $effect.pre(() => {
-    console.log('About to update DOM, query is:', query);
+    if (container) {
+      console.log('Height before update:', container.scrollHeight);
+    }
   });
 </script>
 
@@ -229,79 +283,82 @@ Svelte 5 replaces the implicit reactivity model with explicit **runes** -- compi
     <li>{result}</li>
   {/each}
 </ul>
+<div bind:this={container}>Content</div>
 ```
 
-### $props -- Component Props
+### $props and $bindable: Component Props
 
 ```svelte
-<!-- Button.svelte -->
+<!-- Counter.svelte -->
 <script lang="ts">
-  import type { Snippet } from 'svelte';
-  import type { HTMLButtonAttributes } from 'svelte/elements';
-
-  interface Props extends HTMLButtonAttributes {
-    variant?: 'primary' | 'secondary' | 'danger';
-    loading?: boolean;
-    children: Snippet;
+  interface Props {
+    initialCount?: number;
+    step?: number;
+    count?: number;
+    onchange?: (count: number) => void;
+    label: string;
   }
 
   let {
-    variant = 'primary',
-    loading = false,
-    children,
-    ...restProps
+    initialCount = 0,
+    step = 1,
+    count = $bindable(initialCount),
+    onchange,
+    label
   }: Props = $props();
-</script>
 
-<button
-  class="btn btn-{variant}"
-  disabled={loading}
-  {...restProps}
->
-  {#if loading}
-    <span class="spinner"></span>
-  {/if}
-  {@render children()}
-</button>
-```
-
-### $bindable -- Two-Way Binding Props
-
-```svelte
-<!-- TextInput.svelte -->
-<script lang="ts">
-  interface Props {
-    value: string;
-    label: string;
-    error?: string;
+  function increment() {
+    count += step;
+    onchange?.(count);
   }
 
-  let { value = $bindable(), label, error }: Props = $props();
+  function decrement() {
+    count -= step;
+    onchange?.(count);
+  }
 </script>
 
-<label>
-  {label}
-  <input
-    type="text"
-    bind:value
-    class:error={!!error}
-  />
-  {#if error}
-    <span class="error-text">{error}</span>
-  {/if}
-</label>
+<div class="counter">
+  <span>{label}: {count}</span>
+  <button onclick={decrement}>-{step}</button>
+  <button onclick={increment}>+{step}</button>
+</div>
+```
 
-<!-- Usage in parent -->
-<!-- <TextInput bind:value={username} label="Username" /> -->
+```svelte
+<!-- Usage with bind -->
+<script lang="ts">
+  import Counter from '$components/Counter.svelte';
+  let value = $state(10);
+</script>
+
+<Counter label="Quantity" bind:count={value} step={5} />
+<p>Parent sees: {value}</p>
+
+<Counter label="Independent" onchange={(c) => console.log('Changed:', c)} />
+```
+
+### $inspect: Debug Reactive Values
+
+```svelte
+<script lang="ts">
+  let count = $state(0);
+  let doubled = $derived(count * 2);
+
+  // Development only, stripped in production
+  $inspect(count, doubled);
+
+  $inspect(count).with((type, value) => {
+    if (type === 'update') console.log('Count updated to:', value);
+  });
+</script>
 ```
 
 ---
 
-## 3. Components
+## 3. Component Patterns
 
-### Component Composition with Snippets
-
-Svelte 5 replaces slots with **snippets** for content projection.
+### Snippets (Replacing Slots in Svelte 5)
 
 ```svelte
 <!-- Card.svelte -->
@@ -316,14 +373,12 @@ Svelte 5 replaces slots with **snippets** for content projection.
   }
 
   let { title, header, children, footer }: Props = $props();
-  let visible = $state(true);
+  let isOpen = $state(true);
 
-  function close() {
-    visible = false;
-  }
+  function close() { isOpen = false; }
 </script>
 
-{#if visible}
+{#if isOpen}
   <div class="card">
     <div class="card-header">
       {#if header}
@@ -332,11 +387,9 @@ Svelte 5 replaces slots with **snippets** for content projection.
         <h2>{title}</h2>
       {/if}
     </div>
-
     <div class="card-body">
       {@render children()}
     </div>
-
     {#if footer}
       <div class="card-footer">
         {@render footer({ close })}
@@ -349,77 +402,51 @@ Svelte 5 replaces slots with **snippets** for content projection.
 ```svelte
 <!-- Usage -->
 <Card title="User Profile">
-  <p>Main content goes here.</p>
+  {#snippet header()}
+    <h2 class="text-xl font-bold">Custom Header</h2>
+  {/snippet}
 
-  {#snippet footer({ close })}
-    <button onclick={close}>Dismiss</button>
+  <p>This is the card body content.</p>
+
+  {#snippet footer(props)}
+    <button onclick={props.close}>Dismiss</button>
   {/snippet}
 </Card>
 ```
 
-### Event Handling with Callback Props
+### Events and Callback Props
 
 ```svelte
-<!-- DataTable.svelte -->
+<!-- SearchInput.svelte -->
 <script lang="ts">
-  interface Column<T> {
-    key: keyof T;
-    label: string;
-    sortable?: boolean;
+  interface Props {
+    value?: string;
+    placeholder?: string;
+    onsearch?: (query: string) => void;
+    onclear?: () => void;
   }
 
-  interface Props<T> {
-    data: T[];
-    columns: Column<T>[];
-    onRowClick?: (row: T) => void;
-    onSort?: (key: string, direction: 'asc' | 'desc') => void;
+  let { value = $bindable(''), placeholder = 'Search...', onsearch, onclear }: Props = $props();
+
+  function handleKeydown(e: KeyboardEvent) {
+    if (e.key === 'Enter') onsearch?.(value);
   }
 
-  let { data, columns, onRowClick, onSort }: Props<Record<string, any>> = $props();
-
-  let sortKey = $state('');
-  let sortDir = $state<'asc' | 'desc'>('asc');
-
-  function handleSort(key: string) {
-    if (sortKey === key) {
-      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-    } else {
-      sortKey = key;
-      sortDir = 'asc';
-    }
-    onSort?.(sortKey, sortDir);
+  function clear() {
+    value = '';
+    onclear?.();
   }
 </script>
 
-<table>
-  <thead>
-    <tr>
-      {#each columns as col}
-        <th>
-          {#if col.sortable}
-            <button onclick={() => handleSort(String(col.key))}>
-              {col.label} {sortKey === col.key ? (sortDir === 'asc' ? '↑' : '↓') : ''}
-            </button>
-          {:else}
-            {col.label}
-          {/if}
-        </th>
-      {/each}
-    </tr>
-  </thead>
-  <tbody>
-    {#each data as row}
-      <tr onclick={() => onRowClick?.(row)} class:clickable={!!onRowClick}>
-        {#each columns as col}
-          <td>{row[col.key]}</td>
-        {/each}
-      </tr>
-    {/each}
-  </tbody>
-</table>
+<div class="search-input">
+  <input type="text" bind:value {placeholder} onkeydown={handleKeydown} />
+  {#if value}
+    <button onclick={clear} aria-label="Clear search">x</button>
+  {/if}
+</div>
 ```
 
-### Context API for Dependency Injection
+### Context API
 
 ```svelte
 <!-- ThemeProvider.svelte -->
@@ -429,180 +456,93 @@ Svelte 5 replaces slots with **snippets** for content projection.
   const THEME_KEY = Symbol('theme');
 
   export interface ThemeContext {
-    current: string;
-    toggle: () => void;
+    theme: string;
+    toggleTheme: () => void;
   }
 
-  export function getTheme(): ThemeContext {
-    return getContext(THEME_KEY);
+  export function setThemeContext(ctx: ThemeContext) {
+    setContext(THEME_KEY, ctx);
+  }
+
+  export function getThemeContext(): ThemeContext {
+    return getContext<ThemeContext>(THEME_KEY);
   }
 </script>
 
 <script lang="ts">
   import type { Snippet } from 'svelte';
 
-  let { children }: { children: Snippet } = $props();
+  interface Props {
+    initialTheme?: 'light' | 'dark';
+    children: Snippet;
+  }
 
-  let theme = $state<'light' | 'dark'>('light');
+  let { initialTheme = 'light', children }: Props = $props();
+  let theme = $state(initialTheme);
 
-  setContext(THEME_KEY, {
-    get current() { return theme; },
-    toggle() { theme = theme === 'light' ? 'dark' : 'light'; }
+  function toggleTheme() {
+    theme = theme === 'light' ? 'dark' : 'light';
+  }
+
+  setThemeContext({
+    get theme() { return theme; },
+    toggleTheme
   });
 </script>
 
-<div class="theme-{theme}">
+<div class="app" data-theme={theme}>
   {@render children()}
 </div>
 ```
 
----
+### Spreading Props and HTML Attributes
 
-## 4. Reactivity and Stores
+```svelte
+<!-- Button.svelte -->
+<script lang="ts">
+  import type { HTMLButtonAttributes } from 'svelte/elements';
 
-Svelte stores remain useful for sharing state across non-component modules and for interoperability.
-
-### Writable and Derived Stores
-
-```ts
-// src/lib/stores/cart.ts
-import { writable, derived } from 'svelte/store';
-
-export interface CartItem {
-  id: string;
-  name: string;
-  price: number;
-  quantity: number;
-}
-
-export const cart = writable<CartItem[]>([]);
-
-export const cartTotal = derived(cart, ($cart) =>
-  $cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
-);
-
-export const cartCount = derived(cart, ($cart) =>
-  $cart.reduce((sum, item) => sum + item.quantity, 0)
-);
-
-export function addToCart(item: Omit<CartItem, 'quantity'>) {
-  cart.update((items) => {
-    const existing = items.find((i) => i.id === item.id);
-    if (existing) {
-      existing.quantity++;
-      return [...items];
-    }
-    return [...items, { ...item, quantity: 1 }];
-  });
-}
-
-export function removeFromCart(id: string) {
-  cart.update((items) => items.filter((i) => i.id !== id));
-}
-```
-
-### Readable Store with External Source
-
-```ts
-// src/lib/stores/online.ts
-import { readable } from 'svelte/store';
-
-export const isOnline = readable(true, (set) => {
-  const handleOnline = () => set(true);
-  const handleOffline = () => set(false);
-
-  if (typeof window !== 'undefined') {
-    set(navigator.onLine);
-    window.addEventListener('online', handleOnline);
-    window.addEventListener('offline', handleOffline);
-
-    return () => {
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
-    };
+  interface Props extends HTMLButtonAttributes {
+    variant?: 'primary' | 'secondary' | 'danger';
+    loading?: boolean;
+    children: import('svelte').Snippet;
   }
-});
-```
 
-### Using Stores in Svelte 5 Components
-
-```svelte
-<script lang="ts">
-  import { cart, cartTotal, addToCart, removeFromCart } from '$stores/cart';
-
-  // Access store value with the $ prefix in the template,
-  // or subscribe manually in script for runes compatibility
-  let items = $derived($cart);
-  let total = $derived($cartTotal);
+  let { variant = 'primary', loading = false, children, ...rest }: Props = $props();
 </script>
 
-<h2>Cart ({items.length} items)</h2>
-<ul>
-  {#each items as item (item.id)}
-    <li>
-      {item.name} x{item.quantity} -- ${(item.price * item.quantity).toFixed(2)}
-      <button onclick={() => removeFromCart(item.id)}>Remove</button>
-    </li>
-  {/each}
-</ul>
-<p><strong>Total: ${total.toFixed(2)}</strong></p>
+<button class="btn btn-{variant}" disabled={loading || rest.disabled} {...rest}>
+  {#if loading}
+    <span class="spinner" aria-hidden="true"></span> Loading...
+  {:else}
+    {@render children()}
+  {/if}
+</button>
 ```
 
 ---
 
-## 5. Routing
+## 4. Routing
 
-### Basic Pages and Layouts
-
-```svelte
-<!-- src/routes/+layout.svelte (root layout) -->
-<script lang="ts">
-  import type { Snippet } from 'svelte';
-  import '../app.css';
-
-  let { children }: { children: Snippet } = $props();
-</script>
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-  <a href="/dashboard">Dashboard</a>
-</nav>
-
-<main>
-  {@render children()}
-</main>
-
-<footer>
-  <p>&copy; 2026 My SvelteKit App</p>
-</footer>
-```
-
-### Dynamic Routes
+### Basic Routes
 
 ```
 src/routes/
+├── +page.svelte                    # /
+├── about/+page.svelte              # /about
 ├── blog/
-│   ├── +page.svelte              # /blog
-│   ├── +page.server.ts
-│   ├── [slug]/
-│   │   ├── +page.svelte          # /blog/my-post
-│   │   └── +page.server.ts
-│   └── category/
-│       └── [category]/
-│           ├── +page.svelte      # /blog/category/tech
-│           └── +page.server.ts
+│   ├── +page.svelte                # /blog
+│   └── [slug]/+page.svelte         # /blog/:slug
 ├── users/
-│   └── [id=integer]/             # Param matcher: /users/42
-│       ├── +page.svelte
-│       └── +page.server.ts
-└── [[lang]]/                     # Optional param: / or /en or /fr
-    └── +page.svelte
+│   ├── +page.svelte                # /users
+│   └── [id=integer]/+page.svelte   # /users/:id (with param matcher)
+└── docs/[...path]/+page.svelte     # /docs/* (catch-all)
 ```
 
-```ts
-// src/params/integer.ts -- Parameter matcher
+### Param Matchers
+
+```typescript
+// src/params/integer.ts
 import type { ParamMatcher } from '@sveltejs/kit';
 
 export const match: ParamMatcher = (param) => {
@@ -610,567 +550,401 @@ export const match: ParamMatcher = (param) => {
 };
 ```
 
-### Route Groups and Layouts
+### Layouts
+
+```svelte
+<!-- src/routes/+layout.svelte -->
+<script lang="ts">
+  import type { Snippet } from 'svelte';
+  import { page } from '$app/state';
+
+  interface Props {
+    data: import('./$types').LayoutData;
+    children: Snippet;
+  }
+
+  let { data, children }: Props = $props();
+</script>
+
+<nav>
+  <a href="/" class:active={page.url.pathname === '/'}>Home</a>
+  <a href="/dashboard" class:active={page.url.pathname.startsWith('/dashboard')}>Dashboard</a>
+  {#if data.user}
+    <span>{data.user.email}</span>
+    <form method="POST" action="/logout">
+      <button type="submit">Sign out</button>
+    </form>
+  {:else}
+    <a href="/login">Sign in</a>
+  {/if}
+</nav>
+
+<main>{@render children()}</main>
+```
+
+### Route Groups
 
 ```
 src/routes/
-├── (marketing)/           # Group: shared layout, no URL segment
-│   ├── +layout.svelte     # Marketing layout (full-width, no sidebar)
-│   ├── pricing/
-│   │   └── +page.svelte   # /pricing
-│   └── features/
-│       └── +page.svelte   # /features
-├── (app)/                 # Group: app layout with sidebar
-│   ├── +layout.svelte     # App layout
-│   ├── +layout.server.ts  # Auth check for all app routes
-│   ├── dashboard/
-│   │   └── +page.svelte   # /dashboard
-│   └── settings/
-│       └── +page.svelte   # /settings
-└── +layout.svelte         # Root layout (wraps everything)
+├── (marketing)/              # Group: no /marketing in URL
+│   ├── +layout.svelte
+│   ├── +page.svelte          # /
+│   └── pricing/+page.svelte  # /pricing
+├── (app)/                    # Group: no /app in URL
+│   ├── +layout.server.ts     # Auth guard for all app pages
+│   ├── dashboard/+page.svelte  # /dashboard
+│   └── settings/+page.svelte   # /settings
+└── (auth)/                   # Group: no /auth in URL
+    ├── login/+page.svelte    # /login
+    └── register/+page.svelte # /register
 ```
+
+### Navigation
 
 ```svelte
-<!-- src/routes/(app)/+layout.svelte -->
 <script lang="ts">
-  import type { Snippet } from 'svelte';
-  import Sidebar from '$components/Sidebar.svelte';
+  import { goto, invalidate, invalidateAll } from '$app/navigation';
 
-  let { data, children }: { data: any; children: Snippet } = $props();
+  async function navigateToDashboard() {
+    await goto('/dashboard');
+  }
+
+  async function navigateWithOptions() {
+    await goto('/dashboard', {
+      replaceState: true,
+      noScroll: true,
+      invalidateAll: true
+    });
+  }
+
+  async function refreshUserData() {
+    await invalidate('app:user');
+    await invalidate('/api/users');
+  }
 </script>
 
-<div class="app-layout">
-  <Sidebar user={data.user} />
-  <div class="content">
-    {@render children()}
-  </div>
-</div>
+<a href="/dashboard" data-sveltekit-preload-data="hover">Dashboard</a>
+<a href="/external" data-sveltekit-reload>Full Page Load</a>
 ```
 
-### Error and Loading Pages
+### Error Pages
 
 ```svelte
 <!-- src/routes/+error.svelte -->
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 </script>
 
-<div class="error-page">
-  <h1>{$page.status}</h1>
-  <p>{$page.error?.message ?? 'Something went wrong'}</p>
-  <a href="/">Return home</a>
-</div>
-```
-
----
-
-## 6. Load Functions
-
-### Page Server Load (+page.server.ts)
-
-```ts
-// src/routes/blog/+page.server.ts
-import type { PageServerLoad } from './$types';
-import { db } from '$server/database';
-
-export const load: PageServerLoad = async ({ url, locals }) => {
-  const page = Number(url.searchParams.get('page')) || 1;
-  const limit = 10;
-  const offset = (page - 1) * limit;
-
-  const [posts, total] = await Promise.all([
-    db.post.findMany({
-      take: limit,
-      skip: offset,
-      orderBy: { createdAt: 'desc' },
-      select: { id: true, title: true, slug: true, excerpt: true, createdAt: true }
-    }),
-    db.post.count()
-  ]);
-
-  return {
-    posts,
-    pagination: {
-      page,
-      totalPages: Math.ceil(total / limit),
-      total
-    }
-  };
-};
-```
-
-### Dynamic Route Load with Error Handling
-
-```ts
-// src/routes/blog/[slug]/+page.server.ts
-import type { PageServerLoad } from './$types';
-import { error } from '@sveltejs/kit';
-import { db } from '$server/database';
-
-export const load: PageServerLoad = async ({ params, locals }) => {
-  const post = await db.post.findUnique({
-    where: { slug: params.slug },
-    include: {
-      author: { select: { name: true, avatar: true } },
-      comments: {
-        orderBy: { createdAt: 'desc' },
-        take: 20
-      }
-    }
-  });
-
-  if (!post) {
-    error(404, { message: 'Post not found' });
-  }
-
-  if (!post.published && locals.user?.role !== 'admin') {
-    error(403, { message: 'This post is not published' });
-  }
-
-  return { post };
-};
-```
-
-### Universal Load (+page.ts) for Client-Side Data
-
-```ts
-// src/routes/search/+page.ts
-import type { PageLoad } from './$types';
-
-export const load: PageLoad = async ({ url, fetch }) => {
-  const query = url.searchParams.get('q') ?? '';
-
-  if (!query) {
-    return { results: [], query };
-  }
-
-  // This fetch is isomorphic: runs on server during SSR, client on navigation
-  const response = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
-  const results = await response.json();
-
-  return { results, query };
-};
-```
-
-### Layout Server Load (Shared Data)
-
-```ts
-// src/routes/(app)/+layout.server.ts
-import type { LayoutServerLoad } from './$types';
-import { redirect } from '@sveltejs/kit';
-
-export const load: LayoutServerLoad = async ({ locals, url }) => {
-  if (!locals.user) {
-    redirect(303, `/auth/login?redirect=${encodeURIComponent(url.pathname)}`);
-  }
-
-  return {
-    user: locals.user
-  };
-};
-```
-
-### Consuming Load Data in Components
-
-```svelte
-<!-- src/routes/blog/+page.svelte -->
-<script lang="ts">
-  import type { PageData } from './$types';
-  import PostCard from '$components/PostCard.svelte';
-  import Pagination from '$components/Pagination.svelte';
-
-  let { data }: { data: PageData } = $props();
-</script>
-
-<svelte:head>
-  <title>Blog | My App</title>
-</svelte:head>
-
-<h1>Blog</h1>
-
-{#if data.posts.length === 0}
-  <p>No posts found.</p>
+<h1>{page.status}</h1>
+<p>{page.error?.message ?? 'Something went wrong'}</p>
+{#if page.status === 404}
+  <a href="/">Go back home</a>
 {:else}
-  <div class="posts-grid">
-    {#each data.posts as post (post.id)}
-      <PostCard {post} />
-    {/each}
-  </div>
-
-  <Pagination
-    currentPage={data.pagination.page}
-    totalPages={data.pagination.totalPages}
-  />
+  <button onclick={() => location.reload()}>Try again</button>
 {/if}
 ```
 
 ---
 
-## 7. Form Actions
+## 5. Load Functions
 
-### Server-Side Form Actions
+### Server Load (+page.server.ts)
 
-```ts
-// src/routes/blog/create/+page.server.ts
-import type { Actions, PageServerLoad } from './$types';
-import { fail, redirect } from '@sveltejs/kit';
-import { db } from '$server/database';
-import { z } from 'zod';
+```typescript
+// src/routes/dashboard/+page.server.ts
+import { error, redirect } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
+import { db } from '$lib/server/db';
 
-const PostSchema = z.object({
-  title: z.string().min(3, 'Title must be at least 3 characters').max(200),
-  content: z.string().min(10, 'Content must be at least 10 characters'),
-  slug: z
-    .string()
-    .regex(/^[a-z0-9-]+$/, 'Slug must be lowercase alphanumeric with hyphens'),
-  published: z.coerce.boolean().default(false)
-});
+export const load: PageServerLoad = async ({ locals, depends, url }) => {
+  if (!locals.user) redirect(303, '/login');
+
+  depends('app:dashboard');
+
+  const page = Number(url.searchParams.get('page') ?? '1');
+
+  try {
+    const [stats, recentOrders] = await Promise.all([
+      db.getDashboardStats(locals.user.id),
+      db.getRecentOrders(locals.user.id, { page, limit: 20 })
+    ]);
+
+    return { stats, recentOrders };
+  } catch (err) {
+    console.error('Dashboard load failed:', err);
+    error(500, { message: 'Failed to load dashboard data' });
+  }
+};
+```
+
+### Universal Load (+page.ts)
+
+```typescript
+// src/routes/blog/[slug]/+page.ts
+import { error } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
+
+// Runs on both server (SSR) and client (navigation).
+export const load: PageLoad = async ({ params, fetch }) => {
+  const response = await fetch(`/api/posts/${params.slug}`);
+
+  if (!response.ok) {
+    error(response.status, { message: 'Post not found' });
+  }
+
+  return { post: await response.json() };
+};
+```
+
+### Layout Server Load
+
+```typescript
+// src/routes/+layout.server.ts
+import type { LayoutServerLoad } from './$types';
+
+export const load: LayoutServerLoad = async ({ locals }) => {
+  return { user: locals.user };
+};
+```
+
+### Streaming with Promises
+
+```typescript
+// src/routes/dashboard/+page.server.ts
+import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ locals }) => {
-  if (!locals.user) {
-    redirect(303, '/auth/login');
-  }
-  return {};
-};
-
-export const actions: Actions = {
-  default: async ({ request, locals }) => {
-    if (!locals.user) {
-      return fail(401, { error: 'Unauthorized' });
-    }
-
-    const formData = await request.formData();
-    const rawData = Object.fromEntries(formData);
-
-    const parsed = PostSchema.safeParse(rawData);
-
-    if (!parsed.success) {
-      const fieldErrors = parsed.error.flatten().fieldErrors;
-      return fail(400, {
-        data: rawData,
-        errors: fieldErrors
-      });
-    }
-
-    const existingSlug = await db.post.findUnique({
-      where: { slug: parsed.data.slug }
-    });
-
-    if (existingSlug) {
-      return fail(400, {
-        data: rawData,
-        errors: { slug: ['This slug is already in use'] }
-      });
-    }
-
-    const post = await db.post.create({
-      data: {
-        ...parsed.data,
-        authorId: locals.user.id
-      }
-    });
-
-    redirect(303, `/blog/${post.slug}`);
-  }
+  return {
+    user: locals.user,
+    quickStats: await db.getQuickStats(locals.user!.id),
+    // These resolve later -- SvelteKit streams them to the client
+    recentActivity: db.getRecentActivity(locals.user!.id),
+    recommendations: db.getRecommendations(locals.user!.id)
+  };
 };
 ```
 
-### Progressive Enhancement Form Component
-
 ```svelte
-<!-- src/routes/blog/create/+page.svelte -->
+<!-- Consuming streamed data -->
 <script lang="ts">
-  import { enhance } from '$app/forms';
-  import type { ActionData } from './$types';
-
-  let { form }: { form: ActionData } = $props();
-  let submitting = $state(false);
+  let { data }: { data: PageData } = $props();
 </script>
 
-<svelte:head>
-  <title>Create Post</title>
-</svelte:head>
+<h1>Welcome, {data.user?.email}</h1>
 
-<h1>Create New Post</h1>
-
-<form
-  method="POST"
-  use:enhance={() => {
-    submitting = true;
-    return async ({ update }) => {
-      submitting = false;
-      await update();
-    };
-  }}
->
-  <div class="field">
-    <label for="title">Title</label>
-    <input
-      id="title"
-      name="title"
-      type="text"
-      value={form?.data?.title ?? ''}
-      required
-    />
-    {#if form?.errors?.title}
-      <span class="error">{form.errors.title[0]}</span>
-    {/if}
-  </div>
-
-  <div class="field">
-    <label for="slug">Slug</label>
-    <input
-      id="slug"
-      name="slug"
-      type="text"
-      value={form?.data?.slug ?? ''}
-      required
-    />
-    {#if form?.errors?.slug}
-      <span class="error">{form.errors.slug[0]}</span>
-    {/if}
-  </div>
-
-  <div class="field">
-    <label for="content">Content</label>
-    <textarea
-      id="content"
-      name="content"
-      rows="12"
-      required
-    >{form?.data?.content ?? ''}</textarea>
-    {#if form?.errors?.content}
-      <span class="error">{form.errors.content[0]}</span>
-    {/if}
-  </div>
-
-  <div class="field">
-    <label>
-      <input name="published" type="checkbox" value="true" />
-      Publish immediately
-    </label>
-  </div>
-
-  <button type="submit" disabled={submitting}>
-    {submitting ? 'Creating...' : 'Create Post'}
-  </button>
-</form>
-```
-
-### Named Actions (Multiple Actions per Page)
-
-```ts
-// src/routes/dashboard/settings/+page.server.ts
-import type { Actions } from './$types';
-import { fail, redirect } from '@sveltejs/kit';
-
-export const actions: Actions = {
-  updateProfile: async ({ request, locals }) => {
-    const data = await request.formData();
-    const name = data.get('name') as string;
-    const bio = data.get('bio') as string;
-
-    if (!name || name.length < 2) {
-      return fail(400, { profileError: 'Name must be at least 2 characters' });
-    }
-
-    await db.user.update({
-      where: { id: locals.user!.id },
-      data: { name, bio }
-    });
-
-    return { profileSuccess: true };
-  },
-
-  changePassword: async ({ request, locals }) => {
-    const data = await request.formData();
-    const current = data.get('currentPassword') as string;
-    const newPass = data.get('newPassword') as string;
-    const confirm = data.get('confirmPassword') as string;
-
-    if (newPass !== confirm) {
-      return fail(400, { passwordError: 'Passwords do not match' });
-    }
-
-    if (newPass.length < 8) {
-      return fail(400, { passwordError: 'Password must be at least 8 characters' });
-    }
-
-    // Verify current password and update...
-
-    return { passwordSuccess: true };
-  },
-
-  deleteAccount: async ({ locals }) => {
-    await db.user.delete({ where: { id: locals.user!.id } });
-    redirect(303, '/');
-  }
-};
-```
-
-```svelte
-<!-- Named actions are targeted via ?/ syntax -->
-<form method="POST" action="?/updateProfile" use:enhance>
-  <!-- profile fields -->
-</form>
-
-<form method="POST" action="?/changePassword" use:enhance>
-  <!-- password fields -->
-</form>
-
-<form method="POST" action="?/deleteAccount" use:enhance>
-  <button type="submit">Delete My Account</button>
-</form>
+{#await data.recentActivity}
+  <p>Loading recent activity...</p>
+{:then activity}
+  <ul>
+    {#each activity as item}
+      <li>{item.description}</li>
+    {/each}
+  </ul>
+{:catch error}
+  <p>Failed to load: {error.message}</p>
+{/await}
 ```
 
 ---
 
-## 8. API Routes
+## 6. Form Actions
 
-### RESTful Resource Endpoints
+### Default and Named Actions
 
-```ts
-// src/routes/api/posts/+server.ts
-import type { RequestHandler } from './$types';
-import { json, error } from '@sveltejs/kit';
-import { db } from '$server/database';
+```typescript
+// src/routes/todos/+page.server.ts
+import { fail, redirect } from '@sveltejs/kit';
+import type { Actions, PageServerLoad } from './$types';
+import { db } from '$lib/server/db';
 import { z } from 'zod';
 
-// GET /api/posts?page=1&limit=10
-export const GET: RequestHandler = async ({ url, locals }) => {
-  const page = Number(url.searchParams.get('page')) || 1;
-  const limit = Math.min(Number(url.searchParams.get('limit')) || 10, 100);
-
-  const posts = await db.post.findMany({
-    skip: (page - 1) * limit,
-    take: limit,
-    orderBy: { createdAt: 'desc' },
-    where: { published: true }
-  });
-
-  return json({ data: posts, page, limit });
-};
-
-const CreatePostSchema = z.object({
-  title: z.string().min(3).max(200),
-  content: z.string().min(10),
-  slug: z.string().regex(/^[a-z0-9-]+$/),
-  published: z.boolean().default(false)
+const CreateTodoSchema = z.object({
+  title: z.string().min(1, 'Title is required').max(200),
+  description: z.string().max(1000).optional()
 });
 
-// POST /api/posts
+export const load: PageServerLoad = async ({ locals }) => {
+  if (!locals.user) redirect(303, '/login');
+  return { todos: await db.getTodos(locals.user.id) };
+};
+
+export const actions: Actions = {
+  default: async ({ request, locals }) => {
+    if (!locals.user) return fail(401, { error: 'Unauthorized' });
+
+    const formData = await request.formData();
+    const data = {
+      title: formData.get('title') as string,
+      description: formData.get('description') as string | undefined
+    };
+
+    const result = CreateTodoSchema.safeParse(data);
+    if (!result.success) {
+      return fail(400, {
+        error: 'Validation failed',
+        fields: data,
+        errors: result.error.flatten().fieldErrors
+      });
+    }
+
+    await db.createTodo({ ...result.data, userId: locals.user.id });
+  },
+
+  delete: async ({ request, locals }) => {
+    if (!locals.user) return fail(401, { error: 'Unauthorized' });
+    const id = (await request.formData()).get('id') as string;
+    if (!id) return fail(400, { error: 'Missing todo ID' });
+    await db.deleteTodo(id, locals.user.id);
+  },
+
+  toggle: async ({ request, locals }) => {
+    if (!locals.user) return fail(401, { error: 'Unauthorized' });
+    const id = (await request.formData()).get('id') as string;
+    await db.toggleTodo(id, locals.user.id);
+  }
+};
+```
+
+### Form with Progressive Enhancement
+
+```svelte
+<!-- src/routes/todos/+page.svelte -->
+<script lang="ts">
+  import { enhance } from '$app/forms';
+  import type { ActionData, PageData } from './$types';
+
+  let { data, form }: { data: PageData; form: ActionData } = $props();
+  let isSubmitting = $state(false);
+</script>
+
+<form
+  method="POST"
+  use:enhance={() => {
+    isSubmitting = true;
+    return async ({ update, result }) => {
+      isSubmitting = false;
+      await update({ reset: result.type === 'success' });
+    };
+  }}
+>
+  <label for="title">Title</label>
+  <input id="title" name="title" required value={form?.fields?.title ?? ''} />
+  {#if form?.errors?.title}
+    <p class="error">{form.errors.title[0]}</p>
+  {/if}
+
+  <button type="submit" disabled={isSubmitting}>
+    {isSubmitting ? 'Adding...' : 'Add Todo'}
+  </button>
+</form>
+
+<ul>
+  {#each data.todos as todo}
+    <li>
+      <form method="POST" action="?/toggle" use:enhance>
+        <input type="hidden" name="id" value={todo.id} />
+        <button type="submit" class:completed={todo.completed}>{todo.title}</button>
+      </form>
+      <form method="POST" action="?/delete" use:enhance>
+        <input type="hidden" name="id" value={todo.id} />
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  {/each}
+</ul>
+```
+
+---
+
+## 7. API Endpoints (+server.ts)
+
+### RESTful CRUD
+
+```typescript
+// src/routes/api/users/+server.ts
+import { json, error } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
+import { db } from '$lib/server/db';
+import { z } from 'zod';
+
+const CreateUserSchema = z.object({
+  name: z.string().min(1).max(100),
+  email: z.string().email()
+});
+
+export const GET: RequestHandler = async ({ url, locals }) => {
+  if (!locals.user) error(401, { message: 'Unauthorized' });
+
+  const page = Number(url.searchParams.get('page') ?? '1');
+  const limit = Math.min(Number(url.searchParams.get('limit') ?? '20'), 100);
+
+  const { users, total } = await db.getUsers({ page, limit });
+
+  return json({ users, pagination: { page, limit, total } });
+};
+
 export const POST: RequestHandler = async ({ request, locals }) => {
-  if (!locals.user) {
-    error(401, { message: 'Authentication required' });
+  if (!locals.user || locals.user.role !== 'admin') {
+    error(403, { message: 'Forbidden' });
   }
 
   const body = await request.json();
-  const parsed = CreatePostSchema.safeParse(body);
+  const result = CreateUserSchema.safeParse(body);
 
-  if (!parsed.success) {
+  if (!result.success) {
     return json(
-      { errors: parsed.error.flatten().fieldErrors },
+      { error: 'Validation failed', details: result.error.flatten().fieldErrors },
       { status: 400 }
     );
   }
 
-  const post = await db.post.create({
-    data: { ...parsed.data, authorId: locals.user.id }
-  });
-
-  return json({ data: post }, { status: 201 });
+  const user = await db.createUser(result.data);
+  return json(user, { status: 201 });
 };
 ```
 
-```ts
-// src/routes/api/posts/[id]/+server.ts
-import type { RequestHandler } from './$types';
+```typescript
+// src/routes/api/users/[id]/+server.ts
 import { json, error } from '@sveltejs/kit';
-import { db } from '$server/database';
+import type { RequestHandler } from './$types';
 
-// GET /api/posts/:id
-export const GET: RequestHandler = async ({ params }) => {
-  const post = await db.post.findUnique({ where: { id: params.id } });
-
-  if (!post) {
-    error(404, { message: 'Post not found' });
-  }
-
-  return json({ data: post });
+export const GET: RequestHandler = async ({ params, locals }) => {
+  if (!locals.user) error(401, { message: 'Unauthorized' });
+  const user = await db.getUser(params.id);
+  if (!user) error(404, { message: 'User not found' });
+  return json(user);
 };
 
-// PUT /api/posts/:id
-export const PUT: RequestHandler = async ({ params, request, locals }) => {
-  if (!locals.user) {
-    error(401, { message: 'Authentication required' });
-  }
-
-  const post = await db.post.findUnique({ where: { id: params.id } });
-
-  if (!post) {
-    error(404, { message: 'Post not found' });
-  }
-
-  if (post.authorId !== locals.user.id && locals.user.role !== 'admin') {
-    error(403, { message: 'Not authorized to edit this post' });
-  }
-
-  const body = await request.json();
-  const updated = await db.post.update({
-    where: { id: params.id },
-    data: body
-  });
-
-  return json({ data: updated });
+export const PATCH: RequestHandler = async ({ params, request, locals }) => {
+  if (!locals.user || locals.user.role !== 'admin') error(403, { message: 'Forbidden' });
+  const updates = await request.json();
+  return json(await db.updateUser(params.id, updates));
 };
 
-// DELETE /api/posts/:id
 export const DELETE: RequestHandler = async ({ params, locals }) => {
-  if (!locals.user) {
-    error(401, { message: 'Authentication required' });
-  }
-
-  const post = await db.post.findUnique({ where: { id: params.id } });
-
-  if (!post) {
-    error(404, { message: 'Post not found' });
-  }
-
-  if (post.authorId !== locals.user.id && locals.user.role !== 'admin') {
-    error(403, { message: 'Forbidden' });
-  }
-
-  await db.post.delete({ where: { id: params.id } });
-
+  if (!locals.user || locals.user.role !== 'admin') error(403, { message: 'Forbidden' });
+  await db.deleteUser(params.id);
   return new Response(null, { status: 204 });
 };
 ```
 
-### Streaming and Server-Sent Events
+### Streaming Responses (Server-Sent Events)
 
-```ts
-// src/routes/api/events/+server.ts
+```typescript
+// src/routes/api/stream/+server.ts
 import type { RequestHandler } from './$types';
 
-export const GET: RequestHandler = async ({ locals }) => {
-  if (!locals.user) {
-    return new Response('Unauthorized', { status: 401 });
-  }
-
+export const GET: RequestHandler = async () => {
   const stream = new ReadableStream({
-    start(controller) {
+    async start(controller) {
       const encoder = new TextEncoder();
-
-      const interval = setInterval(() => {
-        const data = JSON.stringify({
-          time: new Date().toISOString(),
-          message: 'heartbeat'
-        });
+      for (let i = 0; i < 10; i++) {
+        const data = JSON.stringify({ count: i, timestamp: Date.now() });
         controller.enqueue(encoder.encode(`data: ${data}\n\n`));
-      }, 5000);
-
-      // Clean up on close
-      return () => clearInterval(interval);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      }
+      controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+      controller.close();
     }
   });
 
@@ -1186,305 +960,566 @@ export const GET: RequestHandler = async ({ locals }) => {
 
 ---
 
-## 9. Authentication Patterns
+## 8. Hooks
 
-### Server Hooks for Session Management
+### Server Hooks (hooks.server.ts)
 
-```ts
+```typescript
 // src/hooks.server.ts
-import type { Handle } from '@sveltejs/kit';
-import { db } from '$lib/server/database';
+import type { Handle, HandleFetch, HandleServerError } from '@sveltejs/kit';
+import { sequence } from '@sveltejs/kit/hooks';
+import { db } from '$lib/server/db';
 
-export const handle: Handle = async ({ event, resolve }) => {
-  // Read session token from cookie
-  const sessionToken = event.cookies.get('session');
-
-  if (sessionToken) {
-    const session = await db.session.findUnique({
-      where: { token: sessionToken },
-      include: { user: { select: { id: true, email: true, role: true } } }
-    });
-
-    if (session && session.expiresAt > new Date()) {
-      event.locals.user = session.user;
-    } else {
-      // Expired session: clear the cookie
-      event.cookies.delete('session', { path: '/' });
+const authHandle: Handle = async ({ event, resolve }) => {
+  const sessionId = event.cookies.get('session');
+  if (sessionId) {
+    try {
+      const session = await db.getSession(sessionId);
+      if (session && session.expiresAt > new Date()) {
+        event.locals.user = { id: session.userId, email: session.email, role: session.role };
+      } else {
+        event.cookies.delete('session', { path: '/' });
+      }
+    } catch {
       event.locals.user = null;
     }
   } else {
     event.locals.user = null;
   }
-
-  const response = await resolve(event);
-  return response;
-};
-```
-
-### Login and Logout
-
-```ts
-// src/routes/auth/login/+page.server.ts
-import type { Actions } from './$types';
-import { fail, redirect } from '@sveltejs/kit';
-import { db } from '$server/database';
-import { verifyPassword } from '$server/auth';
-import { randomUUID } from 'crypto';
-
-export const actions: Actions = {
-  default: async ({ request, cookies, url }) => {
-    const data = await request.formData();
-    const email = (data.get('email') as string)?.trim().toLowerCase();
-    const password = data.get('password') as string;
-
-    if (!email || !password) {
-      return fail(400, { error: 'Email and password are required', email });
-    }
-
-    const user = await db.user.findUnique({ where: { email } });
-
-    if (!user || !(await verifyPassword(password, user.passwordHash))) {
-      return fail(400, { error: 'Invalid email or password', email });
-    }
-
-    // Create session
-    const token = randomUUID();
-    const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000); // 30 days
-
-    await db.session.create({
-      data: { token, userId: user.id, expiresAt }
-    });
-
-    cookies.set('session', token, {
-      path: '/',
-      httpOnly: true,
-      secure: true,
-      sameSite: 'lax',
-      maxAge: 30 * 24 * 60 * 60
-    });
-
-    const redirectTo = url.searchParams.get('redirect') ?? '/dashboard';
-    redirect(303, redirectTo);
-  }
-};
-```
-
-```ts
-// src/routes/auth/logout/+server.ts
-import type { RequestHandler } from './$types';
-import { redirect } from '@sveltejs/kit';
-import { db } from '$server/database';
-
-export const POST: RequestHandler = async ({ cookies, locals }) => {
-  const sessionToken = cookies.get('session');
-
-  if (sessionToken) {
-    await db.session.delete({ where: { token: sessionToken } }).catch(() => {});
-    cookies.delete('session', { path: '/' });
-  }
-
-  redirect(303, '/');
-};
-```
-
-### Route Guards via Layout Load
-
-```ts
-// src/routes/(app)/+layout.server.ts
-import type { LayoutServerLoad } from './$types';
-import { redirect } from '@sveltejs/kit';
-
-export const load: LayoutServerLoad = async ({ locals, url }) => {
-  if (!locals.user) {
-    redirect(303, `/auth/login?redirect=${encodeURIComponent(url.pathname)}`);
-  }
-
-  return { user: locals.user };
-};
-```
-
-### Role-Based Access Control
-
-```ts
-// src/routes/(app)/admin/+layout.server.ts
-import type { LayoutServerLoad } from './$types';
-import { error } from '@sveltejs/kit';
-
-export const load: LayoutServerLoad = async ({ parent }) => {
-  const { user } = await parent();
-
-  if (user.role !== 'admin') {
-    error(403, { message: 'Admin access required' });
-  }
-
-  return {};
-};
-```
-
-### CSRF and Security Headers via Hooks
-
-```ts
-// src/hooks.server.ts (extended)
-import type { Handle } from '@sveltejs/kit';
-import { sequence } from '@sveltejs/kit/hooks';
-
-const securityHeaders: Handle = async ({ event, resolve }) => {
-  const response = await resolve(event);
-
-  response.headers.set('X-Frame-Options', 'DENY');
-  response.headers.set('X-Content-Type-Options', 'nosniff');
-  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
-  response.headers.set(
-    'Permissions-Policy',
-    'camera=(), microphone=(), geolocation=()'
-  );
-
-  return response;
-};
-
-const authHandle: Handle = async ({ event, resolve }) => {
-  // ... session logic from above ...
   return resolve(event);
 };
 
-// Compose multiple hooks
-export const handle = sequence(authHandle, securityHeaders);
+const securityHandle: Handle = async ({ event, resolve }) => {
+  const response = await resolve(event);
+  response.headers.set('X-Frame-Options', 'DENY');
+  response.headers.set('X-Content-Type-Options', 'nosniff');
+  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  return response;
+};
+
+export const handle = sequence(authHandle, securityHandle);
+
+export const handleFetch: HandleFetch = async ({ request, fetch, event }) => {
+  if (request.url.startsWith('https://api.internal.example.com')) {
+    request.headers.set('Authorization', `Bearer ${event.locals.user?.id ?? ''}`);
+  }
+  return fetch(request);
+};
+
+export const handleError: HandleServerError = async ({ error, event, status }) => {
+  const errorId = crypto.randomUUID();
+  console.error(`[${errorId}] ${event.request.method} ${event.url.pathname}:`, error);
+  return {
+    message: status === 404 ? 'Page not found' : 'An unexpected error occurred',
+    code: errorId
+  };
+};
+```
+
+### Client Hooks (hooks.client.ts)
+
+```typescript
+// src/hooks.client.ts
+import type { HandleClientError } from '@sveltejs/kit';
+
+export const handleError: HandleClientError = async ({ error, status }) => {
+  const errorId = crypto.randomUUID();
+  console.error(`[Client ${errorId}]:`, error);
+  return {
+    message: status === 404 ? 'Page not found' : 'Something went wrong',
+    code: errorId
+  };
+};
 ```
 
 ---
 
-## 10. Deployment
+## 9. Authentication Patterns
 
-### adapter-node (Self-Hosted / Docker)
+### Cookie-Based Session Authentication
 
-```js
-// svelte.config.js
-import adapter from '@sveltejs/adapter-node';
+```typescript
+// src/lib/server/auth.ts
+import { db } from '$lib/server/db';
+import bcrypt from 'bcrypt';
+import crypto from 'node:crypto';
 
-export default {
-  kit: {
-    adapter: adapter({
-      out: 'build',
-      precompress: true,       // Generate .gz and .br files
-      envPrefix: 'APP_'        // Only expose APP_* env vars
-    })
+const SESSION_DURATION_MS = 7 * 24 * 60 * 60 * 1000;
+
+export async function createSession(userId: string) {
+  const sessionId = crypto.randomUUID();
+  const expiresAt = new Date(Date.now() + SESSION_DURATION_MS);
+  await db.createSession({ id: sessionId, userId, expiresAt });
+  return { sessionId, expiresAt };
+}
+
+export async function verifyCredentials(email: string, password: string) {
+  const user = await db.getUserByEmail(email);
+  if (!user) return null;
+  const valid = await bcrypt.compare(password, user.passwordHash);
+  if (!valid) return null;
+  return { id: user.id, email: user.email, role: user.role };
+}
+
+export async function invalidateSession(sessionId: string) {
+  await db.deleteSession(sessionId);
+}
+```
+
+```typescript
+// src/routes/login/+page.server.ts
+import { fail, redirect } from '@sveltejs/kit';
+import type { Actions, PageServerLoad } from './$types';
+import { createSession, verifyCredentials } from '$lib/server/auth';
+
+export const load: PageServerLoad = async ({ locals }) => {
+  if (locals.user) redirect(303, '/dashboard');
+};
+
+export const actions: Actions = {
+  default: async ({ request, cookies }) => {
+    const formData = await request.formData();
+    const email = (formData.get('email') as string)?.trim();
+    const password = formData.get('password') as string;
+
+    if (!email || !password) {
+      return fail(400, { email, error: 'Email and password are required' });
+    }
+
+    const user = await verifyCredentials(email, password);
+    if (!user) {
+      return fail(401, { email, error: 'Invalid email or password' });
+    }
+
+    const { sessionId, expiresAt } = await createSession(user.id);
+
+    cookies.set('session', sessionId, {
+      path: '/',
+      httpOnly: true,
+      secure: true,
+      sameSite: 'lax',
+      expires: expiresAt
+    });
+
+    redirect(303, '/dashboard');
   }
 };
 ```
 
+### Route Guards and Role-Based Access
+
+```typescript
+// src/lib/server/guards.ts
+import { error } from '@sveltejs/kit';
+import type { RequestEvent } from '@sveltejs/kit';
+
+export function requireAuth(event: RequestEvent) {
+  if (!event.locals.user) error(401, { message: 'Authentication required' });
+  return event.locals.user;
+}
+
+export function requireRole(event: RequestEvent, role: 'admin' | 'user') {
+  const user = requireAuth(event);
+  if (user.role !== role) error(403, { message: 'Insufficient permissions' });
+  return user;
+}
+```
+
+```typescript
+// src/routes/(app)/+layout.server.ts
+import { redirect } from '@sveltejs/kit';
+import type { LayoutServerLoad } from './$types';
+
+export const load: LayoutServerLoad = async ({ locals, url }) => {
+  if (!locals.user) {
+    redirect(303, `/login?redirectTo=${encodeURIComponent(url.pathname)}`);
+  }
+  return { user: locals.user };
+};
+```
+
+---
+
+## 10. Stores and State Management
+
+### Svelte Stores
+
+```typescript
+// src/lib/stores/theme.ts
+import { writable, derived } from 'svelte/store';
+import { browser } from '$app/environment';
+
+type Theme = 'light' | 'dark' | 'system';
+
+function createThemeStore() {
+  const stored = browser ? (localStorage.getItem('theme') as Theme) : null;
+  const { subscribe, set, update } = writable<Theme>(stored ?? 'system');
+
+  return {
+    subscribe,
+    set(value: Theme) {
+      set(value);
+      if (browser) localStorage.setItem('theme', value);
+    },
+    toggle() {
+      update((current) => {
+        const next = current === 'light' ? 'dark' : 'light';
+        if (browser) localStorage.setItem('theme', next);
+        return next;
+      });
+    }
+  };
+}
+
+export const theme = createThemeStore();
+
+export const resolvedTheme = derived(theme, ($theme) => {
+  if ($theme !== 'system') return $theme;
+  if (!browser) return 'light';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+});
+```
+
+### Rune-Based Shared State (.svelte.ts)
+
+```typescript
+// src/lib/stores/cart.svelte.ts
+interface CartItem { id: string; name: string; price: number; quantity: number; }
+
+function createCart() {
+  let items = $state<CartItem[]>([]);
+
+  const total = $derived(items.reduce((sum, i) => sum + i.price * i.quantity, 0));
+  const itemCount = $derived(items.reduce((sum, i) => sum + i.quantity, 0));
+
+  function addItem(product: Omit<CartItem, 'quantity'>) {
+    const existing = items.find((i) => i.id === product.id);
+    if (existing) existing.quantity++;
+    else items.push({ ...product, quantity: 1 });
+  }
+
+  function removeItem(id: string) {
+    const idx = items.findIndex((i) => i.id === id);
+    if (idx !== -1) items.splice(idx, 1);
+  }
+
+  function updateQuantity(id: string, qty: number) {
+    if (qty <= 0) { removeItem(id); return; }
+    const item = items.find((i) => i.id === id);
+    if (item) item.quantity = qty;
+  }
+
+  function clear() { items.length = 0; }
+
+  return {
+    get items() { return items; },
+    get total() { return total; },
+    get itemCount() { return itemCount; },
+    addItem, removeItem, updateQuantity, clear
+  };
+}
+
+export const cart = createCart();
+```
+
+---
+
+## 11. Styling
+
+### Scoped Styles
+
+```svelte
+<button class="btn {variant}">
+  <slot />
+</button>
+
+<style>
+  .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn :global(svg) { width: 1em; height: 1em; }
+</style>
+```
+
+### CSS Custom Properties
+
+```svelte
+<style>
+  :global(:root) {
+    --color-primary: #3b82f6;
+    --color-background: #ffffff;
+    --color-text: #1f2937;
+    --color-border: #e5e7eb;
+  }
+  :global([data-theme='dark']) {
+    --color-background: #111827;
+    --color-text: #f9fafb;
+    --color-border: #374151;
+  }
+</style>
+```
+
+### Tailwind CSS
+
+```bash
+npx sv add tailwindcss
+```
+
+```svelte
+<script lang="ts">
+  import type { Snippet } from 'svelte';
+  let { variant = 'primary', children }: { variant?: string; children: Snippet } = $props();
+
+  const classes: Record<string, string> = {
+    primary: 'bg-blue-600 text-white hover:bg-blue-700',
+    secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
+    danger: 'bg-red-600 text-white hover:bg-red-700'
+  };
+</script>
+
+<button class="px-4 py-2 rounded-md font-medium transition-colors {classes[variant]}">
+  {@render children()}
+</button>
+```
+
+### Dynamic Classes
+
+```svelte
+<script lang="ts">
+  let active = $state(false);
+  let size = $state<'sm' | 'md' | 'lg'>('md');
+</script>
+
+<div class="card size-{size}" class:active>Content</div>
+```
+
+---
+
+## 12. Deployment
+
+### adapter-auto (Recommended Default)
+
+```javascript
+import adapter from '@sveltejs/adapter-auto';
+const config = { kit: { adapter: adapter() } };
+export default config;
+```
+
+### adapter-node (Docker)
+
+```bash
+npm install -D @sveltejs/adapter-node
+```
+
+```javascript
+import adapter from '@sveltejs/adapter-node';
+const config = {
+  kit: {
+    adapter: adapter({ out: 'build', precompress: true, envPrefix: 'APP_' })
+  }
+};
+export default config;
+```
+
 ```dockerfile
-# Dockerfile
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
-COPY package*.json ./
+COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
-RUN npm run build
-RUN npm prune --production
+RUN npm run build && npm prune --production
 
-FROM node:20-alpine
+FROM node:22-alpine
 WORKDIR /app
-COPY --from=builder /app/build ./build
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./
-
 ENV NODE_ENV=production
-ENV PORT=3000
-ENV ORIGIN=https://myapp.example.com
+RUN addgroup -S sk && adduser -S sk -G sk
+COPY --from=builder --chown=sk:sk /app/build ./build
+COPY --from=builder --chown=sk:sk /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./
+USER sk
 EXPOSE 3000
 CMD ["node", "build"]
 ```
 
+### adapter-vercel
+
 ```bash
-# Build and run
-npm run build
-PORT=3000 ORIGIN=https://myapp.example.com node build
+npm install -D @sveltejs/adapter-vercel
 ```
 
-### adapter-vercel (Serverless)
-
-```js
-// svelte.config.js
+```javascript
 import adapter from '@sveltejs/adapter-vercel';
-
-export default {
-  kit: {
-    adapter: adapter({
-      runtime: 'nodejs20.x',
-      regions: ['iad1'],
-      split: false          // Single function for all routes
-    })
-  }
+const config = {
+  kit: { adapter: adapter({ runtime: 'nodejs22.x', regions: ['iad1'] }) }
 };
+export default config;
 ```
 
-To configure specific routes for edge or serverless runtime:
+### Prerendering and SSR
 
-```ts
-// src/routes/api/fast-endpoint/+server.ts
-export const config = {
-  runtime: 'edge'       // This specific route runs on edge
-};
-```
+```typescript
+// src/routes/about/+page.ts
+export const prerender = true;   // Static at build time
 
-### adapter-static (Static Site Generation)
+// src/routes/dashboard/+page.ts
+export const ssr = false;        // Client-only rendering
 
-```js
-// svelte.config.js
-import adapter from '@sveltejs/adapter-static';
-
-export default {
-  kit: {
-    adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: '404.html',  // SPA fallback page
-      precompress: true
-    }),
-    prerender: {
-      entries: ['*'],              // Prerender all discoverable routes
-      handleHttpError: 'warn'      // Warn on broken links during prerender
-    }
-  }
-};
-```
-
-For full static generation, disable SSR across the app:
-
-```ts
-// src/routes/+layout.ts
+// src/routes/+layout.ts (full static site)
 export const prerender = true;
-export const ssr = false;    // Optional: disable SSR for pure SPA mode
+export const trailingSlash = 'never';
 ```
 
-### Environment Variables
+---
 
-```ts
-// Access public env vars (available client and server)
-import { PUBLIC_API_URL } from '$env/static/public';
+## 13. Testing
 
-// Access private env vars (server only)
-import { DATABASE_URL, JWT_SECRET } from '$env/static/private';
+### Unit Tests with Vitest
 
-// Dynamic env vars (read at runtime, not build time)
-import { env } from '$env/dynamic/private';
-const dbUrl = env.DATABASE_URL;
+```typescript
+// src/lib/utils/format.test.ts
+import { describe, it, expect } from 'vitest';
+import { formatCurrency, slugify } from './format';
+
+describe('formatCurrency', () => {
+  it('formats USD', () => expect(formatCurrency(1234.56)).toBe('$1,234.56'));
+  it('formats zero', () => expect(formatCurrency(0)).toBe('$0.00'));
+});
+
+describe('slugify', () => {
+  it('converts to kebab-case', () => expect(slugify('Hello World')).toBe('hello-world'));
+  it('removes special chars', () => expect(slugify('Hello! World?')).toBe('hello-world'));
+});
+```
+
+### Component Tests with @testing-library/svelte
+
+```typescript
+// src/lib/components/Counter.test.ts
+import { describe, it, expect } from 'vitest';
+import { render, screen, fireEvent } from '@testing-library/svelte';
+import Counter from './Counter.svelte';
+
+describe('Counter', () => {
+  it('renders with initial count', () => {
+    render(Counter, { props: { label: 'Items', initialCount: 5 } });
+    expect(screen.getByText('Items: 5')).toBeInTheDocument();
+  });
+
+  it('increments on click', async () => {
+    render(Counter, { props: { label: 'Items', step: 1 } });
+    await fireEvent.click(screen.getByText('+1'));
+    expect(screen.getByText('Items: 1')).toBeInTheDocument();
+  });
+});
+```
+
+### End-to-End Tests with Playwright
+
+```typescript
+// tests/auth.test.ts
+import { expect, test } from '@playwright/test';
+
+test.describe('Authentication', () => {
+  test('login page renders', async ({ page }) => {
+    await page.goto('/login');
+    await expect(page.getByRole('heading', { name: 'Sign In' })).toBeVisible();
+  });
+
+  test('invalid credentials show error', async ({ page }) => {
+    await page.goto('/login');
+    await page.getByLabel('Email').fill('bad@example.com');
+    await page.getByLabel('Password').fill('wrong');
+    await page.getByRole('button', { name: 'Sign In' }).click();
+    await expect(page.getByText('Invalid email or password')).toBeVisible();
+  });
+
+  test('protected route redirects', async ({ page }) => {
+    await page.goto('/dashboard');
+    await expect(page).toHaveURL(/\/login/);
+  });
+});
+```
+
+### Playwright Configuration
+
+```typescript
+// playwright.config.ts
+import type { PlaywrightTestConfig } from '@playwright/test';
+
+const config: PlaywrightTestConfig = {
+  webServer: {
+    command: 'npm run build && npm run preview',
+    port: 4173,
+    reuseExistingServer: !process.env.CI
+  },
+  testDir: 'tests',
+  use: { baseURL: 'http://localhost:4173' }
+};
+
+export default config;
 ```
 
 ---
 
 ## Quick Reference
 
-| Task                     | File                        | Key Exports / Patterns                     |
-| ------------------------ | --------------------------- | ------------------------------------------ |
-| Page UI                  | `+page.svelte`              | Component with `data` prop                 |
-| Server data loading      | `+page.server.ts`           | `load` function                            |
-| Client data loading      | `+page.ts`                  | `load` function (isomorphic fetch)         |
-| Form mutations           | `+page.server.ts`           | `actions` object                           |
-| API endpoints            | `+server.ts`                | `GET`, `POST`, `PUT`, `DELETE` handlers    |
-| Shared layout data       | `+layout.server.ts`         | `load` function (inherited by children)    |
-| Layout UI                | `+layout.svelte`            | Component with `children` snippet          |
-| Middleware / auth        | `hooks.server.ts`           | `handle` function                          |
-| Error page               | `+error.svelte`             | Access `$page.status` and `$page.error`    |
-| Reactive state           | Component `<script>`        | `$state`, `$derived`, `$effect`            |
-| Component props          | Component `<script>`        | `$props()`, `$bindable()`                  |
+| Task | Pattern |
+|---|---|
+| Reactive state | `let x = $state(value)` |
+| Computed value | `let y = $derived(expr)` or `$derived.by(() => {...})` |
+| Side effect | `$effect(() => { ...; return cleanup })` |
+| Component props | `let { a, b = default }: Props = $props()` |
+| Two-way binding | `let { value = $bindable() } = $props()` |
+| Children content | `children: Snippet` + `{@render children()}` |
+| Named snippet | `footer?: Snippet<[{ data: T }]>` + `{@render footer({data})}` |
+| Shared state (runes) | `.svelte.ts` file with `$state`, export getters |
+| Shared state (stores) | `writable()` in `.ts`, `$store` in templates |
+| Server load | `+page.server.ts` exports `load` |
+| Universal load | `+page.ts` exports `load` |
+| Form actions | `+page.server.ts` exports `actions` |
+| Progressive enhance | `use:enhance` on `<form>` |
+| API endpoint | `+server.ts` exports `GET`/`POST`/`PATCH`/`DELETE` |
+| Auth guard | `redirect(303, '/login')` in layout server load |
+| Hooks | `hooks.server.ts` exports `handle`/`handleFetch`/`handleError` |
+| Combine hooks | `sequence(h1, h2)` from `@sveltejs/kit/hooks` |
+| Prerender | `export const prerender = true` in `+page.ts` |
+| Disable SSR | `export const ssr = false` in `+page.ts` |
+
+## File Naming
+
+- Components: PascalCase.svelte (UserCard.svelte)
+- Rune modules: name.svelte.ts (cart.svelte.ts)
+- Store modules: name.ts (theme.ts)
+- Route files: +page.svelte, +page.ts, +page.server.ts, +layout.svelte, +server.ts, +error.svelte
+- Param matchers: lowercase.ts in src/params/
+- Hooks: hooks.server.ts, hooks.client.ts in src/
+
+## Dependency Versions (as of 2026)
+
+```json
+{
+  "@sveltejs/kit": "^2",
+  "svelte": "^5",
+  "@sveltejs/vite-plugin-svelte": "^4",
+  "@sveltejs/adapter-auto": "^3",
+  "@sveltejs/adapter-node": "^5",
+  "@sveltejs/adapter-vercel": "^5",
+  "vite": "^6",
+  "vitest": "^2",
+  "@testing-library/svelte": "^5",
+  "@playwright/test": "^1.49",
+  "typescript": "^5.6"
+}
+```
+
+## Additional Resources
+
+- SvelteKit Docs: https://svelte.dev/docs/kit
+- Svelte 5 Runes: https://svelte.dev/docs/svelte/$state
+- SvelteKit Routing: https://svelte.dev/docs/kit/routing
+- SvelteKit Form Actions: https://svelte.dev/docs/kit/form-actions
+- SvelteKit Hooks: https://svelte.dev/docs/kit/hooks
+- Svelte Tutorial: https://svelte.dev/tutorial

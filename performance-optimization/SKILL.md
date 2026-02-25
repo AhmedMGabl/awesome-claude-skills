@@ -127,15 +127,12 @@ Load heavy components only on user interaction:
 
 ```tsx
 const HeavyChart = lazy(() => import("./components/AnalyticsChart"));
-
 function Dashboard() {
   const [show, setShow] = useState(false);
-  return (
-    <>
-      <button onClick={() => setShow(true)}>Show Analytics</button>
-      {show && <Suspense fallback={<Skeleton />}><HeavyChart /></Suspense>}
-    </>
-  );
+  return (<>
+    <button onClick={() => setShow(true)}>Show Analytics</button>
+    {show && <Suspense fallback={<Skeleton />}><HeavyChart /></Suspense>}
+  </>);
 }
 ```
 
@@ -143,7 +140,7 @@ function Dashboard() {
 
 ## 4. Image Optimization
 
-Serve modern formats with responsive sizing. Use `loading="lazy"` for below-fold images:
+Serve modern formats (AVIF > WebP > JPEG) with responsive `srcset` and explicit dimensions:
 
 ```html
 <picture>
@@ -153,10 +150,8 @@ Serve modern formats with responsive sizing. Use `loading="lazy"` for below-fold
 </picture>
 ```
 
-Next.js `<Image>` automates format selection, resizing, and lazy loading:
-
+Next.js `<Image>` automates format, resizing, and lazy loading:
 ```tsx
-import Image from "next/image";
 <Image src={url} alt={alt} width={400} height={300} sizes="(max-width: 768px) 100vw, 33vw" placeholder="blur" />
 ```
 
@@ -164,12 +159,8 @@ import Image from "next/image";
 
 ## 5. Font Optimization
 
-**Before:**
-```css
-@font-face { font-family: "Custom"; src: url("/fonts/custom.woff2"); }
-```
+Preload critical fonts, use `font-display: swap` to avoid invisible text, and subset to reduce size:
 
-**After:**
 ```html
 <link rel="preload" href="/fonts/custom-latin.woff2" as="font" type="font/woff2" crossorigin>
 ```
@@ -177,12 +168,11 @@ import Image from "next/image";
 @font-face {
   font-family: "Custom";
   src: url("/fonts/custom-latin.woff2") format("woff2");
-  font-display: swap;
-  unicode-range: U+0000-00FF;
+  font-display: swap;       /* Show fallback immediately, swap when loaded */
+  unicode-range: U+0000-00FF; /* Latin subset only */
 }
 ```
 ```bash
-# Subset to Latin characters only
 pyftsubset Custom.ttf --output-file=custom-latin.woff2 --flavor=woff2 --unicodes="U+0000-00FF"
 ```
 
@@ -226,19 +216,16 @@ for (const order of orders) {
 }
 ```
 
-**After (1 query with JOIN):**
-```typescript
-const orders = await db.query(`
-  SELECT o.*, c.name AS customer_name, c.email AS customer_email
-  FROM orders o JOIN customers c ON c.id = o.customer_id
-  WHERE o.status = 'active'
-`);
+**After -- JOIN (single query):**
+```sql
+SELECT o.*, c.name AS customer_name, c.email AS customer_email
+FROM orders o JOIN customers c ON c.id = o.customer_id WHERE o.status = 'active';
 ```
 
-**Alternative -- batch loading (useful for ORM/GraphQL DataLoader patterns):**
+**After -- batch loading (for ORM/GraphQL DataLoader patterns):**
 ```typescript
-const customerIds = [...new Set(orders.map(o => o.customer_id))];
-const customers = await db.query("SELECT * FROM customers WHERE id = ANY($1)", [customerIds]);
+const ids = [...new Set(orders.map(o => o.customer_id))];
+const customers = await db.query("SELECT * FROM customers WHERE id = ANY($1)", [ids]);
 const map = new Map(customers.map(c => [c.id, c]));
 orders.forEach(o => { o.customer = map.get(o.customer_id); });
 ```
@@ -246,15 +233,12 @@ orders.forEach(o => { o.customer = map.get(o.customer_id); });
 ### Indexing
 
 ```sql
--- Find missing indexes
-SELECT relname, seq_scan - idx_scan AS excess_seq_scans
-FROM pg_stat_user_tables WHERE seq_scan > idx_scan ORDER BY 2 DESC;
-
+-- Find tables with excessive sequential scans (missing indexes)
+SELECT relname, seq_scan - idx_scan AS excess FROM pg_stat_user_tables WHERE seq_scan > idx_scan ORDER BY 2 DESC;
 -- Partial index for filtered queries
 CREATE INDEX CONCURRENTLY idx_orders_active ON orders (created_at DESC) WHERE status = 'active';
-
 -- Covering index to avoid table lookups
-CREATE INDEX CONCURRENTLY idx_products_cat_price ON products (category_id, price) INCLUDE (name);
+CREATE INDEX CONCURRENTLY idx_products_cat ON products (category_id, price) INCLUDE (name);
 ```
 
 ---
@@ -263,15 +247,14 @@ CREATE INDEX CONCURRENTLY idx_products_cat_price ON products (category_id, price
 
 ### Cursor Pagination
 
-Offset pagination degrades at scale (`OFFSET 100000` still scans 100K rows). Cursor pagination runs in constant time:
+Offset pagination degrades at scale. Cursor pagination runs in constant time:
 
 ```typescript
-// Before: OFFSET-based -- degrades with page depth
+// Before: OFFSET 100000 still scans 100K rows
 await db.query("SELECT * FROM products ORDER BY id LIMIT 20 OFFSET $1", [(page - 1) * 20]);
-
-// After: cursor-based -- constant performance
+// After: cursor-based -- constant performance regardless of depth
 const cursor = req.query.cursor as string | undefined;
-let q = "SELECT * FROM products" + (cursor ? " WHERE id > $1 ORDER BY id LIMIT 21" : " ORDER BY id LIMIT 21");
+const q = "SELECT * FROM products" + (cursor ? " WHERE id > $1" : "") + " ORDER BY id LIMIT 21";
 const rows = await db.query(q, cursor ? [cursor] : []);
 const hasNext = rows.length > 20;
 if (hasNext) rows.pop();
@@ -297,7 +280,6 @@ const pool = new Pool({ max: 20, idleTimeoutMillis: 30000, connectionTimeoutMill
 ```typescript
 // Before: listeners leak on SPA navigation
 window.addEventListener("resize", handleResize);
-
 // After: AbortController cleans up all listeners at once
 const controller = new AbortController();
 window.addEventListener("resize", handleResize, { signal: controller.signal });
@@ -328,24 +310,16 @@ class LRUCache<K, V> {
 
 ### memo, useMemo, useCallback
 
-**Before -- new references every render cause child re-renders:**
-```tsx
-function ProductList({ products }: { products: Product[] }) {
-  return products.map(p => (
-    <ProductCard key={p.id} product={p}
-      style={{ border: "1px solid gray" }}   // new object
-      onAdd={() => addToCart(p.id)}           // new function
-    />
-  ));
-}
-```
+Inline objects and arrow functions create new references every render, defeating `memo`:
 
-**After:**
 ```tsx
+// Before: new style object and onAdd function on every render cause child re-renders
+<ProductCard style={{ border: "1px solid gray" }} onAdd={() => addToCart(p.id)} />
+
+// After: stable references with memo + useCallback + useMemo
 const ProductCard = memo(function ProductCard({ product, onAdd }: Props) {
   return <div><h3>{product.name}</h3><button onClick={() => onAdd(product.id)}>Add</button></div>;
 });
-
 function ProductList({ products }: { products: Product[] }) {
   const handleAdd = useCallback((id: string) => addToCart(id), []);
   const stats = useMemo(() => computeExpensiveStats(products), [products]);
@@ -395,14 +369,14 @@ function runWorker(path: string, data: unknown): Promise<Buffer> {
 app.post("/api/reports", async (req, res) => { res.send(await runWorker("./pdf-worker.js", await fetchData(req.body))); });
 ```
 
-### Clustering for Multi-Core Utilization
+### Clustering
 
 ```typescript
 import cluster from "cluster";
 import { cpus } from "os";
 if (cluster.isPrimary) {
   for (let i = 0; i < Math.min(cpus().length, 4); i++) cluster.fork();
-  cluster.on("exit", () => cluster.fork());
+  cluster.on("exit", () => cluster.fork()); // Auto-replace crashed workers
 } else { createApp().listen(3000); }
 ```
 
@@ -423,6 +397,4 @@ if (cluster.isPrimary) {
 - Cursor pagination for large datasets; compression enabled
 - Connection pooling configured; bounded caches prevent memory leaks
 
-**Infrastructure:**
-- CDN with stale-while-revalidate; service worker for offline/static
-- Node.js clustered; CPU work offloaded to worker threads
+**Infrastructure:** CDN with stale-while-revalidate; service worker for static; Node.js clustered; CPU work in worker threads
