@@ -1477,6 +1477,42 @@
       "description": "Stripe billing covering subscription management, usage-based metering, customer portal, invoicing, proration, trial periods, webhook handling, and SaaS pricing model implementation.",
       "source": "./stripe-billing",
       "category": "development"
+    },
+    {
+      "name": "elasticsearch",
+      "description": "Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, query DSL, analyzers, highlighting, and Node.js/Python client patterns.",
+      "source": "./elasticsearch",
+      "category": "development"
+    },
+    {
+      "name": "rabbitmq",
+      "description": "RabbitMQ message broker covering exchanges, queues, routing, publish/subscribe, work queues, RPC, dead letter handling, priority queues, and Node.js/Python client patterns.",
+      "source": "./rabbitmq",
+      "category": "development"
+    },
+    {
+      "name": "kafka-streaming",
+      "description": "Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, exactly-once semantics, Kafka Streams, Schema Registry, and KafkaJS/confluent-kafka patterns.",
+      "source": "./kafka-streaming",
+      "category": "development"
+    },
+    {
+      "name": "github-actions",
+      "description": "GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, artifact management, environment deployments, secrets, and self-hosted runners.",
+      "source": "./github-actions",
+      "category": "development"
+    },
+    {
+      "name": "mongodb",
+      "description": "MongoDB database operations covering Mongoose schemas, CRUD operations, aggregation pipeline, indexing, transactions, change streams, Atlas Search, population, and connection management patterns.",
+      "source": "./mongodb",
+      "category": "development"
+    },
+    {
+      "name": "grpc-apis",
+      "description": "gRPC API development covering Protocol Buffers, unary and streaming RPCs, interceptors, error handling, metadata, health checks, gRPC-Web, Connect protocol, and Node.js/TypeScript implementations.",
+      "source": "./grpc-apis",
+      "category": "development"
     }
   ]
 }

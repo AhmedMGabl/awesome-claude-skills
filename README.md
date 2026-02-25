@@ -125,6 +125,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Drizzle ORM](./drizzle-orm/) - Drizzle ORM for TypeScript with schema definition, migrations, type-safe queries, joins, transactions, and multi-database support.
 - [DynamoDB Operations](./dynamodb-operations/) - Amazon DynamoDB operations with single-table design, SDK v3 CRUD, GSIs, batch operations, transactions, and streams.
 - [Event Sourcing & CQRS](./event-sourcing/) - Event sourcing with event stores, aggregate roots, command handlers, projections, and saga orchestration.
+- [Elasticsearch](./elasticsearch/) - Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, and query DSL.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
 - [Express.js](./express-js/) - Express.js with routing, middleware, Zod validation, JWT auth, error handling patterns, graceful shutdown, and supertest testing.
 - [ESLint & Biome](./eslint-biome/) - Code linting and formatting with ESLint flat config, Biome, Prettier, lint-staged, and CI enforcement.
@@ -164,7 +165,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Flutter Development](./flutter-development/) - Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, testing, and production deployment to iOS and Android.
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
+- [gRPC APIs](./grpc-apis/) - gRPC API development with Connect protocol, streaming RPCs, interceptors, error handling, and gRPC-Web browser support.
 - [gRPC & Protocol Buffers](./grpc-protobuf/) - gRPC and Protocol Buffers with proto3 schemas, code generation, streaming RPCs, interceptors, and Node.js/Go/Python patterns.
+- [GitHub Actions](./github-actions/) - GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, and deployments.
 - [GitHub API Integration](./github-api/) - GitHub API with Octokit, REST/GraphQL, PR automation, webhooks, GitHub Apps, and release management.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
 - [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
@@ -183,6 +186,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
+- [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
@@ -194,6 +198,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
+- [MongoDB](./mongodb/) - MongoDB with Mongoose schemas, aggregation pipeline, transactions, change streams, population, and connection management.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Migration Patterns](./migration-patterns/) - Framework migration (CRA to Vite/Next.js), API versioning, gradual TypeScript adoption, and zero-downtime strategies.
 - [Material UI](./material-ui/) - MUI component library with theme customization, sx prop, DataGrid, form components, dark mode, and responsive design.
@@ -225,6 +230,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
 - [PWA Development](./pwa-development/) - Progressive Web Apps with service workers, Workbox, offline caching strategies, push notifications, and install prompts.
 - [Qwik Framework](./qwik-framework/) - Qwik framework covering resumability, signals, routeLoader$/routeAction$, server$ functions, and Qwik City deployment.
+- [RabbitMQ](./rabbitmq/) - RabbitMQ message broker covering exchanges, queues, routing, pub/sub, work queues, RPC, and dead letter handling.
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [Radix UI](./radix-ui/) - Radix UI headless components with accessible dialogs, dropdowns, tabs, tooltips, Tailwind styling, and ARIA compliance.
