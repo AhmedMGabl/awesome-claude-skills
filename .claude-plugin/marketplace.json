@@ -2101,6 +2101,66 @@
       "description": "WXT browser extension patterns covering manifest configuration, background scripts, content scripts, popup and options pages, storage API, messaging, cross-browser support, and hot module replacement during development.",
       "source": "./wxt-extensions",
       "category": "development"
+    },
+    {
+      "name": "mantine-ui",
+      "description": "Mantine UI patterns covering core components, form handling with useForm, notifications, modals manager, theme customization, CSS-in-JS with Mantine styles, hooks, and Next.js/Remix integration.",
+      "source": "./mantine-ui",
+      "category": "development"
+    },
+    {
+      "name": "chakra-ui-v3",
+      "description": "Chakra UI v3 patterns covering style props, responsive design, color mode, component recipes, slot recipes, tokens, semantic tokens, custom themes, and accessibility-first component composition.",
+      "source": "./chakra-ui-v3",
+      "category": "development"
+    },
+    {
+      "name": "motion-one",
+      "description": "Motion One animation patterns covering the animate API, spring physics, scroll-triggered animations, timeline sequences, gesture recognition, layout animations, and integration with React and Vue.",
+      "source": "./motion-one",
+      "category": "development"
+    },
+    {
+      "name": "spring-boot-kotlin",
+      "description": "Spring Boot with Kotlin patterns covering coroutines, WebFlux reactive endpoints, data classes, Spring Data JPA, Spring Security, testing with MockK, and idiomatic Kotlin configuration.",
+      "source": "./spring-boot-kotlin",
+      "category": "development"
+    },
+    {
+      "name": "fastify-patterns",
+      "description": "Fastify patterns covering route registration, schema validation with JSON Schema, plugins, hooks, decorators, serialization, TypeBox integration, WebSocket support, and production-ready Node.js API development.",
+      "source": "./fastify-patterns",
+      "category": "development"
+    },
+    {
+      "name": "elysia-patterns",
+      "description": "Elysia patterns covering route handlers, type-safe validation with TypeBox, derive and resolve middleware, Eden Treaty client, WebSocket support, groups, guards, and Bun-optimized API development.",
+      "source": "./elysia-patterns",
+      "category": "development"
+    },
+    {
+      "name": "cloudflare-ai",
+      "description": "Cloudflare AI patterns covering Workers AI inference, text generation, embeddings, image generation, speech-to-text, Vectorize for RAG, AI Gateway, and edge-deployed AI application development.",
+      "source": "./cloudflare-ai",
+      "category": "development"
+    },
+    {
+      "name": "temporal-workflows",
+      "description": "Temporal workflow patterns covering workflow definitions, activities, signals, queries, timers, child workflows, retry policies, saga compensation, and TypeScript/Go SDK integration for durable execution.",
+      "source": "./temporal-workflows",
+      "category": "development"
+    },
+    {
+      "name": "rive-animations",
+      "description": "Rive animation patterns covering state machines, inputs, artboard loading, event handling, React/Vue integration, responsive sizing, and interactive animation design for web and mobile applications.",
+      "source": "./rive-animations",
+      "category": "development"
+    },
+    {
+      "name": "liveblocks-realtime",
+      "description": "Liveblocks real-time collaboration patterns covering presence, live cursors, storage with conflict-free data types, Yjs text editing, comments, notifications, and React hooks for multiplayer experiences.",
+      "source": "./liveblocks-realtime",
+      "category": "development"
     }
   ]
 }
