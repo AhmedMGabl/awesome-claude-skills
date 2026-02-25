@@ -817,6 +817,54 @@
       "description": "Cypress end-to-end testing covering component testing, custom commands, fixtures, intercepts for API mocking, visual regression with Percy, authentication flows, CI configuration, retry strategies, and best practices for reliable test suites.",
       "source": "./cypress-testing",
       "category": "development"
+    },
+    {
+      "name": "database-seeding",
+      "description": "Database seeding and test data generation covering Prisma seed scripts, Drizzle seeders, SQLAlchemy fixtures, factory patterns with Faker, deterministic seeding for tests, large dataset generation, referential integrity in seed data, and environment-specific seed strategies.",
+      "source": "./database-seeding",
+      "category": "development"
+    },
+    {
+      "name": "unit-testing-patterns",
+      "description": "Unit testing patterns and strategies covering test structure (Arrange-Act-Assert), mocking and stubbing, test doubles, parameterized tests, snapshot testing, coverage analysis, test naming conventions, testing async code, and writing maintainable test suites across JavaScript, TypeScript, and Python.",
+      "source": "./unit-testing-patterns",
+      "category": "development"
+    },
+    {
+      "name": "docker-development",
+      "description": "Docker development covering Dockerfile best practices, multi-stage builds, layer caching optimization, Docker Compose for development, volume mounts, networking, health checks, security hardening, debugging containers, and production image patterns.",
+      "source": "./docker-development",
+      "category": "development"
+    },
+    {
+      "name": "multi-tenant-saas",
+      "description": "Multi-tenant SaaS architecture patterns covering tenant isolation strategies (schema-per-tenant, row-level security, database-per-tenant), subdomain routing, billing integration with Stripe, tenant-aware middleware, data partitioning, and scalable multi-tenancy in Node.js and Python.",
+      "source": "./multi-tenant-saas",
+      "category": "development"
+    },
+    {
+      "name": "openapi-spec",
+      "description": "OpenAPI 3.1 specification authoring covering schema definition, path operations, request/response bodies, authentication schemes, reusable components, code generation with openapi-typescript, validation with Zod, and API-first development workflows.",
+      "source": "./openapi-spec",
+      "category": "development"
+    },
+    {
+      "name": "css-architecture",
+      "description": "CSS architecture and methodology covering CSS Modules, CSS-in-JS patterns, BEM naming, CSS custom properties, cascade layers, CSS nesting, :has() selector, logical properties, color-scheme support, and scalable stylesheet organization strategies.",
+      "source": "./css-architecture",
+      "category": "development"
+    },
+    {
+      "name": "payment-processing",
+      "description": "Payment processing patterns covering Stripe Checkout, PayPal, subscription billing, metered usage billing, invoice generation, refund handling, PCI compliance, idempotent payment operations, and multi-currency support.",
+      "source": "./payment-processing",
+      "category": "development"
+    },
+    {
+      "name": "pwa-development",
+      "description": "Progressive Web App development covering service workers, Web App Manifest, caching strategies (Cache First, Network First, Stale-While-Revalidate), offline support, push notifications, background sync, install prompts, and Workbox integration.",
+      "source": "./pwa-development",
+      "category": "development"
     }
   ]
 }
