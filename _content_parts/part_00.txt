@@ -1,0 +1,110 @@
+---
+name: react-native-mobile
+description: React Native mobile development covering Expo, React Navigation, native modules, platform-specific code, animations with Reanimated, state management, push notifications, app store deployment, and cross-platform patterns.
+---
+
+# React Native Mobile Development
+
+This skill provides comprehensive guidance for building production-quality React Native mobile applications. It covers the full development lifecycle from project initialization through app store deployment, with emphasis on modern tooling and cross-platform best practices.
+
+---
+
+## 1. Project Setup
+
+### Expo vs Bare Workflow
+
+For most projects, start with Expo (managed workflow) unless native module customization is required from day one.
+
+```bash
+# Create a new Expo project with the latest SDK
+npx create-expo-app@latest my-app --template blank-typescript
+
+# Or with the navigation template for a head start
+npx create-expo-app@latest my-app --template tabs
+
+# For bare workflow (when native code access is needed immediately)
+npx react-native@latest init MyApp --template react-native-template-typescript
+```
+
+### Recommended Project Structure
+
+```
+src/
+├── app/                    # App entry, providers, global config
+│   ├── App.tsx
+│   └── Providers.tsx
+├── components/             # Shared UI components
+│   ├── ui/                 # Primitives (Button, Input, Card)
+│   └── forms/              # Form-specific components
+├── features/               # Feature-based modules
+│   ├── auth/
+│   │   ├── screens/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── api.ts
+│   │   └── store.ts
+│   └── home/
+├── navigation/             # Navigation configuration
+│   ├── RootNavigator.tsx
+│   ├── AuthNavigator.tsx
+│   └── MainTabNavigator.tsx
+├── hooks/                  # Global custom hooks
+├── services/               # API client, storage, analytics
+├── stores/                 # Global state (Zustand stores)
+├── theme/                  # Colors, typography, spacing
+│   ├── colors.ts
+│   ├── typography.ts
+│   └── spacing.ts
+├── utils/                  # Pure utility functions
+└── types/                  # Shared TypeScript types
+```
+
+### EAS Build Configuration
+
+```json
+// eas.json
+{
+  "cli": { "version": ">= 5.0.0" },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": { "simulator": true },
+      "env": { "API_URL": "https://dev-api.example.com" }
+    },
+    "preview": {
+      "distribution": "internal",
+      "ios": { "resourceClass": "m-medium" },
+      "env": { "API_URL": "https://staging-api.example.com" }
+    },
+    "production": {
+      "ios": { "resourceClass": "m-medium" },
+      "env": { "API_URL": "https://api.example.com" }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "developer@example.com",
+        "ascAppId": "1234567890",
+        "appleTeamId": "ABCDE12345"
+      },
+      "android": {
+        "serviceAccountKeyPath": "./google-services-key.json",
+        "track": "internal"
+      }
+    }
+  }
+}
+```
+
+```bash
+# Build for development
+eas build --profile development --platform ios
+
+# Build for production
+eas build --profile production --platform all
+
+# Submit to app stores
+eas submit --profile production --platform ios
+```

@@ -474,3 +474,591 @@ impl NotificationService {
     }
 }
 ```
+
+---
+
+## 5. Error Handling
+
+### Result, Option, and the `?` Operator
+
+```rust
+use std::fs;
+use std::num::ParseIntError;
+
+// The ? operator propagates errors, converting via From when needed.
+fn read_config_value(path: &str, key: &str) -> Result<String, Box<dyn std::error::Error>> {
+    let contents = fs::read_to_string(path)?;
+    let value = contents
+        .lines()
+        .find(|line| line.starts_with(key))
+        .ok_or_else(|| format!("Key '{key}' not found"))?
+        .split('=')
+        .nth(1)
+        .ok_or_else(|| format!("Malformed line for key '{key}'"))?
+        .trim()
+        .to_string();
+    Ok(value)
+}
+
+// Option combinators for concise transformations.
+fn parse_port(input: Option<&str>) -> u16 {
+    input
+        .and_then(|s| s.parse::<u16>().ok())
+        .unwrap_or(8080)
+}
+```
+
+### Typed Errors with `thiserror`
+
+```rust
+use thiserror::Error;
+
+#[derive(Error, Debug)]
+pub enum AppError {
+    #[error("User not found: {id}")]
+    UserNotFound { id: String },
+
+    #[error("Validation failed: {0}")]
+    Validation(String),
+
+    #[error("Database error")]
+    Database(#[source] Box<dyn std::error::Error + Send + Sync>),
+
+    #[error("Unauthorized: {reason}")]
+    Unauthorized { reason: String },
+
+    #[error(transparent)]
+    Internal(#[from] anyhow::Error),
+}
+
+// Convert AppError into HTTP responses for axum.
+impl axum::response::IntoResponse for AppError {
+    fn into_response(self) -> axum::response::Response {
+        use axum::http::StatusCode;
+
+        let (status, message) = match &self {
+            AppError::UserNotFound { .. } => (StatusCode::NOT_FOUND, self.to_string()),
+            AppError::Validation(_) => (StatusCode::BAD_REQUEST, self.to_string()),
+            AppError::Unauthorized { .. } => (StatusCode::UNAUTHORIZED, self.to_string()),
+            AppError::Database(_) | AppError::Internal(_) => {
+                tracing::error!(?self, "Internal error");
+                (
+                    StatusCode::INTERNAL_SERVER_ERROR,
+                    "Internal server error".to_string(),
+                )
+            }
+        };
+
+        (status, axum::Json(serde_json::json!({ "error": message }))).into_response()
+    }
+}
+```
+
+### Application-Level Errors with `anyhow`
+
+```rust
+use anyhow::{Context, Result};
+
+// anyhow::Result is ideal for application code and scripts.
+fn load_and_process() -> Result<()> {
+    let config = fs::read_to_string("config.toml")
+        .context("Failed to read configuration file")?;
+
+    let port: u16 = config
+        .lines()
+        .find(|l| l.starts_with("port"))
+        .context("Missing 'port' in config")?
+        .split('=')
+        .nth(1)
+        .context("Malformed port line")?
+        .trim()
+        .parse()
+        .context("Invalid port number")?;
+
+    println!("Starting on port {port}");
+    Ok(())
+}
+```
+
+---
+
+## 6. Collections, Iterators, and Closures
+
+### Vec and HashMap
+
+```rust
+use std::collections::HashMap;
+
+fn demonstrate_collections() {
+    // Vec — growable array.
+    let mut scores: Vec<i32> = Vec::new();
+    scores.push(95);
+    scores.push(87);
+    scores.push(92);
+    scores.extend([88, 76, 91]);
+
+    // Access with bounds checking.
+    if let Some(&top) = scores.first() {
+        println!("First score: {top}");
+    }
+
+    // HashMap — key-value store.
+    let mut word_counts: HashMap<String, usize> = HashMap::new();
+    let text = "the quick brown fox jumps over the lazy fox";
+    for word in text.split_whitespace() {
+        *word_counts.entry(word.to_string()).or_insert(0) += 1;
+    }
+    println!("Word counts: {word_counts:?}");
+
+    // entry API for conditional insertion.
+    let mut settings: HashMap<&str, String> = HashMap::new();
+    settings
+        .entry("theme")
+        .or_insert_with(|| "dark".to_string());
+}
+```
+
+### Iterator Chains and Closures
+
+```rust
+#[derive(Debug, Clone)]
+struct Product {
+    name: String,
+    price: f64,
+    in_stock: bool,
+}
+
+fn demonstrate_iterators() {
+    let products = vec![
+        Product { name: "Laptop".into(), price: 999.99, in_stock: true },
+        Product { name: "Mouse".into(), price: 29.99, in_stock: true },
+        Product { name: "Monitor".into(), price: 449.99, in_stock: false },
+        Product { name: "Keyboard".into(), price: 79.99, in_stock: true },
+        Product { name: "Webcam".into(), price: 59.99, in_stock: true },
+    ];
+
+    // Filter, transform, collect.
+    let affordable_available: Vec<String> = products
+        .iter()
+        .filter(|p| p.in_stock && p.price < 100.0)
+        .map(|p| format!("{} (${:.2})", p.name, p.price))
+        .collect();
+    println!("Affordable: {affordable_available:?}");
+
+    // fold to compute aggregate.
+    let total_value: f64 = products
+        .iter()
+        .filter(|p| p.in_stock)
+        .fold(0.0, |acc, p| acc + p.price);
+    println!("Total in-stock value: ${total_value:.2}");
+
+    // Partition into two collections.
+    let (in_stock, out_of_stock): (Vec<_>, Vec<_>) = products
+        .iter()
+        .partition(|p| p.in_stock);
+    println!("In stock: {}, Out: {}", in_stock.len(), out_of_stock.len());
+
+    // flat_map for nested iteration.
+    let tags: Vec<Vec<&str>> = vec![
+        vec!["rust", "systems"],
+        vec!["async", "tokio"],
+        vec!["web", "axum"],
+    ];
+    let all_tags: Vec<&str> = tags.iter().flat_map(|t| t.iter().copied()).collect();
+    println!("All tags: {all_tags:?}");
+
+    // find and position.
+    let first_expensive = products.iter().find(|p| p.price > 500.0);
+    println!("First expensive: {first_expensive:?}");
+
+    // enumerate and zip.
+    let names: Vec<&str> = vec!["alpha", "beta", "gamma"];
+    let values: Vec<i32> = vec![1, 2, 3];
+    let pairs: HashMap<&str, i32> = names.into_iter().zip(values).collect();
+    println!("Pairs: {pairs:?}");
+
+    // Chaining with closures stored in variables.
+    let min_price = 50.0;
+    let price_filter = |p: &&Product| p.price >= min_price;
+    let count = products.iter().filter(price_filter).count();
+    println!("Products >= ${min_price}: {count}");
+}
+```
+
+---
+
+## 7. Async Programming with Tokio
+
+### Basic Async Runtime and Spawning
+
+```rust
+use tokio::time::{self, Duration};
+
+#[tokio::main]
+async fn main() {
+    // Initialize structured logging.
+    tracing_subscriber::fmt()
+        .with_env_filter("info")
+        .init();
+
+    tracing::info!("Application starting");
+
+    // Spawn concurrent tasks.
+    let handle_a = tokio::spawn(async {
+        time::sleep(Duration::from_millis(100)).await;
+        "Task A complete"
+    });
+
+    let handle_b = tokio::spawn(async {
+        time::sleep(Duration::from_millis(50)).await;
+        42
+    });
+
+    // Await results. JoinHandle returns Result<T, JoinError>.
+    let result_a = handle_a.await.expect("Task A panicked");
+    let result_b = handle_b.await.expect("Task B panicked");
+    tracing::info!(%result_a, %result_b, "Tasks finished");
+}
+```
+
+### `tokio::select!` for Racing Futures
+
+```rust
+use tokio::sync::mpsc;
+use tokio::time::{self, Duration};
+
+async fn event_loop() {
+    let (tx, mut rx) = mpsc::channel::<String>(32);
+    let mut interval = time::interval(Duration::from_secs(5));
+    let shutdown = tokio::signal::ctrl_c();
+    tokio::pin!(shutdown);
+
+    loop {
+        tokio::select! {
+            // Receive a message from the channel.
+            Some(msg) = rx.recv() => {
+                tracing::info!(%msg, "Received message");
+            }
+
+            // Periodic tick.
+            _ = interval.tick() => {
+                tracing::debug!("Heartbeat tick");
+            }
+
+            // Graceful shutdown on Ctrl+C.
+            _ = &mut shutdown => {
+                tracing::info!("Shutting down gracefully");
+                break;
+            }
+        }
+    }
+}
+```
+
+### Channels — mpsc and oneshot
+
+```rust
+use tokio::sync::{mpsc, oneshot};
+
+#[derive(Debug)]
+enum DbCommand {
+    Get {
+        key: String,
+        reply: oneshot::Sender<Option<String>>,
+    },
+    Set {
+        key: String,
+        value: String,
+        reply: oneshot::Sender<()>,
+    },
+}
+
+async fn db_actor(mut rx: mpsc::Receiver<DbCommand>) {
+    let mut store = std::collections::HashMap::new();
+
+    while let Some(cmd) = rx.recv().await {
+        match cmd {
+            DbCommand::Get { key, reply } => {
+                let value = store.get(&key).cloned();
+                let _ = reply.send(value);
+            }
+            DbCommand::Set { key, value, reply } => {
+                store.insert(key, value);
+                let _ = reply.send(());
+            }
+        }
+    }
+}
+
+async fn use_db_actor() {
+    let (tx, rx) = mpsc::channel(64);
+    tokio::spawn(db_actor(rx));
+
+    // Set a value.
+    let (reply_tx, reply_rx) = oneshot::channel();
+    tx.send(DbCommand::Set {
+        key: "name".into(),
+        value: "Rust".into(),
+        reply: reply_tx,
+    })
+    .await
+    .unwrap();
+    reply_rx.await.unwrap();
+
+    // Get the value back.
+    let (reply_tx, reply_rx) = oneshot::channel();
+    tx.send(DbCommand::Get {
+        key: "name".into(),
+        reply: reply_tx,
+    })
+    .await
+    .unwrap();
+    let result = reply_rx.await.unwrap();
+    println!("Got: {result:?}");
+}
+```
+
+### Shared State with `Arc<Mutex<T>>`
+
+```rust
+use std::sync::Arc;
+use tokio::sync::Mutex;
+
+#[derive(Debug, Default)]
+struct AppState {
+    request_count: u64,
+    active_connections: u32,
+}
+
+async fn demonstrate_shared_state() {
+    let state = Arc::new(Mutex::new(AppState::default()));
+
+    let mut handles = Vec::new();
+    for i in 0..10 {
+        let state = Arc::clone(&state);
+        handles.push(tokio::spawn(async move {
+            // Lock is held only for the duration of the block.
+            let mut guard = state.lock().await;
+            guard.request_count += 1;
+            tracing::info!(task = i, count = guard.request_count, "Incremented");
+        }));
+    }
+
+    for handle in handles {
+        handle.await.unwrap();
+    }
+
+    let final_state = state.lock().await;
+    println!("Final count: {}", final_state.request_count);
+}
+```
+
+---
+
+## 8. HTTP with Axum
+
+### Application Setup with Shared State
+
+```rust
+use axum::{
+    extract::{Json, Path, Query, State},
+    http::StatusCode,
+    middleware,
+    response::IntoResponse,
+    routing::{get, post, put, delete},
+    Router,
+};
+use serde::{Deserialize, Serialize};
+use std::sync::Arc;
+use tokio::sync::RwLock;
+use uuid::Uuid;
+
+// Shared application state.
+pub type SharedState = Arc<RwLock<AppData>>;
+
+#[derive(Debug, Default)]
+pub struct AppData {
+    pub users: std::collections::HashMap<Uuid, User>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct User {
+    pub id: Uuid,
+    pub name: String,
+    pub email: String,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct CreateUserRequest {
+    pub name: String,
+    pub email: String,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct ListParams {
+    pub page: Option<u32>,
+    pub per_page: Option<u32>,
+}
+
+// Build the router with nested routes and shared state.
+pub fn create_router(state: SharedState) -> Router {
+    let api_routes = Router::new()
+        .route("/users", get(list_users).post(create_user))
+        .route(
+            "/users/{id}",
+            get(get_user).put(update_user).delete(delete_user),
+        )
+        .route("/health", get(health_check));
+
+    Router::new()
+        .nest("/api/v1", api_routes)
+        .layer(middleware::from_fn(request_logging_middleware))
+        .with_state(state)
+}
+```
+
+### Route Handlers with Extractors
+
+```rust
+async fn health_check() -> impl IntoResponse {
+    Json(serde_json::json!({ "status": "healthy" }))
+}
+
+async fn list_users(
+    State(state): State<SharedState>,
+    Query(params): Query<ListParams>,
+) -> impl IntoResponse {
+    let data = state.read().await;
+    let page = params.page.unwrap_or(1);
+    let per_page = params.per_page.unwrap_or(20);
+
+    let users: Vec<&User> = data
+        .users
+        .values()
+        .skip(((page - 1) * per_page) as usize)
+        .take(per_page as usize)
+        .collect();
+
+    Json(serde_json::json!({
+        "users": users,
+        "page": page,
+        "total": data.users.len(),
+    }))
+}
+
+async fn create_user(
+    State(state): State<SharedState>,
+    Json(payload): Json<CreateUserRequest>,
+) -> Result<impl IntoResponse, AppError> {
+    if payload.name.is_empty() {
+        return Err(AppError::Validation("Name cannot be empty".into()));
+    }
+    if !payload.email.contains('@') {
+        return Err(AppError::Validation("Invalid email address".into()));
+    }
+
+    let user = User {
+        id: Uuid::new_v4(),
+        name: payload.name,
+        email: payload.email,
+    };
+
+    let mut data = state.write().await;
+    data.users.insert(user.id, user.clone());
+
+    Ok((StatusCode::CREATED, Json(user)))
+}
+
+async fn get_user(
+    State(state): State<SharedState>,
+    Path(id): Path<Uuid>,
+) -> Result<Json<User>, AppError> {
+    let data = state.read().await;
+    let user = data
+        .users
+        .get(&id)
+        .cloned()
+        .ok_or(AppError::UserNotFound { id: id.to_string() })?;
+    Ok(Json(user))
+}
+
+async fn update_user(
+    State(state): State<SharedState>,
+    Path(id): Path<Uuid>,
+    Json(payload): Json<CreateUserRequest>,
+) -> Result<Json<User>, AppError> {
+    let mut data = state.write().await;
+    let user = data
+        .users
+        .get_mut(&id)
+        .ok_or(AppError::UserNotFound { id: id.to_string() })?;
+
+    user.name = payload.name;
+    user.email = payload.email;
+    Ok(Json(user.clone()))
+}
+
+async fn delete_user(
+    State(state): State<SharedState>,
+    Path(id): Path<Uuid>,
+) -> Result<StatusCode, AppError> {
+    let mut data = state.write().await;
+    data.users
+        .remove(&id)
+        .ok_or(AppError::UserNotFound { id: id.to_string() })?;
+    Ok(StatusCode::NO_CONTENT)
+}
+```
+
+### Middleware
+
+```rust
+use axum::{extract::Request, middleware::Next, response::Response};
+use std::time::Instant;
+
+async fn request_logging_middleware(req: Request, next: Next) -> Response {
+    let method = req.method().clone();
+    let uri = req.uri().clone();
+    let start = Instant::now();
+
+    let response = next.run(req).await;
+
+    let elapsed = start.elapsed();
+    tracing::info!(
+        %method,
+        %uri,
+        status = %response.status(),
+        duration_ms = elapsed.as_millis(),
+        "Request completed"
+    );
+
+    response
+}
+```
+
+### Server Entrypoint with Graceful Shutdown
+
+```rust
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    tracing_subscriber::fmt()
+        .with_env_filter("info,tower_http=debug")
+        .init();
+
+    let state: SharedState = Arc::new(RwLock::new(AppData::default()));
+    let app = create_router(state);
+    let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await?;
+
+    tracing::info!("Listening on http://0.0.0.0:3000");
+    axum::serve(listener, app)
+        .with_graceful_shutdown(async {
+            tokio::signal::ctrl_c()
+                .await
+                .expect("Failed to listen for Ctrl+C");
+            tracing::info!("Shutdown signal received");
+        })
+        .await?;
+
+    Ok(())
+}
+```

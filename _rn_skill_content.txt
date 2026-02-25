@@ -1,0 +1,17 @@
+---
+name: react-native-mobile
+description: React Native mobile development covering Expo, React Navigation, native modules, platform-specific code, animations with Reanimated, state management, push notifications, app store deployment, and cross-platform patterns.
+---
+
+# React Native Mobile Development
+
+This skill provides comprehensive guidance for building production-quality React Native mobile applications. It covers the full development lifecycle from project initialization through app store deployment, with emphasis on modern tooling and cross-platform best practices.
+
+---
+
+## 1. Project Setup
+
+### Expo vs Bare Workflow
+
+For most projects, start with Expo (managed workflow) unless native module customization is required from day one.
+
