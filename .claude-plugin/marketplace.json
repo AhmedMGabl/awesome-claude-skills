@@ -1105,6 +1105,30 @@
       "description": "React Router v7 development covering file-based routing, nested layouts, loaders and actions, form handling, data loading patterns, route protection with authentication, lazy loading, error boundaries, search params, and migration from v6.",
       "source": "./react-router",
       "category": "development"
+    },
+    {
+      "name": "redux-toolkit",
+      "description": "Redux Toolkit state management covering configureStore, createSlice, createAsyncThunk, RTK Query for data fetching, entity adapters, TypeScript typing patterns, React hooks integration, middleware configuration, and testing strategies.",
+      "source": "./redux-toolkit",
+      "category": "development"
+    },
+    {
+      "name": "react-hook-form",
+      "description": "React Hook Form for performant form management covering useForm, Zod schema validation, useFieldArray, Controller for controlled inputs, multi-step wizards, file uploads, error display patterns, and TypeScript integration.",
+      "source": "./react-hook-form",
+      "category": "development"
+    },
+    {
+      "name": "hono-framework",
+      "description": "Hono web framework covering routing, middleware, Zod OpenAPI integration, request validation, multi-runtime support for Cloudflare Workers, Bun, Node.js, and Deno, RPC client, and testing patterns.",
+      "source": "./hono-framework",
+      "category": "development"
+    },
+    {
+      "name": "semantic-release",
+      "description": "Semantic versioning and automated release management covering semantic-release configuration, conventional commits, commitlint, changesets for monorepos, GitHub Actions workflows, npm publishing, changelog generation, and pre-release channels.",
+      "source": "./semantic-release",
+      "category": "development"
     }
   ]
 }

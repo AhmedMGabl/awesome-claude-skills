@@ -153,6 +153,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
+- [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
@@ -193,10 +194,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [Rate Limiting & Throttling](./rate-limiting/) - Rate limiting with token bucket, sliding window, Redis distributed limits, Express middleware, and tiered API quotas.
+- [React Hook Form](./react-hook-form/) - React Hook Form with Zod validation, useFieldArray, Controller, multi-step wizards, and performance optimization.
 - [React Router](./react-router/) - React Router v7 with file-based routing, nested layouts, loaders, actions, route protection, and search params.
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.
+- [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
@@ -223,6 +226,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
+- [Semantic Release](./semantic-release/) - Automated versioning with semantic-release, conventional commits, commitlint, changesets, and GitHub Actions workflows.
 - [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
