@@ -535,6 +535,24 @@
       "description": "Prompt engineering patterns covering structured prompting, chain-of-thought, few-shot examples, system prompt design, tool use schemas, output formatting, evaluation strategies, and LLM best practices.",
       "source": "./prompt-engineering",
       "category": "development"
+    },
+    {
+      "name": "error-handling",
+      "description": "Error handling patterns covering custom error hierarchies, Result types, retry logic, circuit breakers, error boundaries, graceful degradation, and production error management across TypeScript, Python, and Go.",
+      "source": "./error-handling",
+      "category": "development"
+    },
+    {
+      "name": "api-design",
+      "description": "REST API design best practices covering resource naming, HTTP methods, status codes, pagination, filtering, versioning, error responses, rate limiting, and OpenAPI specifications.",
+      "source": "./api-design",
+      "category": "development"
+    },
+    {
+      "name": "git-hooks-automation",
+      "description": "Git hooks and repository automation covering Husky, lint-staged, conventional commits, commitlint, semantic release, changesets, pre-commit hooks, and developer experience tooling.",
+      "source": "./git-hooks-automation",
+      "category": "development"
     }
   ]
 }

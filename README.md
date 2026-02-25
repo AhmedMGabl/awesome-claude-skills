@@ -77,6 +77,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Accessibility & WCAG Compliance](./accessibility-wcag/) - Web accessibility and WCAG compliance covering semantic HTML, ARIA attributes, keyboard navigation, color contrast, accessible forms, and testing with axe-core and Lighthouse.
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
+- [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
 - [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
@@ -90,6 +91,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
+- [Error Handling Patterns](./error-handling/) - Error handling strategies with custom errors, Result types, retry logic, circuit breakers, and error boundaries across TypeScript, Python, and Go.
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
@@ -104,6 +106,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
+- [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
 - [Git Workflows](./git-workflows/) - Git branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, cherry-pick, bisect, worktrees, hooks, and monorepo management.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
