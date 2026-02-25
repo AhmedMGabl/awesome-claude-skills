@@ -1255,6 +1255,18 @@
       "description": "Drizzle ORM advanced patterns covering relational queries, prepared statements, custom SQL, migration strategies, database push vs migrate, Drizzle Studio GUI, multi-database support for PostgreSQL, MySQL, and SQLite, and integration with Next.js and Hono.",
       "source": "./drizzle-studio",
       "category": "development"
+    },
+    {
+      "name": "react-server-components",
+      "description": "React Server Components covering server vs client component patterns, data fetching in server components, streaming with Suspense, server actions, use server and use client directives, composition patterns, caching, and migration strategies.",
+      "source": "./react-server-components",
+      "category": "development"
+    },
+    {
+      "name": "opentelemetry",
+      "description": "OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, span creation, context propagation, exporters for Jaeger and OTLP, auto-instrumentation, and integration with Grafana and Datadog.",
+      "source": "./opentelemetry",
+      "category": "development"
     }
   ]
 }
