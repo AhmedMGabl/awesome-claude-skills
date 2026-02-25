@@ -1429,6 +1429,30 @@
       "description": "Sharp image processing covering resizing, format conversion, compression, watermarks, metadata extraction, batch processing, thumbnail generation, and integration with Node.js upload pipelines.",
       "source": "./sharp-image-processing",
       "category": "development"
+    },
+    {
+      "name": "turborepo-v2",
+      "description": "Turborepo v2 covering task configuration in turbo.json, watch mode, boundary enforcement, workspace dependencies, remote caching, environment variable passthrough, and migration from v1.",
+      "source": "./turborepo-v2",
+      "category": "development"
+    },
+    {
+      "name": "railway-deployment",
+      "description": "Railway deployment covering project setup, service configuration, Postgres and Redis provisioning, environment variables, custom domains, Nixpacks builds, health checks, cron jobs, and GitHub integration.",
+      "source": "./railway-deployment",
+      "category": "development"
+    },
+    {
+      "name": "coolify-selfhost",
+      "description": "Coolify self-hosted PaaS covering server setup, application deployment from GitHub, database provisioning, environment variables, custom domains, SSL certificates, Docker Compose projects, and backup configuration.",
+      "source": "./coolify-selfhost",
+      "category": "development"
+    },
+    {
+      "name": "biome-linting",
+      "description": "Biome toolchain covering linting, formatting, import sorting, configuration, rule customization, IDE integration, migration from ESLint and Prettier, CI setup, and monorepo support.",
+      "source": "./biome-linting",
+      "category": "development"
     }
   ]
 }

@@ -97,6 +97,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
+- [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
@@ -135,6 +136,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
 - [Capacitor Mobile](./capacitor-mobile/) - Capacitor cross-platform mobile development with native plugins, deep linking, push notifications, and app store deployment.
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
+- [Coolify Self-Hosted](./coolify-selfhost/) - Coolify self-hosted PaaS covering server setup, GitHub deployment, database provisioning, custom domains, and Docker Compose.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
@@ -224,6 +226,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [Radix UI](./radix-ui/) - Radix UI headless components with accessible dialogs, dropdowns, tabs, tooltips, Tailwind styling, and ARIA compliance.
+- [Railway Deployment](./railway-deployment/) - Railway deployment covering Postgres/Redis provisioning, Nixpacks builds, custom domains, cron jobs, and GitHub integration.
 - [Rate Limiting & Throttling](./rate-limiting/) - Rate limiting with token bucket, sliding window, Redis distributed limits, Express middleware, and tiered API quotas.
 - [React Hook Form](./react-hook-form/) - React Hook Form with Zod validation, useFieldArray, Controller, multi-step wizards, and performance optimization.
 - [React Router](./react-router/) - React Router v7 with file-based routing, nested layouts, loaders, actions, route protection, and search params.
@@ -286,6 +289,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [Turborepo Monorepo](./turborepo-monorepo/)
 - [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI.
+- [Turborepo v2](./turborepo-v2/) - Turborepo v2 covering task configuration, watch mode, boundary enforcement, remote caching, and migration from v1.
 - [Twilio Communication](./twilio-communication/) - Twilio APIs covering SMS, voice calls with TwiML, WhatsApp messaging, Verify OTP, webhooks, and Node.js SDK integration.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
