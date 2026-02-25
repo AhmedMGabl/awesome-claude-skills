@@ -1,12 +1,6 @@
 [
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\flux-gitops\\SKILL.md",
-    "timestamp": 1772046284667,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\flux-gitops\\SKILL.md",
     "timestamp": 1772046286653,
     "focus": false,
     "openLocation": 1
@@ -56,6 +50,12 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\backstage-developer-portal\\SKILL.md",
     "timestamp": 1772046379767,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\.claude-plugin\\marketplace.json",
+    "timestamp": 1772046565698,
     "focus": false,
     "openLocation": 1
   }

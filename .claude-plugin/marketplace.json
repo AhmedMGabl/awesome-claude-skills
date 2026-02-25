@@ -3421,6 +3421,66 @@
       "description": "PagerDuty incident management patterns covering service configuration, escalation policies, event rules, API integration, incident workflows, and on-call scheduling.",
       "source": "./pagerduty-incidents",
       "category": "development"
+    },
+    {
+      "name": "crossplane-infra",
+      "description": "Crossplane infrastructure patterns covering composite resources, compositions, XRDs, provider configurations, claims, EnvironmentConfigs, and GitOps workflows.",
+      "source": "./crossplane-infra",
+      "category": "development"
+    },
+    {
+      "name": "kustomize-overlays",
+      "description": "Kustomize patterns covering base/overlay structure, strategic merge patches, JSON patches, config/secret generators, component reuse, and environment-specific configurations.",
+      "source": "./kustomize-overlays",
+      "category": "development"
+    },
+    {
+      "name": "helm-charts-advanced",
+      "description": "Advanced Helm chart patterns covering chart development, values templating, hooks, dependencies, library charts, testing, OCI registries, and production chart best practices.",
+      "source": "./helm-charts-advanced",
+      "category": "development"
+    },
+    {
+      "name": "flux-gitops",
+      "description": "Flux CD GitOps patterns covering source controllers, kustomization resources, Helm releases, image automation, notifications, multi-tenancy, and progressive delivery.",
+      "source": "./flux-gitops",
+      "category": "development"
+    },
+    {
+      "name": "backstage-developer-portal",
+      "description": "Backstage developer portal patterns covering catalog entities, software templates, TechDocs, plugins, search, authentication, and organizational modeling.",
+      "source": "./backstage-developer-portal",
+      "category": "development"
+    },
+    {
+      "name": "opentofu-iac",
+      "description": "OpenTofu infrastructure-as-code patterns covering provider configuration, state encryption, variable validation, module development, testing, and migration from Terraform.",
+      "source": "./opentofu-iac",
+      "category": "development"
+    },
+    {
+      "name": "pulumi-infra",
+      "description": "Pulumi infrastructure patterns covering TypeScript/Python resource definitions, stack management, component resources, automation API, policy-as-code, and cloud provider integration.",
+      "source": "./pulumi-infra",
+      "category": "development"
+    },
+    {
+      "name": "cdk8s-constructs",
+      "description": "CDK8s patterns covering Kubernetes manifest generation with TypeScript/Python, custom constructs, Helm chart imports, cdk8s-plus abstractions, and testing with snapshots.",
+      "source": "./cdk8s-constructs",
+      "category": "development"
+    },
+    {
+      "name": "jsonnet-config",
+      "description": "Jsonnet configuration patterns covering data templating, functions, imports, object composition, hidden fields, array comprehensions, and Kubernetes manifest generation.",
+      "source": "./jsonnet-config",
+      "category": "development"
+    },
+    {
+      "name": "tekton-pipelines",
+      "description": "Tekton CI/CD patterns covering Tasks, Pipelines, PipelineRuns, workspaces, triggers, results, custom steps, and Kubernetes-native build automation.",
+      "source": "./tekton-pipelines",
+      "category": "development"
     }
   ]
 }
