@@ -207,6 +207,18 @@
       "category": "development"
     },
     {
+      "name": "nextjs-development",
+      "description": "Next.js development covering App Router, Server Components, Client Components, SSR/SSG/ISR, API routes, middleware, authentication, performance optimization, and production deployment patterns.",
+      "source": "./nextjs-development",
+      "category": "development"
+    },
+    {
+      "name": "postgresql-operations",
+      "description": "PostgreSQL database operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, transactions, performance tuning, and PostgreSQL-specific best practices.",
+      "source": "./postgresql-operations",
+      "category": "development"
+    },
+    {
       "name": "python-development",
       "description": "Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns for building robust applications.",
       "source": "./python-development",
@@ -240,6 +252,12 @@
       "name": "terraform-infrastructure",
       "description": "Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.",
       "source": "./terraform-infrastructure",
+      "category": "development"
+    },
+    {
+      "name": "typescript-development",
+      "description": "TypeScript development best practices covering strict mode configuration, advanced types, generics, utility types, decorators, module systems, type narrowing, and production-ready patterns for building type-safe applications.",
+      "source": "./typescript-development",
       "category": "development"
     },
     {
