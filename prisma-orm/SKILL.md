@@ -1081,3 +1081,252 @@ export async function POST(request: NextRequest) {
   return NextResponse.json(post, { status: 201 });
 }
 ```
+### Next.js Server Component
+
+```typescript
+// app/posts/[slug]/page.tsx
+import { prisma } from "@/lib/prisma";
+import { notFound } from "next/navigation";
+
+export default async function PostPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const post = await prisma.post.findUnique({
+    where: { slug: params.slug, published: true },
+    include: {
+      author: {
+        select: { id: true, name: true, profile: { select: { avatar: true } } },
+      },
+      tags: true,
+      comments: {
+        where: { parentId: null },
+        include: {
+          author: { select: { id: true, name: true } },
+          replies: {
+            include: { author: { select: { id: true, name: true } } },
+          },
+        },
+        orderBy: { createdAt: "desc" },
+      },
+    },
+  });
+
+  if (!post) notFound();
+
+  prisma.post.update({
+    where: { id: post.id },
+    data: { views: { increment: 1 } },
+  }).catch(() => {});
+
+  return (
+    <article>
+      <h1>{post.title}</h1>
+      <p>By {post.author.name}</p>
+      <div>{post.content}</div>
+    </article>
+  );
+}
+```
+
+### Express.js Integration
+
+```typescript
+import express from "express";
+import { prisma } from "./lib/prisma";
+
+const app = express();
+app.use(express.json());
+
+process.on("SIGTERM", async () => {
+  await prisma.$disconnect();
+  process.exit(0);
+});
+
+app.get("/users/:id", async (req, res) => {
+  try {
+    const user = await prisma.user.findUniqueOrThrow({
+      where: { id: req.params.id },
+      select: {
+        id: true, email: true, name: true, role: true,
+        profile: true, _count: { select: { posts: true } },
+      },
+    });
+    res.json(user);
+  } catch (error) {
+    if ((error as any).code === "P2025") {
+      return res.status(404).json({ error: "User not found" });
+    }
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+app.post("/users", async (req, res) => {
+  try {
+    const user = await prisma.user.create({
+      data: {
+        email: req.body.email,
+        name: req.body.name,
+        password: await hash(req.body.password, 12),
+        profile: req.body.bio
+          ? { create: { bio: req.body.bio } }
+          : undefined,
+      },
+      select: { id: true, email: true, name: true },
+    });
+    res.status(201).json(user);
+  } catch (error) {
+    if ((error as any).code === "P2002") {
+      return res.status(409).json({ error: "Email already exists" });
+    }
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+// P2002: Unique constraint violation
+// P2025: Record not found
+// P2003: Foreign key constraint violation
+// P2014: Required relation violation
+
+app.listen(3000, () => console.log("Server running on port 3000"));
+```
+### Testing with Prisma
+
+```typescript
+// tests/helpers/prisma.ts
+import { PrismaClient } from "@prisma/client";
+import { execSync } from "child_process";
+import { randomUUID } from "crypto";
+
+function createTestPrisma() {
+  const schema = "test_" + randomUUID().replace(/-/g, "").slice(0, 12);
+  const url = process.env.DATABASE_URL + "?schema=" + schema;
+  const prisma = new PrismaClient({
+    datasources: { db: { url } },
+  });
+  return { prisma, schema, url };
+}
+
+export async function setupTestDB() {
+  const { prisma, url } = createTestPrisma();
+  execSync("npx prisma migrate deploy", {
+    env: { ...process.env, DATABASE_URL: url },
+  });
+  return prisma;
+}
+
+export async function teardownTestDB(prisma: PrismaClient) {
+  const result = await prisma.$queryRaw<{ schema: string }[]>(
+    Prisma.sql`SELECT current_schema() as schema`
+  );
+  const schemaName = result[0].schema;
+  await prisma.$executeRawUnsafe(
+    "DROP SCHEMA IF EXISTS " + schemaName + " CASCADE"
+  );
+  await prisma.$disconnect();
+}
+
+export async function cleanDB(prisma: PrismaClient) {
+  const models = Reflect.ownKeys(prisma).filter(
+    (key) =>
+      typeof key === "string" &&
+      !key.startsWith("_") &&
+      !key.startsWith("$")
+  ) as string[];
+  await prisma.$transaction(
+    models.map((model) => (prisma as any)[model].deleteMany())
+  );
+}
+```
+
+```typescript
+// tests/user.service.test.ts
+import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
+import { PrismaClient } from "@prisma/client";
+import { setupTestDB, teardownTestDB, cleanDB } from "./helpers/prisma";
+import { UserService } from "../src/services/user.service";
+
+describe("UserService", () => {
+  let prisma: PrismaClient;
+  let userService: UserService;
+
+  beforeAll(async () => {
+    prisma = await setupTestDB();
+    userService = new UserService(prisma);
+  });
+
+  afterAll(async () => { await teardownTestDB(prisma); });
+  beforeEach(async () => { await cleanDB(prisma); });
+
+  it("should create a user with profile", async () => {
+    const user = await userService.createUser({
+      email: "test@example.com",
+      name: "Test User",
+      password: "password123",
+      bio: "A test user",
+    });
+    expect(user.email).toBe("test@example.com");
+    expect(user.profile?.bio).toBe("A test user");
+  });
+
+  it("should reject duplicate emails", async () => {
+    await userService.createUser({
+      email: "dup@example.com", name: "User A", password: "pass",
+    });
+    await expect(
+      userService.createUser({
+        email: "dup@example.com", name: "User B", password: "pass",
+      })
+    ).rejects.toThrow(/email already exists/i);
+  });
+
+  it("should paginate users correctly", async () => {
+    await prisma.user.createMany({
+      data: Array.from({ length: 15 }).map((_, i) => ({
+        email: "user" + i + "@example.com",
+        name: "User " + i,
+        password: "hashed",
+      })),
+    });
+
+    const page1 = await userService.listUsers({ page: 1, pageSize: 10 });
+    expect(page1.data).toHaveLength(10);
+    expect(page1.meta.total).toBe(15);
+    expect(page1.meta.totalPages).toBe(2);
+
+    const page2 = await userService.listUsers({ page: 2, pageSize: 10 });
+    expect(page2.data).toHaveLength(5);
+  });
+});
+```
+
+---
+
+## Quick Reference -- Common Prisma CLI Commands
+
+| Command | Purpose |
+| --- | --- |
+| `npx prisma init` | Initialize Prisma in a project |
+| `npx prisma generate` | Regenerate Prisma Client |
+| `npx prisma migrate dev --name X` | Create and apply a migration |
+| `npx prisma migrate deploy` | Apply pending migrations (production) |
+| `npx prisma migrate reset` | Drop database and re-apply all migrations |
+| `npx prisma migrate status` | Show current migration status |
+| `npx prisma db push` | Push schema without creating migration files |
+| `npx prisma db pull` | Introspect database and update schema |
+| `npx prisma db seed` | Run the seed script |
+| `npx prisma studio` | Open visual database browser |
+| `npx prisma validate` | Validate the schema file |
+| `npx prisma format` | Format the schema file |
+
+## Quick Reference -- Common Error Codes
+
+| Code | Meaning | Typical Resolution |
+| --- | --- | --- |
+| P2002 | Unique constraint violation | Check for duplicate values |
+| P2003 | Foreign key constraint failure | Ensure referenced record exists |
+| P2014 | Required relation violation | Include required related records |
+| P2025 | Record not found | Verify ID/filter or handle gracefully |
+| P1001 | Cannot reach database server | Check DATABASE_URL and connectivity |
+| P1008 | Operation timed out | Optimize query or increase timeout |
