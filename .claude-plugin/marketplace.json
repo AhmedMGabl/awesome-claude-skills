@@ -511,6 +511,30 @@
       "description": "Spring Boot development covering REST APIs, Spring Data JPA, Spring Security with JWT/OAuth2, validation, exception handling, caching, actuator monitoring, testing with MockMvc, and production deployment patterns.",
       "source": "./spring-boot",
       "category": "development"
+    },
+    {
+      "name": "cloudflare-workers",
+      "description": "Cloudflare Workers and edge computing covering Workers runtime, Hono framework, D1 database, R2 storage, KV store, Durable Objects, Queues, Cron Triggers, and deployment with Wrangler.",
+      "source": "./cloudflare-workers",
+      "category": "development"
+    },
+    {
+      "name": "pulumi-iac",
+      "description": "Pulumi infrastructure as code using TypeScript, Python, or Go covering AWS, GCP, Azure resource provisioning, stack management, component resources, secrets, testing, and CI/CD integration.",
+      "source": "./pulumi-iac",
+      "category": "development"
+    },
+    {
+      "name": "state-machines",
+      "description": "State machine patterns with XState v5 covering finite state machines, statecharts, parallel states, guards, actions, TypeScript integration, React bindings, and complex UI state management.",
+      "source": "./state-machines",
+      "category": "development"
+    },
+    {
+      "name": "prompt-engineering",
+      "description": "Prompt engineering patterns covering structured prompting, chain-of-thought, few-shot examples, system prompt design, tool use schemas, output formatting, evaluation strategies, and LLM best practices.",
+      "source": "./prompt-engineering",
+      "category": "development"
     }
   ]
 }
