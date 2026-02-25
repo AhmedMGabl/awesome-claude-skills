@@ -1039,6 +1039,24 @@
       "description": "Stripe Connect platform development covering marketplace payments, connected account onboarding, direct and destination charges, transfer splits, payout scheduling, platform fees, account dashboards, identity verification, and webhook handling for multi-party payments.",
       "source": "./stripe-connect",
       "category": "development"
+    },
+    {
+      "name": "vercel-deployment",
+      "description": "Vercel deployment covering project configuration, environment variables, serverless and edge functions, preview deployments, custom domains, monorepo support, build optimization, ISR revalidation, middleware, analytics, and CI/CD integration with GitHub Actions.",
+      "source": "./vercel-deployment",
+      "category": "development"
+    },
+    {
+      "name": "cron-jobs",
+      "description": "Cron job and task scheduling covering node-cron and cron syntax, BullMQ repeatable jobs, Agenda.js MongoDB scheduler, pg-boss PostgreSQL job queues, distributed locking, retry strategies, dead letter handling, monitoring, and serverless cron with Vercel and AWS.",
+      "source": "./cron-jobs",
+      "category": "development"
+    },
+    {
+      "name": "tailwind-css",
+      "description": "Tailwind CSS development covering utility classes, responsive design, dark mode, custom theme configuration, component patterns, animations, group and peer modifiers, arbitrary values, @apply extraction, and plugin development.",
+      "source": "./tailwind-css",
+      "category": "development"
     }
   ]
 }

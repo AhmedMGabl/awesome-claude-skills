@@ -122,6 +122,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
+- [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
 - [Cron & Job Scheduling](./cron-scheduling/) - Job scheduling with cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, and production patterns.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
@@ -227,6 +228,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
+- [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [Turborepo Monorepo](./turborepo-monorepo/) - Turborepo with workspace setup, task pipelines, remote caching, shared packages, and CI optimization.
@@ -235,6 +237,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
+- [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 - [Web Components](./web-components/) - Web Components with Custom Elements, Shadow DOM, Lit framework, slots, form-associated elements, and framework interop.
