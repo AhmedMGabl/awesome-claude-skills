@@ -571,6 +571,42 @@
       "description": "Design system and component library patterns covering design tokens, variant systems (CVA), accessibility, Storybook documentation, theming, and building maintainable UI component libraries.",
       "source": "./design-system",
       "category": "development"
+    },
+    {
+      "name": "email-templates",
+      "description": "Email template development covering responsive HTML email, React Email, MJML, transactional emails, dark mode support, deliverability, and SendGrid/Resend integration.",
+      "source": "./email-templates",
+      "category": "development"
+    },
+    {
+      "name": "cron-scheduling",
+      "description": "Job scheduling and cron patterns covering cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, retry strategies, and production scheduling.",
+      "source": "./cron-scheduling",
+      "category": "development"
+    },
+    {
+      "name": "environment-config",
+      "description": "Environment configuration and secrets management covering dotenv, Zod/Pydantic validation, 12-factor config, feature flags, and secrets manager integration.",
+      "source": "./environment-config",
+      "category": "development"
+    },
+    {
+      "name": "web-scraping",
+      "description": "Web scraping and data extraction covering Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical scraping practices.",
+      "source": "./web-scraping",
+      "category": "development"
+    },
+    {
+      "name": "linux-commands",
+      "description": "Essential Linux/Unix command reference covering file operations, text processing, process management, networking, permissions, systemd, SSH, and shell scripting.",
+      "source": "./linux-commands",
+      "category": "development"
+    },
+    {
+      "name": "cli-development",
+      "description": "CLI application development covering argument parsing (Commander.js, Click, Cobra), interactive prompts, colored output, configuration files, and distribution patterns.",
+      "source": "./cli-development",
+      "category": "development"
     }
   ]
 }

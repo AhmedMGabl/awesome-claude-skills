@@ -85,6 +85,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
+- [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
@@ -93,8 +94,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
 - [Error Handling Patterns](./error-handling/) - Error handling strategies with custom errors, Result types, retry logic, circuit breakers, and error boundaries across TypeScript, Python, and Go.
+- [Email Templates](./email-templates/) - Email template development with React Email, MJML, responsive HTML, dark mode, deliverability, and Resend/SendGrid.
+- [Environment Config & Secrets](./environment-config/) - Environment configuration with Zod/Pydantic validation, 12-factor patterns, feature flags, and secrets managers.
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
+- [Cron & Job Scheduling](./cron-scheduling/) - Job scheduling with cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, and production patterns.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
 - [Data Engineering & ETL](./data-engineering/) - Data engineering and ETL pipeline patterns with Kafka, dbt, Airflow, data validation, and modern Python data stack.
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
@@ -115,6 +119,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
+- [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
@@ -162,6 +167,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 
 ### Data & Analysis
