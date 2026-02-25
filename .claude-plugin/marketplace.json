@@ -1513,6 +1513,42 @@
       "description": "gRPC API development covering Protocol Buffers, unary and streaming RPCs, interceptors, error handling, metadata, health checks, gRPC-Web, Connect protocol, and Node.js/TypeScript implementations.",
       "source": "./grpc-apis",
       "category": "development"
+    },
+    {
+      "name": "resend-email",
+      "description": "Resend email API covering transactional emails, React Email templates, batch sending, domains, webhooks, audiences, broadcast campaigns, and Next.js integration patterns.",
+      "source": "./resend-email",
+      "category": "development"
+    },
+    {
+      "name": "tanstack-router",
+      "description": "TanStack Router covering type-safe routing, file-based routes, search params validation, data loading, route context, authentication guards, code splitting, and SSR with TanStack Start.",
+      "source": "./tanstack-router",
+      "category": "development"
+    },
+    {
+      "name": "effect-ts",
+      "description": "Effect-TS library covering type-safe error handling, dependency injection, concurrency, streaming, scheduling, retry policies, resource management, and functional programming patterns for TypeScript.",
+      "source": "./effect-ts",
+      "category": "development"
+    },
+    {
+      "name": "react-aria",
+      "description": "React Aria accessible components covering hooks-based primitives, React Aria Components, collections, selection, drag and drop, internationalization, forms, overlays, and custom styling patterns.",
+      "source": "./react-aria",
+      "category": "development"
+    },
+    {
+      "name": "better-auth",
+      "description": "Better Auth library covering email/password authentication, OAuth providers, session management, two-factor auth, organization multi-tenancy, rate limiting, database adapters, and framework integration for Next.js, Nuxt, and SvelteKit.",
+      "source": "./better-auth",
+      "category": "development"
+    },
+    {
+      "name": "trigger-dev",
+      "description": "Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency control, retries, idempotency, webhook handling, AI/LLM integration, and deployment patterns.",
+      "source": "./trigger-dev",
+      "category": "development"
     }
   ]
 }
