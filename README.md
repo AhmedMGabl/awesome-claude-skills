@@ -220,6 +220,16 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions](./github-actions/) - GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, and deployments.
 - [GitHub API Integration](./github-api/) - GitHub API with Octokit, REST/GraphQL, PR automation, webhooks, GitHub Apps, and release management.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
+- [Go Chi Router](./go-chi/) - Go Chi router patterns with lightweight routing, middleware stack, URL parameters, subrouters, and RESTful API patterns.
+- [Go Cobra CLI](./go-cobra-cli/) - Go Cobra CLI with command hierarchies, flags, arguments, Viper configuration, output formatting, and shell completions.
+- [Go Core Development](./go-development/) - Go development patterns with structs, interfaces, error handling, goroutines, channels, HTTP servers, middleware, and testing.
+- [Go Echo](./go-echo/) - Go Echo framework with high-performance routing, middleware, request binding, validation, JWT auth, and error handling.
+- [Go Fiber](./go-fiber/) - Go Fiber with Express-inspired routing, middleware, request validation, WebSockets, file uploads, and error handling.
+- [Go Gin](./go-gin/) - Go Gin with HTTP routing, middleware, request binding, validation, JWT auth, error handling, and route grouping.
+- [Go htmx](./go-htmx/) - Go htmx integration with server-side rendering, partial updates, triggers, swapping strategies, infinite scroll, and live search.
+- [Go sqlc](./go-sqlc/) - Go sqlc type-safe SQL query generation with migrations, custom types, batch operations, joins, and transactions.
+- [Go templ](./go-templ/) - Go templ type-safe HTML templating with components, props, layouts, conditional rendering, and Echo/Chi integration.
+- [Go Testing](./go-testing/) - Go testing patterns with table-driven tests, subtests, interface mocking, HTTP handler testing, benchmarks, and fuzz testing.
 - [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
 - [Git Workflows](./git-workflows/) - Git branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, cherry-pick, bisect, worktrees, hooks, and monorepo management.
 - [GitHub Actions Advanced](./github-actions-advanced/) - Advanced GitHub Actions with reusable workflows, composite actions, matrix strategies, OIDC, and caching optimization.

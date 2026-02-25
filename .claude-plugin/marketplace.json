@@ -2581,6 +2581,66 @@
       "description": "Pact.js contract testing patterns covering consumer-driven contracts, provider verification, matchers, message pacts, Pact Broker integration, and CI/CD workflows.",
       "source": "./pactjs-contracts",
       "category": "development"
+    },
+    {
+      "name": "go-development",
+      "description": "Go development patterns covering structs, interfaces, error handling, goroutines, channels, HTTP servers, middleware, testing, database access, and CLI tools with Cobra.",
+      "source": "./go-development",
+      "category": "development"
+    },
+    {
+      "name": "go-fiber",
+      "description": "Go Fiber patterns covering Express-inspired routing, middleware, request validation, WebSockets, file uploads, template rendering, and production deployment.",
+      "source": "./go-fiber",
+      "category": "development"
+    },
+    {
+      "name": "go-gin",
+      "description": "Go Gin patterns covering HTTP routing, middleware, request binding, validation, error handling, file uploads, grouping, and production deployment.",
+      "source": "./go-gin",
+      "category": "development"
+    },
+    {
+      "name": "go-chi",
+      "description": "Go Chi router patterns covering lightweight routing, middleware stack, URL parameters, subrouters, request context, and RESTful API patterns.",
+      "source": "./go-chi",
+      "category": "development"
+    },
+    {
+      "name": "go-echo",
+      "description": "Go Echo patterns covering high-performance routing, middleware, request binding, validation, error handling, WebSockets, and Swagger documentation.",
+      "source": "./go-echo",
+      "category": "development"
+    },
+    {
+      "name": "go-sqlc",
+      "description": "Go sqlc patterns covering type-safe SQL query generation, migrations, custom types, batch operations, joins, transactions, and PostgreSQL/MySQL/SQLite support.",
+      "source": "./go-sqlc",
+      "category": "development"
+    },
+    {
+      "name": "go-templ",
+      "description": "Go templ patterns covering type-safe HTML templating, components, props, layouts, conditional rendering, loops, and integration with htmx and Echo/Chi.",
+      "source": "./go-templ",
+      "category": "development"
+    },
+    {
+      "name": "go-htmx",
+      "description": "Go htmx integration patterns covering server-side rendering with partial updates, triggers, swapping strategies, form handling, infinite scroll, and live search.",
+      "source": "./go-htmx",
+      "category": "development"
+    },
+    {
+      "name": "go-cobra-cli",
+      "description": "Go Cobra CLI patterns covering command hierarchies, flags, arguments, configuration with Viper, interactive prompts, output formatting, and shell completions.",
+      "source": "./go-cobra-cli",
+      "category": "development"
+    },
+    {
+      "name": "go-testing",
+      "description": "Go testing patterns covering table-driven tests, subtests, mocking with interfaces, HTTP handler testing, benchmarks, fuzz testing, testcontainers, and golden files.",
+      "source": "./go-testing",
+      "category": "development"
     }
   ]
 }
