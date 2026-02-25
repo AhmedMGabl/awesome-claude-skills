@@ -105,6 +105,12 @@
       "category": "development"
     },
     {
+      "name": "cicd-pipelines",
+      "description": "CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies (blue-green, canary, rolling), secrets management, pipeline optimization, and production deployment automation.",
+      "source": "./cicd-pipelines",
+      "category": "development"
+    },
+    {
       "name": "developer-growth-analysis",
       "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and areas for improvement, curates relevant learning resources from HackerNews, and automatically sends a personalized growth report to your Slack DMs.",
       "source": "./developer-growth-analysis",
@@ -307,6 +313,12 @@
       "description": "Skills for working with Excel spreadsheets including creation, editing, formulas, and data manipulation.",
       "source": "./document-skills/xlsx",
       "category": "productivity-organization"
+    },
+    {
+      "name": "vuejs-development",
+      "description": "Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.",
+      "source": "./vuejs-development",
+      "category": "development"
     }
   ]
 }
