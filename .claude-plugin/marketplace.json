@@ -1645,6 +1645,54 @@
       "description": "Turso embedded SQLite database covering libSQL client, embedded replicas, local-first development, schema migrations, vector search, multi-tenant databases, and edge deployment patterns.",
       "source": "./turso-database",
       "category": "development"
+    },
+    {
+      "name": "pocketbase-backend",
+      "description": "PocketBase backend covering collections, real-time subscriptions, authentication, file storage, hooks, migrations, JavaScript SDK integration, and single-binary deployment.",
+      "source": "./pocketbase-backend",
+      "category": "development"
+    },
+    {
+      "name": "supabase-realtime",
+      "description": "Supabase Realtime covering Postgres changes, broadcast channels, presence tracking, database triggers, row-level security filters, and React/Next.js subscription patterns.",
+      "source": "./supabase-realtime",
+      "category": "development"
+    },
+    {
+      "name": "wrangler-cli",
+      "description": "Cloudflare Wrangler CLI covering Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, Pages deployment, secrets management, and local development with Miniflare.",
+      "source": "./wrangler-cli",
+      "category": "development"
+    },
+    {
+      "name": "msw-mocking",
+      "description": "Mock Service Worker (MSW) covering request handlers, REST and GraphQL mocking, browser service worker setup, Node.js server integration, response resolvers, and testing patterns with Vitest and Playwright.",
+      "source": "./msw-mocking",
+      "category": "development"
+    },
+    {
+      "name": "storybook-testing",
+      "description": "Storybook component testing covering story definitions, controls, decorators, interaction tests, visual regression, accessibility audits, documentation with MDX, and CI integration.",
+      "source": "./storybook-testing",
+      "category": "development"
+    },
+    {
+      "name": "contentlayer",
+      "description": "Contentlayer and MDX content management covering document type definitions, computed fields, content validation, MDX components, Next.js integration, and static content generation patterns.",
+      "source": "./contentlayer",
+      "category": "development"
+    },
+    {
+      "name": "shadcn-patterns",
+      "description": "shadcn/ui advanced patterns covering component composition, form integration with React Hook Form and Zod, data table patterns, theme customization, command palette, toast notifications, and custom component variants.",
+      "source": "./shadcn-patterns",
+      "category": "development"
+    },
+    {
+      "name": "framer-motion-advanced",
+      "description": "Framer Motion advanced animations covering layout animations, shared layout transitions, gesture-driven interactions, scroll-linked animations, exit animations, orchestration, and SVG path animations.",
+      "source": "./framer-motion-advanced",
+      "category": "development"
     }
   ]
 }
