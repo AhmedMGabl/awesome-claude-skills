@@ -1,29 +1,5 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\prometheus-monitoring\\SKILL.md",
-    "timestamp": 1772039181787,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\grafana-dashboards\\SKILL.md",
-    "timestamp": 1772039209771,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\nginx-config\\SKILL.md",
-    "timestamp": 1772039225952,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\caddy-server\\SKILL.md",
-    "timestamp": 1772039242311,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\traefik-proxy\\SKILL.md",
     "timestamp": 1772039260780,
     "focus": false,
@@ -56,6 +32,30 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
     "timestamp": 1772039496494,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039534638,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039557428,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039581897,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039604509,
     "focus": false,
     "openLocation": 1
   }

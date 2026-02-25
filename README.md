@@ -169,6 +169,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
+- [Caddy Server](./caddy-server/) - Caddy web server with automatic HTTPS, reverse proxy, file serving, load balancing, and Caddyfile configuration.
 - [Capacitor Mobile](./capacitor-mobile/) - Capacitor cross-platform mobile development with native plugins, deep linking, push notifications, and app store deployment.
 - [Capacitor Plugins](./capacitor-plugins/) - Capacitor native plugins with Camera, Filesystem, Geolocation, Push Notifications, Haptics, Biometrics, and custom plugin creation.
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
@@ -236,10 +237,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions CI/CD](./github-actions-cicd/) - GitHub Actions with reusable workflows, composite actions, OIDC, environment gates, and monorepo change detection.
 - [GitHub Copilot Setup](./github-copilot-setup/) - GitHub Copilot configuration with custom instructions, Copilot Chat, context variables, and team productivity patterns.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
+- [Grafana Dashboards](./grafana-dashboards/) - Grafana dashboards with panel types, variables, Prometheus data sources, alerting, provisioning, and dashboard-as-code.
 - [GraphQL Code Generator](./graphql-codegen/) - GraphQL Code Generator covering TypeScript type generation, typed document nodes, React Query and Apollo hooks, and fragment colocation.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
 - [Inngest Functions](./inngest-functions/) - Inngest event-driven workflows with step functions, scheduling, retries, concurrency control, and Next.js integration.
+- [Helm Charts](./helm-charts/) - Helm chart templates, values, helpers, hooks, dependencies, testing, and Kubernetes deployment management.
 - [Hono API](./hono-api/) - Hono API patterns with Zod validation, JWT auth, CORS, streaming, RPC client, and multi-runtime deployment.
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
@@ -309,6 +312,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Nock Mocking](./nock-mocking/) - Nock HTTP mocking with request interception, response fixtures, query/body matching, error simulation, and recording/playback.
 - [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
 - [Novel Editor](./novel-editor/) - Novel Notion-style WYSIWYG editor with Tiptap-based architecture, slash commands, bubble menu, AI completions, and Next.js integration.
+- [Nginx Config](./nginx-config/) - Nginx configuration with reverse proxy, load balancing, SSL/TLS, caching, rate limiting, security headers, and WebSocket proxying.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [next-safe-action](./next-safe-action/) - next-safe-action type-safe server actions with Zod validation, middleware chains, optimistic updates, and React hooks.
 - [next-intl](./next-intl/) - next-intl internationalization with message definitions, locale routing, middleware, server/client translations, and Next.js App Router integration.
