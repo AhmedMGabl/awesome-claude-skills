@@ -3121,6 +3121,66 @@
       "description": "Lua programming patterns covering tables, metatables, coroutines, C API, LuaRocks, embedding, game scripting, and Neovim plugin development.",
       "source": "./lua-programming",
       "category": "development"
+    },
+    {
+      "name": "apache-kafka",
+      "description": "Apache Kafka patterns covering producers, consumers, consumer groups, topics, partitions, Kafka Streams, Connect, Schema Registry, and event-driven architectures.",
+      "source": "./apache-kafka",
+      "category": "development"
+    },
+    {
+      "name": "consul-service-mesh",
+      "description": "HashiCorp Consul patterns covering service discovery, health checks, KV store, service mesh, intentions, prepared queries, and multi-datacenter configuration.",
+      "source": "./consul-service-mesh",
+      "category": "development"
+    },
+    {
+      "name": "vault-secrets-advanced",
+      "description": "HashiCorp Vault advanced patterns covering dynamic secrets, PKI certificates, transit encryption, policies, auth methods, secret engines, and Kubernetes integration.",
+      "source": "./vault-secrets-advanced",
+      "category": "development"
+    },
+    {
+      "name": "elasticsearch-patterns",
+      "description": "Elasticsearch patterns covering index management, mappings, queries, aggregations, analyzers, bulk operations, and search optimization techniques.",
+      "source": "./elasticsearch-patterns",
+      "category": "development"
+    },
+    {
+      "name": "cassandra-patterns",
+      "description": "Apache Cassandra patterns covering data modeling, partition keys, clustering columns, CQL queries, materialized views, lightweight transactions, and driver configuration.",
+      "source": "./cassandra-patterns",
+      "category": "development"
+    },
+    {
+      "name": "couchdb-patterns",
+      "description": "Apache CouchDB patterns covering document design, MapReduce views, Mango queries, replication, conflict resolution, PouchDB sync, and offline-first applications.",
+      "source": "./couchdb-patterns",
+      "category": "development"
+    },
+    {
+      "name": "minio-storage",
+      "description": "MinIO object storage patterns covering bucket operations, presigned URLs, notifications, versioning, lifecycle policies, and S3-compatible API usage.",
+      "source": "./minio-storage",
+      "category": "development"
+    },
+    {
+      "name": "harbor-registry",
+      "description": "Harbor container registry patterns covering project management, vulnerability scanning, replication, robot accounts, RBAC, garbage collection, and CI/CD integration.",
+      "source": "./harbor-registry",
+      "category": "development"
+    },
+    {
+      "name": "envoy-proxy",
+      "description": "Envoy proxy patterns covering listeners, clusters, routes, filters, rate limiting, circuit breaking, load balancing, and service mesh data plane configuration.",
+      "source": "./envoy-proxy",
+      "category": "development"
+    },
+    {
+      "name": "istio-mesh",
+      "description": "Istio service mesh patterns covering traffic management, virtual services, destination rules, mTLS, authorization policies, observability, and canary deployments.",
+      "source": "./istio-mesh",
+      "category": "development"
     }
   ]
 }

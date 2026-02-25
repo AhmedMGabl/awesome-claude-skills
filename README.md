@@ -89,6 +89,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
 - [AI SDK (Vercel)](./ai-sdk-vercel/) - Vercel AI SDK with streaming chat, tool calling, structured output, multi-provider support, RAG, and useChat hooks.
 - [API Mocking](./api-mocking/) - API mocking with MSW, Nock, JSON Server, test data factories with Faker, and contract testing with Pact.
+- [Apache Kafka](./apache-kafka/) - Apache Kafka patterns covering producers, consumers, consumer groups, topics, partitions, Kafka Streams, Connect, Schema Registry, and event-driven architectures.
 - [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [Auth Patterns](./auth-patterns/) - Authentication and authorization patterns covering JWT, OAuth 2.0, session management, RBAC, passwordless auth, MFA, and security best practices.
@@ -137,6 +138,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [ClickHouse Analytics](./clickhouse-analytics/) - ClickHouse analytics patterns covering table engines, MergeTree family, materialized views, aggregating functions, partitioning, and real-time analytics queries.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Conform Forms](./conform-forms/) - Conform progressive enhancement forms with Zod validation, server actions, field arrays, and React/Remix/Next.js integration.
+- [Consul Service Mesh](./consul-service-mesh/) - HashiCorp Consul patterns covering service discovery, health checks, KV store, service mesh, intentions, prepared queries, and multi-datacenter configuration.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
 - [C# LINQ](./csharp-linq/) - C# LINQ patterns covering query syntax, method syntax, deferred execution, grouping, joins, projections, custom extension methods, and async LINQ with EF Core.
 - [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
@@ -179,12 +181,15 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Email Templates](./email-templates/) - Email template development with React Email, MJML, responsive HTML, dark mode, deliverability, and Resend/SendGrid.
 - [Entity Framework Core](./dotnet-entityframework/) - Entity Framework Core patterns covering DbContext, entity configuration, migrations, LINQ queries, relationships, change tracking, and performance optimization.
 - [Environment Config & Secrets](./environment-config/) - Environment configuration with Zod/Pydantic validation, 12-factor patterns, feature flags, and secrets managers.
+- [Envoy Proxy](./envoy-proxy/) - Envoy proxy patterns covering listeners, clusters, routes, filters, rate limiting, circuit breaking, load balancing, and service mesh data plane configuration.
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
+- [Elasticsearch Patterns](./elasticsearch-patterns/) - Elasticsearch patterns covering index management, mappings, queries, aggregations, analyzers, bulk operations, and search optimization techniques.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
 - [Caddy Server](./caddy-server/) - Caddy web server with automatic HTTPS, reverse proxy, file serving, load balancing, and Caddyfile configuration.
 - [Capacitor Mobile](./capacitor-mobile/) - Capacitor cross-platform mobile development with native plugins, deep linking, push notifications, and app store deployment.
 - [Capacitor Plugins](./capacitor-plugins/) - Capacitor native plugins with Camera, Filesystem, Geolocation, Push Notifications, Haptics, Biometrics, and custom plugin creation.
+- [Cassandra Patterns](./cassandra-patterns/) - Apache Cassandra patterns covering data modeling, partition keys, clustering columns, CQL queries, materialized views, lightweight transactions, and driver configuration.
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Contentlayer](./contentlayer/) - Contentlayer and MDX content management with document type definitions, computed fields, MDX components, and Next.js integration.
 - [Coolify Self-Hosted](./coolify-selfhost/) - Coolify self-hosted PaaS covering server setup, GitHub deployment, database provisioning, custom domains, and Docker Compose.
@@ -193,6 +198,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
 - [Convex Schema](./convex-schema/) - Convex schema definitions with validators, indexes, query and mutation functions, real-time subscriptions, and React hooks.
+- [CouchDB Patterns](./couchdb-patterns/) - Apache CouchDB patterns covering document design, MapReduce views, Mango queries, replication, conflict resolution, PouchDB sync, and offline-first applications.
 - [Crawlee Scraping](./crawlee-scraping/) - Crawlee web scraping framework with request queues, Cheerio/Playwright/Puppeteer crawlers, proxy rotation, and anti-blocking strategies.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [CSS Modules Patterns](./css-modules-patterns/) - CSS Modules with scoped class names, composition, theming with CSS variables, TypeScript integration, and Next.js configuration.
@@ -262,6 +268,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GraphQL Federation](./graphql-federation/) - GraphQL Federation patterns covering subgraph schemas, entity resolution, Apollo Router, shared types, migration strategies, and federated gateway configuration.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
 - [Inngest Functions](./inngest-functions/) - Inngest event-driven workflows with step functions, scheduling, retries, concurrency control, and Next.js integration.
+- [Harbor Registry](./harbor-registry/) - Harbor container registry patterns covering project management, vulnerability scanning, replication, robot accounts, RBAC, garbage collection, and CI/CD integration.
 - [Haskell Programming](./haskell-programming/) - Haskell programming patterns covering type classes, monads, functors, algebraic data types, IO, Cabal/Stack build tools, and functional programming idioms.
 - [Helm Charts](./helm-charts/) - Helm chart templates, values, helpers, hooks, dependencies, testing, and Kubernetes deployment management.
 - [Hono API](./hono-api/) - Hono API patterns with Zod validation, JWT auth, CORS, streaming, RPC client, and multi-runtime deployment.
@@ -282,6 +289,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
 - [io-ts Validation](./io-ts-validation/) - io-ts runtime type checking with codec composition, branded types, Either-based error handling, reporters, and fp-ts integration.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
+- [Istio Service Mesh](./istio-mesh/) - Istio service mesh patterns covering traffic management, virtual services, destination rules, mTLS, authorization policies, observability, and canary deployments.
 - [Java Hibernate](./java-hibernate/) - Hibernate ORM patterns covering entity mapping, relationships, JPQL/Criteria queries, caching, lazy loading, batch operations, and Spring Data JPA integration.
 - [Java JUnit 5](./java-junit5/) - JUnit 5 testing patterns covering assertions, parameterized tests, nested tests, extensions, MockMvc, Testcontainers, and Spring Boot test slices.
 - [Java Maven](./java-maven/) - Apache Maven patterns covering POM configuration, dependency management, build lifecycle, plugins, multi-module projects, profiles, and repository management.
@@ -314,6 +322,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
+- [MinIO Storage](./minio-storage/) - MinIO object storage patterns covering bucket operations, presigned URLs, notifications, versioning, lifecycle policies, and S3-compatible API usage.
 - [MLflow Experiment](./mlflow-experiment/) - MLflow patterns covering experiment tracking, model registry, artifact logging, hyperparameter tuning, model serving, and CI/CD integration for ML workflows.
 - [Motion One](./motion-one/) - Motion One animations with animate API, spring physics, scroll-triggered effects, timelines, and React integration.
 - [Monaco Editor](./monaco-editor/) - Monaco VS Code-based web editor with IntelliSense, language services, custom themes, diff editor, markers, and React integration.
@@ -562,6 +571,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Valibot Validation](./valibot-validation/) - Valibot tree-shakeable schema definitions with type inference, transformations, custom validators, error formatting, and React form integration.
 - [vanilla-extract](./vanilla-extract/) - vanilla-extract CSS-in-TypeScript with type-safe styles, theme contracts, Sprinkles utility classes, recipes, and build-time extraction.
 - [Vault Secrets](./vault-secrets/) - HashiCorp Vault with secret engines, dynamic secrets, authentication methods, policies, transit encryption, and Kubernetes integration.
+- [Vault Secrets Advanced](./vault-secrets-advanced/) - HashiCorp Vault advanced patterns covering dynamic secrets, PKI certificates, transit encryption, policies, auth methods, secret engines, and Kubernetes integration.
 - [Vector Database Patterns](./vector-database-patterns/) - Vector database patterns covering embedding generation, similarity search, metadata filtering, indexing strategies, RAG integration, and Pinecone/Weaviate/Chroma usage.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vinxi Server](./vinxi-server/) - Vinxi meta-framework with app configuration, routers, server functions, middleware, API routes, and multi-framework SSR.
