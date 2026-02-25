@@ -97,11 +97,13 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
+- [Astro Content Collections](./astro-content/) - Astro Content Collections with type-safe schemas, Zod validation, MDX components, dynamic routing, RSS feeds, and static site generation.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
+- [better-sqlite3](./better-sqlite3/) - better-sqlite3 synchronous SQLite with prepared statements, transactions, WAL mode, full-text search, JSON support, and Node.js integration.
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
 - [Biome Config](./biome-config/) - Biome advanced configuration with rule customization, per-file overrides, import sorting, CI integration, and ESLint/Prettier migration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
@@ -131,6 +133,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
 - [DNS & Networking](./dns-networking/) - DNS records, domain configuration, Cloudflare/Route 53, SSL/TLS, CDN setup, and network troubleshooting.
+- [Directus CMS](./directus-cms/) - Directus headless CMS with REST/GraphQL APIs, custom flows, role-based access, Directus SDK, and real-time subscriptions.
 - [Discord Bot](./discord-bot/) - Discord bot development with Discord.js v14 covering slash commands, event handling, embeds, buttons, select menus, modals, and permissions.
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
 - [Docker & Kubernetes Production](./docker-kubernetes/) - Docker multi-stage builds, Docker Compose, Kubernetes Deployments, Helm charts, autoscaling, and CI/CD pipelines.
@@ -228,6 +231,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
+- [KeystoneJS](./keystonejs/) - KeystoneJS schema-driven CMS with list definitions, access control, hooks, GraphQL API, document fields, and admin UI customization.
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [Ky HTTP Client](./ky-http-client/) - Ky lightweight HTTP client with hooks, retry logic, timeout configuration, custom instances, and error handling.
 - [Kysely ORM](./kysely-orm/) - Kysely type-safe SQL query builder with joins, subqueries, transactions, migrations, and PostgreSQL/MySQL/SQLite dialect support.
@@ -255,6 +259,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Migration Patterns](./migration-patterns/) - Framework migration (CRA to Vite/Next.js), API versioning, gradual TypeScript adoption, and zero-downtime strategies.
 - [Mantine UI](./mantine-ui/) - Mantine React component library with useForm, notifications, modals manager, theme customization, and hooks.
 - [Material UI](./material-ui/) - MUI component library with theme customization, sx prop, DataGrid, form components, dark mode, and responsive design.
+- [Medusa Commerce](./medusa-commerce/) - Medusa.js headless e-commerce with product management, cart and checkout flows, payment providers, subscribers, and Next.js storefront.
 - [Monorepo Management](./monorepo-management/) - Monorepo management with Turborepo, Nx, and pnpm workspaces covering task pipelines, remote caching, and shared configurations.
 - [MSW Mocking](./msw-mocking/) - Mock Service Worker (MSW) with REST/GraphQL mocking, browser and Node.js setup, response resolvers, and testing patterns.
 - [Multi-Tenant SaaS](./multi-tenant-saas/) - Multi-tenant architecture with row-level security, subdomain routing, tenant-scoped queries, Stripe billing, and isolation strategies.
@@ -295,6 +300,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
 - [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
+- [PocketBase](./pocketbase/) - PocketBase collection schemas, real-time subscriptions, authentication, file uploads, API rules, and single-binary deployment.
 - [PocketBase Backend](./pocketbase-backend/) - PocketBase backend with collections, real-time subscriptions, authentication, file storage, and JavaScript SDK integration.
 - [PostgreSQL Operations](./postgresql-operations/) - PostgreSQL operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, and performance tuning.
 - [PostHog Analytics](./posthog-analytics/) - PostHog product analytics with event tracking, feature flags, A/B testing, session replay, and React/Next.js integration.
@@ -326,12 +332,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
 - [Redis Patterns](./redis-patterns/) - Advanced Redis patterns covering pub/sub, Streams, Lua scripting, RedisJSON, RediSearch, TimeSeries, and cluster configuration.
+- [Remix Auth](./remix-auth/) - Remix Auth with authentication strategies, session management, OAuth2/OIDC providers, form-based login, and protected route loaders.
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
 - [React Three Fiber](./react-three-fiber/) - React Three Fiber 3D graphics with scene setup, GLTF loading, useFrame animations, physics with Rapier, and post-processing.
 - [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
+- [Sanity Studio](./sanity-studio/) - Sanity Studio schema definitions, GROQ queries, image handling, portable text rendering, and Next.js/Remix integration.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
@@ -345,6 +353,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
 - [Sentry Monitoring](./sentry-monitoring/) - Sentry error monitoring with SDK setup, error boundaries, performance tracing, breadcrumbs, release tracking, and source maps.
 - [Service Workers](./service-workers/) - Service Workers and PWA patterns with offline caching, push notifications, Workbox integration, and installable web app configuration.
+- [Shopify Hydrogen](./shopify-hydrogen/) - Shopify Hydrogen Remix-based storefront with Storefront API, cart management, collection pages, and Oxygen deployment.
 - [Server Components Patterns](./server-components-patterns/) - React Server Components with server/client boundaries, Suspense streaming, server actions, and caching strategies.
 - [Serverless Patterns](./serverless-patterns/) - Serverless architecture with Lambda, cold start optimization, Step Functions, DynamoDB, and Vercel functions.
 - [shadcn/ui](./shadcn-ui/) - shadcn/ui components with forms, data tables, theming, dark mode, and React Hook Form + Zod validation.
@@ -369,6 +378,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Storybook v8](./storybook-v8/) - Storybook v8 with CSF3, args, play functions, interaction testing, Autodocs, and React/Vue/Angular integration.
 - [SWR Data Fetching](./swr-data-fetching/) - SWR with stale-while-revalidate caching, optimistic mutations, useSWRInfinite pagination, and prefetching.
 - [Strapi CMS](./strapi-cms/) - Strapi headless CMS covering content types, REST and GraphQL APIs, lifecycle hooks, authentication, custom plugins, and deployment.
+- [Strapi v5](./strapi-v5/) - Strapi v5 content type builder, REST/GraphQL APIs, custom controllers, lifecycle hooks, role-based access, and plugin development.
 - [Stripe Billing](./stripe-billing/) - Stripe billing covering subscriptions, usage-based metering, customer portal, invoicing, webhooks, and SaaS pricing patterns.
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
 - [Stripe Elements](./stripe-elements/) - Stripe Elements with Payment Element, Address Element, Express Checkout, appearance customization, and React Stripe.js integration.

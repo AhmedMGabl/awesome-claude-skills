@@ -2281,6 +2281,66 @@
       "description": "Neutralinojs patterns covering lightweight desktop apps, native OS API access, file system operations, system info, window management, tray menus, process spawning, and cross-platform distribution without bundled browser.",
       "source": "./neutralino-apps",
       "category": "development"
+    },
+    {
+      "name": "pocketbase",
+      "description": "PocketBase patterns covering collection schemas, real-time subscriptions, authentication, file uploads, API rules, hooks, JavaScript SDK, and single-binary deployment for backend-as-a-service.",
+      "source": "./pocketbase",
+      "category": "development"
+    },
+    {
+      "name": "directus-cms",
+      "description": "Directus CMS patterns covering headless content management, REST/GraphQL APIs, custom flows, role-based access, file storage, Directus SDK, and self-hosted or cloud deployment.",
+      "source": "./directus-cms",
+      "category": "development"
+    },
+    {
+      "name": "sanity-studio",
+      "description": "Sanity Studio patterns covering schema definitions, GROQ queries, image handling with asset pipeline, portable text, real-time collaboration, custom input components, and Next.js/Remix integration.",
+      "source": "./sanity-studio",
+      "category": "development"
+    },
+    {
+      "name": "keystonejs",
+      "description": "KeystoneJS patterns covering schema-driven CMS, list definitions, field types, access control, hooks, GraphQL API, document fields, admin UI customization, and Next.js integration.",
+      "source": "./keystonejs",
+      "category": "development"
+    },
+    {
+      "name": "strapi-v5",
+      "description": "Strapi v5 patterns covering content type builder, REST/GraphQL APIs, custom controllers, middleware, lifecycle hooks, role-based access, media uploads, and plugin development.",
+      "source": "./strapi-v5",
+      "category": "development"
+    },
+    {
+      "name": "medusa-commerce",
+      "description": "Medusa.js patterns covering headless e-commerce, product/variant management, cart and checkout flows, payment/fulfillment providers, custom API routes, subscribers, and Next.js storefront integration.",
+      "source": "./medusa-commerce",
+      "category": "development"
+    },
+    {
+      "name": "shopify-hydrogen",
+      "description": "Shopify Hydrogen patterns covering Remix-based storefront, Storefront API GraphQL queries, cart management, customer accounts, product pages, collection filtering, SEO, and Oxygen deployment.",
+      "source": "./shopify-hydrogen",
+      "category": "development"
+    },
+    {
+      "name": "remix-auth",
+      "description": "Remix Auth patterns covering authentication strategies, session management, OAuth2/OIDC providers, form-based login, TOTP two-factor, role-based access, and protected route loaders.",
+      "source": "./remix-auth",
+      "category": "development"
+    },
+    {
+      "name": "astro-content",
+      "description": "Astro Content Collections patterns covering type-safe content schemas, Zod validation, MDX components, content queries, dynamic routing, related content, RSS feeds, and static site generation.",
+      "source": "./astro-content",
+      "category": "development"
+    },
+    {
+      "name": "better-sqlite3",
+      "description": "better-sqlite3 patterns covering synchronous SQLite operations, prepared statements, transactions, WAL mode, migrations, full-text search, JSON support, and Node.js/Bun integration.",
+      "source": "./better-sqlite3",
+      "category": "development"
     }
   ]
 }
