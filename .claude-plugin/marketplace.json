@@ -375,6 +375,18 @@
       "category": "development"
     },
     {
+      "name": "prisma-orm",
+      "description": "Prisma ORM for TypeScript/Node.js covering schema design, migrations, CRUD operations, relations, transactions, raw queries, middleware, seeding, testing patterns, and production database management.",
+      "source": "./prisma-orm",
+      "category": "development"
+    },
+    {
+      "name": "react-native-mobile",
+      "description": "React Native mobile development covering Expo, React Navigation, native modules, platform-specific code, animations with Reanimated, state management, push notifications, app store deployment, and cross-platform patterns.",
+      "source": "./react-native-mobile",
+      "category": "development"
+    },
+    {
       "name": "rust-development",
       "description": "Rust development covering ownership and borrowing, lifetimes, traits, error handling with Result/Option, async with tokio, structs and enums, pattern matching, cargo workspace, testing, and production-ready systems programming patterns.",
       "source": "./rust-development",
