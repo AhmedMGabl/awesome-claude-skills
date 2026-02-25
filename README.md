@@ -506,6 +506,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Valibot Schemas](./valibot-schemas/) - Valibot tree-shakeable validation with pipe transformations, custom rules, form validation, API parsing, and Zod migration.
 - [Valibot Validation](./valibot-validation/) - Valibot tree-shakeable schema definitions with type inference, transformations, custom validators, error formatting, and React form integration.
 - [vanilla-extract](./vanilla-extract/) - vanilla-extract CSS-in-TypeScript with type-safe styles, theme contracts, Sprinkles utility classes, recipes, and build-time extraction.
+- [Vault Secrets](./vault-secrets/) - HashiCorp Vault with secret engines, dynamic secrets, authentication methods, policies, transit encryption, and Kubernetes integration.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vinxi Server](./vinxi-server/) - Vinxi meta-framework with app configuration, routers, server functions, middleware, API routes, and multi-framework SSR.
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.

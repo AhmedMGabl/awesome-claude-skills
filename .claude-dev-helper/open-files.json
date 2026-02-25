@@ -1,11 +1,5 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\pulumi-infrastructure\\SKILL.md",
-    "timestamp": 1772039126652,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\helm-charts\\SKILL.md",
     "timestamp": 1772039143917,
     "focus": false,
@@ -56,6 +50,12 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\.claude-plugin\\marketplace.json",
     "timestamp": 1772039312169,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039441425,
     "focus": false,
     "openLocation": 1
   }
