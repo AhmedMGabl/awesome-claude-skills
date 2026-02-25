@@ -79,6 +79,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
 - [Android Kotlin Development](./android-kotlin/) - Android development with Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
+- [Ansible Automation](./ansible-automation/) - Ansible automation covering playbooks, roles, inventory management, Vault secrets, Galaxy collections, and CI/CD integration.
 - [AI-Assisted Development](./github-copilot-patterns/) - AI coding assistant patterns with effective prompting, context management, code review, test generation, and team guidelines.
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
 - [API Gateway](./api-gateway/) - API gateway patterns with request routing, rate limiting, auth middleware, BFF pattern, and AWS/Kong configuration.
@@ -132,6 +133,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
+- [Capacitor Mobile](./capacitor-mobile/) - Capacitor cross-platform mobile development with native plugins, deep linking, push notifications, and app store deployment.
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
@@ -155,6 +157,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [FastAPI Development](./fastapi-development/) - FastAPI development with async/await, Pydantic v2, dependency injection, SQLAlchemy async, JWT auth, WebSockets, and testing with httpx/pytest.
 - [Feishu Automation](./feishu-automation/) - Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.
 - [Flask Development](./flask-development/) - Flask web development covering blueprints, SQLAlchemy models, Flask-Login authentication, REST APIs, Celery tasks, and pytest testing.
+- [Fly.io Deployment](./fly-io-deployment/) - Fly.io deployment covering multi-region deployment, Postgres clusters, Redis, volumes, autoscaling, and CI/CD with GitHub Actions.
 - [Flutter Development](./flutter-development/) - Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, testing, and production deployment to iOS and Android.
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
@@ -167,6 +170,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions CI/CD](./github-actions-cicd/) - GitHub Actions with reusable workflows, composite actions, OIDC, environment gates, and monorepo change detection.
 - [GitHub Copilot Setup](./github-copilot-setup/) - GitHub Copilot configuration with custom instructions, Copilot Chat, context variables, and team productivity patterns.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
+- [GraphQL Code Generator](./graphql-codegen/) - GraphQL Code Generator covering TypeScript type generation, typed document nodes, React Query and Apollo hooks, and fragment colocation.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
@@ -215,6 +219,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Prompt Improver Hook](https://github.com/severity1/claude-code-prompt-improver) - Intelligent hook that intercepts and refines vague prompts into precise, actionable instructions. *By [@severity1](https://github.com/severity1)*
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
 - [PWA Development](./pwa-development/) - Progressive Web Apps with service workers, Workbox, offline caching strategies, push notifications, and install prompts.
+- [Qwik Framework](./qwik-framework/) - Qwik framework covering resumability, signals, routeLoader$/routeAction$, server$ functions, and Qwik City deployment.
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
 - [Radix UI](./radix-ui/) - Radix UI headless components with accessible dialogs, dropdowns, tabs, tooltips, Tailwind styling, and ARIA compliance.
@@ -223,10 +228,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [React Router](./react-router/) - React Router v7 with file-based routing, nested layouts, loaders, actions, route protection, and search params.
 - [React Server Components](./react-server-components/) - React Server Components covering server vs client component patterns, data fetching, streaming with Suspense, server actions, and composition patterns.
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
+- [React Email](./react-email/) - React Email templates with @react-email/components, responsive layouts, preview server, and sending with Resend or Nodemailer.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.
 - [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
+- [Redis Patterns](./redis-patterns/) - Advanced Redis patterns covering pub/sub, Streams, Lua scripting, RedisJSON, RediSearch, TimeSeries, and cluster configuration.
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
@@ -276,7 +283,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [Turborepo Monorepo](./turborepo-monorepo/)
-- [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI. - Turborepo with workspace setup, task pipelines, remote caching, shared packages, and CI optimization.
+- [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI.
+- [Twilio Communication](./twilio-communication/) - Twilio APIs covering SMS, voice calls with TwiML, WhatsApp messaging, Verify OTP, webhooks, and Node.js SDK integration.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.

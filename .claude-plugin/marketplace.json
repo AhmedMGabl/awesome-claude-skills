@@ -1363,6 +1363,54 @@
       "description": "Puppeteer browser automation covering page navigation, element selection, form filling, screenshot capture, PDF generation, network interception, stealth mode, cookie management, and headless Chrome scripting.",
       "source": "./puppeteer-scraping",
       "category": "development"
+    },
+    {
+      "name": "capacitor-mobile",
+      "description": "Capacitor cross-platform mobile development covering project setup, native plugins (Camera, Filesystem, Push Notifications), custom native plugins, deep linking, app lifecycle, live reload, and deployment to iOS and Android app stores.",
+      "source": "./capacitor-mobile",
+      "category": "development"
+    },
+    {
+      "name": "graphql-codegen",
+      "description": "GraphQL Code Generator covering TypeScript type generation, typed document nodes, React Query and Apollo hooks, fragment colocation, schema-first development, and CI integration for type-safe GraphQL operations.",
+      "source": "./graphql-codegen",
+      "category": "development"
+    },
+    {
+      "name": "react-email",
+      "description": "React Email development covering email component creation with @react-email/components, responsive layouts, dark mode, dynamic templates, preview server, and sending with Resend, Nodemailer, and AWS SES.",
+      "source": "./react-email",
+      "category": "development"
+    },
+    {
+      "name": "fly-io-deployment",
+      "description": "Fly.io deployment covering fly launch, multi-region deployment, Postgres clusters, Redis, volume storage, autoscaling, health checks, secrets management, and CI/CD with GitHub Actions.",
+      "source": "./fly-io-deployment",
+      "category": "development"
+    },
+    {
+      "name": "twilio-communication",
+      "description": "Twilio communication APIs covering SMS sending, voice calls with TwiML, WhatsApp messaging, Verify OTP, programmable video, webhooks, and Node.js/Python SDK integration.",
+      "source": "./twilio-communication",
+      "category": "development"
+    },
+    {
+      "name": "ansible-automation",
+      "description": "Ansible automation covering playbooks, roles, inventory management, variables, handlers, templates, Ansible Vault secrets, Galaxy collections, and CI/CD integration for infrastructure provisioning.",
+      "source": "./ansible-automation",
+      "category": "development"
+    },
+    {
+      "name": "qwik-framework",
+      "description": "Qwik framework covering resumability, component creation, useSignal/useStore state, routeLoader$ and routeAction$, server$ functions, middleware, layout routes, and Qwik City deployment.",
+      "source": "./qwik-framework",
+      "category": "development"
+    },
+    {
+      "name": "redis-patterns",
+      "description": "Advanced Redis patterns covering pub/sub messaging, Streams with consumer groups, Lua scripting, RedisJSON, RediSearch full-text search, RedisTimeSeries, pipeline batching, and cluster configuration.",
+      "source": "./redis-patterns",
+      "category": "development"
     }
   ]
 }
