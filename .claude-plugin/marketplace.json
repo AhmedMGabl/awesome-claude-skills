@@ -643,6 +643,30 @@
       "description": "Message queue and event-driven patterns covering RabbitMQ, BullMQ, AWS SQS, Kafka, dead letter queues, idempotency, fan-out/fan-in, and backpressure handling.",
       "source": "./message-queues",
       "category": "development"
+    },
+    {
+      "name": "web-animation",
+      "description": "Web animation patterns with Framer Motion, GSAP, CSS transitions, scroll-triggered effects, spring physics, and reduced-motion accessibility.",
+      "source": "./web-animation",
+      "category": "development"
+    },
+    {
+      "name": "dependency-injection",
+      "description": "Dependency injection patterns with tsyringe, InversifyJS, Python dependency-injector, constructor injection, scope management, and testing strategies.",
+      "source": "./dependency-injection",
+      "category": "development"
+    },
+    {
+      "name": "sql-optimization",
+      "description": "SQL query optimization covering EXPLAIN ANALYZE, index strategies, query rewriting, N+1 detection, materialized views, partitioning, and connection pooling.",
+      "source": "./sql-optimization",
+      "category": "development"
+    },
+    {
+      "name": "android-kotlin",
+      "description": "Android development with Kotlin covering Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3 theming.",
+      "source": "./android-kotlin",
+      "category": "development"
     }
   ]
 }

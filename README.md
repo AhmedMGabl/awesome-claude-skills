@@ -76,6 +76,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 
 - [Accessibility & WCAG Compliance](./accessibility-wcag/) - Web accessibility and WCAG compliance covering semantic HTML, ARIA attributes, keyboard navigation, color contrast, accessible forms, and testing with axe-core and Lighthouse.
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
+- [Android Kotlin Development](./android-kotlin/) - Android development with Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
@@ -91,6 +92,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
+- [Dependency Injection](./dependency-injection/) - DI patterns with tsyringe, InversifyJS, Python dependency-injector, constructor injection, and testing strategies.
 - [Design System & Components](./design-system/) - Design system patterns with design tokens, CVA variants, accessible components, Storybook docs, and theming.
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
@@ -161,6 +163,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Skill Share](./skill-share/) - Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
+- [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
 - [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
@@ -176,6 +179,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [Web Animation](./web-animation/) - Web animation with Framer Motion, GSAP, CSS transitions, scroll effects, spring physics, and reduced-motion accessibility.
 - [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
 - [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - One-command Vercel deployment, React/Next.js performance optimization (40+ rules), and code auditing for 100+ accessibility/UX rules. *By [@vercel-labs](https://github.com/vercel-labs)*
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
