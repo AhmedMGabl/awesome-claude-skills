@@ -1,61 +1,61 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-flask\\SKILL.md",
-    "timestamp": 1772038639753,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\pulumi-infrastructure\\SKILL.md",
+    "timestamp": 1772039126652,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-sqlalchemy\\SKILL.md",
-    "timestamp": 1772038658005,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\helm-charts\\SKILL.md",
+    "timestamp": 1772039143917,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-pytest\\SKILL.md",
-    "timestamp": 1772038677607,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\argocd-gitops\\SKILL.md",
+    "timestamp": 1772039162255,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-pydantic\\SKILL.md",
-    "timestamp": 1772038703139,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\prometheus-monitoring\\SKILL.md",
+    "timestamp": 1772039181787,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-celery\\SKILL.md",
-    "timestamp": 1772038723680,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\grafana-dashboards\\SKILL.md",
+    "timestamp": 1772039209771,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-asyncio\\SKILL.md",
-    "timestamp": 1772038740544,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\nginx-config\\SKILL.md",
+    "timestamp": 1772039225952,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-click-cli\\SKILL.md",
-    "timestamp": 1772038760273,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\caddy-server\\SKILL.md",
+    "timestamp": 1772039242311,
     "focus": false,
     "openLocation": 1
   },
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\python-poetry\\SKILL.md",
-    "timestamp": 1772038779910,
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\traefik-proxy\\SKILL.md",
+    "timestamp": 1772039260780,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\vault-secrets\\SKILL.md",
+    "timestamp": 1772039281402,
     "focus": false,
     "openLocation": 1
   },
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\.claude-plugin\\marketplace.json",
-    "timestamp": 1772038808346,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
-    "timestamp": 1772038874651,
+    "timestamp": 1772039312169,
     "focus": false,
     "openLocation": 1
   }

@@ -2761,6 +2761,66 @@
       "description": "Python Poetry patterns covering dependency management, virtual environments, pyproject.toml, version constraints, publishing, monorepos, and CI/CD integration.",
       "source": "./python-poetry",
       "category": "development"
+    },
+    {
+      "name": "terraform-aws",
+      "description": "Terraform AWS patterns covering VPC networking, EC2/ECS/EKS compute, RDS databases, S3 storage, IAM policies, CloudFront CDN, Lambda functions, and module composition.",
+      "source": "./terraform-aws",
+      "category": "development"
+    },
+    {
+      "name": "pulumi-infrastructure",
+      "description": "Pulumi infrastructure-as-code patterns covering TypeScript/Python programs, AWS/Azure/GCP resources, stacks, configuration, secrets, component resources, and testing.",
+      "source": "./pulumi-infrastructure",
+      "category": "development"
+    },
+    {
+      "name": "helm-charts",
+      "description": "Helm chart patterns covering chart structure, templates, values, helpers, hooks, dependencies, testing, repositories, and Kubernetes deployment management.",
+      "source": "./helm-charts",
+      "category": "development"
+    },
+    {
+      "name": "argocd-gitops",
+      "description": "Argo CD GitOps patterns covering application manifests, sync policies, Helm/Kustomize integration, ApplicationSets, multi-cluster deployment, and RBAC configuration.",
+      "source": "./argocd-gitops",
+      "category": "development"
+    },
+    {
+      "name": "prometheus-monitoring",
+      "description": "Prometheus monitoring patterns covering metric types, PromQL queries, alerting rules, recording rules, service discovery, exporters, and Alertmanager configuration.",
+      "source": "./prometheus-monitoring",
+      "category": "development"
+    },
+    {
+      "name": "grafana-dashboards",
+      "description": "Grafana dashboard patterns covering panel types, variables, Prometheus data sources, alerting, annotations, provisioning, and dashboard-as-code with JSON models.",
+      "source": "./grafana-dashboards",
+      "category": "development"
+    },
+    {
+      "name": "nginx-config",
+      "description": "Nginx configuration patterns covering reverse proxy, load balancing, SSL/TLS, caching, rate limiting, security headers, WebSocket proxying, and performance tuning.",
+      "source": "./nginx-config",
+      "category": "development"
+    },
+    {
+      "name": "caddy-server",
+      "description": "Caddy server patterns covering automatic HTTPS, reverse proxy, file serving, load balancing, Caddyfile syntax, API configuration, and production deployment.",
+      "source": "./caddy-server",
+      "category": "development"
+    },
+    {
+      "name": "traefik-proxy",
+      "description": "Traefik proxy patterns covering Docker/Kubernetes integration, automatic service discovery, Let's Encrypt TLS, middleware chains, load balancing, and dashboard configuration.",
+      "source": "./traefik-proxy",
+      "category": "development"
+    },
+    {
+      "name": "vault-secrets",
+      "description": "HashiCorp Vault patterns covering secret engines, dynamic secrets, authentication methods, policies, transit encryption, PKI certificates, and Kubernetes integration.",
+      "source": "./vault-secrets",
+      "category": "development"
     }
   ]
 }
