@@ -2041,6 +2041,66 @@
       "description": "Paraglide JS internationalization patterns covering message definitions, tree-shakeable translations, compiler-generated functions, language switching, SvelteKit/Next.js/Astro integration, and type-safe message parameters.",
       "source": "./paraglide-js",
       "category": "development"
+    },
+    {
+      "name": "htmx-patterns",
+      "description": "htmx hypermedia patterns covering hx-get/post/put/delete attributes, swap strategies, targets, triggers, boosting, server-sent events, WebSocket connections, and progressive enhancement with minimal JavaScript.",
+      "source": "./htmx-patterns",
+      "category": "development"
+    },
+    {
+      "name": "deno-patterns",
+      "description": "Deno runtime patterns covering permissions, HTTP servers with Deno.serve, KV database, Fresh framework, testing, npm compatibility, TypeScript-first development, and deployment to Deno Deploy.",
+      "source": "./deno-patterns",
+      "category": "development"
+    },
+    {
+      "name": "lit-components",
+      "description": "Lit web component patterns covering reactive properties, decorators, templates with html/css tagged literals, lifecycle callbacks, shadow DOM styling, context protocol, and custom element registration.",
+      "source": "./lit-components",
+      "category": "development"
+    },
+    {
+      "name": "alpine-js",
+      "description": "Alpine.js patterns covering x-data, x-bind, x-on, x-show/x-if, x-for, x-model, transitions, Alpine stores, plugins (Intersect, Persist, Morph), and progressive enhancement of server-rendered HTML.",
+      "source": "./alpine-js",
+      "category": "development"
+    },
+    {
+      "name": "stimulus-hotwire",
+      "description": "Stimulus and Hotwire patterns covering controllers, targets, values, actions, outlets, Turbo Drive, Turbo Frames, Turbo Streams, and progressive enhancement of server-rendered HTML applications.",
+      "source": "./stimulus-hotwire",
+      "category": "development"
+    },
+    {
+      "name": "storybook-v8",
+      "description": "Storybook v8 patterns covering Component Story Format 3, args, decorators, play functions, interaction testing, visual regression, Autodocs, and framework integration for React, Vue, and Angular.",
+      "source": "./storybook-v8",
+      "category": "development"
+    },
+    {
+      "name": "vitest-patterns",
+      "description": "Vitest testing patterns covering test organization, mocking with vi.fn/vi.mock, snapshot testing, concurrent tests, coverage, workspace projects, browser mode, and integration with React Testing Library.",
+      "source": "./vitest-patterns",
+      "category": "development"
+    },
+    {
+      "name": "turborepo",
+      "description": "Turborepo monorepo patterns covering turbo.json pipeline configuration, caching, remote cache, task dependencies, filtering, workspace packages, pruning, and CI/CD optimization for large-scale TypeScript projects.",
+      "source": "./turborepo",
+      "category": "development"
+    },
+    {
+      "name": "kobalte-ui",
+      "description": "Kobalte UI patterns covering accessible SolidJS components, headless primitives, polymorphic rendering, form controls, dialogs, menus, select, combobox, and WAI-ARIA compliant component composition.",
+      "source": "./kobalte-ui",
+      "category": "development"
+    },
+    {
+      "name": "wxt-extensions",
+      "description": "WXT browser extension patterns covering manifest configuration, background scripts, content scripts, popup and options pages, storage API, messaging, cross-browser support, and hot module replacement during development.",
+      "source": "./wxt-extensions",
+      "category": "development"
     }
   ]
 }

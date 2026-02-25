@@ -81,6 +81,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
 - [Angular Signals](./angular-signals/) - Angular Signals patterns with signal(), computed(), effect(), input/output signals, RxJS interop, and resource API.
 - [Ansible Automation](./ansible-automation/) - Ansible automation covering playbooks, roles, inventory management, Vault secrets, Galaxy collections, and CI/CD integration.
+- [Alpine.js](./alpine-js/) - Alpine.js lightweight interactivity with x-data, x-bind, x-on, x-show, x-for, transitions, stores, and progressive enhancement.
 - [AI-Assisted Development](./github-copilot-patterns/) - AI coding assistant patterns with effective prompting, context management, code review, test generation, and team guidelines.
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
 - [API Gateway](./api-gateway/) - API gateway patterns with request routing, rate limiting, auth middleware, BFF pattern, and AWS/Kong configuration.
@@ -121,6 +122,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
 - [Deno Development](./deno-development/) - Deno runtime with permissions, HTTP servers, built-in TypeScript, npm compatibility, Fresh framework, Deploy, and KV store.
+- [Deno Patterns](./deno-patterns/) - Deno runtime patterns with Deno.serve, KV database, Fresh framework, testing, npm compatibility, and Deno Deploy.
 - [Dependency Injection](./dependency-injection/) - DI patterns with tsyringe, InversifyJS, Python dependency-injector, constructor injection, and testing strategies.
 - [Design System & Components](./design-system/) - Design system patterns with design tokens, CVA variants, accessible components, Storybook docs, and theming.
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
@@ -174,6 +176,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
 - [Figma to Code](./figma-to-code/) - Figma-to-code translation with design tokens, auto-layout to flexbox/grid, variant-to-prop mapping, and responsive conversion.
 - [File Upload](./file-upload/) - File uploads with Multer, presigned S3 URLs, chunked uploads, validation, image processing, and drag-and-drop UI.
+- [htmx Patterns](./htmx-patterns/) - htmx hypermedia patterns with hx-get/post, swap strategies, triggers, SSE, WebSockets, and progressive enhancement.
 - [Framer Motion](./framer-motion/) - Framer Motion animations with variants, gestures, layout animations, scroll effects, AnimatePresence, and spring physics.
 - [Framer Motion Advanced](./framer-motion-advanced/) - Framer Motion advanced layout animations, shared transitions, gesture-driven interactions, scroll-linked effects, and orchestration.
 - [Form Validation](./form-validation/) - Form validation with Zod, React Hook Form, server-side validation, accessible errors, and multi-step wizards.
@@ -220,6 +223,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Kysely ORM](./kysely-orm/) - Kysely type-safe SQL query builder with joins, subqueries, transactions, migrations, and PostgreSQL/MySQL/SQLite dialect support.
 - [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
+- [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
+- [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
 - [Lit Web Components](./lit-web-components/) - Lit web components with reactive properties, shadow DOM styling, lifecycle callbacks, events, slots, and custom element registration.
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
@@ -336,8 +341,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sonner Toasts](./sonner-toasts/) - Sonner toast notifications with promise toasts, action buttons, custom components, positioning, and React/Next.js integration.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
+- [Stimulus & Hotwire](./stimulus-hotwire/) - Stimulus controllers, Turbo Drive, Turbo Frames, Turbo Streams, and progressive enhancement of server-rendered HTML.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
 - [Storybook Testing](./storybook-testing/) - Storybook component testing with interaction tests, visual regression, accessibility audits, decorators, and CI integration.
+- [Storybook v8](./storybook-v8/) - Storybook v8 with CSF3, args, play functions, interaction testing, Autodocs, and React/Vue/Angular integration.
 - [SWR Data Fetching](./swr-data-fetching/) - SWR with stale-while-revalidate caching, optimistic mutations, useSWRInfinite pagination, and prefetching.
 - [Strapi CMS](./strapi-cms/) - Strapi headless CMS covering content types, REST and GraphQL APIs, lifecycle hooks, authentication, custom plugins, and deployment.
 - [Stripe Billing](./stripe-billing/) - Stripe billing covering subscriptions, usage-based metering, customer portal, invoicing, webhooks, and SaaS pricing patterns.
@@ -374,6 +381,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [tRPC Patterns](./trpc-patterns/) - tRPC advanced patterns with router definitions, input validation, context, subscriptions, error handling, and Next.js App Router setup.
+- [Turborepo](./turborepo/) - Turborepo monorepo with turbo.json pipelines, caching, remote cache, task filtering, pruning, and CI/CD optimization.
 - [Turborepo Monorepo](./turborepo-monorepo/)
 - [Turborepo Pipelines](./turborepo-pipelines/) - Turborepo build orchestration with task pipelines, remote caching, pruned Docker builds, and GitHub Actions CI.
 - [Turborepo v2](./turborepo-v2/) - Turborepo v2 covering task configuration, watch mode, boundary enforcement, remote caching, and migration from v1.
@@ -381,6 +389,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Twilio Communication](./twilio-communication/) - Twilio APIs covering SMS, voice calls with TwiML, WhatsApp messaging, Verify OTP, webhooks, and Node.js SDK integration.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
 - [typesafe-i18n](./typesafe-i18n/) - typesafe-i18n with typed translations, plural rules, formatters, async locale loading, and React/Svelte/Vue integration.
+- [Vitest Patterns](./vitest-patterns/) - Vitest testing with mocking, snapshots, concurrent tests, coverage, workspace projects, and React Testing Library.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
@@ -411,6 +420,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 - [Wrangler CLI](./wrangler-cli/) - Cloudflare Wrangler CLI with Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, and Pages deployment.
+- [WXT Browser Extensions](./wxt-extensions/) - WXT browser extension framework with manifest config, background/content scripts, storage, messaging, and cross-browser support.
 - [XState v5](./xstate-v5/) - XState v5 state machines with guards, actions, actors, parallel states, invoked services, TypeScript types, and React hooks.
 
 ### Data & Analysis
