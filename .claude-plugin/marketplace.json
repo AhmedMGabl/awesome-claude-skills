@@ -781,6 +781,42 @@
       "description": "Electron desktop app development with main/renderer processes, IPC, BrowserWindow, auto-updates, native menus, system tray, and cross-platform packaging.",
       "source": "./electron-desktop",
       "category": "development"
+    },
+    {
+      "name": "data-visualization",
+      "description": "Data visualization covering Chart.js and Recharts for React, D3.js fundamentals, dashboard layouts, responsive charts, real-time data updates, color accessibility, tooltip and legend patterns, export-to-image functionality, and performance optimization for large datasets.",
+      "source": "./data-visualization",
+      "category": "development"
+    },
+    {
+      "name": "responsive-design",
+      "description": "Responsive web design patterns covering mobile-first approach, CSS Grid and Flexbox layouts, container queries, fluid typography with clamp(), responsive images, breakpoint strategies, media queries, touch targets, viewport units, and cross-device testing best practices.",
+      "source": "./responsive-design",
+      "category": "development"
+    },
+    {
+      "name": "webhooks-integration",
+      "description": "Webhook implementation patterns covering signature verification (HMAC-SHA256), idempotent processing, retry handling with exponential backoff, webhook delivery systems, Stripe/GitHub/Slack webhook patterns, dead letter queues, event logging, and webhook testing strategies.",
+      "source": "./webhooks-integration",
+      "category": "development"
+    },
+    {
+      "name": "api-mocking",
+      "description": "API mocking and testing patterns covering MSW (Mock Service Worker) for browser and Node.js, Nock for HTTP interception, JSON Server for rapid prototyping, Mirage.js, factory patterns for test data generation, and contract testing with Pact.",
+      "source": "./api-mocking",
+      "category": "development"
+    },
+    {
+      "name": "accessibility-testing",
+      "description": "Accessibility testing and automation covering axe-core integration, Playwright accessibility audits, screen reader testing patterns, ARIA attribute validation, color contrast checking, keyboard navigation testing, focus management, and automated a11y CI pipeline setup.",
+      "source": "./accessibility-testing",
+      "category": "development"
+    },
+    {
+      "name": "cypress-testing",
+      "description": "Cypress end-to-end testing covering component testing, custom commands, fixtures, intercepts for API mocking, visual regression with Percy, authentication flows, CI configuration, retry strategies, and best practices for reliable test suites.",
+      "source": "./cypress-testing",
+      "category": "development"
     }
   ]
 }
