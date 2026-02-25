@@ -607,6 +607,42 @@
       "description": "CLI application development covering argument parsing (Commander.js, Click, Cobra), interactive prompts, colored output, configuration files, and distribution patterns.",
       "source": "./cli-development",
       "category": "development"
+    },
+    {
+      "name": "oauth-authentication",
+      "description": "OAuth 2.0 and authentication implementation covering Authorization Code flow with PKCE, JWT management, Auth.js/NextAuth, social login, refresh token rotation, and RBAC patterns.",
+      "source": "./oauth-authentication",
+      "category": "development"
+    },
+    {
+      "name": "grpc-protobuf",
+      "description": "gRPC and Protocol Buffers covering proto3 schemas, code generation, streaming RPCs, interceptors, error handling, deadlines, and Node.js/Go/Python service patterns.",
+      "source": "./grpc-protobuf",
+      "category": "development"
+    },
+    {
+      "name": "i18n-localization",
+      "description": "Internationalization and localization covering react-intl, next-intl, i18next, ICU message format, pluralization, Intl API formatting, RTL layout, and translation workflows.",
+      "source": "./i18n-localization",
+      "category": "development"
+    },
+    {
+      "name": "swiftui-development",
+      "description": "SwiftUI development for iOS/macOS covering views, modifiers, @Observable state, NavigationStack, async/await, SwiftData, MVVM architecture, and accessibility.",
+      "source": "./swiftui-development",
+      "category": "development"
+    },
+    {
+      "name": "chaos-engineering",
+      "description": "Chaos engineering and resilience testing covering fault injection, LitmusChaos, Toxiproxy, circuit breakers, gameday planning, and distributed system hardening.",
+      "source": "./chaos-engineering",
+      "category": "development"
+    },
+    {
+      "name": "message-queues",
+      "description": "Message queue and event-driven patterns covering RabbitMQ, BullMQ, AWS SQS, Kafka, dead letter queues, idempotency, fan-out/fan-in, and backpressure handling.",
+      "source": "./message-queues",
+      "category": "development"
     }
   ]
 }

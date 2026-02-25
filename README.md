@@ -87,6 +87,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
 - [Callstack React Native Performance](https://github.com/callstackincubator/agent-skills) - React Native performance optimization skills from Callstack covering JS/React, Native, and bundling optimizations. *By [@callstackincubator](https://github.com/callstackincubator)*
+- [Chaos Engineering](./chaos-engineering/) - Chaos engineering and resilience testing with LitmusChaos, Toxiproxy, circuit breakers, fault injection, and gameday planning.
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
@@ -111,11 +112,13 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Flutter Development](./flutter-development/) - Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, testing, and production deployment to iOS and Android.
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
+- [gRPC & Protocol Buffers](./grpc-protobuf/) - gRPC and Protocol Buffers with proto3 schemas, code generation, streaming RPCs, interceptors, and Node.js/Go/Python patterns.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
 - [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
 - [Git Workflows](./git-workflows/) - Git branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, cherry-pick, bisect, worktrees, hooks, and monorepo management.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
+- [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
@@ -124,12 +127,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
+- [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Monorepo Management](./monorepo-management/) - Monorepo management with Turborepo, Nx, and pnpm workspaces covering task pipelines, remote caching, and shared configurations.
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
+- [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
@@ -159,6 +164,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
 - [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
+- [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
