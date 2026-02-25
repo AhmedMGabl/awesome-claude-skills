@@ -1411,6 +1411,24 @@
       "description": "Advanced Redis patterns covering pub/sub messaging, Streams with consumer groups, Lua scripting, RedisJSON, RediSearch full-text search, RedisTimeSeries, pipeline batching, and cluster configuration.",
       "source": "./redis-patterns",
       "category": "development"
+    },
+    {
+      "name": "neon-database",
+      "description": "Neon serverless Postgres covering branching, connection pooling, autoscaling, Neon Auth, drizzle-orm integration, edge function access, database branching for preview deployments, and migration workflows.",
+      "source": "./neon-database",
+      "category": "development"
+    },
+    {
+      "name": "upstash-serverless",
+      "description": "Upstash serverless data services covering Redis REST API, QStash message queues, Vector for embeddings search, rate limiting, session management, caching, and integration with Next.js and Vercel Edge.",
+      "source": "./upstash-serverless",
+      "category": "development"
+    },
+    {
+      "name": "sharp-image-processing",
+      "description": "Sharp image processing covering resizing, format conversion, compression, watermarks, metadata extraction, batch processing, thumbnail generation, and integration with Node.js upload pipelines.",
+      "source": "./sharp-image-processing",
+      "category": "development"
     }
   ]
 }
