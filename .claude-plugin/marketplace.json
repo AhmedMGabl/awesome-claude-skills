@@ -715,6 +715,36 @@
       "description": "GitHub API integration with Octokit, REST/GraphQL APIs, PR automation, webhook handling, GitHub Apps auth, release management, and workflow dispatch.",
       "source": "./github-api",
       "category": "development"
+    },
+    {
+      "name": "form-validation",
+      "description": "Form validation with Zod, React Hook Form, server-side validation, accessible error display, multi-step wizards, and shared client/server schemas.",
+      "source": "./form-validation",
+      "category": "development"
+    },
+    {
+      "name": "image-optimization",
+      "description": "Image optimization with Next.js Image, sharp processing, responsive srcset, WebP/AVIF conversion, lazy loading, blur placeholders, and LCP improvement.",
+      "source": "./image-optimization",
+      "category": "development"
+    },
+    {
+      "name": "feature-flags",
+      "description": "Feature flag implementation with LaunchDarkly, Unleash, percentage rollouts, A/B testing, user targeting, kill switches, and flag lifecycle management.",
+      "source": "./feature-flags",
+      "category": "development"
+    },
+    {
+      "name": "caching-strategies",
+      "description": "Caching strategies covering HTTP headers, CDN caching, Redis application cache, React Query/SWR, cache invalidation patterns, and stampede prevention.",
+      "source": "./caching-strategies",
+      "category": "development"
+    },
+    {
+      "name": "file-upload",
+      "description": "File upload with Multer, presigned S3 URLs, chunked uploads, file validation, image processing pipelines, drag-and-drop UI, and progress tracking.",
+      "source": "./file-upload",
+      "category": "development"
     }
   ]
 }
