@@ -2701,6 +2701,66 @@
       "description": "Rust async programming patterns covering futures, async/await, streams, pin, select, join, async traits, concurrency limits, and runtime-agnostic design.",
       "source": "./rust-async",
       "category": "development"
+    },
+    {
+      "name": "python-fastapi",
+      "description": "Python FastAPI patterns covering async endpoints, Pydantic models, dependency injection, middleware, OAuth2 authentication, WebSockets, and OpenAPI documentation.",
+      "source": "./python-fastapi",
+      "category": "development"
+    },
+    {
+      "name": "python-django",
+      "description": "Python Django patterns covering models, views, serializers, Django REST Framework, authentication, middleware, signals, admin customization, and testing.",
+      "source": "./python-django",
+      "category": "development"
+    },
+    {
+      "name": "python-flask",
+      "description": "Python Flask patterns covering routing, blueprints, request handling, Jinja2 templates, Flask-SQLAlchemy, authentication, error handling, and testing.",
+      "source": "./python-flask",
+      "category": "development"
+    },
+    {
+      "name": "python-sqlalchemy",
+      "description": "Python SQLAlchemy patterns covering ORM models, relationships, queries, sessions, migrations with Alembic, async support, and advanced query techniques.",
+      "source": "./python-sqlalchemy",
+      "category": "development"
+    },
+    {
+      "name": "python-pytest",
+      "description": "Python pytest patterns covering fixtures, parametrize, mocking, async tests, markers, conftest, plugins, coverage, and test organization best practices.",
+      "source": "./python-pytest",
+      "category": "development"
+    },
+    {
+      "name": "python-pydantic",
+      "description": "Python Pydantic patterns covering model definitions, field validators, custom types, nested models, settings management, JSON Schema generation, and serialization.",
+      "source": "./python-pydantic",
+      "category": "development"
+    },
+    {
+      "name": "python-celery",
+      "description": "Python Celery patterns covering task queues, periodic tasks, task chains, error handling, rate limiting, result backends, monitoring, and production deployment.",
+      "source": "./python-celery",
+      "category": "development"
+    },
+    {
+      "name": "python-asyncio",
+      "description": "Python asyncio patterns covering coroutines, tasks, gather, semaphores, queues, streams, event loops, async context managers, and concurrent programming.",
+      "source": "./python-asyncio",
+      "category": "development"
+    },
+    {
+      "name": "python-click-cli",
+      "description": "Python Click CLI patterns covering commands, groups, options, arguments, prompts, file handling, progress bars, testing, and distribution with setuptools.",
+      "source": "./python-click-cli",
+      "category": "development"
+    },
+    {
+      "name": "python-poetry",
+      "description": "Python Poetry patterns covering dependency management, virtual environments, pyproject.toml, version constraints, publishing, monorepos, and CI/CD integration.",
+      "source": "./python-poetry",
+      "category": "development"
     }
   ]
 }
