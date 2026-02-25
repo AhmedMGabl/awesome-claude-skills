@@ -99,6 +99,12 @@
       "category": "development"
     },
     {
+      "name": "aws-serverless",
+      "description": "AWS serverless development covering Lambda functions, API Gateway, DynamoDB, S3, SQS/SNS, Step Functions, EventBridge, CDK/SAM infrastructure, and production-ready serverless architecture patterns.",
+      "source": "./aws-serverless",
+      "category": "development"
+    },
+    {
       "name": "changelog-generator",
       "description": "Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.",
       "source": "./changelog-generator",
@@ -168,6 +174,12 @@
       "name": "golang-development",
       "description": "Go development covering project structure, error handling, concurrency with goroutines and channels, HTTP servers, testing, modules, interfaces, generics, and production-ready patterns for building performant applications.",
       "source": "./golang-development",
+      "category": "development"
+    },
+    {
+      "name": "git-workflows",
+      "description": "Git workflows covering branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, interactive rebase, cherry-pick, bisect, worktrees, hooks, monorepo management, and team collaboration patterns.",
+      "source": "./git-workflows",
       "category": "development"
     },
     {
