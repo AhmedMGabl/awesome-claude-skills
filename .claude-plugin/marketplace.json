@@ -2461,6 +2461,66 @@
       "description": "TinyMCE patterns covering WYSIWYG configuration, plugin ecosystem, custom toolbar buttons, content formatting, image upload, templates, and React/Vue integration.",
       "source": "./tinymce",
       "category": "development"
+    },
+    {
+      "name": "slate-editor",
+      "description": "Slate editor patterns covering customizable rich text framework, custom elements, leaves, plugins, serialization, normalizing, collaborative editing, and React integration.",
+      "source": "./slate-editor",
+      "category": "development"
+    },
+    {
+      "name": "ckeditor5",
+      "description": "CKEditor 5 patterns covering modular editor builds, plugin architecture, custom plugins, toolbar configuration, image upload adapters, content conversion, and React integration.",
+      "source": "./ckeditor5",
+      "category": "development"
+    },
+    {
+      "name": "froala-editor",
+      "description": "Froala Editor patterns covering WYSIWYG configuration, custom buttons, image/video upload, event handling, content manipulation, themes, and React integration.",
+      "source": "./froala-editor",
+      "category": "development"
+    },
+    {
+      "name": "suneditor",
+      "description": "SunEditor patterns covering lightweight WYSIWYG editing, toolbar customization, plugin system, image upload, content manipulation, responsive design, and React integration.",
+      "source": "./suneditor",
+      "category": "development"
+    },
+    {
+      "name": "jodit-editor",
+      "description": "Jodit Editor patterns covering WYSIWYG editing, toolbar configuration, custom plugins, file browser, content filtering, iframe mode, and React integration.",
+      "source": "./jodit-editor",
+      "category": "development"
+    },
+    {
+      "name": "puppeteer-automation",
+      "description": "Puppeteer browser automation patterns covering page navigation, element interaction, screenshots, PDF generation, network interception, web scraping, and testing workflows.",
+      "source": "./puppeteer-automation",
+      "category": "development"
+    },
+    {
+      "name": "playwright-scraping",
+      "description": "Playwright web scraping patterns covering multi-browser automation, locator strategies, network interception, stealth mode, pagination handling, and data extraction workflows.",
+      "source": "./playwright-scraping",
+      "category": "development"
+    },
+    {
+      "name": "cheerio-scraping",
+      "description": "Cheerio web scraping patterns covering HTML parsing, jQuery-style selectors, DOM traversal, data extraction, form parsing, table scraping, and Node.js integration.",
+      "source": "./cheerio-scraping",
+      "category": "development"
+    },
+    {
+      "name": "crawlee-scraping",
+      "description": "Crawlee web scraping framework patterns covering request queues, browser crawlers, Cheerio/Playwright/Puppeteer crawlers, proxy rotation, storage, and anti-blocking strategies.",
+      "source": "./crawlee-scraping",
+      "category": "development"
+    },
+    {
+      "name": "jsdom-testing",
+      "description": "jsdom patterns covering DOM simulation in Node.js, document creation, element querying, event dispatching, form handling, window APIs, and testing with Jest/Vitest.",
+      "source": "./jsdom-testing",
+      "category": "development"
     }
   ]
 }

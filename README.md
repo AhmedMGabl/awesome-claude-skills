@@ -112,7 +112,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
+- [Cheerio Scraping](./cheerio-scraping/) - Cheerio HTML parsing with jQuery-style selectors, DOM traversal, table scraping, paginated scraping, and Node.js integration.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
+- [CKEditor 5](./ckeditor5/) - CKEditor 5 modular WYSIWYG editor with plugin architecture, custom plugins, image upload adapters, content conversion, and React integration.
 - [cmdk Command Palette](./cmdk-command/) - cmdk command palette with groups, keyboard navigation, nested pages, async search, and shadcn/ui integration.
 - [Callstack React Native Performance](https://github.com/callstackincubator/agent-skills) - React Native performance optimization skills from Callstack covering JS/React, Native, and bundling optimizations. *By [@callstackincubator](https://github.com/callstackincubator)*
 - [Chakra UI v3](./chakra-ui-v3/) - Chakra UI v3 with style props, recipes, tokens, color mode, responsive design, and accessible components.
@@ -175,6 +177,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
 - [Convex Schema](./convex-schema/) - Convex schema definitions with validators, indexes, query and mutation functions, real-time subscriptions, and React hooks.
+- [Crawlee Scraping](./crawlee-scraping/) - Crawlee web scraping framework with request queues, Cheerio/Playwright/Puppeteer crawlers, proxy rotation, and anti-blocking strategies.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [CSS Modules Patterns](./css-modules-patterns/) - CSS Modules with scoped class names, composition, theming with CSS variables, TypeScript integration, and Next.js configuration.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
@@ -196,6 +199,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [htmx Patterns](./htmx-patterns/) - htmx hypermedia patterns with hx-get/post, swap strategies, triggers, SSE, WebSockets, and progressive enhancement.
 - [Framer Motion](./framer-motion/) - Framer Motion animations with variants, gestures, layout animations, scroll effects, AnimatePresence, and spring physics.
 - [Framer Motion Advanced](./framer-motion-advanced/) - Framer Motion advanced layout animations, shared transitions, gesture-driven interactions, scroll-linked effects, and orchestration.
+- [Froala Editor](./froala-editor/) - Froala WYSIWYG editor with custom buttons, image/video upload, event handling, content manipulation, and React integration.
 - [Form Validation](./form-validation/) - Form validation with Zod, React Hook Form, server-side validation, accessible errors, and multi-step wizards.
 - [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
@@ -230,7 +234,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
+- [Jodit Editor](./jodit-editor/) - Jodit WYSIWYG editor with toolbar configuration, custom plugins, file browser, content filtering, and React integration.
 - [Jotai State](./jotai-state/) - Jotai atomic state management with primitive atoms, derived atoms, async atoms, atom families, persistence, and DevTools.
+- [jsdom Testing](./jsdom-testing/) - jsdom DOM simulation in Node.js with document creation, element querying, event dispatching, form handling, and Jest/Vitest integration.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [Inngest](./inngest/) - Inngest event-driven functions with step functions, scheduled tasks, fan-out patterns, retries, concurrency, and Next.js integration.
 - [Ionic Capacitor](./ionic-capacitor/) - Ionic Capacitor cross-platform mobile apps with native device APIs, Ionic React components, navigation, push notifications, and iOS/Android deployment.
@@ -312,6 +318,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
 - [Plate Editor](./plate-editor/) - Plate Slate-based rich text editor with plugins, custom elements, serialization, toolbar components, and shadcn/ui integration.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
+- [Playwright Scraping](./playwright-scraping/) - Playwright web scraping with multi-browser automation, locator strategies, pagination handling, infinite scroll, and data extraction.
 - [PocketBase](./pocketbase/) - PocketBase collection schemas, real-time subscriptions, authentication, file uploads, API rules, and single-binary deployment.
 - [PocketBase Backend](./pocketbase-backend/) - PocketBase backend with collections, real-time subscriptions, authentication, file storage, and JavaScript SDK integration.
 - [PostgreSQL Operations](./postgresql-operations/) - PostgreSQL operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, and performance tuning.
@@ -358,6 +365,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
 - [pypict-claude-skill](https://github.com/omkamal/pypict-claude-skill) - Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.
 - [Pulumi Infrastructure as Code](./pulumi-iac/) - Pulumi IaC with TypeScript covering AWS/GCP/Azure, stack management, component resources, testing, and CI/CD integration.
+- [Puppeteer Automation](./puppeteer-automation/) - Puppeteer browser automation with page navigation, element interaction, screenshots, PDF generation, network interception, and scraping.
 - [Quasar Framework](./quasar-framework/) - Quasar cross-platform Vue 3 apps with Material/iOS components, SSR mode, PWA configuration, Electron/Capacitor builds, and responsive layouts.
 - [Puppeteer Scraping](./puppeteer-scraping/) - Puppeteer browser automation covering page navigation, form filling, screenshots, PDF generation, network interception, and stealth mode.
 - [Python Development](./python-development/) - Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns.
@@ -385,6 +393,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sonner Toasts](./sonner-toasts/) - Sonner toast notifications with promise toasts, action buttons, custom components, positioning, and React/Next.js integration.
 - [Sonner v2](./sonner-v2/) - Sonner v2 toast patterns with promise-based toasts, custom JSX rendering, action buttons, rich content, theming, and Next.js App Router integration.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
+- [Slate Editor](./slate-editor/) - Slate customizable rich text framework with custom elements, leaves, plugins, serialization, normalizing, and React integration.
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Stimulus & Hotwire](./stimulus-hotwire/) - Stimulus controllers, Turbo Drive, Turbo Frames, Turbo Streams, and progressive enhancement of server-rendered HTML.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
@@ -408,6 +417,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sharp Image](./sharp-image/) - Sharp image processing with resize, crop, WebP/AVIF optimization, watermarks, metadata extraction, compositing, and batch operations.
 - [Sharp Image Processing](./sharp-image-processing/) - Sharp image processing covering resizing, format conversion, watermarks, metadata, batch processing, and upload pipelines.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
+- [SunEditor](./suneditor/) - SunEditor lightweight WYSIWYG editor with toolbar customization, plugin system, image upload, responsive design, and React integration.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
 - [Svelte 5](./svelte-v5/) - Svelte 5 runes with $state, $derived, $effect, $props, $bindable, snippets, and migration from Svelte 4.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
