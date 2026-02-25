@@ -207,6 +207,18 @@
       "category": "development"
     },
     {
+      "name": "python-development",
+      "description": "Python development best practices including virtual environments, type hints, dataclasses, async/await, pytest testing, packaging, and modern Python patterns for building robust applications.",
+      "source": "./python-development",
+      "category": "development"
+    },
+    {
+      "name": "react-development",
+      "description": "React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.",
+      "source": "./react-development",
+      "category": "development"
+    },
+    {
       "name": "redis-caching",
       "description": "Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.",
       "source": "./redis-caching",
@@ -222,6 +234,12 @@
       "name": "template-skill",
       "description": "A template skill that demonstrates the structure and format for creating new Claude Skills.",
       "source": "./template-skill",
+      "category": "development"
+    },
+    {
+      "name": "terraform-infrastructure",
+      "description": "Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.",
+      "source": "./terraform-infrastructure",
       "category": "development"
     },
     {
