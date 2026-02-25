@@ -1861,6 +1861,66 @@
       "description": "Capacitor native plugin patterns covering Camera, Filesystem, Geolocation, Push Notifications, Haptics, App Launcher, Biometrics, Share, local notifications, and custom native plugin creation for iOS and Android.",
       "source": "./capacitor-plugins",
       "category": "development"
+    },
+    {
+      "name": "ky-http-client",
+      "description": "Ky HTTP client patterns covering request methods, hooks (beforeRequest, afterResponse), retry logic, timeout configuration, JSON parsing, custom instances, error handling, and migration from axios or fetch for modern browser and Node.js applications.",
+      "source": "./ky-http-client",
+      "category": "development"
+    },
+    {
+      "name": "million-js",
+      "description": "Million.js optimization patterns covering the block virtual DOM, compiler integration, automatic mode, manual block() wrapping, for-loop optimization, React component optimization, and performance profiling for faster React rendering.",
+      "source": "./million-js",
+      "category": "development"
+    },
+    {
+      "name": "typesafe-i18n",
+      "description": "typesafe-i18n patterns covering locale definitions, typed translation functions, plural rules, formatters, async locale loading, namespace organization, React/Svelte/Vue integration, and type-safe interpolation with compile-time checks.",
+      "source": "./typesafe-i18n",
+      "category": "development"
+    },
+    {
+      "name": "unplugin-patterns",
+      "description": "Unplugin patterns covering universal plugin development for Vite, Webpack, Rollup, and esbuild, with auto-imports, component resolution, icon loading, virtual modules, and build-time code transformations.",
+      "source": "./unplugin-patterns",
+      "category": "development"
+    },
+    {
+      "name": "solid-start",
+      "description": "SolidStart full-stack framework patterns covering file-based routing, server functions, API routes, data loading with createAsync, middleware, sessions, SSR/SSG modes, and deployment configuration.",
+      "source": "./solid-start",
+      "category": "development"
+    },
+    {
+      "name": "tauri-v2",
+      "description": "Tauri v2 desktop and mobile application patterns covering window management, IPC commands, event system, file system access, system tray, auto-updater, plugins, multi-window apps, and Rust backend integration.",
+      "source": "./tauri-v2",
+      "category": "development"
+    },
+    {
+      "name": "farm-bundler",
+      "description": "Farm bundler patterns covering configuration, Rust-based plugins, partial bundling strategy, persistent caching, HMR, CSS modules, lazy compilation, and migration from Webpack or Vite for high-performance builds.",
+      "source": "./farm-bundler",
+      "category": "development"
+    },
+    {
+      "name": "biome-config",
+      "description": "Biome advanced configuration patterns covering rule customization, per-file overrides, import sorting, formatter options, linter groups, ignore patterns, CI integration, and migration from ESLint and Prettier.",
+      "source": "./biome-config",
+      "category": "development"
+    },
+    {
+      "name": "rspack-bundler",
+      "description": "Rspack bundler patterns covering configuration, loaders, plugins, module federation, code splitting, CSS extraction, dev server, production optimization, and migration from Webpack for high-performance Rust-based bundling.",
+      "source": "./rspack-bundler",
+      "category": "development"
+    },
+    {
+      "name": "playwright-component",
+      "description": "Playwright Component Testing patterns covering mounting React, Vue, and Svelte components, prop and slot testing, event handling, visual regression, accessibility checks, and integration with Vite for isolated component testing.",
+      "source": "./playwright-component",
+      "category": "development"
     }
   ]
 }

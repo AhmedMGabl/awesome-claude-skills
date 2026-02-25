@@ -100,6 +100,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
+- [Biome Config](./biome-config/) - Biome advanced configuration with rule customization, per-file overrides, import sorting, CI integration, and ESLint/Prettier migration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
@@ -173,6 +174,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Form Validation](./form-validation/) - Form validation with Zod, React Hook Form, server-side validation, accessible errors, and multi-step wizards.
 - [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
+- [Farm Bundler](./farm-bundler/) - Farm Rust-based bundler with partial bundling, persistent caching, HMR, CSS modules, lazy compilation, and Webpack/Vite migration.
 - [FastAPI Development](./fastapi-development/) - FastAPI development with async/await, Pydantic v2, dependency injection, SQLAlchemy async, JWT auth, WebSockets, and testing with httpx/pytest.
 - [FastAPI Python](./fastapi-python/) - FastAPI Python web framework with async endpoints, Pydantic models, dependency injection, OAuth2 authentication, WebSockets, and background tasks.
 - [Feishu Automation](./feishu-automation/) - Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.
@@ -209,6 +211,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
+- [Ky HTTP Client](./ky-http-client/) - Ky lightweight HTTP client with hooks, retry logic, timeout configuration, custom instances, and error handling.
 - [Kysely ORM](./kysely-orm/) - Kysely type-safe SQL query builder with joins, subqueries, transactions, migrations, and PostgreSQL/MySQL/SQLite dialect support.
 - [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
@@ -220,6 +223,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [MDX Content](./mdx-content/) - MDX content authoring with custom components, remark/rehype plugins, frontmatter parsing, syntax highlighting, and Next.js integration.
 - [Meilisearch](./meilisearch/) - Meilisearch full-text search with index management, filtering, faceting, sorting, typo tolerance, synonyms, and React InstantSearch integration.
+- [Million.js](./million-js/) - Million.js block virtual DOM optimization with compiler integration, automatic mode, For component, and React performance profiling.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
@@ -258,6 +262,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
 - [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
+- [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
 - [PocketBase Backend](./pocketbase-backend/) - PocketBase backend with collections, real-time subscriptions, authentication, file storage, and JavaScript SDK integration.
 - [PostgreSQL Operations](./postgresql-operations/) - PostgreSQL operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, and performance tuning.
@@ -287,6 +292,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
+- [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
@@ -310,6 +316,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Socket.IO](./socket-io/) - Socket.IO real-time communication with rooms, namespaces, typed events, auth middleware, React hooks, and Redis adapter scaling.
 - [Socket.IO v4](./socket-io-v4/) - Socket.IO v4 with typed events, namespaces, rooms, acknowledgements, middleware, and Redis adapter for horizontal scaling.
 - [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
+- [SolidStart](./solid-start/) - SolidStart full-stack framework with file-based routing, server functions, createAsync, middleware, sessions, and SSR/SSG modes.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
@@ -337,6 +344,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [TanStack Query](./tanstack-query/) - TanStack Query (React Query) with queries, mutations, optimistic updates, infinite scrolling, prefetching, and cache management.
 - [TanStack Router](./tanstack-router/) - TanStack Router covering type-safe routing, file-based routes, search params validation, data loading, and auth guards.
 - [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
+- [Tauri v2](./tauri-v2/) - Tauri v2 desktop and mobile apps with IPC commands, event system, window management, system tray, plugins, and Rust backend.
 - [Trigger.dev](./trigger-dev/) - Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency, and AI/LLM integration.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
 - [Testing Strategies](./testing-strategies/) - Testing pyramid, integration tests, contract testing with Pact, database testing with Testcontainers, and CI optimization.
@@ -353,10 +361,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Turso Database](./turso-database/) - Turso embedded SQLite with libSQL client, embedded replicas, local-first development, vector search, and multi-tenant patterns.
 - [Twilio Communication](./twilio-communication/) - Twilio APIs covering SMS, voice calls with TwiML, WhatsApp messaging, Verify OTP, webhooks, and Node.js SDK integration.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
+- [typesafe-i18n](./typesafe-i18n/) - typesafe-i18n with typed translations, plural rules, formatters, async locale loading, and React/Svelte/Vue integration.
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
+- [Unplugin Patterns](./unplugin-patterns/) - Unplugin universal bundler plugins with auto-imports, component resolution, icon loading, virtual modules, and Vite/Webpack/Rollup support.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
 - [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
 - [Valibot Schemas](./valibot-schemas/) - Valibot tree-shakeable validation with pipe transformations, custom rules, form validation, API parsing, and Zod migration.
