@@ -2881,6 +2881,66 @@
       "description": "Neo4j graph database patterns covering Cypher queries, node/relationship modeling, indexes, path algorithms, APOC procedures, and JavaScript/Python driver integration.",
       "source": "./neo4j-graph",
       "category": "development"
+    },
+    {
+      "name": "java-spring-security",
+      "description": "Spring Security patterns covering authentication, authorization, OAuth2/OIDC, JWT tokens, CSRF protection, method security, and reactive security configuration.",
+      "source": "./java-spring-security",
+      "category": "development"
+    },
+    {
+      "name": "java-hibernate",
+      "description": "Hibernate ORM patterns covering entity mapping, relationships, JPQL/Criteria queries, caching, lazy loading, batch operations, and Spring Data JPA integration.",
+      "source": "./java-hibernate",
+      "category": "development"
+    },
+    {
+      "name": "java-maven",
+      "description": "Apache Maven patterns covering POM configuration, dependency management, build lifecycle, plugins, multi-module projects, profiles, and repository management.",
+      "source": "./java-maven",
+      "category": "development"
+    },
+    {
+      "name": "java-junit5",
+      "description": "JUnit 5 testing patterns covering assertions, parameterized tests, nested tests, extensions, MockMvc, Testcontainers, and Spring Boot test slices.",
+      "source": "./java-junit5",
+      "category": "development"
+    },
+    {
+      "name": "kotlin-coroutines",
+      "description": "Kotlin coroutines patterns covering suspend functions, structured concurrency, Flow, channels, dispatchers, error handling, and testing coroutines.",
+      "source": "./kotlin-coroutines",
+      "category": "development"
+    },
+    {
+      "name": "dotnet-aspnetcore",
+      "description": "ASP.NET Core patterns covering minimal APIs, controllers, middleware, dependency injection, authentication, Entity Framework Core, and deployment configuration.",
+      "source": "./dotnet-aspnetcore",
+      "category": "development"
+    },
+    {
+      "name": "dotnet-entityframework",
+      "description": "Entity Framework Core patterns covering DbContext, entity configuration, migrations, LINQ queries, relationships, change tracking, and performance optimization.",
+      "source": "./dotnet-entityframework",
+      "category": "development"
+    },
+    {
+      "name": "dotnet-blazor",
+      "description": "Blazor patterns covering components, data binding, event handling, forms, dependency injection, JavaScript interop, and server/WebAssembly render modes.",
+      "source": "./dotnet-blazor",
+      "category": "development"
+    },
+    {
+      "name": "csharp-linq",
+      "description": "C# LINQ patterns covering query syntax, method syntax, deferred execution, grouping, joins, projections, custom extension methods, and async LINQ with EF Core.",
+      "source": "./csharp-linq",
+      "category": "development"
+    },
+    {
+      "name": "fsharp-patterns",
+      "description": "F# patterns covering discriminated unions, pattern matching, computation expressions, async workflows, Railway-oriented programming, and domain modeling.",
+      "source": "./fsharp-patterns",
+      "category": "development"
     }
   ]
 }

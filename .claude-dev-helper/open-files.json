@@ -1,11 +1,5 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\java-spring-security\\SKILL.md",
-    "timestamp": 1772040394810,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\java-hibernate\\SKILL.md",
     "timestamp": 1772040414937,
     "focus": false,
@@ -56,6 +50,12 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\fsharp-patterns\\SKILL.md",
     "timestamp": 1772040594201,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills/.claude-plugin/marketplace.json",
+    "timestamp": 1772040651514,
     "focus": false,
     "openLocation": 1
   }
