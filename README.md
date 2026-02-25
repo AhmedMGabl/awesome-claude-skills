@@ -79,7 +79,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
 - [Android Kotlin Development](./android-kotlin/) - Android development with Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
+- [AI-Assisted Development](./github-copilot-patterns/) - AI coding assistant patterns with effective prompting, context management, code review, test generation, and team guidelines.
 - [API Design Best Practices](./api-design/) - REST API design covering resource naming, HTTP status codes, pagination, filtering, versioning, error formats, and OpenAPI specs.
+- [API Gateway](./api-gateway/) - API gateway patterns with request routing, rate limiting, auth middleware, BFF pattern, and AWS/Kong configuration.
 - [API Documentation Generator](./api-documentation-generator/) - Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.
 - [API Mocking](./api-mocking/) - API mocking with MSW, Nock, JSON Server, test data factories with Faker, and contract testing with Pact.
 - [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
@@ -90,12 +92,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
+- [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
 - [Callstack React Native Performance](https://github.com/callstackincubator/agent-skills) - React Native performance optimization skills from Callstack covering JS/React, Native, and bundling optimizations. *By [@callstackincubator](https://github.com/callstackincubator)*
 - [Chaos Engineering](./chaos-engineering/) - Chaos engineering and resilience testing with LitmusChaos, Toxiproxy, circuit breakers, fault injection, and gameday planning.
 - [Cloudflare Workers](./cloudflare-workers/) - Cloudflare Workers edge computing with Hono, D1, R2, KV, Durable Objects, Cron Triggers, and Wrangler deployment.
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
+- [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
 - [Deno Development](./deno-development/) - Deno runtime with permissions, HTTP servers, built-in TypeScript, npm compatibility, Fresh framework, Deploy, and KV store.
@@ -151,6 +155,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
+- [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
@@ -158,6 +163,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
+- [Migration Patterns](./migration-patterns/) - Framework migration (CRA to Vite/Next.js), API versioning, gradual TypeScript adoption, and zero-downtime strategies.
 - [Monorepo Management](./monorepo-management/) - Monorepo management with Turborepo, Nx, and pnpm workspaces covering task pipelines, remote caching, and shared configurations.
 - [Multi-Tenant SaaS](./multi-tenant-saas/) - Multi-tenant architecture with row-level security, subdomain routing, tenant-scoped queries, Stripe billing, and isolation strategies.
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
@@ -213,6 +219,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [Tailwind CSS Styling](./tailwindcss-styling/) - Tailwind CSS utility-first styling with responsive design, dark mode, custom themes, component patterns, animations, and production optimization.
 - [TanStack Query](./tanstack-query/) - TanStack Query (React Query) with queries, mutations, optimistic updates, infinite scrolling, prefetching, and cache management.
+- [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
@@ -225,6 +232,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
+- [Web Components](./web-components/) - Web Components with Custom Elements, Shadow DOM, Lit framework, slots, form-associated elements, and framework interop.
 - [Web Animation](./web-animation/) - Web animation with Framer Motion, GSAP, CSS transitions, scroll effects, spring physics, and reduced-motion accessibility.
 - [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
 - [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - One-command Vercel deployment, React/Next.js performance optimization (40+ rules), and code auditing for 100+ accessibility/UX rules. *By [@vercel-labs](https://github.com/vercel-labs)*

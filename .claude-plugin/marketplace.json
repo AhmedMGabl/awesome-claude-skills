@@ -961,6 +961,54 @@
       "description": "Zod schema validation covering primitive and object schemas, transforms, refinements, discriminated unions, recursive types, error formatting, integration with React Hook Form, tRPC, and Next.js Server Actions, and shared client/server validation.",
       "source": "./zod-validation",
       "category": "development"
+    },
+    {
+      "name": "web-components",
+      "description": "Web Components development covering Custom Elements, Shadow DOM, HTML templates and slots, Lit framework, reactive properties, CSS encapsulation, lifecycle callbacks, event dispatching, form-associated elements, and cross-framework interoperability.",
+      "source": "./web-components",
+      "category": "development"
+    },
+    {
+      "name": "migration-patterns",
+      "description": "Software migration patterns covering framework migration (CRA to Vite/Next.js), API versioning, data migration strategies, strangler fig pattern, feature flag migration, database schema evolution, gradual TypeScript adoption, and zero-downtime migration techniques.",
+      "source": "./migration-patterns",
+      "category": "development"
+    },
+    {
+      "name": "api-gateway",
+      "description": "API gateway patterns covering request routing, rate limiting, authentication middleware, request/response transformation, load balancing, circuit breaking, API composition, Kong/AWS API Gateway configuration, and BFF (Backend for Frontend) architecture.",
+      "source": "./api-gateway",
+      "category": "development"
+    },
+    {
+      "name": "concurrency-patterns",
+      "description": "Concurrency and parallelism patterns covering Promise.all/allSettled/race, Web Workers, worker threads, async iterators, mutex and semaphore patterns, producer-consumer queues, Go goroutines and channels, Python asyncio, and thread-safe data structures.",
+      "source": "./concurrency-patterns",
+      "category": "development"
+    },
+    {
+      "name": "tauri-desktop",
+      "description": "Tauri desktop application development covering Rust backend commands, JavaScript frontend integration, window management, system tray, file system access, IPC communication, auto-updates, app bundling, and cross-platform builds for Windows, macOS, and Linux.",
+      "source": "./tauri-desktop",
+      "category": "development"
+    },
+    {
+      "name": "bun-runtime",
+      "description": "Bun runtime development covering Bun.serve HTTP server, Bun.file and filesystem APIs, built-in SQLite, testing with bun test, bundling, package management, TypeScript execution, Workers, and compatibility with Node.js APIs.",
+      "source": "./bun-runtime",
+      "category": "development"
+    },
+    {
+      "name": "load-testing",
+      "description": "Load testing and performance benchmarking covering k6 scripts, Autocannon for HTTP benchmarking, Artillery scenarios, stress and spike testing, threshold-based pass/fail, CI integration, metrics analysis (p95/p99 latency, throughput), and capacity planning.",
+      "source": "./load-testing",
+      "category": "development"
+    },
+    {
+      "name": "github-copilot-patterns",
+      "description": "AI-assisted development patterns covering effective prompt engineering for code generation, Copilot Chat workflows, context management, code review with AI, test generation, documentation generation, refactoring suggestions, and maximizing AI coding assistant productivity.",
+      "source": "./github-copilot-patterns",
+      "category": "development"
     }
   ]
 }
