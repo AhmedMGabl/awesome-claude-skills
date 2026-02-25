@@ -3301,6 +3301,66 @@
       "description": "Avalonia UI patterns covering cross-platform XAML, MVVM with ReactiveUI, styles, control templates, data templates, and platform-specific rendering.",
       "source": "./avalonia-ui",
       "category": "development"
+    },
+    {
+      "name": "godot-gdscript",
+      "description": "Godot Engine patterns covering GDScript, scene tree, nodes, signals, physics, animations, tilemaps, UI, shaders, and export templates for 2D and 3D games.",
+      "source": "./godot-gdscript",
+      "category": "development"
+    },
+    {
+      "name": "unity-csharp",
+      "description": "Unity game development patterns covering C# scripting, MonoBehaviour lifecycle, physics, input system, UI Toolkit, ScriptableObjects, addressables, and editor extensions.",
+      "source": "./unity-csharp",
+      "category": "development"
+    },
+    {
+      "name": "unreal-blueprints",
+      "description": "Unreal Engine patterns covering C++ gameplay classes, Blueprints, character movement, GAS ability system, Niagara particles, materials, and multiplayer replication.",
+      "source": "./unreal-blueprints",
+      "category": "development"
+    },
+    {
+      "name": "phaser-gamedev",
+      "description": "Phaser 3 game development patterns covering scenes, sprites, physics, animations, tilemaps, input handling, audio, particle effects, and mobile deployment.",
+      "source": "./phaser-gamedev",
+      "category": "development"
+    },
+    {
+      "name": "threejs-3d",
+      "description": "Three.js 3D graphics patterns covering scene setup, geometries, materials, lighting, cameras, GLTF loading, animations, shaders, post-processing, and performance optimization.",
+      "source": "./threejs-3d",
+      "category": "development"
+    },
+    {
+      "name": "pixi-js",
+      "description": "PixiJS 2D rendering patterns covering sprites, containers, graphics, filters, particle systems, text, interaction events, and WebGL/WebGPU performance.",
+      "source": "./pixi-js",
+      "category": "development"
+    },
+    {
+      "name": "babylon-js",
+      "description": "Babylon.js 3D engine patterns covering scene setup, meshes, PBR materials, lighting, physics, GUI, XR support, node material editor, and performance optimization.",
+      "source": "./babylon-js",
+      "category": "development"
+    },
+    {
+      "name": "love2d-gamedev",
+      "description": "LOVE2D game development patterns covering Lua game loops, sprites, physics with Box2D, audio, input handling, tilemaps, state machines, and game distribution.",
+      "source": "./love2d-gamedev",
+      "category": "development"
+    },
+    {
+      "name": "blender-scripting",
+      "description": "Blender Python scripting patterns covering bpy API, mesh operations, modifiers, materials, animation keyframes, add-on development, and batch processing.",
+      "source": "./blender-scripting",
+      "category": "development"
+    },
+    {
+      "name": "ffmpeg-media",
+      "description": "FFmpeg media processing patterns covering video encoding, audio extraction, format conversion, streaming, filters, subtitles, thumbnails, and batch processing.",
+      "source": "./ffmpeg-media",
+      "category": "development"
     }
   ]
 }

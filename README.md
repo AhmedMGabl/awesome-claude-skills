@@ -111,12 +111,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Azure Functions](./azure-functions/) - Azure Functions patterns covering HTTP triggers, timer triggers, queue bindings, Durable Functions orchestration, Cosmos DB integration, and deployment configuration.
+- [Babylon.js](./babylon-js/) - Babylon.js 3D engine patterns covering scene setup, meshes, PBR materials, lighting, physics, GUI, XR support, node material editor, and performance optimization.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
 - [better-sqlite3](./better-sqlite3/) - better-sqlite3 synchronous SQLite with prepared statements, transactions, WAL mode, full-text search, JSON support, and Node.js integration.
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
 - [Biome Config](./biome-config/) - Biome advanced configuration with rule customization, per-file overrides, import sorting, CI integration, and ESLint/Prettier migration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
 - [Blazor](./dotnet-blazor/) - Blazor patterns covering components, data binding, event handling, forms, dependency injection, JavaScript interop, and server/WebAssembly render modes.
+- [Blender Scripting](./blender-scripting/) - Blender Python scripting patterns covering bpy API, mesh operations, modifiers, materials, animation keyframes, add-on development, and batch processing.
 - [BlockNote Editor](./blocknote-editor/) - BlockNote Notion-style block editor with custom block types, slash menu, drag-and-drop, collaborative editing, and React integration.
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
@@ -235,6 +237,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Farm Bundler](./farm-bundler/) - Farm Rust-based bundler with partial bundling, persistent caching, HMR, CSS modules, lazy compilation, and Webpack/Vite migration.
 - [FastAPI Development](./fastapi-development/) - FastAPI development with async/await, Pydantic v2, dependency injection, SQLAlchemy async, JWT auth, WebSockets, and testing with httpx/pytest.
 - [FastAPI Python](./fastapi-python/) - FastAPI Python web framework with async endpoints, Pydantic models, dependency injection, OAuth2 authentication, WebSockets, and background tasks.
+- [FFmpeg Media Processing](./ffmpeg-media/) - FFmpeg media processing patterns covering video encoding, audio extraction, format conversion, streaming, filters, subtitles, thumbnails, and batch processing.
 - [Feishu Automation](./feishu-automation/) - Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.
 - [Flask Development](./flask-development/) - Flask web development covering blueprints, SQLAlchemy models, Flask-Login authentication, REST APIs, Celery tasks, and pytest testing.
 - [Flutter & Dart](./flutter-dart/) - Flutter and Dart patterns covering widgets, state management, navigation, platform channels, animations, testing, and cross-platform mobile/web/desktop development.
@@ -249,6 +252,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GitHub Actions](./github-actions/) - GitHub Actions CI/CD covering workflow syntax, reusable workflows, composite actions, matrix strategies, caching, and deployments.
 - [GitHub API Integration](./github-api/) - GitHub API with Octokit, REST/GraphQL, PR automation, webhooks, GitHub Apps, and release management.
 - [Gleam Programming](./gleam-programming/) - Gleam programming patterns covering type-safe BEAM development, pattern matching, Result types, OTP processes, Lustre web framework, and JavaScript/Erlang targets.
+- [Godot GDScript](./godot-gdscript/) - Godot Engine patterns covering GDScript, scene tree, nodes, signals, physics, animations, tilemaps, UI, shaders, and export templates for 2D and 3D games.
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
 - [Go Chi Router](./go-chi/) - Go Chi router patterns with lightweight routing, middleware stack, URL parameters, subrouters, and RESTful API patterns.
 - [Go Cobra CLI](./go-cobra-cli/) - Go Cobra CLI with command hierarchies, flags, arguments, Viper configuration, output formatting, and shell completions.
@@ -319,6 +323,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Linaria CSS](./linaria-css/) - Linaria zero-runtime CSS-in-JS patterns covering tagged template literals, styled API, theming, dynamic values, atomic mode, and build-time extraction.
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
+- [LOVE2D Game Development](./love2d-gamedev/) - LOVE2D game development patterns covering Lua game loops, sprites, physics with Box2D, audio, input handling, tilemaps, state machines, and game distribution.
 - [Lucia Authentication](./lucia-auth/) - Lucia session auth with Prisma/Drizzle adapters, OAuth via Arctic, password hashing, and email verification.
 - [Lua Programming](./lua-programming/) - Lua programming patterns covering tables, metatables, coroutines, C API, LuaRocks, embedding, game scripting, and Neovim plugin development.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
@@ -392,8 +397,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Payload CMS](./payload-cms/) - Payload CMS with collections, access control, hooks, Lexical rich text, file uploads, and Next.js integration.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
+- [Phaser Game Development](./phaser-gamedev/) - Phaser 3 game development patterns covering scenes, sprites, physics, animations, tilemaps, input handling, audio, particle effects, and mobile deployment.
 - [PHP Composer](./php-composer/) - PHP Composer patterns covering dependency management, autoloading, version constraints, scripts, publishing packages, and monorepo configuration.
 - [PHP Laravel Livewire](./php-laravel-livewire/) - Laravel Livewire patterns covering reactive components, form handling, real-time validation, file uploads, pagination, Alpine.js integration, and SPA-like interactivity.
+- [PixiJS](./pixi-js/) - PixiJS 2D rendering patterns covering sprites, containers, graphics, filters, particle systems, text, interaction events, and WebGL/WebGPU performance.
 - [pnpm Workspaces](./pnpm-workspaces/) - pnpm workspace management with workspace protocol, filtering, catalogs, .npmrc config, and dependency alignment.
 - [Playwright Component Testing](./playwright-component/) - Playwright component testing with mounting, prop/slot testing, visual regression, accessibility checks, and Vite integration.
 - [Plate Editor](./plate-editor/) - Plate Slate-based rich text editor with plugins, custom elements, serialization, toolbar components, and shadcn/ui integration.
@@ -556,6 +563,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
 - [Three.js 3D Graphics](./three-js/) - Three.js with scene setup, GLTF models, React Three Fiber, Rapier physics, animations, and performance optimization.
+- [Three.js 3D Patterns](./threejs-3d/) - Three.js 3D graphics patterns covering scene setup, geometries, materials, lighting, cameras, GLTF loading, animations, shaders, post-processing, and performance optimization.
 - [Tigris Data](./tigris-search/) - Tigris serverless NoSQL database with full-text search, faceted search, real-time subscriptions, and S3-compatible object storage.
 - [TimescaleDB Time-Series](./timescaledb-timeseries/) - TimescaleDB time-series patterns covering hypertables, continuous aggregates, compression, retention policies, real-time analytics, and PostgreSQL integration.
 - [Tiptap Editor](./tiptap-editor/) - Tiptap ProseMirror-based rich text editor with extensions, custom nodes, collaborative editing, bubble menus, and React/Vue integration.
@@ -581,8 +589,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unistyles](./unistyles/) - React Native Unistyles with createStyleSheet, breakpoints, themes, runtime theming, and responsive cross-platform styling.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
+- [Unity C#](./unity-csharp/) - Unity game development patterns covering C# scripting, MonoBehaviour lifecycle, physics, input system, UI Toolkit, ScriptableObjects, addressables, and editor extensions.
 - [UnoCSS Patterns](./unocss-patterns/) - UnoCSS patterns covering atomic utility classes, presets, shortcuts, rules, variants, icons, attributify mode, and build-time optimization.
 - [Unplugin Patterns](./unplugin-patterns/) - Unplugin universal bundler plugins with auto-imports, component resolution, icon loading, virtual modules, and Vite/Webpack/Rollup support.
+- [Unreal Engine](./unreal-blueprints/) - Unreal Engine patterns covering C++ gameplay classes, Blueprints, character movement, GAS ability system, Niagara particles, materials, and multiplayer replication.
 - [UploadThing](./uploadthing/) - UploadThing file uploads with route definitions, file validation, auth middleware, React components, and Next.js integration.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
 - [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
