@@ -136,3 +136,70 @@ fn take_ownership(s: String) {
     println!("Took ownership of: {s}");
 } // s is dropped here
 ```
+
+### Iterator Chains and Closures
+
+```rust
+#[derive(Debug, Clone)]
+struct Product {
+    name: String,
+    price: f64,
+    in_stock: bool,
+}
+
+fn demonstrate_iterators() {
+    let products = vec![
+        Product { name: "Laptop".into(), price: 999.99, in_stock: true },
+        Product { name: "Mouse".into(), price: 29.99, in_stock: true },
+        Product { name: "Monitor".into(), price: 449.99, in_stock: false },
+        Product { name: "Keyboard".into(), price: 79.99, in_stock: true },
+        Product { name: "Webcam".into(), price: 59.99, in_stock: true },
+    ];
+
+    // Filter, transform, collect.
+    let affordable_available: Vec<String> = products
+        .iter()
+        .filter(|p| p.in_stock && p.price < 100.0)
+        .map(|p| format!("{} (${:.2})", p.name, p.price))
+        .collect();
+    println!("Affordable: {affordable_available:?}");
+
+    // fold to compute aggregate.
+    let total_value: f64 = products
+        .iter()
+        .filter(|p| p.in_stock)
+        .fold(0.0, |acc, p| acc + p.price);
+    println!("Total in-stock value: ${total_value:.2}");
+
+    // Partition into two collections.
+    let (in_stock, out_of_stock): (Vec<_>, Vec<_>) = products
+        .iter()
+        .partition(|p| p.in_stock);
+    println!("In stock: {}, Out: {}", in_stock.len(), out_of_stock.len());
+
+    // flat_map for nested iteration.
+    let tags: Vec<Vec<&str>> = vec![
+        vec!["rust", "systems"],
+        vec!["async", "tokio"],
+        vec!["web", "axum"],
+    ];
+    let all_tags: Vec<&str> = tags.iter().flat_map(|t| t.iter().copied()).collect();
+    println!("All tags: {all_tags:?}");
+
+    // find and position.
+    let first_expensive = products.iter().find(|p| p.price > 500.0);
+    println!("First expensive: {first_expensive:?}");
+
+    // enumerate and zip.
+    let names: Vec<&str> = vec!["alpha", "beta", "gamma"];
+    let values: Vec<i32> = vec![1, 2, 3];
+    let pairs: HashMap<&str, i32> = names.into_iter().zip(values).collect();
+    println!("Pairs: {pairs:?}");
+
+    // Chaining with closures stored in variables.
+    let min_price = 50.0;
+    let price_filter = |p: &&Product| p.price >= min_price;
+    let count = products.iter().filter(price_filter).count();
+    println!("Products >= ${min_price}: {count}");
+}
+```

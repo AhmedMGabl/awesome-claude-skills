@@ -87,6 +87,12 @@
       "category": "creative-media"
     },
     {
+      "name": "accessibility-wcag",
+      "description": "Web accessibility and WCAG compliance covering semantic HTML, ARIA attributes, keyboard navigation, screen reader compatibility, color contrast, focus management, accessible forms, testing with axe-core and Lighthouse, and inclusive design patterns.",
+      "source": "./accessibility-wcag",
+      "category": "development"
+    },
+    {
       "name": "api-documentation-generator",
       "description": "Generate OpenAPI/Swagger specs, create interactive API documentation, and implement API documentation best practices.",
       "source": "./api-documentation-generator",
