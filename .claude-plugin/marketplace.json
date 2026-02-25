@@ -1153,6 +1153,42 @@
       "description": "Webpack 5 configuration covering entry/output, loaders for TypeScript, CSS, and assets, code splitting with dynamic imports, Module Federation for micro-frontends, dev server with HMR, production optimization, caching strategies, and bundle analysis.",
       "source": "./webpack-config",
       "category": "development"
+    },
+    {
+      "name": "nuxt-development",
+      "description": "Nuxt 3 full-stack development covering auto-imports, file-based routing, server routes, composables, useFetch and useAsyncData, Nitro server engine, middleware, plugins, SEO with useHead, Pinia state, and deployment to various platforms.",
+      "source": "./nuxt-development",
+      "category": "development"
+    },
+    {
+      "name": "docker-kubernetes",
+      "description": "Docker and Kubernetes production deployment covering multi-stage Dockerfiles, Docker Compose services, Kubernetes Deployments, Services, Ingress, ConfigMaps, Secrets, Helm charts, horizontal pod autoscaling, health checks, and CI/CD deployment pipelines.",
+      "source": "./docker-kubernetes",
+      "category": "development"
+    },
+    {
+      "name": "github-copilot-setup",
+      "description": "GitHub Copilot configuration and productivity covering VS Code setup, custom instructions, Copilot Chat usage, code completion optimization, workspace context, slash commands, context variables, agent mode, and team productivity patterns.",
+      "source": "./github-copilot-setup",
+      "category": "development"
+    },
+    {
+      "name": "testing-strategies",
+      "description": "Comprehensive testing strategies covering the testing pyramid, integration testing patterns, contract testing with Pact, mutation testing, snapshot testing, API testing with supertest, database testing with test containers, performance testing, and CI test optimization.",
+      "source": "./testing-strategies",
+      "category": "development"
+    },
+    {
+      "name": "express-js",
+      "description": "Express.js web framework covering routing, middleware (CORS, helmet, rate limiting), request validation with Zod, file uploads, JWT authentication, error handling patterns, graceful shutdown, and testing with supertest.",
+      "source": "./express-js",
+      "category": "development"
+    },
+    {
+      "name": "aws-s3-cloudfront",
+      "description": "AWS S3 and CloudFront covering file operations with SDK v3, presigned URLs, multipart uploads, CloudFront distributions, cache invalidation, bucket policies, static hosting, Lambda@Edge, and CDK infrastructure.",
+      "source": "./aws-s3-cloudfront",
+      "category": "development"
     }
   ]
 }
