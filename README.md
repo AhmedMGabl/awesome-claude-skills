@@ -341,7 +341,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [PostHog Analytics](./posthog-analytics/) - PostHog product analytics with event tracking, feature flags, A/B testing, session replay, and React/Next.js integration.
 - [Prompt Improver Hook](https://github.com/severity1/claude-code-prompt-improver) - Intelligent hook that intercepts and refines vague prompts into precise, actionable instructions. *By [@severity1](https://github.com/severity1)*
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
+- [Prometheus Monitoring](./prometheus-monitoring/) - Prometheus monitoring with metric types, PromQL queries, alerting rules, recording rules, service discovery, and Alertmanager.
 - [ProseMirror](./prosemirror-core/) - ProseMirror document model with schemas, transactions, plugins, decorations, input rules, node views, and collaborative editing.
+- [Pulumi Infrastructure](./pulumi-infrastructure/) - Pulumi infrastructure-as-code with TypeScript/Python, AWS/Azure/GCP resources, stacks, configuration, and component resources.
 - [PWA Development](./pwa-development/) - Progressive Web Apps with service workers, Workbox, offline caching strategies, push notifications, and install prompts.
 - [Quill Editor](./quill-editor/) - Quill rich text editor with Delta document model, toolbar modules, custom formats/blots, clipboard handling, and React integration.
 - [Qwik Framework](./qwik-framework/) - Qwik framework covering resumability, signals, routeLoader$/routeAction$, server$ functions, and Qwik City deployment.
@@ -470,7 +472,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
 - [Tauri v2](./tauri-v2/) - Tauri v2 desktop and mobile apps with IPC commands, event system, window management, system tray, plugins, and Rust backend.
 - [Trigger.dev](./trigger-dev/) - Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency, and AI/LLM integration.
+- [Terraform AWS](./terraform-aws/) - Terraform AWS with VPC networking, EC2/ECS/EKS compute, RDS databases, S3 storage, IAM, CloudFront, and Lambda.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
+- [Traefik Proxy](./traefik-proxy/) - Traefik reverse proxy with Docker/Kubernetes integration, service discovery, Let's Encrypt TLS, middleware, and load balancing.
 - [Testing Strategies](./testing-strategies/) - Testing pyramid, integration tests, contract testing with Pact, database testing with Testcontainers, and CI optimization.
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
