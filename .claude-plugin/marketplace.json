@@ -463,6 +463,54 @@
       "description": "Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.",
       "source": "./vuejs-development",
       "category": "development"
+    },
+    {
+      "name": "fastapi-development",
+      "description": "FastAPI development covering async/await patterns, Pydantic v2 models, dependency injection, SQLAlchemy async integration, OAuth2 with JWT authentication, WebSockets, middleware, background tasks, and testing with httpx and pytest.",
+      "source": "./fastapi-development",
+      "category": "development"
+    },
+    {
+      "name": "angular-development",
+      "description": "Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR with hydration, NgRx signal store, reactive forms, HTTP client, routing, Angular Material, and testing with Jest and Cypress.",
+      "source": "./angular-development",
+      "category": "development"
+    },
+    {
+      "name": "monorepo-management",
+      "description": "Monorepo management with Turborepo, Nx, and pnpm workspaces covering task pipelines, remote caching, shared packages, code generation, versioning with changesets, CI optimization, and shared configurations.",
+      "source": "./monorepo-management",
+      "category": "development"
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Application performance optimization covering Core Web Vitals, bundle analysis, code splitting, lazy loading, caching strategies, database query tuning, API performance, memory profiling, and React/Next.js rendering optimizations.",
+      "source": "./performance-optimization",
+      "category": "development"
+    },
+    {
+      "name": "playwright-testing",
+      "description": "End-to-end testing with Playwright covering browser automation, page object model, visual regression testing, API testing, authentication flows, network interception, accessibility testing, and CI integration.",
+      "source": "./playwright-testing",
+      "category": "development"
+    },
+    {
+      "name": "database-migrations",
+      "description": "Database migration strategies covering schema versioning, zero-downtime migrations, data migrations, rollback strategies, ORM-specific patterns (Prisma, Drizzle, Knex, Alembic), PostgreSQL ALTER operations, and production deployment safety.",
+      "source": "./database-migrations",
+      "category": "development"
+    },
+    {
+      "name": "data-engineering",
+      "description": "Data engineering and ETL pipeline patterns covering extraction, transformation, loading, batch and stream processing, data validation, pipeline orchestration, and integration with Kafka, dbt, Airflow, and modern Python data stack.",
+      "source": "./data-engineering",
+      "category": "development"
+    },
+    {
+      "name": "spring-boot",
+      "description": "Spring Boot development covering REST APIs, Spring Data JPA, Spring Security with JWT/OAuth2, validation, exception handling, caching, actuator monitoring, testing with MockMvc, and production deployment patterns.",
+      "source": "./spring-boot",
+      "category": "development"
     }
   ]
 }
