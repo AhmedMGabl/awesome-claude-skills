@@ -2161,6 +2161,66 @@
       "description": "Liveblocks real-time collaboration patterns covering presence, live cursors, storage with conflict-free data types, Yjs text editing, comments, notifications, and React hooks for multiplayer experiences.",
       "source": "./liveblocks-realtime",
       "category": "development"
+    },
+    {
+      "name": "inngest-functions",
+      "description": "Inngest serverless function patterns covering event-driven workflows, step functions, fan-out, scheduled cron jobs, retries, concurrency control, throttling, and integration with Next.js and other frameworks.",
+      "source": "./inngest-functions",
+      "category": "development"
+    },
+    {
+      "name": "convex-actions",
+      "description": "Convex actions patterns covering server-side actions, internal functions, HTTP endpoints, scheduled jobs, file storage, vector search, aggregation, and integration with external APIs and third-party services.",
+      "source": "./convex-actions",
+      "category": "development"
+    },
+    {
+      "name": "react-native-reanimated",
+      "description": "React Native Reanimated patterns covering shared values, worklets, useAnimatedStyle, gesture handler integration, layout animations, entering/exiting transitions, and custom animation builders.",
+      "source": "./react-native-reanimated",
+      "category": "development"
+    },
+    {
+      "name": "zeego-menus",
+      "description": "Zeego cross-platform menu patterns covering dropdown menus, context menus, menu items with icons, checkboxes, submenus, and native iOS/Android menu rendering with React Native and Expo.",
+      "source": "./zeego-menus",
+      "category": "development"
+    },
+    {
+      "name": "tamagui",
+      "description": "Tamagui patterns covering universal styling, responsive design tokens, themes, media queries, animations, form components, and cross-platform React Native and web component development.",
+      "source": "./tamagui",
+      "category": "development"
+    },
+    {
+      "name": "unistyles",
+      "description": "React Native Unistyles patterns covering createStyleSheet, useStyles hook, breakpoints, themes, runtime theming, media queries, dynamic values, and cross-platform styling with StyleSheet-like API.",
+      "source": "./unistyles",
+      "category": "development"
+    },
+    {
+      "name": "kysely-queries",
+      "description": "Kysely type-safe SQL query builder patterns covering select, insert, update, delete, joins, subqueries, CTEs, transactions, migrations, and dialect support for PostgreSQL, MySQL, and SQLite.",
+      "source": "./kysely-queries",
+      "category": "development"
+    },
+    {
+      "name": "sst-ion",
+      "description": "SST Ion patterns covering infrastructure as code with TypeScript, linking resources, Next.js/Astro/Remix deployment, API routes, queues, cron jobs, buckets, and AWS/Cloudflare deployment.",
+      "source": "./sst-ion",
+      "category": "development"
+    },
+    {
+      "name": "effect-schema",
+      "description": "Effect Schema patterns covering type-safe schema definitions, transformations, branded types, recursive schemas, JSON Schema generation, parsing with detailed errors, and integration with Effect runtime.",
+      "source": "./effect-schema",
+      "category": "development"
+    },
+    {
+      "name": "react-native-skia",
+      "description": "React Native Skia patterns covering canvas drawing, paths, shaders, image filters, blur effects, gradient fills, animated transitions, and high-performance 2D graphics rendering on mobile.",
+      "source": "./react-native-skia",
+      "category": "development"
     }
   ]
 }

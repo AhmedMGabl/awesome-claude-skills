@@ -141,6 +141,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Fumadocs](./fumadocs/) - Fumadocs documentation framework with content collections, MDX components, sidebar, search, and Next.js App Router integration.
 - [Event Sourcing & CQRS](./event-sourcing/) - Event sourcing with event stores, aggregate roots, command handlers, projections, and saga orchestration.
 - [Elasticsearch](./elasticsearch/) - Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, and query DSL.
+- [Effect Schema](./effect-schema/) - Effect Schema with type-safe definitions, transformations, branded types, parsing, and JSON Schema generation.
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
 - [Electric SQL](./electric-sql/) - ElectricSQL local-first sync with Shape streams, real-time Postgres replication, offline support, optimistic mutations, and React hooks.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
@@ -160,6 +161,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Contentlayer](./contentlayer/) - Contentlayer and MDX content management with document type definitions, computed fields, MDX components, and Next.js integration.
 - [Coolify Self-Hosted](./coolify-selfhost/) - Coolify self-hosted PaaS covering server setup, GitHub deployment, database provisioning, custom domains, and Docker Compose.
+- [Convex Actions](./convex-actions/) - Convex server-side actions with HTTP endpoints, scheduled jobs, file storage, vector search, and external API integration.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
@@ -209,6 +211,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [GraphQL Code Generator](./graphql-codegen/) - GraphQL Code Generator covering TypeScript type generation, typed document nodes, React Query and Apollo hooks, and fragment colocation.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [GraphQL Subscriptions](./graphql-subscriptions/) - Real-time GraphQL subscriptions with WebSocket transport, pub/sub patterns, Redis scaling, filtering, and authentication.
+- [Inngest Functions](./inngest-functions/) - Inngest event-driven workflows with step functions, scheduling, retries, concurrency control, and Next.js integration.
 - [Hono API](./hono-api/) - Hono API patterns with Zod validation, JWT auth, CORS, streaming, RPC client, and multi-runtime deployment.
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
@@ -227,6 +230,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Kysely ORM](./kysely-orm/) - Kysely type-safe SQL query builder with joins, subqueries, transactions, migrations, and PostgreSQL/MySQL/SQLite dialect support.
 - [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
+- [Kysely Queries](./kysely-queries/) - Kysely type-safe SQL query builder with joins, transactions, migrations, and multi-dialect support.
 - [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
 - [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
 - [Lit Web Components](./lit-web-components/) - Lit web components with reactive properties, shadow DOM styling, lifecycle callbacks, events, slots, and custom element registration.
@@ -310,6 +314,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [React Email](./react-email/) - React Email templates with @react-email/components, responsive layouts, preview server, and sending with Resend or Nodemailer.
 - [Resend Email](./resend-email/) - Resend email API covering transactional emails, React Email templates, batch sending, webhooks, and audiences.
 - [Rive Animations](./rive-animations/) - Rive interactive animations with state machines, inputs, event handling, React integration, and responsive sizing.
+- [React Native Reanimated](./react-native-reanimated/) - React Native Reanimated with shared values, gesture integration, layout animations, and 60fps UI thread animations.
+- [React Native Skia](./react-native-skia/) - React Native Skia 2D graphics with canvas drawing, paths, shaders, image filters, and performant animations.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.
 - [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
@@ -359,6 +365,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
 - [Stripe Elements](./stripe-elements/) - Stripe Elements with Payment Element, Address Element, Express Checkout, appearance customization, and React Stripe.js integration.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
+- [SST Ion](./sst-ion/) - SST Ion infrastructure as TypeScript with resource linking, Next.js/Astro deployment, queues, crons, and AWS/Cloudflare.
 - [SSE Streaming](./sse-streaming/) - Server-Sent Events covering event stream protocol, Express/Node.js implementations, AI token streaming, reconnection, and React hooks.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
@@ -375,6 +382,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
 - [subagent-driven-development](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development) - Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.
 - [Temporal Workflows](./temporal-workflows/) - Temporal durable workflows with activities, signals, queries, timers, child workflows, saga compensation, and TypeScript SDK.
+- [Tamagui](./tamagui/) - Tamagui cross-platform styling with design tokens, themes, responsive media queries, and React Native/web components.
 - [Tailwind CSS Styling](./tailwindcss-styling/) - Tailwind CSS utility-first styling with responsive design, dark mode, custom themes, component patterns, animations, and production optimization.
 - [TanStack Query](./tanstack-query/) - TanStack Query (React Query) with queries, mutations, optimistic updates, infinite scrolling, prefetching, and cache management.
 - [TanStack Router](./tanstack-router/) - TanStack Router covering type-safe routing, file-based routes, search params validation, data loading, and auth guards.
@@ -403,6 +411,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
+- [Unistyles](./unistyles/) - React Native Unistyles with createStyleSheet, breakpoints, themes, runtime theming, and responsive cross-platform styling.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
 - [Unplugin Patterns](./unplugin-patterns/) - Unplugin universal bundler plugins with auto-imports, component resolution, icon loading, virtual modules, and Vite/Webpack/Rollup support.
 - [UploadThing](./uploadthing/) - UploadThing file uploads with route definitions, file validation, auth middleware, React components, and Next.js integration.
@@ -425,6 +434,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - One-command Vercel deployment, React/Next.js performance optimization (40+ rules), and code auditing for 100+ accessibility/UX rules. *By [@vercel-labs](https://github.com/vercel-labs)*
 - [WebRTC Communication](./webrtc-communication/) - WebRTC real-time communication covering peer connections, media streams, data channels, signaling with WebSocket, and screen sharing.
 - [Webhooks Integration](./webhooks-integration/) - Webhook implementation with HMAC-SHA256 verification, idempotent processing, Stripe/GitHub patterns, and delivery systems.
+- [Zeego Menus](./zeego-menus/) - Zeego cross-platform native menus with dropdown menus, context menus, checkboxes, submenus, and React Native/Expo.
 - [Zod Validation](./zod-validation/) - Zod schema validation with transforms, refinements, discriminated unions, React Hook Form integration, and shared client/server schemas.
 - [Zod Schemas](./zod-schemas/) - Zod advanced schema patterns with discriminated unions, recursive types, branded types, schema composition, and API contract validation.
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.
