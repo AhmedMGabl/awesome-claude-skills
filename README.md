@@ -77,6 +77,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Accessibility Testing](./accessibility-testing/) - Accessibility testing automation with axe-core, Playwright audits, keyboard navigation testing, ARIA validation, and a11y CI pipelines.
 - [Accessibility & WCAG Compliance](./accessibility-wcag/) - Web accessibility and WCAG compliance covering semantic HTML, ARIA attributes, keyboard navigation, color contrast, accessible forms, and testing with axe-core and Lighthouse.
 - [Algorithmic Art](./algorithmic-art/) - Creates algorithmic art and generative designs using computational creativity techniques.
+- [Android Jetpack Compose](./android-jetpack-compose/) - Jetpack Compose patterns covering composables, state management, navigation, Material 3, Hilt DI, Room database, Retrofit networking, and testing.
 - [Android Kotlin Development](./android-kotlin/) - Android development with Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3.
 - [Angular Development](./angular-development/) - Angular 18+ development with signals, standalone components, new control flow syntax, defer blocks, SSR, NgRx signal store, and reactive forms.
 - [Angular Signals](./angular-signals/) - Angular Signals patterns with signal(), computed(), effect(), input/output signals, RxJS interop, and resource API.
@@ -94,6 +95,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Auth0 Integration](./auth0-integration/) - Auth0 with Universal Login, social connections, RBAC, organizations, M2M tokens, Next.js SDK, and Express middleware.
 - [AWS CDK](./aws-cdk/) - AWS CDK infrastructure as code covering constructs, stacks, Lambda, API Gateway, DynamoDB, S3, CloudFront, testing, and CI/CD pipelines.
 - [AWS Lambda](./aws-lambda/) - Serverless functions with API Gateway, S3/SQS/DynamoDB event sources, SAM/CDK deployment, and cold start optimization.
+- [AWS Lambda Patterns](./aws-lambda-patterns/) - AWS Lambda patterns covering handler design, event sources, API Gateway integration, layers, cold start optimization, DynamoDB triggers, SQS processing, and testing.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
@@ -106,6 +108,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
+- [Azure Functions](./azure-functions/) - Azure Functions patterns covering HTTP triggers, timer triggers, queue bindings, Durable Functions orchestration, Cosmos DB integration, and deployment configuration.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
 - [better-sqlite3](./better-sqlite3/) - better-sqlite3 synchronous SQLite with prepared statements, transactions, WAL mode, full-text search, JSON support, and Node.js integration.
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
@@ -220,10 +223,12 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [FastAPI Python](./fastapi-python/) - FastAPI Python web framework with async endpoints, Pydantic models, dependency injection, OAuth2 authentication, WebSockets, and background tasks.
 - [Feishu Automation](./feishu-automation/) - Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.
 - [Flask Development](./flask-development/) - Flask web development covering blueprints, SQLAlchemy models, Flask-Login authentication, REST APIs, Celery tasks, and pytest testing.
+- [Flutter & Dart](./flutter-dart/) - Flutter and Dart patterns covering widgets, state management, navigation, platform channels, animations, testing, and cross-platform mobile/web/desktop development.
 - [Fly.io Deployment](./fly-io-deployment/) - Fly.io deployment covering multi-region deployment, Postgres clusters, Redis, volumes, autoscaling, and CI/CD with GitHub Actions.
 - [Flutter Development](./flutter-development/) - Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, testing, and production deployment to iOS and Android.
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
+- [GCP Cloud Run](./gcp-cloud-run/) - Google Cloud Run patterns covering containerized services, Jobs, Pub/Sub triggers, Cloud SQL connections, Secret Manager, traffic splitting, and CI/CD deployment.
 - [gRPC APIs](./grpc-apis/) - gRPC API development with Connect protocol, streaming RPCs, interceptors, error handling, and gRPC-Web browser support.
 - [gRPC & Protocol Buffers](./grpc-protobuf/) - gRPC and Protocol Buffers with proto3 schemas, code generation, streaming RPCs, interceptors, and Node.js/Go/Python patterns.
 - [gRPC Go](./grpc-go/) - Go gRPC patterns covering protobuf definitions, server/client implementation, streaming RPCs, interceptors, error handling, health checks, and TLS configuration.
@@ -256,6 +261,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Hono Framework](./hono-framework/) - Hono web framework with routing, middleware, Zod OpenAPI, multi-runtime (Cloudflare, Bun, Node.js, Deno), and RPC client.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
 - [HTMX Development](./htmx-development/) - HTMX development with hx-get/post/put/delete attributes, SSE, WebSocket integration, CSS transitions, and out-of-band swaps.
+- [Hugging Face Transformers](./huggingface-transformers/) - Hugging Face Transformers patterns covering pipeline API, model fine-tuning, tokenizers, dataset loading, training with Trainer, inference optimization, and model hub integration.
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
@@ -277,6 +283,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
 - [Ky HTTP Client](./ky-http-client/) - Ky lightweight HTTP client with hooks, retry logic, timeout configuration, custom instances, and error handling.
 - [Kysely ORM](./kysely-orm/) - Kysely type-safe SQL query builder with joins, subqueries, transactions, migrations, and PostgreSQL/MySQL/SQLite dialect support.
+- [LangChain Patterns](./langchain-patterns/) - LangChain patterns covering chains, agents, tools, RAG pipelines, memory, output parsers, vector stores, and LangGraph workflow orchestration.
 - [Laravel Development](./laravel-development/) - Laravel PHP development covering Eloquent ORM, Sanctum authentication, queues, event broadcasting, and testing with Pest.
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Kysely Queries](./kysely-queries/) - Kysely type-safe SQL query builder with joins, transactions, migrations, and multi-dialect support.
@@ -298,6 +305,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
+- [MLflow Experiment](./mlflow-experiment/) - MLflow patterns covering experiment tracking, model registry, artifact logging, hyperparameter tuning, model serving, and CI/CD integration for ML workflows.
 - [Motion One](./motion-one/) - Motion One animations with animate API, spring physics, scroll-triggered effects, timelines, and React integration.
 - [Monaco Editor](./monaco-editor/) - Monaco VS Code-based web editor with IntelliSense, language services, custom themes, diff editor, markers, and React integration.
 - [MongoDB](./mongodb/) - MongoDB with Mongoose schemas, aggregation pipeline, transactions, change streams, population, and connection management.
@@ -482,6 +490,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
 - [SunEditor](./suneditor/) - SunEditor lightweight WYSIWYG editor with toolbar customization, plugin system, image upload, responsive design, and React integration.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
+- [SwiftUI iOS](./swiftui-ios/) - SwiftUI iOS patterns covering views, modifiers, state management, navigation, data persistence, async/await networking, and App Store deployment.
 - [Svelte 5](./svelte-v5/) - Svelte 5 runes with $state, $derived, $effect, $props, $bindable, snippets, and migration from Svelte 4.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
@@ -536,6 +545,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Valibot Validation](./valibot-validation/) - Valibot tree-shakeable schema definitions with type inference, transformations, custom validators, error formatting, and React form integration.
 - [vanilla-extract](./vanilla-extract/) - vanilla-extract CSS-in-TypeScript with type-safe styles, theme contracts, Sprinkles utility classes, recipes, and build-time extraction.
 - [Vault Secrets](./vault-secrets/) - HashiCorp Vault with secret engines, dynamic secrets, authentication methods, policies, transit encryption, and Kubernetes integration.
+- [Vector Database Patterns](./vector-database-patterns/) - Vector database patterns covering embedding generation, similarity search, metadata filtering, indexing strategies, RAG integration, and Pinecone/Weaviate/Chroma usage.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vinxi Server](./vinxi-server/) - Vinxi meta-framework with app configuration, routers, server functions, middleware, API routes, and multi-framework SSR.
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.

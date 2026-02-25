@@ -2941,6 +2941,66 @@
       "description": "F# patterns covering discriminated unions, pattern matching, computation expressions, async workflows, Railway-oriented programming, and domain modeling.",
       "source": "./fsharp-patterns",
       "category": "development"
+    },
+    {
+      "name": "flutter-dart",
+      "description": "Flutter and Dart patterns covering widgets, state management, navigation, platform channels, animations, testing, and cross-platform mobile/web/desktop development.",
+      "source": "./flutter-dart",
+      "category": "development"
+    },
+    {
+      "name": "swiftui-ios",
+      "description": "SwiftUI iOS patterns covering views, modifiers, state management, navigation, data persistence, async/await networking, and App Store deployment.",
+      "source": "./swiftui-ios",
+      "category": "development"
+    },
+    {
+      "name": "android-jetpack-compose",
+      "description": "Jetpack Compose patterns covering composables, state management, navigation, Material 3, Hilt DI, Room database, Retrofit networking, and testing.",
+      "source": "./android-jetpack-compose",
+      "category": "development"
+    },
+    {
+      "name": "aws-lambda-patterns",
+      "description": "AWS Lambda patterns covering handler design, event sources, API Gateway integration, layers, cold start optimization, DynamoDB triggers, SQS processing, and testing.",
+      "source": "./aws-lambda-patterns",
+      "category": "development"
+    },
+    {
+      "name": "gcp-cloud-run",
+      "description": "Google Cloud Run patterns covering containerized services, Jobs, Pub/Sub triggers, Cloud SQL connections, Secret Manager, traffic splitting, and CI/CD deployment.",
+      "source": "./gcp-cloud-run",
+      "category": "development"
+    },
+    {
+      "name": "azure-functions",
+      "description": "Azure Functions patterns covering HTTP triggers, timer triggers, queue bindings, Durable Functions orchestration, Cosmos DB integration, and deployment configuration.",
+      "source": "./azure-functions",
+      "category": "development"
+    },
+    {
+      "name": "langchain-patterns",
+      "description": "LangChain patterns covering chains, agents, tools, RAG pipelines, memory, output parsers, vector stores, and LangGraph workflow orchestration.",
+      "source": "./langchain-patterns",
+      "category": "development"
+    },
+    {
+      "name": "huggingface-transformers",
+      "description": "Hugging Face Transformers patterns covering pipeline API, model fine-tuning, tokenizers, dataset loading, training with Trainer, inference optimization, and model hub integration.",
+      "source": "./huggingface-transformers",
+      "category": "development"
+    },
+    {
+      "name": "mlflow-experiment",
+      "description": "MLflow patterns covering experiment tracking, model registry, artifact logging, hyperparameter tuning, model serving, and CI/CD integration for ML workflows.",
+      "source": "./mlflow-experiment",
+      "category": "development"
+    },
+    {
+      "name": "vector-database-patterns",
+      "description": "Vector database patterns covering embedding generation, similarity search, metadata filtering, indexing strategies, RAG integration, and Pinecone/Weaviate/Chroma usage.",
+      "source": "./vector-database-patterns",
+      "category": "development"
     }
   ]
 }
