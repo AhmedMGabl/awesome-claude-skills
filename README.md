@@ -85,6 +85,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Autonomous Task Execution](./autonomous-task-execution/) - Autonomous task execution patterns for AI assistants covering goal decomposition, self-directed research, proactive tool usage, and error recovery.
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [Auth Patterns](./auth-patterns/) - Authentication and authorization patterns covering JWT, OAuth 2.0, session management, RBAC, passwordless auth, MFA, and security best practices.
+- [Auth0 Integration](./auth0-integration/) - Auth0 with Universal Login, social connections, RBAC, organizations, M2M tokens, Next.js SDK, and Express middleware.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
@@ -139,6 +140,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Go Development](./golang-development/) - Go development with error handling, goroutines, channels, HTTP servers, generics, interfaces, testing, and production-ready patterns.
 - [Git Hooks & Automation](./git-hooks-automation/) - Git hooks with Husky, lint-staged, conventional commits, semantic release, changesets, and developer experience tooling.
 - [Git Workflows](./git-workflows/) - Git branching strategies (GitFlow, trunk-based), merge vs rebase, conflict resolution, cherry-pick, bisect, worktrees, hooks, and monorepo management.
+- [GitHub Actions Advanced](./github-actions-advanced/) - Advanced GitHub Actions with reusable workflows, composite actions, matrix strategies, OIDC, and caching optimization.
 - [GitHub Actions Generator](./github-actions-generator/) - Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.
 - [GraphQL Development](./graphql-development/) - GraphQL API development with schema design, Apollo Server/Client, subscriptions, type safety, authentication, and real-time capabilities.
 - [HTMX & Hypermedia](./htmx-hypermedia/) - HTMX with server-rendered HTML, partial updates, infinite scroll, active search, and progressive enhancement.
@@ -180,6 +182,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.
 - [Redis Caching](./redis-caching/) - Redis caching strategies, session management, rate limiting, real-time features, and performance optimization with in-memory data store.
+- [Remix Development](./remix-development/) - Remix with nested routes, loaders, actions, form handling, error boundaries, streaming SSR, and progressive enhancement.
 - [Research & Analysis](./research-and-analysis/) - Deep research and analysis patterns covering systematic exploration, technology comparison, architecture analysis, and thorough investigation before implementation.
 - [Responsive Design](./responsive-design/) - Responsive web design with mobile-first CSS, Grid/Flexbox, container queries, fluid typography, and touch target optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
@@ -199,6 +202,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Socket.IO](./socket-io/) - Socket.IO real-time communication with rooms, namespaces, typed events, auth middleware, React hooks, and Redis adapter scaling.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
+- [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [Spring Boot](./spring-boot/) - Spring Boot development with REST APIs, Spring Data JPA, Spring Security, JWT/OAuth2, MockMvc testing, and production deployment patterns.
 - [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
@@ -212,7 +216,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
+- [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
+- [Turborepo Monorepo](./turborepo-monorepo/) - Turborepo with workspace setup, task pipelines, remote caching, shared packages, and CI optimization.
 - [TypeScript Development](./typescript-development/) - TypeScript development with strict mode, advanced generics, utility types, type narrowing, decorators, module systems, and production-ready type-safe patterns.
+- [Vitest Testing](./vitest-testing/) - Vitest with mocking, snapshots, coverage, workspace mode for monorepos, browser mode, and Jest migration.
 - [Vue.js Development](./vuejs-development/) - Vue.js development covering Composition API, reactive state, Pinia store, Vue Router, TypeScript integration, component patterns, composables, testing with Vitest, and production-ready patterns with Nuxt.js.
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
@@ -222,6 +229,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
 - [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - One-command Vercel deployment, React/Next.js performance optimization (40+ rules), and code auditing for 100+ accessibility/UX rules. *By [@vercel-labs](https://github.com/vercel-labs)*
 - [Webhooks Integration](./webhooks-integration/) - Webhook implementation with HMAC-SHA256 verification, idempotent processing, Stripe/GitHub patterns, and delivery systems.
+- [Zod Validation](./zod-validation/) - Zod schema validation with transforms, refinements, discriminated unions, React Hook Form integration, and shared client/server schemas.
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 

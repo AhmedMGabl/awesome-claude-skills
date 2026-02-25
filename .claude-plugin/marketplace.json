@@ -913,6 +913,54 @@
       "description": "Drizzle ORM for TypeScript covering schema definition, drizzle-kit migrations, type-safe CRUD operations, joins, subqueries, transactions, prepared statements, multi-database support (PostgreSQL, MySQL, SQLite), and production best practices.",
       "source": "./drizzle-orm",
       "category": "development"
+    },
+    {
+      "name": "remix-development",
+      "description": "Remix framework development covering nested routes, loaders, actions, form handling, error boundaries, deferred data, resource routes, authentication patterns, streaming SSR, and progressive enhancement.",
+      "source": "./remix-development",
+      "category": "development"
+    },
+    {
+      "name": "auth0-integration",
+      "description": "Auth0 identity platform integration covering Universal Login, social connections, JWT validation, role-based access control, organizations and multi-tenancy, machine-to-machine tokens, Auth0 Actions, Next.js SDK, and Express middleware patterns.",
+      "source": "./auth0-integration",
+      "category": "development"
+    },
+    {
+      "name": "trpc-api",
+      "description": "tRPC type-safe API development covering router definition, procedures, input validation with Zod, middleware, context creation, React Query integration, subscriptions, error handling, and full-stack TypeScript type safety between server and client.",
+      "source": "./trpc-api",
+      "category": "development"
+    },
+    {
+      "name": "turborepo-monorepo",
+      "description": "Turborepo monorepo management covering workspace setup, task pipelines, remote caching, shared packages, internal packages pattern, code generation, environment variables, CI optimization, and incremental builds for large TypeScript projects.",
+      "source": "./turborepo-monorepo",
+      "category": "development"
+    },
+    {
+      "name": "storybook-docs",
+      "description": "Storybook component documentation covering story writing (CSF3), args and controls, autodocs, interaction testing with play functions, visual regression testing, accessibility addon, mock data patterns, and Storybook deployment.",
+      "source": "./storybook-docs",
+      "category": "development"
+    },
+    {
+      "name": "github-actions-advanced",
+      "description": "Advanced GitHub Actions patterns covering reusable workflows, composite actions, matrix strategies, concurrency control, caching (node_modules, Docker layers), environment deployments, OIDC authentication, artifact management, and workflow optimization.",
+      "source": "./github-actions-advanced",
+      "category": "development"
+    },
+    {
+      "name": "vitest-testing",
+      "description": "Vitest testing framework covering configuration, test organization, mocking with vi.fn/vi.mock, snapshot testing, coverage with v8/istanbul, workspace mode for monorepos, browser mode, concurrent tests, and migration from Jest.",
+      "source": "./vitest-testing",
+      "category": "development"
+    },
+    {
+      "name": "zod-validation",
+      "description": "Zod schema validation covering primitive and object schemas, transforms, refinements, discriminated unions, recursive types, error formatting, integration with React Hook Form, tRPC, and Next.js Server Actions, and shared client/server validation.",
+      "source": "./zod-validation",
+      "category": "development"
     }
   ]
 }
