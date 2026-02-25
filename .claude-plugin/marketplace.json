@@ -1057,6 +1057,54 @@
       "description": "Tailwind CSS development covering utility classes, responsive design, dark mode, custom theme configuration, component patterns, animations, group and peer modifiers, arbitrary values, @apply extraction, and plugin development.",
       "source": "./tailwind-css",
       "category": "development"
+    },
+    {
+      "name": "nestjs-framework",
+      "description": "NestJS framework development covering module architecture, controllers and providers, dependency injection, guards and interceptors, pipes and validation, TypeORM/Prisma integration, WebSocket gateways, microservices, Swagger documentation, and testing with Jest.",
+      "source": "./nestjs-framework",
+      "category": "development"
+    },
+    {
+      "name": "firebase-development",
+      "description": "Firebase development covering Firestore CRUD and queries, Firebase Authentication with social providers, Cloud Storage file uploads, Cloud Functions triggers, Firebase Hosting, security rules, real-time listeners, offline persistence, and Firebase Admin SDK for server-side operations.",
+      "source": "./firebase-development",
+      "category": "development"
+    },
+    {
+      "name": "dynamodb-operations",
+      "description": "Amazon DynamoDB operations covering table design with partition and sort keys, single-table design patterns, CRUD with AWS SDK v3, query and scan operations, Global Secondary Indexes, batch operations, DynamoDB Streams, TTL, transactions, and cost optimization strategies.",
+      "source": "./dynamodb-operations",
+      "category": "development"
+    },
+    {
+      "name": "vite-build-tool",
+      "description": "Vite build tool configuration covering project setup, dev server optimization, build configuration, environment variables, library mode, SSR, plugin development, path aliases, proxy configuration, chunk splitting strategies, and migration from Webpack/CRA.",
+      "source": "./vite-build-tool",
+      "category": "development"
+    },
+    {
+      "name": "sqlite-libsql",
+      "description": "SQLite and LibSQL/Turso development covering better-sqlite3 for Node.js, Turso embedded replicas, Drizzle and Prisma integration, WAL mode configuration, full-text search with FTS5, JSON functions, migrations, connection pooling, and edge deployment with LibSQL.",
+      "source": "./sqlite-libsql",
+      "category": "development"
+    },
+    {
+      "name": "three-js",
+      "description": "Three.js 3D graphics development covering scene setup, geometries and materials, lighting, camera controls, GLTF model loading, animations, post-processing effects, React Three Fiber integration, physics with Rapier, shaders, and performance optimization.",
+      "source": "./three-js",
+      "category": "development"
+    },
+    {
+      "name": "material-ui",
+      "description": "Material UI (MUI) component library covering theme customization, styled components, sx prop, responsive breakpoints, data grid, autocomplete, form components, dark mode, custom variants, and integration with React Hook Form and Next.js.",
+      "source": "./material-ui",
+      "category": "development"
+    },
+    {
+      "name": "react-router",
+      "description": "React Router v7 development covering file-based routing, nested layouts, loaders and actions, form handling, data loading patterns, route protection with authentication, lazy loading, error boundaries, search params, and migration from v6.",
+      "source": "./react-router",
+      "category": "development"
     }
   ]
 }
