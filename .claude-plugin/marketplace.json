@@ -865,6 +865,54 @@
       "description": "Progressive Web App development covering service workers, Web App Manifest, caching strategies (Cache First, Network First, Stale-While-Revalidate), offline support, push notifications, background sync, install prompts, and Workbox integration.",
       "source": "./pwa-development",
       "category": "development"
+    },
+    {
+      "name": "shadcn-ui",
+      "description": "shadcn/ui component library patterns covering installation and configuration, component customization, theme setup with CSS variables, dark mode, form components with React Hook Form and Zod, data tables, command palette, toast notifications, and building consistent UI with Tailwind CSS.",
+      "source": "./shadcn-ui",
+      "category": "development"
+    },
+    {
+      "name": "s3-storage",
+      "description": "AWS S3 and object storage patterns covering bucket configuration, presigned URLs for uploads and downloads, multipart uploads, lifecycle policies, access control, CloudFront CDN integration, S3-compatible stores (R2, MinIO), and cost optimization strategies.",
+      "source": "./s3-storage",
+      "category": "development"
+    },
+    {
+      "name": "tanstack-query",
+      "description": "TanStack Query (React Query) patterns covering queries, mutations, query invalidation, optimistic updates, infinite scrolling, prefetching, suspense integration, cache management, and server state synchronization in React applications.",
+      "source": "./tanstack-query",
+      "category": "development"
+    },
+    {
+      "name": "zustand-state",
+      "description": "Zustand state management covering store creation, selectors, middleware (persist, devtools, immer), async actions, computed values, store composition, TypeScript patterns, testing stores, and migration from Redux.",
+      "source": "./zustand-state",
+      "category": "development"
+    },
+    {
+      "name": "testing-library",
+      "description": "React Testing Library and DOM Testing Library patterns covering accessibility-first queries, user interaction simulation with userEvent, async testing, custom render wrappers, form and modal testing, hook testing with renderHook, and common anti-patterns to avoid.",
+      "source": "./testing-library",
+      "category": "development"
+    },
+    {
+      "name": "deno-development",
+      "description": "Deno runtime development covering permissions, deno.json configuration, HTTP servers with Deno.serve and Oak/Hono frameworks, file system operations, testing with Deno.test, built-in TypeScript support, npm compatibility, Fresh framework patterns, Deno Deploy, and Deno KV store.",
+      "source": "./deno-development",
+      "category": "development"
+    },
+    {
+      "name": "socket-io",
+      "description": "Socket.IO real-time communication covering server setup with Express and standalone modes, client connection with auto-reconnection, rooms and namespaces, broadcasting patterns, authentication middleware, TypeScript typed events, React integration hooks, horizontal scaling with Redis adapter, error handling, disconnect recovery, and testing strategies.",
+      "source": "./socket-io",
+      "category": "development"
+    },
+    {
+      "name": "drizzle-orm",
+      "description": "Drizzle ORM for TypeScript covering schema definition, drizzle-kit migrations, type-safe CRUD operations, joins, subqueries, transactions, prepared statements, multi-database support (PostgreSQL, MySQL, SQLite), and production best practices.",
+      "source": "./drizzle-orm",
+      "category": "development"
     }
   ]
 }
