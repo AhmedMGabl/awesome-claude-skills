@@ -111,6 +111,12 @@
       "category": "development"
     },
     {
+      "name": "code-refactoring",
+      "description": "Code refactoring and technical debt management covering refactoring patterns, code smell detection, safe refactoring techniques, extract/inline/rename operations, dependency reduction, architecture improvement, legacy code strategies, and maintaining test coverage during refactoring.",
+      "source": "./code-refactoring",
+      "category": "development"
+    },
+    {
       "name": "context-management",
       "description": "Context management and semantic understanding patterns for Claude Code sessions covering codebase navigation strategies, context window optimization, progressive code exploration, dependency tracing, maintaining working memory across long sessions, and avoiding context drift during complex tasks.",
       "source": "./context-management",
