@@ -1,11 +1,5 @@
 [
   {
-    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\traefik-proxy\\SKILL.md",
-    "timestamp": 1772039260780,
-    "focus": false,
-    "openLocation": 1
-  },
-  {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\vault-secrets\\SKILL.md",
     "timestamp": 1772039281402,
     "focus": false,
@@ -56,6 +50,12 @@
   {
     "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
     "timestamp": 1772039604509,
+    "focus": false,
+    "openLocation": 1
+  },
+  {
+    "filePath": "W:\\WS\\AhmedGabl\\awesome-claude-skills\\README.md",
+    "timestamp": 1772039645245,
     "focus": false,
     "openLocation": 1
   }
