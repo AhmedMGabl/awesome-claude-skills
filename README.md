@@ -94,6 +94,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [Auth Patterns](./auth-patterns/) - Authentication and authorization patterns covering JWT, OAuth 2.0, session management, RBAC, passwordless auth, MFA, and security best practices.
 - [Auth0 Integration](./auth0-integration/) - Auth0 with Universal Login, social connections, RBAC, organizations, M2M tokens, Next.js SDK, and Express middleware.
+- [Avalonia UI](./avalonia-ui/) - Avalonia UI patterns covering cross-platform XAML, MVVM with ReactiveUI, styles, control templates, data templates, and platform-specific rendering.
 - [AWS CDK](./aws-cdk/) - AWS CDK infrastructure as code covering constructs, stacks, Lambda, API Gateway, DynamoDB, S3, CloudFront, testing, and CI/CD pipelines.
 - [AWS Lambda](./aws-lambda/) - Serverless functions with API Gateway, S3/SQS/DynamoDB event sources, SAM/CDK deployment, and cold start optimization.
 - [AWS Lambda Patterns](./aws-lambda-patterns/) - AWS Lambda patterns covering handler design, event sources, API Gateway integration, layers, cold start optimization, DynamoDB triggers, SQS processing, and testing.
@@ -169,6 +170,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
 - [Electric SQL](./electric-sql/) - ElectricSQL local-first sync with Shape streams, real-time Postgres replication, offline support, optimistic mutations, and React hooks.
 - [Editor.js](./editorjs/) - Editor.js block-style editor with custom tool plugins, inline tools, structured JSON output, image/embed tools, and React integration.
+- [Electron App](./electron-app/) - Electron desktop application patterns covering main/renderer processes, IPC communication, native menus, auto-updates, packaging, and security hardening.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
 - [Electron Forge](./electron-forge/) - Electron Forge desktop app scaffolding with IPC communication, BrowserWindow management, auto-updates, tray icons, and cross-platform packaging.
 - [Elixir Phoenix](./elixir-phoenix/) - Elixir Phoenix patterns covering LiveView, Ecto schemas, channels, PubSub, GenServer, supervision trees, and real-time features.
@@ -190,6 +192,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Caddy Server](./caddy-server/) - Caddy web server with automatic HTTPS, reverse proxy, file serving, load balancing, and Caddyfile configuration.
 - [Capacitor Mobile](./capacitor-mobile/) - Capacitor cross-platform mobile development with native plugins, deep linking, push notifications, and app store deployment.
 - [Capacitor Plugins](./capacitor-plugins/) - Capacitor native plugins with Camera, Filesystem, Geolocation, Push Notifications, Haptics, Biometrics, and custom plugin creation.
+- [CapacitorJS Plugins](./capacitorjs-plugins/) - CapacitorJS patterns covering native plugin development, web-to-native bridge, camera, filesystem, push notifications, deep links, and app lifecycle hooks.
 - [Cassandra Patterns](./cassandra-patterns/) - Apache Cassandra patterns covering data modeling, partition keys, clustering columns, CQL queries, materialized views, lightweight transactions, and driver configuration.
 - [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Contentlayer](./contentlayer/) - Contentlayer and MDX content management with document type definitions, computed fields, MDX components, and Next.js integration.
@@ -281,6 +284,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
+- [Jetpack Compose](./jetpack-compose/) - Jetpack Compose patterns covering declarative UI, state management, navigation, Material 3, lazy lists, animations, and ViewModel integration for Android.
 - [Jodit Editor](./jodit-editor/) - Jodit WYSIWYG editor with toolbar configuration, custom plugins, file browser, content filtering, and React integration.
 - [Jotai State](./jotai-state/) - Jotai atomic state management with primitive atoms, derived atoms, async atoms, atom families, persistence, and DevTools.
 - [jsdom Testing](./jsdom-testing/) - jsdom DOM simulation in Node.js with document creation, element querying, event dispatching, form handling, and Jest/Vitest integration.
@@ -306,6 +310,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Kysely Queries](./kysely-queries/) - Kysely type-safe SQL query builder with joins, transactions, migrations, and multi-dialect support.
 - [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
 - [Kotlin Coroutines](./kotlin-coroutines/) - Kotlin coroutines patterns covering suspend functions, structured concurrency, Flow, channels, dispatchers, error handling, and testing coroutines.
+- [Kotlin Multiplatform](./kotlin-multiplatform/) - Kotlin Multiplatform patterns covering shared modules, expect/actual declarations, Ktor networking, SQLDelight persistence, Koin DI, and Compose Multiplatform UI.
 - [Lexical Editor](./lexical-editor/) - Lexical extensible text editor with custom nodes, plugins, decorators, command system, Markdown support, and React integration.
 - [Less CSS](./less-css/) - Less CSS patterns covering variables, mixins, functions, guards, namespaces, lazy evaluation, and integration with build tools.
 - [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
@@ -324,6 +329,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Million.js](./million-js/) - Million.js block virtual DOM optimization with compiler integration, automatic mode, For component, and React performance profiling.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
+- [MAUI .NET](./maui-dotnet/) - .NET MAUI patterns covering cross-platform UI, XAML layouts, MVVM with CommunityToolkit, platform-specific code, dependency injection, and app lifecycle.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
 - [MinIO Storage](./minio-storage/) - MinIO object storage patterns covering bucket operations, presigned URLs, notifications, versioning, lifecycle policies, and S3-compatible API usage.
 - [MLflow Experiment](./mlflow-experiment/) - MLflow patterns covering experiment tracking, model registry, artifact logging, hyperparameter tuning, model serving, and CI/CD integration for ML workflows.
@@ -347,6 +353,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Nuxt UI](./nuxt-ui/) - Nuxt UI component library with Zod form validation, table components, modal and slideover overlays, command palette, and Nuxt 3 integration.
 - [nuqs URL State](./nuqs-url-state/) - nuqs type-safe URL search param state with parsers, shallow routing, history modes, and Next.js server-side access.
 - [Nanostores](./nanostores/) - Nanostores lightweight state management with atoms, computed stores, maps, lifecycle events, and React/Vue/Svelte/Solid integration.
+- [NativeScript Patterns](./nativescript-patterns/) - NativeScript patterns covering native UI components, data binding, navigation, plugins, platform-specific code, and integration with Angular, Vue, and React.
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [NATS Messaging](./nats-messaging/) - NATS messaging patterns covering pub/sub, request/reply, JetStream persistent messaging, key-value store, object store, and microservice communication.
 - [Neo4j Graph](./neo4j-graph/) - Neo4j graph database patterns covering Cypher queries, node/relationship modeling, indexes, path algorithms, APOC procedures, and JavaScript/Python driver integration.
@@ -424,6 +431,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Rive Animations](./rive-animations/) - Rive interactive animations with state machines, inputs, event handling, React integration, and responsive sizing.
 - [React Native Reanimated](./react-native-reanimated/) - React Native Reanimated with shared values, gesture integration, layout animations, and 60fps UI thread animations.
 - [React Native Skia](./react-native-skia/) - React Native Skia 2D graphics with canvas drawing, paths, shaders, image filters, and performant animations.
+- [React Native Expo](./react-native-expo/) - React Native with Expo patterns covering managed workflow, file-based routing, native modules, EAS Build, push notifications, and over-the-air updates.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.
 - [Redux Toolkit](./redux-toolkit/) - Redux Toolkit with configureStore, createSlice, createAsyncThunk, RTK Query, entity adapters, and TypeScript typing.
@@ -526,6 +534,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [SunEditor](./suneditor/) - SunEditor lightweight WYSIWYG editor with toolbar customization, plugin system, image upload, responsive design, and React integration.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
 - [SwiftUI iOS](./swiftui-ios/) - SwiftUI iOS patterns covering views, modifiers, state management, navigation, data persistence, async/await networking, and App Store deployment.
+- [SwiftUI Patterns](./swiftui-patterns/) - SwiftUI patterns covering declarative views, state management, navigation, animations, async data loading, and platform-adaptive layouts for iOS, macOS, and watchOS.
 - [Svelte 5](./svelte-v5/) - Svelte 5 runes with $state, $derived, $effect, $props, $bindable, snippets, and migration from Svelte 4.
 - [SvelteKit Development](./sveltekit-development/) - SvelteKit full-stack development with Svelte 5 runes, load functions, form actions, API routes, authentication, and deployment adapters.
 - [software-architecture](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture) - Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.
@@ -608,6 +617,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 - [Wrangler CLI](./wrangler-cli/) - Cloudflare Wrangler CLI with Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, and Pages deployment.
 - [WXT Browser Extensions](./wxt-extensions/) - WXT browser extension framework with manifest config, background/content scripts, storage, messaging, and cross-browser support.
+- [Xamarin.Forms](./xamarin-forms/) - Xamarin.Forms patterns covering XAML layouts, MVVM data binding, dependency services, custom renderers, effects, navigation, and platform-specific code.
 - [Xata Database](./xata-database/) - Xata serverless Postgres with full-text search, vector embeddings, file attachments, branching, and TypeScript SDK.
 - [XState v5](./xstate-v5/) - XState v5 state machines with guards, actions, actors, parallel states, invoked services, TypeScript types, and React hooks.
 - [Yjs Collaborative Editing](./y-js-collab/) - Yjs CRDT-based collaboration with shared types, awareness protocol, WebSocket providers, ProseMirror/CodeMirror bindings, and offline sync.

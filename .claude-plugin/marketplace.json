@@ -3241,6 +3241,66 @@
       "description": "Style Dictionary patterns covering design token definitions, multi-platform transforms, custom formats, token composition, theming, and CI/CD integration.",
       "source": "./style-dictionary",
       "category": "development"
+    },
+    {
+      "name": "react-native-expo",
+      "description": "React Native with Expo patterns covering managed workflow, file-based routing, native modules, EAS Build, push notifications, and over-the-air updates.",
+      "source": "./react-native-expo",
+      "category": "development"
+    },
+    {
+      "name": "electron-app",
+      "description": "Electron desktop application patterns covering main/renderer processes, IPC communication, native menus, auto-updates, packaging, and security hardening.",
+      "source": "./electron-app",
+      "category": "development"
+    },
+    {
+      "name": "maui-dotnet",
+      "description": ".NET MAUI patterns covering cross-platform UI, XAML layouts, MVVM with CommunityToolkit, platform-specific code, dependency injection, and app lifecycle.",
+      "source": "./maui-dotnet",
+      "category": "development"
+    },
+    {
+      "name": "kotlin-multiplatform",
+      "description": "Kotlin Multiplatform patterns covering shared modules, expect/actual declarations, Ktor networking, SQLDelight persistence, Koin DI, and Compose Multiplatform UI.",
+      "source": "./kotlin-multiplatform",
+      "category": "development"
+    },
+    {
+      "name": "swiftui-patterns",
+      "description": "SwiftUI patterns covering declarative views, state management, navigation, animations, async data loading, and platform-adaptive layouts for iOS, macOS, and watchOS.",
+      "source": "./swiftui-patterns",
+      "category": "development"
+    },
+    {
+      "name": "jetpack-compose",
+      "description": "Jetpack Compose patterns covering declarative UI, state management, navigation, Material 3, lazy lists, animations, and ViewModel integration for Android.",
+      "source": "./jetpack-compose",
+      "category": "development"
+    },
+    {
+      "name": "xamarin-forms",
+      "description": "Xamarin.Forms patterns covering XAML layouts, MVVM data binding, dependency services, custom renderers, effects, navigation, and platform-specific code.",
+      "source": "./xamarin-forms",
+      "category": "development"
+    },
+    {
+      "name": "capacitorjs-plugins",
+      "description": "CapacitorJS patterns covering native plugin development, web-to-native bridge, camera, filesystem, push notifications, deep links, and app lifecycle hooks.",
+      "source": "./capacitorjs-plugins",
+      "category": "development"
+    },
+    {
+      "name": "nativescript-patterns",
+      "description": "NativeScript patterns covering native UI components, data binding, navigation, plugins, platform-specific code, and integration with Angular, Vue, and React.",
+      "source": "./nativescript-patterns",
+      "category": "development"
+    },
+    {
+      "name": "avalonia-ui",
+      "description": "Avalonia UI patterns covering cross-platform XAML, MVVM with ReactiveUI, styles, control templates, data templates, and platform-specific rendering.",
+      "source": "./avalonia-ui",
+      "category": "development"
     }
   ]
 }
