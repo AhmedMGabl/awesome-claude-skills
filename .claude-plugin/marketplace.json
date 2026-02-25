@@ -3181,6 +3181,66 @@
       "description": "Istio service mesh patterns covering traffic management, virtual services, destination rules, mTLS, authorization policies, observability, and canary deployments.",
       "source": "./istio-mesh",
       "category": "development"
+    },
+    {
+      "name": "sass-scss",
+      "description": "Sass/SCSS patterns covering variables, mixins, functions, nesting, modules, partials, extend/placeholder selectors, and responsive design utilities.",
+      "source": "./sass-scss",
+      "category": "development"
+    },
+    {
+      "name": "less-css",
+      "description": "Less CSS patterns covering variables, mixins, functions, guards, namespaces, lazy evaluation, and integration with build tools.",
+      "source": "./less-css",
+      "category": "development"
+    },
+    {
+      "name": "styled-components-patterns",
+      "description": "styled-components patterns covering theming, dynamic props, CSS animations, global styles, SSR, component variants, and TypeScript integration.",
+      "source": "./styled-components-patterns",
+      "category": "development"
+    },
+    {
+      "name": "emotion-css",
+      "description": "Emotion CSS-in-JS patterns covering the css prop, styled API, theming, keyframes, global styles, SSR, and TypeScript integration.",
+      "source": "./emotion-css",
+      "category": "development"
+    },
+    {
+      "name": "stylex-css",
+      "description": "StyleX patterns covering atomic CSS-in-JS, conditional styles, themes, typed tokens, dynamic values, and build-time optimization for React applications.",
+      "source": "./stylex-css",
+      "category": "development"
+    },
+    {
+      "name": "linaria-css",
+      "description": "Linaria zero-runtime CSS-in-JS patterns covering tagged template literals, styled API, theming, dynamic values, atomic mode, and build-time extraction.",
+      "source": "./linaria-css",
+      "category": "development"
+    },
+    {
+      "name": "open-props",
+      "description": "Open Props patterns covering CSS custom properties, adaptive design tokens, animations, gradients, shadows, responsive utilities, and PostCSS JIT integration.",
+      "source": "./open-props",
+      "category": "development"
+    },
+    {
+      "name": "unocss-patterns",
+      "description": "UnoCSS patterns covering atomic utility classes, presets, shortcuts, rules, variants, icons, attributify mode, and build-time optimization.",
+      "source": "./unocss-patterns",
+      "category": "development"
+    },
+    {
+      "name": "panda-css-patterns",
+      "description": "Panda CSS patterns covering type-safe tokens, recipes, patterns, conditions, semantic tokens, CSS-in-JS at build time, and design system configuration.",
+      "source": "./panda-css-patterns",
+      "category": "development"
+    },
+    {
+      "name": "style-dictionary",
+      "description": "Style Dictionary patterns covering design token definitions, multi-platform transforms, custom formats, token composition, theming, and CI/CD integration.",
+      "source": "./style-dictionary",
+      "category": "development"
     }
   ]
 }

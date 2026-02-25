@@ -179,6 +179,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Error Handling Patterns](./error-handling/) - Error handling strategies with custom errors, Result types, retry logic, circuit breakers, and error boundaries across TypeScript, Python, and Go.
 - [Email Sending](./email-sending/) - Transactional email with Resend, SendGrid, SES, queue management, SPF/DKIM/DMARC, and deliverability.
 - [Email Templates](./email-templates/) - Email template development with React Email, MJML, responsive HTML, dark mode, deliverability, and Resend/SendGrid.
+- [Emotion CSS](./emotion-css/) - Emotion CSS-in-JS patterns covering styled components, css prop, theming, keyframes, global styles, SSR, and dynamic styling.
 - [Entity Framework Core](./dotnet-entityframework/) - Entity Framework Core patterns covering DbContext, entity configuration, migrations, LINQ queries, relationships, change tracking, and performance optimization.
 - [Environment Config & Secrets](./environment-config/) - Environment configuration with Zod/Pydantic validation, 12-factor patterns, feature flags, and secrets managers.
 - [Envoy Proxy](./envoy-proxy/) - Envoy proxy patterns covering listeners, clusters, routes, filters, rate limiting, circuit breaking, load balancing, and service mesh data plane configuration.
@@ -306,9 +307,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
 - [Kotlin Coroutines](./kotlin-coroutines/) - Kotlin coroutines patterns covering suspend functions, structured concurrency, Flow, channels, dispatchers, error handling, and testing coroutines.
 - [Lexical Editor](./lexical-editor/) - Lexical extensible text editor with custom nodes, plugins, decorators, command system, Markdown support, and React integration.
+- [Less CSS](./less-css/) - Less CSS patterns covering variables, mixins, functions, guards, namespaces, lazy evaluation, and integration with build tools.
 - [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
 - [Lit Web Components](./lit-web-components/) - Lit web components with reactive properties, shadow DOM styling, lifecycle callbacks, events, slots, and custom element registration.
 - [Liveblocks Real-time](./liveblocks-realtime/) - Liveblocks real-time collaboration with presence, cursors, conflict-free storage, and React hooks.
+- [Linaria CSS](./linaria-css/) - Linaria zero-runtime CSS-in-JS patterns covering tagged template literals, styled API, theming, dynamic values, atomic mode, and build-time extraction.
 - [Load Testing](./load-testing/) - Load testing with k6, Autocannon, stress/spike tests, threshold-based pass/fail, and CI integration.
 - [Logging & Structured Logging](./logging-structured/) - Structured JSON logging with Pino/Winston, correlation IDs, request tracing, and production logging patterns.
 - [Lucia Authentication](./lucia-auth/) - Lucia session auth with Prisma/Drizzle adapters, OAuth via Arctic, password hashing, and email verification.
@@ -371,9 +374,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
 - [OpenTelemetry JS](./opentelemetry-js/) - OpenTelemetry JavaScript SDK with custom spans, metrics, context propagation, auto-instrumentation, and OTLP exporter configuration.
+- [Open Props](./open-props/) - Open Props patterns covering CSS custom properties, adaptive design tokens, animations, gradients, shadows, responsive utilities, and PostCSS JIT integration.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
 - [Pact.js Contract Testing](./pactjs-contracts/) - Pact.js consumer-driven contracts with provider verification, matchers, Pact Broker integration, and CI/CD workflows.
 - [Panda CSS](./panda-css/) - Panda CSS type-safe styling with design tokens, recipes, patterns, conditional styles, responsive design, and zero-runtime CSS-in-JS.
+- [Panda CSS Patterns](./panda-css-patterns/) - Panda CSS patterns covering type-safe tokens, recipes, patterns, conditions, semantic tokens, CSS-in-JS at build time, and design system configuration.
 - [PartyKit Real-Time](./partykit-realtime/) - PartyKit real-time collaboration with party servers, WebSocket rooms, presence, broadcast, storage, and React integration.
 - [Paraglide JS](./paraglide-js/) - Paraglide JS tree-shakeable i18n with compiler-generated functions, language switching, and SvelteKit/Next.js integration.
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
@@ -434,6 +439,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Rspack Bundler](./rspack-bundler/) - Rspack Rust-based bundler with Webpack-compatible API, module federation, code splitting, SWC loader, and production optimization.
 - [S3 & Object Storage](./s3-storage/) - AWS S3 and object storage with presigned URLs, multipart uploads, lifecycle policies, CloudFront CDN, and R2/MinIO.
 - [Sanity Studio](./sanity-studio/) - Sanity Studio schema definitions, GROQ queries, image handling, portable text rendering, and Next.js/Remix integration.
+- [Sass/SCSS](./sass-scss/) - Sass/SCSS patterns covering variables, mixins, functions, nesting, modules, partials, extend/placeholder selectors, and responsive design utilities.
 - [Scala Akka](./scala-akka/) - Scala Akka patterns covering typed actors, cluster sharding, event sourcing, Akka Streams, Akka HTTP, and distributed system design.
 - [Playwright Browser Automation](https://github.com/lackeyjb/playwright-skill) - Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*
 - [prompt-engineering](https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering) - Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.
@@ -514,6 +520,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sharp Image](./sharp-image/) - Sharp image processing with resize, crop, WebP/AVIF optimization, watermarks, metadata extraction, compositing, and batch operations.
 - [Sharp Image Processing](./sharp-image-processing/) - Sharp image processing covering resizing, format conversion, watermarks, metadata, batch processing, and upload pipelines.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
+- [Style Dictionary](./style-dictionary/) - Style Dictionary patterns covering design token definitions, multi-platform transforms, custom formats, token composition, theming, and CI/CD integration.
+- [styled-components Patterns](./styled-components-patterns/) - styled-components patterns covering theming, dynamic props, CSS animations, global styles, SSR, component variants, and TypeScript integration.
+- [StyleX CSS](./stylex-css/) - StyleX patterns covering atomic CSS-in-JS, conditional styles, themes, typed tokens, dynamic values, and build-time optimization for React applications.
 - [SunEditor](./suneditor/) - SunEditor lightweight WYSIWYG editor with toolbar customization, plugin system, image upload, responsive design, and React integration.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
 - [SwiftUI iOS](./swiftui-ios/) - SwiftUI iOS patterns covering views, modifiers, state management, navigation, data persistence, async/await networking, and App Store deployment.
@@ -563,6 +572,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unistyles](./unistyles/) - React Native Unistyles with createStyleSheet, breakpoints, themes, runtime theming, and responsive cross-platform styling.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
+- [UnoCSS Patterns](./unocss-patterns/) - UnoCSS patterns covering atomic utility classes, presets, shortcuts, rules, variants, icons, attributify mode, and build-time optimization.
 - [Unplugin Patterns](./unplugin-patterns/) - Unplugin universal bundler plugins with auto-imports, component resolution, icon loading, virtual modules, and Vite/Webpack/Rollup support.
 - [UploadThing](./uploadthing/) - UploadThing file uploads with route definitions, file validation, auth middleware, React components, and Next.js integration.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
