@@ -1549,6 +1549,54 @@
       "description": "Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency control, retries, idempotency, webhook handling, AI/LLM integration, and deployment patterns.",
       "source": "./trigger-dev",
       "category": "development"
+    },
+    {
+      "name": "inngest",
+      "description": "Inngest event-driven functions covering event triggers, step functions, scheduled tasks, fan-out patterns, retries, concurrency, idempotency, and integration with Next.js, Express, and Hono.",
+      "source": "./inngest",
+      "category": "development"
+    },
+    {
+      "name": "expo-router",
+      "description": "Expo Router covering file-based routing for React Native, navigation patterns, layouts, typed routes, deep linking, authentication flows, API routes, and universal app patterns for iOS, Android, and web.",
+      "source": "./expo-router",
+      "category": "development"
+    },
+    {
+      "name": "nativewind",
+      "description": "NativeWind (Tailwind CSS for React Native) covering setup, utility classes, responsive design, dark mode, platform-specific styling, animations, custom themes, and integration with Expo and React Navigation.",
+      "source": "./nativewind",
+      "category": "development"
+    },
+    {
+      "name": "electric-sql",
+      "description": "ElectricSQL local-first sync covering Shape streams, real-time Postgres replication, offline support, optimistic mutations, conflict resolution, React hooks, and integration with PGlite and existing databases.",
+      "source": "./electric-sql",
+      "category": "development"
+    },
+    {
+      "name": "val-town",
+      "description": "Val Town serverless functions covering vals, HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, environment variables, and TypeScript-first development patterns.",
+      "source": "./val-town",
+      "category": "development"
+    },
+    {
+      "name": "dagger-ci",
+      "description": "Dagger CI/CD pipelines covering programmable pipelines in TypeScript/Python/Go, container operations, caching, secrets management, multi-platform builds, and local/CI execution.",
+      "source": "./dagger-ci",
+      "category": "development"
+    },
+    {
+      "name": "tinybird-analytics",
+      "description": "Tinybird real-time analytics covering data sources, pipes, API endpoints, materialized views, SQL transformations, ingestion patterns, and integration with Next.js and event tracking.",
+      "source": "./tinybird-analytics",
+      "category": "development"
+    },
+    {
+      "name": "partykit-realtime",
+      "description": "PartyKit real-time collaboration covering party servers, WebSocket connections, room-based state, presence, broadcast, storage, scheduled tasks, and React integration for multiplayer applications.",
+      "source": "./partykit-realtime",
+      "category": "development"
     }
   ]
 }

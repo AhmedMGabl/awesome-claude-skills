@@ -128,7 +128,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Event Sourcing & CQRS](./event-sourcing/) - Event sourcing with event stores, aggregate roots, command handlers, projections, and saga orchestration.
 - [Elasticsearch](./elasticsearch/) - Elasticsearch integration covering index management, full-text search, aggregations, mappings, bulk operations, and query DSL.
 - [Effect-TS](./effect-ts/) - Effect-TS covering type-safe error handling, dependency injection, concurrency, retry policies, and resource management.
+- [Electric SQL](./electric-sql/) - ElectricSQL local-first sync with Shape streams, real-time Postgres replication, offline support, optimistic mutations, and React hooks.
 - [Electron Desktop Apps](./electron-desktop/) - Electron with main/renderer processes, IPC, auto-updates, native menus, system tray, and cross-platform packaging.
+- [Expo Router](./expo-router/) - Expo Router file-based routing for React Native with layouts, typed routes, deep linking, authentication flows, and universal app patterns.
 - [Express.js](./express-js/) - Express.js with routing, middleware, Zod validation, JWT auth, error handling patterns, graceful shutdown, and supertest testing.
 - [ESLint & Biome](./eslint-biome/) - Code linting and formatting with ESLint flat config, Biome, Prettier, lint-staged, and CI enforcement.
 - [Error Handling Patterns](./error-handling/) - Error handling strategies with custom errors, Result types, retry logic, circuit breakers, and error boundaries across TypeScript, Python, and Go.
@@ -146,6 +148,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
 - [Cron & Job Scheduling](./cron-scheduling/) - Job scheduling with cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, and production patterns.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
+- [Dagger CI/CD](./dagger-ci/) - Dagger CI/CD programmable pipelines in TypeScript/Python/Go, container operations, caching, secrets management, and multi-platform builds.
 - [Data Engineering & ETL](./data-engineering/) - Data engineering and ETL pipeline patterns with Kafka, dbt, Airflow, data validation, and modern Python data stack.
 - [Data Visualization](./data-visualization/) - Data visualization with Chart.js, Recharts, D3.js, dashboard layouts, responsive charts, and real-time data updates.
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
@@ -187,6 +190,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
+- [Inngest](./inngest/) - Inngest event-driven functions with step functions, scheduled tasks, fan-out patterns, retries, concurrency, and Next.js integration.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
@@ -209,6 +213,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
+- [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
 - [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
@@ -221,6 +226,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
+- [PartyKit Real-Time](./partykit-realtime/) - PartyKit real-time collaboration with party servers, WebSocket rooms, presence, broadcast, storage, and React integration.
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
 - [Payload CMS](./payload-cms/) - Payload CMS with collections, access control, hooks, Lexical rich text, file uploads, and Next.js integration.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
@@ -301,6 +307,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Test-Driven Development](./test-driven-development/) - TDD methodology covering red-green-refactor cycle, test design patterns, BDD, and maintaining test quality across TypeScript, Python, and Go.
 - [Tailwind CSS](./tailwind-css/) - Tailwind CSS with utility classes, responsive design, dark mode, custom themes, component patterns, and animations.
 - [Three.js 3D Graphics](./three-js/) - Three.js with scene setup, GLTF models, React Three Fiber, Rapier physics, animations, and performance optimization.
+- [Tinybird Analytics](./tinybird-analytics/) - Tinybird real-time analytics with data sources, pipes, API endpoints, materialized views, and SQL transformations.
 - [Testing Library](./testing-library/) - React Testing Library with accessibility-first queries, userEvent, async patterns, custom render wrappers, and hook testing.
 - [tRPC](./trpc-api/) - tRPC type-safe APIs with routers, procedures, Zod validation, middleware, React Query integration, and SSR prefetching.
 - [Turborepo Monorepo](./turborepo-monorepo/)
@@ -313,6 +320,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [test-driven-development](https://github.com/obra/superpowers/tree/main/skills/test-driven-development) - Use when implementing any feature or bugfix, before writing implementation code.
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
+- [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
