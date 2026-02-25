@@ -1021,6 +1021,24 @@
       "description": "NextAuth.js (Auth.js) authentication covering OAuth providers (Google, GitHub, Discord), credentials provider, JWT and database sessions, role-based access control, middleware protection, custom sign-in pages, adapter configuration for Prisma and Drizzle, and App Router integration.",
       "source": "./nextauth-authentication",
       "category": "development"
+    },
+    {
+      "name": "aws-lambda",
+      "description": "AWS Lambda serverless functions covering handler patterns, API Gateway integration, event sources (S3, SQS, DynamoDB Streams), cold start optimization, layers, environment configuration, SAM and CDK deployment, error handling, and monitoring with CloudWatch.",
+      "source": "./aws-lambda",
+      "category": "development"
+    },
+    {
+      "name": "clerk-authentication",
+      "description": "Clerk authentication covering user management, sign-in/sign-up components, OAuth and passwordless flows, organization multi-tenancy, role-based access control, webhook integration, middleware protection, and Next.js App Router integration with server-side auth.",
+      "source": "./clerk-authentication",
+      "category": "development"
+    },
+    {
+      "name": "stripe-connect",
+      "description": "Stripe Connect platform development covering marketplace payments, connected account onboarding, direct and destination charges, transfer splits, payout scheduling, platform fees, account dashboards, identity verification, and webhook handling for multi-party payments.",
+      "source": "./stripe-connect",
+      "category": "development"
     }
   ]
 }
