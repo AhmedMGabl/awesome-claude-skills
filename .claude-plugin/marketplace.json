@@ -1693,6 +1693,54 @@
       "description": "Framer Motion advanced animations covering layout animations, shared layout transitions, gesture-driven interactions, scroll-linked animations, exit animations, orchestration, and SVG path animations.",
       "source": "./framer-motion-advanced",
       "category": "development"
+    },
+    {
+      "name": "zod-schemas",
+      "description": "Zod advanced schema patterns covering discriminated unions, recursive types, branded types, schema composition, coercion, custom error maps, form integration, and API contract validation.",
+      "source": "./zod-schemas",
+      "category": "development"
+    },
+    {
+      "name": "vanilla-extract",
+      "description": "vanilla-extract CSS-in-TypeScript covering type-safe styles, theme contracts, Sprinkles utility classes, recipes for component variants, responsive conditions, and build-time CSS extraction.",
+      "source": "./vanilla-extract",
+      "category": "development"
+    },
+    {
+      "name": "bullmq-queues",
+      "description": "BullMQ job queues covering queue creation, workers, job scheduling, rate limiting, prioritization, flow dependencies, events, retries, and Redis-backed distributed task processing.",
+      "source": "./bullmq-queues",
+      "category": "development"
+    },
+    {
+      "name": "socket-io-v4",
+      "description": "Socket.IO v4 covering namespaces, rooms, acknowledgements, middleware, binary streaming, Redis adapter for horizontal scaling, and TypeScript-first event typing.",
+      "source": "./socket-io-v4",
+      "category": "development"
+    },
+    {
+      "name": "nextra-docs",
+      "description": "Nextra documentation framework covering file-based routing, MDX pages, theme configuration, search integration, sidebar navigation, i18n, and custom components for documentation sites.",
+      "source": "./nextra-docs",
+      "category": "development"
+    },
+    {
+      "name": "ark-ui",
+      "description": "Ark UI headless component library covering accessible primitives, state machines, React/Vue/Solid adapters, form components, overlay patterns, and WAI-ARIA compliant interactions.",
+      "source": "./ark-ui",
+      "category": "development"
+    },
+    {
+      "name": "clerk-webhooks",
+      "description": "Clerk webhook integration covering user lifecycle events, organization events, session events, Svix signature verification, Next.js API route handling, and event-driven user sync patterns.",
+      "source": "./clerk-webhooks",
+      "category": "development"
+    },
+    {
+      "name": "sharp-image",
+      "description": "Sharp image processing covering resize, crop, format conversion, WebP/AVIF optimization, watermarks, metadata extraction, compositing, and batch processing for Node.js applications.",
+      "source": "./sharp-image",
+      "category": "development"
     }
   ]
 }

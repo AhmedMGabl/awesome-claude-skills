@@ -93,12 +93,14 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [AWS CDK](./aws-cdk/) - AWS CDK infrastructure as code covering constructs, stacks, Lambda, API Gateway, DynamoDB, S3, CloudFront, testing, and CI/CD pipelines.
 - [AWS Lambda](./aws-lambda/) - Serverless functions with API Gateway, S3/SQS/DynamoDB event sources, SAM/CDK deployment, and cold start optimization.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
+- [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
 - [AWS S3 & CloudFront](./aws-s3-cloudfront/) - S3 file operations, presigned URLs, multipart uploads, CloudFront CDN, cache invalidation, and CDK infrastructure.
 - [AWS Serverless](./aws-serverless/) - AWS serverless development with Lambda, API Gateway, DynamoDB, Step Functions, EventBridge, CDK/SAM, and production-ready patterns.
 - [Browser Extensions](./browser-extensions/) - Browser extension development with Manifest V3, content scripts, service workers, popup UI, and cross-browser patterns.
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
+- [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
 - [Changelog Generator](./changelog-generator/) - Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.
 - [CLI Development](./cli-development/) - CLI application development with Commander.js, Click, Cobra, interactive prompts, colored output, and distribution patterns.
@@ -108,6 +110,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [CI/CD Pipelines](./cicd-pipelines/) - CI/CD pipeline configuration covering GitHub Actions, GitLab CI, Docker multi-stage builds, deployment strategies, secrets management, and production deployment automation.
 - [Claude API](./claude-api/) - Anthropic Claude API integration covering messages API, streaming, tool use, vision, prompt caching, extended thinking, and SDK patterns.
 - [Clerk Authentication](./clerk-authentication/) - Clerk auth with sign-in components, organizations, RBAC, webhook sync, and Next.js App Router integration.
+- [Clerk Webhooks](./clerk-webhooks/) - Clerk webhook integration with user lifecycle events, organization events, Svix signature verification, and user sync patterns.
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
 - [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
@@ -230,6 +233,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [NextAuth.js Authentication](./nextauth-authentication/) - Auth.js v5 authentication with OAuth providers, credentials, JWT sessions, RBAC, middleware protection, and Prisma adapter.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
+- [Nextra Docs](./nextra-docs/) - Nextra documentation framework with file-based routing, MDX pages, theme configuration, search, sidebar navigation, and i18n.
 - [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
 - [OpenAPI Specification](./openapi-spec/) - OpenAPI 3.1 authoring, schema design, code generation with openapi-typescript, Zod validation, and API-first development.
 - [OpenAI API](./openai-api/) - OpenAI API integration covering chat completions, function calling, structured outputs, streaming, embeddings, and image generation.
@@ -289,6 +293,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Supabase Realtime](./supabase-realtime/) - Supabase Realtime with Postgres changes, broadcast channels, presence tracking, RLS filters, and React subscription patterns.
 - [Skill Share](./skill-share/) - Creates new Claude skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery.
 - [Socket.IO](./socket-io/) - Socket.IO real-time communication with rooms, namespaces, typed events, auth middleware, React hooks, and Redis adapter scaling.
+- [Socket.IO v4](./socket-io-v4/) - Socket.IO v4 with typed events, namespaces, rooms, acknowledgements, middleware, and Redis adapter for horizontal scaling.
 - [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
@@ -305,6 +310,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Sanity CMS](./sanity-cms/) - Sanity headless CMS with GROQ queries, schema definition, image handling, portable text, and Next.js integration.
 - [Semantic Release](./semantic-release/) - Automated versioning with semantic-release, conventional commits, commitlint, changesets, and GitHub Actions workflows.
 - [SEO Optimization](./seo-optimization/) - SEO technical optimization covering meta tags, structured data (JSON-LD), Open Graph, sitemaps, Core Web Vitals, and search engine visibility.
+- [Sharp Image](./sharp-image/) - Sharp image processing with resize, crop, WebP/AVIF optimization, watermarks, metadata extraction, compositing, and batch operations.
 - [Sharp Image Processing](./sharp-image-processing/) - Sharp image processing covering resizing, format conversion, watermarks, metadata, batch processing, and upload pipelines.
 - [Stripe Payments](./stripe-payments/) - Stripe payment integration covering Checkout Sessions, Payment Intents, subscriptions, webhooks, Connect for marketplaces, and production payment patterns.
 - [SwiftUI Development](./swiftui-development/) - SwiftUI for iOS/macOS with views, @Observable state, NavigationStack, async/await, SwiftData, MVVM, and accessibility.
@@ -336,6 +342,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Unit Testing Patterns](./unit-testing-patterns/) - Unit testing with AAA pattern, mocking, parameterized tests, async testing, and coverage strategies across TypeScript and Python.
 - [Upstash Serverless](./upstash-serverless/) - Upstash serverless data services covering Redis REST API, QStash queues, Vector search, rate limiting, and caching.
 - [Val Town](./val-town/) - Val Town serverless functions with HTTP handlers, cron jobs, email handlers, blob storage, SQLite database, and TypeScript patterns.
+- [vanilla-extract](./vanilla-extract/) - vanilla-extract CSS-in-TypeScript with type-safe styles, theme contracts, Sprinkles utility classes, recipes, and build-time extraction.
 - [Vercel Deployment](./vercel-deployment/) - Vercel deployment with serverless/edge functions, preview deployments, monorepo support, and custom domains.
 - [Vite Build Tool](./vite-build-tool/) - Vite configuration with path aliases, environment variables, library mode, SSR, plugin development, and chunk splitting.
 - [using-git-worktrees](https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/) - Creates isolated git worktrees with smart directory selection and safety verification.
@@ -351,6 +358,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [WebRTC Communication](./webrtc-communication/) - WebRTC real-time communication covering peer connections, media streams, data channels, signaling with WebSocket, and screen sharing.
 - [Webhooks Integration](./webhooks-integration/) - Webhook implementation with HMAC-SHA256 verification, idempotent processing, Stripe/GitHub patterns, and delivery systems.
 - [Zod Validation](./zod-validation/) - Zod schema validation with transforms, refinements, discriminated unions, React Hook Form integration, and shared client/server schemas.
+- [Zod Schemas](./zod-schemas/) - Zod advanced schema patterns with discriminated unions, recursive types, branded types, schema composition, and API contract validation.
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.
 - [WebSocket & Real-time](./websocket-realtime/) - WebSocket and real-time communication with Socket.IO, native WebSocket API, Server-Sent Events, pub/sub, presence tracking, and scalable architecture.
 - [Wrangler CLI](./wrangler-cli/) - Cloudflare Wrangler CLI with Workers development, KV namespaces, R2 storage, D1 databases, Durable Objects, and Pages deployment.
