@@ -148,7 +148,9 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Contentlayer](./contentlayer/) - Contentlayer and MDX content management with document type definitions, computed fields, MDX components, and Next.js integration.
 - [Coolify Self-Hosted](./coolify-selfhost/) - Coolify self-hosted PaaS covering server setup, GitHub deployment, database provisioning, custom domains, and Docker Compose.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
+- [Convex Queries](./convex-queries/) - Convex advanced query patterns with pagination, search indexes, joins, optimistic updates, and file storage.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
+- [CSS Modules Patterns](./css-modules-patterns/) - CSS Modules with scoped class names, composition, theming with CSS variables, TypeScript integration, and Next.js configuration.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
 - [Cron & Job Scheduling](./cron-scheduling/) - Job scheduling with cron expressions, BullMQ, Celery, distributed queues, idempotent jobs, and production patterns.
 - [Code Refactoring](./code-refactoring/) - Code refactoring and technical debt management covering code smell detection, safe refactoring techniques, architecture improvement, and legacy code strategies.
@@ -158,6 +160,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
 - [Database Seeding](./database-seeding/) - Database seed scripts with Prisma, Drizzle, SQLAlchemy, factory patterns, Faker, and deterministic test data.
 - [Date Handling](./date-handling/) - Date and time handling with date-fns, dayjs, Temporal API, Luxon timezone management, duration calculations, relative time, and Intl.DateTimeFormat internationalization.
+- [date-fns Patterns](./date-fns-patterns/) - date-fns utility patterns with formatting, parsing, comparison, interval operations, timezone handling, and locale-aware display.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
 - [Feature Flags](./feature-flags/) - Feature flags with LaunchDarkly, percentage rollouts, A/B testing, user targeting, and flag lifecycle management.
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
@@ -196,6 +199,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Image Optimization](./image-optimization/) - Image optimization with Next.js Image, sharp, responsive srcset, WebP/AVIF, lazy loading, and LCP improvement.
 - [i18n & Localization](./i18n-localization/) - Internationalization with react-intl, next-intl, i18next, ICU message format, Intl API, RTL layout, and translation workflows.
 - [Jest Testing](./jest-testing/) - Write and configure JavaScript/TypeScript tests using Jest or Vitest with unit tests, integration tests, mocking, and coverage.
+- [Jotai State](./jotai-state/) - Jotai atomic state management with primitive atoms, derived atoms, async atoms, atom families, persistence, and DevTools.
 - [Incident Response & SRE](./incident-response/) - Incident response and SRE patterns covering classification, triage, runbooks, postmortems, SLOs, error budgets, and production reliability.
 - [Inngest](./inngest/) - Inngest event-driven functions with step functions, scheduled tasks, fan-out patterns, retries, concurrency, and Next.js integration.
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
@@ -211,6 +215,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Lucia Authentication](./lucia-auth/) - Lucia session auth with Prisma/Drizzle adapters, OAuth via Arctic, password hashing, and email verification.
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
+- [MDX Content](./mdx-content/) - MDX content authoring with custom components, remark/rehype plugins, frontmatter parsing, syntax highlighting, and Next.js integration.
 - [Meilisearch](./meilisearch/) - Meilisearch full-text search with index management, filtering, faceting, sorting, typo tolerance, synonyms, and React InstantSearch integration.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
 - [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
@@ -225,6 +230,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
+- [Nanostores](./nanostores/) - Nanostores lightweight state management with atoms, computed stores, maps, lifecycle events, and React/Vue/Svelte/Solid integration.
 - [NativeWind](./nativewind/) - NativeWind (Tailwind CSS for React Native) with utility classes, responsive design, dark mode, platform-specific styling, and Expo integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
@@ -249,6 +255,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Playwright E2E Testing](./playwright-testing/) - End-to-end testing with Playwright covering page objects, visual regression, API testing, network interception, and CI integration.
 - [PocketBase Backend](./pocketbase-backend/) - PocketBase backend with collections, real-time subscriptions, authentication, file storage, and JavaScript SDK integration.
 - [PostgreSQL Operations](./postgresql-operations/) - PostgreSQL operations including schema design, complex queries, window functions, CTEs, JSONB, full-text search, indexing strategies, and performance tuning.
+- [PostHog Analytics](./posthog-analytics/) - PostHog product analytics with event tracking, feature flags, A/B testing, session replay, and React/Next.js integration.
 - [Prompt Improver Hook](https://github.com/severity1/claude-code-prompt-improver) - Intelligent hook that intercepts and refines vague prompts into precise, actionable instructions. *By [@severity1](https://github.com/severity1)*
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
 - [PWA Development](./pwa-development/) - Progressive Web Apps with service workers, Workbox, offline caching strategies, push notifications, and install prompts.
@@ -285,6 +292,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Rust Development](./rust-development/) - Rust systems programming with ownership/borrowing, lifetimes, traits, async Tokio, Axum web framework, error handling, and production patterns.
 - [Security Audit Skills (Trail of Bits)](https://github.com/trailofbits/skills) - Professional security research skills with CodeQL, Semgrep, variant analysis, and smart contract auditing across 6 blockchain platforms. *By [@trailofbits](https://github.com/trailofbits)*
 - [Security Scanning](./security-scanning/) - Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.
+- [Sentry Monitoring](./sentry-monitoring/) - Sentry error monitoring with SDK setup, error boundaries, performance tracing, breadcrumbs, release tracking, and source maps.
+- [Service Workers](./service-workers/) - Service Workers and PWA patterns with offline caching, push notifications, Workbox integration, and installable web app configuration.
 - [Serverless Patterns](./serverless-patterns/) - Serverless architecture with Lambda, cold start optimization, Step Functions, DynamoDB, and Vercel functions.
 - [shadcn/ui](./shadcn-ui/) - shadcn/ui components with forms, data tables, theming, dark mode, and React Hook Form + Zod validation.
 - [shadcn/ui Patterns](./shadcn-patterns/) - shadcn/ui advanced patterns with form integration, data tables, command palette, toast notifications, and custom component variants.
@@ -303,6 +312,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Strapi CMS](./strapi-cms/) - Strapi headless CMS covering content types, REST and GraphQL APIs, lifecycle hooks, authentication, custom plugins, and deployment.
 - [Stripe Billing](./stripe-billing/) - Stripe billing covering subscriptions, usage-based metering, customer portal, invoicing, webhooks, and SaaS pricing patterns.
 - [Stripe Connect](./stripe-connect/) - Marketplace payments with connected account onboarding, destination/direct charges, transfer splits, and platform fees.
+- [Stripe Elements](./stripe-elements/) - Stripe Elements with Payment Element, Address Element, Express Checkout, appearance customization, and React Stripe.js integration.
 - [SQL Optimization](./sql-optimization/) - SQL query optimization with EXPLAIN ANALYZE, index strategies, N+1 detection, materialized views, partitioning, and connection pooling.
 - [SSE Streaming](./sse-streaming/) - Server-Sent Events covering event stream protocol, Express/Node.js implementations, AI token streaming, reconnection, and React hooks.
 - [SQLite & LibSQL](./sqlite-libsql/) - SQLite and Turso with better-sqlite3, LibSQL client, FTS5 full-text search, JSON functions, and Drizzle integration.

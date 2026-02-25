@@ -1741,6 +1741,66 @@
       "description": "Sharp image processing covering resize, crop, format conversion, WebP/AVIF optimization, watermarks, metadata extraction, compositing, and batch processing for Node.js applications.",
       "source": "./sharp-image",
       "category": "development"
+    },
+    {
+      "name": "sentry-monitoring",
+      "description": "Sentry error monitoring covering SDK setup, error boundaries, performance tracing, custom contexts, breadcrumbs, release tracking, source maps, and alerting for React, Next.js, and Node.js applications.",
+      "source": "./sentry-monitoring",
+      "category": "development"
+    },
+    {
+      "name": "jotai-state",
+      "description": "Jotai atomic state management covering primitive atoms, derived atoms, async atoms, atom families, persistence, DevTools, and integration patterns for React applications.",
+      "source": "./jotai-state",
+      "category": "development"
+    },
+    {
+      "name": "service-workers",
+      "description": "Service Workers and PWA patterns covering offline caching strategies, background sync, push notifications, workbox integration, precaching, runtime caching, and installable web app configuration.",
+      "source": "./service-workers",
+      "category": "development"
+    },
+    {
+      "name": "posthog-analytics",
+      "description": "PostHog product analytics covering event tracking, feature flags, A/B testing, session replay, user identification, group analytics, and React/Next.js integration patterns.",
+      "source": "./posthog-analytics",
+      "category": "development"
+    },
+    {
+      "name": "stripe-elements",
+      "description": "Stripe Elements covering Payment Element, Address Element, Express Checkout, appearance customization, payment intents, setup intents, and React Stripe.js integration patterns.",
+      "source": "./stripe-elements",
+      "category": "development"
+    },
+    {
+      "name": "mdx-content",
+      "description": "MDX content authoring covering custom components, remark/rehype plugins, frontmatter parsing, syntax highlighting, Next.js MDX integration, and content collection patterns.",
+      "source": "./mdx-content",
+      "category": "development"
+    },
+    {
+      "name": "date-fns-patterns",
+      "description": "date-fns utility patterns covering date formatting, parsing, comparison, interval operations, timezone handling with date-fns-tz, relative time, duration, and locale-aware date display.",
+      "source": "./date-fns-patterns",
+      "category": "development"
+    },
+    {
+      "name": "nanostores",
+      "description": "Nanostores lightweight state management covering atoms, computed stores, maps, deep maps, lifecycle events, and framework-agnostic integration with React, Vue, Svelte, and Solid.",
+      "source": "./nanostores",
+      "category": "development"
+    },
+    {
+      "name": "css-modules-patterns",
+      "description": "CSS Modules patterns covering scoped class names, composition, global styles, theming with CSS variables, responsive patterns, TypeScript integration, and Next.js/Vite configuration.",
+      "source": "./css-modules-patterns",
+      "category": "development"
+    },
+    {
+      "name": "convex-queries",
+      "description": "Convex advanced query patterns covering paginated queries, search indexes, aggregate functions, joins, optimistic updates, file storage, and real-time subscription patterns.",
+      "source": "./convex-queries",
+      "category": "development"
     }
   ]
 }
