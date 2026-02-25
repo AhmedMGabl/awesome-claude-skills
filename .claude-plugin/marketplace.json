@@ -1231,6 +1231,30 @@
       "description": "Lucia authentication library covering session management, database adapters for Prisma and Drizzle, OAuth integration with Arctic, password hashing with Argon2, email verification, password reset flows, session cookies, and CSRF protection.",
       "source": "./lucia-auth",
       "category": "development"
+    },
+    {
+      "name": "convex-backend",
+      "description": "Convex backend-as-a-service covering reactive queries, mutations, actions, file storage, scheduled functions, authentication with Clerk, real-time subscriptions, full-text search, database schema validation, and deployment patterns.",
+      "source": "./convex-backend",
+      "category": "development"
+    },
+    {
+      "name": "sanity-cms",
+      "description": "Sanity CMS headless content management covering schema definition, GROQ queries, image handling with next-sanity, real-time preview, portable text rendering, custom studio configuration, webhooks, and integration with Next.js and Astro.",
+      "source": "./sanity-cms",
+      "category": "development"
+    },
+    {
+      "name": "payload-cms",
+      "description": "Payload CMS headless content management covering collection and global configs, access control, hooks, custom endpoints, rich text with Lexical editor, file uploads, localization, draft and version history, GraphQL and REST APIs, and Next.js integration.",
+      "source": "./payload-cms",
+      "category": "development"
+    },
+    {
+      "name": "drizzle-studio",
+      "description": "Drizzle ORM advanced patterns covering relational queries, prepared statements, custom SQL, migration strategies, database push vs migrate, Drizzle Studio GUI, multi-database support for PostgreSQL, MySQL, and SQLite, and integration with Next.js and Hono.",
+      "source": "./drizzle-studio",
+      "category": "development"
     }
   ]
 }
