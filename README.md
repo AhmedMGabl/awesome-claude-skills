@@ -100,6 +100,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [ArkType Validation](./arktype-validation/) - ArkType runtime validation with 1:1 TypeScript syntax, type inference, morphs, scoped types, and discriminated unions.
 - [Argo CD GitOps](./argocd-gitops/) - Argo CD GitOps with application manifests, sync policies, Helm/Kustomize integration, ApplicationSets, and multi-cluster deployment.
 - [Ace Editor](./ace-editor/) - Ace code editor with syntax highlighting, language modes, themes, autocompletion, snippets, annotations, and React integration.
+- [ASP.NET Core](./dotnet-aspnetcore/) - ASP.NET Core patterns covering minimal APIs, controllers, middleware, dependency injection, authentication, Entity Framework Core, and deployment configuration.
 - [Astro Content Collections](./astro-content/) - Astro Content Collections with type-safe schemas, Zod validation, MDX components, dynamic routing, RSS feeds, and static site generation.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
@@ -110,6 +111,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Better Auth](./better-auth/) - Better Auth covering email/password auth, OAuth providers, 2FA, organizations, and framework integration.
 - [Biome Config](./biome-config/) - Biome advanced configuration with rule customization, per-file overrides, import sorting, CI integration, and ESLint/Prettier migration.
 - [Biome Linting](./biome-linting/) - Biome toolchain covering linting, formatting, import sorting, migration from ESLint/Prettier, and CI integration.
+- [Blazor](./dotnet-blazor/) - Blazor patterns covering components, data binding, event handling, forms, dependency injection, JavaScript interop, and server/WebAssembly render modes.
 - [BlockNote Editor](./blocknote-editor/) - BlockNote Notion-style block editor with custom block types, slash menu, drag-and-drop, collaborative editing, and React integration.
 - [BullMQ Queues](./bullmq-queues/) - BullMQ job queues with workers, scheduling, rate limiting, prioritization, flow dependencies, and Redis-backed task processing.
 - [Bun Runtime](./bun-runtime/) - Bun runtime with Bun.serve, built-in SQLite, bun:test, bundling, fast package management, and Node.js compatibility.
@@ -132,6 +134,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Concurrency Patterns](./concurrency-patterns/) - Concurrency with Promise.all, Web Workers, async iterators, semaphores, Go goroutines, and Python asyncio.
 - [Conform Forms](./conform-forms/) - Conform progressive enhancement forms with Zod validation, server actions, field arrays, and React/Remix/Next.js integration.
 - [Context Management](./context-management/) - Context management patterns for Claude Code sessions covering codebase navigation, progressive exploration, dependency tracing, and avoiding context drift.
+- [C# LINQ](./csharp-linq/) - C# LINQ patterns covering query syntax, method syntax, deferred execution, grouping, joins, projections, custom extension methods, and async LINQ with EF Core.
 - [CSS Grid & Flexbox](./css-grid-flexbox/) - CSS Grid and Flexbox with auto-fill, subgrid, container queries, responsive patterns, and layout decision guide.
 - [CSS Architecture](./css-architecture/) - CSS architecture with CSS Modules, custom properties, cascade layers, nesting, :has() selector, and scalable patterns.
 - [Deno Development](./deno-development/) - Deno runtime with permissions, HTTP servers, built-in TypeScript, npm compatibility, Fresh framework, Deploy, and KV store.
@@ -168,6 +171,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Error Handling Patterns](./error-handling/) - Error handling strategies with custom errors, Result types, retry logic, circuit breakers, and error boundaries across TypeScript, Python, and Go.
 - [Email Sending](./email-sending/) - Transactional email with Resend, SendGrid, SES, queue management, SPF/DKIM/DMARC, and deliverability.
 - [Email Templates](./email-templates/) - Email template development with React Email, MJML, responsive HTML, dark mode, deliverability, and Resend/SendGrid.
+- [Entity Framework Core](./dotnet-entityframework/) - Entity Framework Core patterns covering DbContext, entity configuration, migrations, LINQ queries, relationships, change tracking, and performance optimization.
 - [Environment Config & Secrets](./environment-config/) - Environment configuration with Zod/Pydantic validation, 12-factor patterns, feature flags, and secrets managers.
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
@@ -197,6 +201,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Date Handling](./date-handling/) - Date and time handling with date-fns, dayjs, Temporal API, Luxon timezone management, duration calculations, relative time, and Intl.DateTimeFormat internationalization.
 - [date-fns Patterns](./date-fns-patterns/) - date-fns utility patterns with formatting, parsing, comparison, interval operations, timezone handling, and locale-aware display.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
+- [F# Patterns](./fsharp-patterns/) - F# patterns covering discriminated unions, pattern matching, computation expressions, async workflows, Railway-oriented programming, and domain modeling.
 - [Faker.js](./faker-js/) - Faker.js realistic test data generation with locale support, seeded reproducibility, factory patterns, and database seeding.
 - [Feature Flags](./feature-flags/) - Feature flags with LaunchDarkly, percentage rollouts, A/B testing, user targeting, and flag lifecycle management.
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
@@ -263,6 +268,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Ionic Framework](./ionic-framework/) - Ionic cross-platform UI components with Capacitor native plugins, Angular/React/Vue integration, theming, and app store deployment.
 - [io-ts Validation](./io-ts-validation/) - io-ts runtime type checking with codec composition, branded types, Either-based error handling, reporters, and fp-ts integration.
 - [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) - Enables Claude to interact with iOS Simulator for testing and debugging iOS applications. *By [@conorluddy](https://github.com/conorluddy)*
+- [Java Hibernate](./java-hibernate/) - Hibernate ORM patterns covering entity mapping, relationships, JPQL/Criteria queries, caching, lazy loading, batch operations, and Spring Data JPA integration.
+- [Java JUnit 5](./java-junit5/) - JUnit 5 testing patterns covering assertions, parameterized tests, nested tests, extensions, MockMvc, Testcontainers, and Spring Boot test slices.
+- [Java Maven](./java-maven/) - Apache Maven patterns covering POM configuration, dependency management, build lifecycle, plugins, multi-module projects, profiles, and repository management.
+- [Java Spring Security](./java-spring-security/) - Spring Security patterns covering authentication, authorization, OAuth2/OIDC, JWT tokens, CSRF protection, method security, and reactive security configuration.
 - [Kafka Streaming](./kafka-streaming/) - Apache Kafka event streaming covering producers, consumers, consumer groups, topics, partitions, and exactly-once semantics.
 - [KeystoneJS](./keystonejs/) - KeystoneJS schema-driven CMS with list definitions, access control, hooks, GraphQL API, document fields, and admin UI customization.
 - [Kubernetes Manifests](./kubernetes-manifests/) - Kubernetes manifest creation and management including deployments, services, ingress, StatefulSets, auto-scaling, and production-ready orchestration.
@@ -272,6 +281,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Linux Commands Reference](./linux-commands/) - Essential Linux/Unix commands for file operations, text processing, networking, systemd, SSH, and shell scripting.
 - [Kysely Queries](./kysely-queries/) - Kysely type-safe SQL query builder with joins, transactions, migrations, and multi-dialect support.
 - [Kobalte UI](./kobalte-ui/) - Kobalte accessible SolidJS components with headless primitives, form controls, dialogs, menus, and WAI-ARIA compliance.
+- [Kotlin Coroutines](./kotlin-coroutines/) - Kotlin coroutines patterns covering suspend functions, structured concurrency, Flow, channels, dispatchers, error handling, and testing coroutines.
 - [Lexical Editor](./lexical-editor/) - Lexical extensible text editor with custom nodes, plugins, decorators, command system, Markdown support, and React integration.
 - [Lit Components](./lit-components/) - Lit web components with reactive properties, decorators, html/css tagged literals, context protocol, and custom elements.
 - [Lit Web Components](./lit-web-components/) - Lit web components with reactive properties, shadow DOM styling, lifecycle callbacks, events, slots, and custom element registration.
