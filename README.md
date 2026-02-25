@@ -215,6 +215,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Dagger CI/CD](./dagger-ci/) - Dagger CI/CD programmable pipelines in TypeScript/Python/Go, container operations, caching, secrets management, and multi-platform builds.
 - [Data Engineering & ETL](./data-engineering/) - Data engineering and ETL pipeline patterns with Kafka, dbt, Airflow, data validation, and modern Python data stack.
 - [Data Visualization](./data-visualization/) - Data visualization with Chart.js, Recharts, D3.js, dashboard layouts, responsive charts, and real-time data updates.
+- [Datadog Monitoring](./datadog-monitoring/) - Datadog monitoring patterns covering APM tracing, custom metrics, log management, dashboards, alerts, SLOs, RUM, and infrastructure monitoring configuration.
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
 - [Database Seeding](./database-seeding/) - Database seed scripts with Prisma, Drizzle, SQLAlchemy, factory patterns, Faker, and deterministic test data.
 - [Date Handling](./date-handling/) - Date and time handling with date-fns, dayjs, Temporal API, Luxon timezone management, duration calculations, relative time, and Intl.DateTimeFormat internationalization.
@@ -222,6 +223,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
 - [F# Patterns](./fsharp-patterns/) - F# patterns covering discriminated unions, pattern matching, computation expressions, async workflows, Railway-oriented programming, and domain modeling.
 - [Faker.js](./faker-js/) - Faker.js realistic test data generation with locale support, seeded reproducibility, factory patterns, and database seeding.
+- [Falco Runtime Security](./falco-runtime/) - Falco runtime security patterns covering threat detection rules, syscall monitoring, container security, Kubernetes audit logs, alerting, and custom rule development.
 - [Feature Flags](./feature-flags/) - Feature flags with LaunchDarkly, percentage rollouts, A/B testing, user targeting, and flag lifecycle management.
 - [Firebase Development](./firebase-development/) - Firebase with Firestore, Authentication, Cloud Storage, Cloud Functions, security rules, and Admin SDK.
 - [Figma to Code](./figma-to-code/) - Figma-to-code translation with design tokens, auto-layout to flexbox/grid, variant-to-prop mapping, and responsive conversion.
@@ -364,6 +366,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Neo4j Graph](./neo4j-graph/) - Neo4j graph database patterns covering Cypher queries, node/relationship modeling, indexes, path algorithms, APOC procedures, and JavaScript/Python driver integration.
 - [Neon Database](./neon-database/) - Neon serverless Postgres covering branching, connection pooling, edge access, Drizzle ORM integration, and preview deployment workflows.
 - [Neutralinojs](./neutralino-apps/) - Neutralinojs lightweight desktop apps with native OS APIs, file system operations, window management, tray menus, and cross-platform distribution.
+- [New Relic Observability](./newrelic-observability/) - New Relic observability patterns covering APM instrumentation, custom events, NRQL queries, dashboards, alerts, SLIs, distributed tracing, and browser monitoring.
 - [Nile Postgres](./nile-postgres/) - Nile tenant-aware Postgres with virtual tenant databases, isolation, Drizzle ORM integration, and multi-tenant SaaS patterns.
 - [Nitro Server](./nitro-server/) - Nitro server engine with event handlers, middleware, storage drivers, caching, scheduled tasks, WebSockets, and multi-platform deployment.
 - [Nim Programming](./nim-programming/) - Nim programming patterns covering type system, macros, metaprogramming, memory management, FFI, async/await, nimble packages, and systems programming.
@@ -387,8 +390,10 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [OpenTelemetry](./opentelemetry/) - OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, exporters, and auto-instrumentation.
 - [OpenTelemetry JS](./opentelemetry-js/) - OpenTelemetry JavaScript SDK with custom spans, metrics, context propagation, auto-instrumentation, and OTLP exporter configuration.
 - [Open Props](./open-props/) - Open Props patterns covering CSS custom properties, adaptive design tokens, animations, gradients, shadows, responsive utilities, and PostCSS JIT integration.
+- [OWASP Security](./owasp-security/) - OWASP security patterns covering Top 10 vulnerabilities, injection prevention, authentication hardening, XSS mitigation, CSRF protection, CSP headers, and security testing.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
 - [Pact.js Contract Testing](./pactjs-contracts/) - Pact.js consumer-driven contracts with provider verification, matchers, Pact Broker integration, and CI/CD workflows.
+- [PagerDuty Incidents](./pagerduty-incidents/) - PagerDuty incident management patterns covering service configuration, escalation policies, event rules, API integration, incident workflows, and on-call scheduling.
 - [Panda CSS](./panda-css/) - Panda CSS type-safe styling with design tokens, recipes, patterns, conditional styles, responsive design, and zero-runtime CSS-in-JS.
 - [Panda CSS Patterns](./panda-css-patterns/) - Panda CSS patterns covering type-safe tokens, recipes, patterns, conditions, semantic tokens, CSS-in-JS at build time, and design system configuration.
 - [PartyKit Real-Time](./partykit-realtime/) - PartyKit real-time collaboration with party servers, WebSocket rooms, presence, broadcast, storage, and React integration.
@@ -396,6 +401,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Payment Processing](./payment-processing/) - Payment flows with Stripe Checkout, subscriptions, metered billing, refunds, webhooks, and PCI compliance.
 - [Payload CMS](./payload-cms/) - Payload CMS with collections, access control, hooks, Lexical rich text, file uploads, and Next.js integration.
 - [PDF Generation](./pdf-generation/) - PDF generation with Playwright HTML-to-PDF, pdf-lib, invoice templates, watermarks, and Python ReportLab.
+- [Penetration Testing](./penetration-testing/) - Penetration testing patterns covering reconnaissance, vulnerability scanning, web app testing, API security assessment, network testing, and reporting methodologies.
 - [Performance Optimization](./performance-optimization/) - Application performance optimization with Core Web Vitals, bundle analysis, caching strategies, database tuning, and React/Next.js optimizations.
 - [Phaser Game Development](./phaser-gamedev/) - Phaser 3 game development patterns covering scenes, sprites, physics, animations, tilemaps, input handling, audio, particle effects, and mobile deployment.
 - [PHP Composer](./php-composer/) - PHP Composer patterns covering dependency management, autoloading, version constraints, scripts, publishing packages, and monorepo configuration.
@@ -507,10 +513,13 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Socket.IO v4](./socket-io-v4/) - Socket.IO v4 with typed events, namespaces, rooms, acknowledgements, middleware, and Redis adapter for horizontal scaling.
 - [SolidJS](./solid-js/) - SolidJS reactive UI framework covering signals, effects, stores, control flow, resource fetching, routing, and SolidStart SSR.
 - [SolidStart](./solid-start/) - SolidStart full-stack framework with file-based routing, server functions, createAsync, middleware, sessions, and SSR/SSG modes.
+- [SonarQube Analysis](./sonarqube-analysis/) - SonarQube code analysis patterns covering quality gates, code smells, security hotspots, coverage reporting, custom rules, branch analysis, and CI/CD integration.
 - [Sonner Toasts](./sonner-toasts/) - Sonner toast notifications with promise toasts, action buttons, custom components, positioning, and React/Next.js integration.
 - [Sonner v2](./sonner-v2/) - Sonner v2 toast patterns with promise-based toasts, custom JSX rendering, action buttons, rich content, theming, and Next.js App Router integration.
+- [SOPS Encryption](./sops-encryption/) - Mozilla SOPS patterns covering secret encryption, age/PGP/KMS key management, .sops.yaml configuration, CI/CD integration, Kubernetes secrets, and key rotation.
 - [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) - Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*
 - [Slate Editor](./slate-editor/) - Slate customizable rich text framework with custom elements, leaves, plugins, serialization, normalizing, and React integration.
+- [Snyk Security](./snyk-security/) - Snyk security patterns covering dependency scanning, container scanning, IaC testing, code analysis, license compliance, fix PRs, and CI/CD pipeline integration.
 - [State Machines & XState](./state-machines/) - State machine patterns with XState v5 for complex UI workflows, business processes, and parallel state management.
 - [Stimulus & Hotwire](./stimulus-hotwire/) - Stimulus controllers, Turbo Drive, Turbo Frames, Turbo Streams, and progressive enhancement of server-rendered HTML.
 - [Storybook Documentation](./storybook-docs/) - Storybook with CSF3 stories, controls, interaction testing, visual regression, and component documentation.
@@ -556,6 +565,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Tauri Desktop Apps](./tauri-desktop/) - Tauri with Rust backend commands, IPC, system tray, auto-updates, and cross-platform packaging.
 - [Tauri v2](./tauri-v2/) - Tauri v2 desktop and mobile apps with IPC commands, event system, window management, system tray, plugins, and Rust backend.
 - [Trigger.dev](./trigger-dev/) - Trigger.dev background jobs covering task definition, scheduling, event triggers, concurrency, and AI/LLM integration.
+- [Trivy Scanning](./trivy-scanning/) - Trivy security scanning patterns covering container image scanning, filesystem scanning, IaC misconfiguration detection, SBOM generation, and CI/CD integration.
 - [Terraform AWS](./terraform-aws/) - Terraform AWS with VPC networking, EC2/ECS/EKS compute, RDS databases, S3 storage, IAM, CloudFront, and Lambda.
 - [Terraform Infrastructure](./terraform-infrastructure/) - Terraform infrastructure as code covering providers, modules, state management, workspaces, AWS/GCP/Azure resources, remote backends, and production-ready IaC patterns.
 - [Traefik Proxy](./traefik-proxy/) - Traefik reverse proxy with Docker/Kubernetes integration, service discovery, Let's Encrypt TLS, middleware, and load balancing.

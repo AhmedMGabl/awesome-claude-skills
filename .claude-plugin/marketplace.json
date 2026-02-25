@@ -3361,6 +3361,66 @@
       "description": "FFmpeg media processing patterns covering video encoding, audio extraction, format conversion, streaming, filters, subtitles, thumbnails, and batch processing.",
       "source": "./ffmpeg-media",
       "category": "development"
+    },
+    {
+      "name": "owasp-security",
+      "description": "OWASP security patterns covering Top 10 vulnerabilities, injection prevention, authentication hardening, XSS mitigation, CSRF protection, CSP headers, and security testing.",
+      "source": "./owasp-security",
+      "category": "development"
+    },
+    {
+      "name": "penetration-testing",
+      "description": "Penetration testing patterns covering reconnaissance, vulnerability scanning, web app testing, API security assessment, network testing, and reporting methodologies.",
+      "source": "./penetration-testing",
+      "category": "development"
+    },
+    {
+      "name": "sops-encryption",
+      "description": "Mozilla SOPS patterns covering secret encryption, age/PGP/KMS key management, .sops.yaml configuration, CI/CD integration, Kubernetes secrets, and key rotation.",
+      "source": "./sops-encryption",
+      "category": "development"
+    },
+    {
+      "name": "falco-runtime",
+      "description": "Falco runtime security patterns covering threat detection rules, syscall monitoring, container security, Kubernetes audit logs, alerting, and custom rule development.",
+      "source": "./falco-runtime",
+      "category": "development"
+    },
+    {
+      "name": "trivy-scanning",
+      "description": "Trivy security scanning patterns covering container image scanning, filesystem scanning, IaC misconfiguration detection, SBOM generation, and CI/CD integration.",
+      "source": "./trivy-scanning",
+      "category": "development"
+    },
+    {
+      "name": "snyk-security",
+      "description": "Snyk security patterns covering dependency scanning, container scanning, IaC testing, code analysis, license compliance, fix PRs, and CI/CD pipeline integration.",
+      "source": "./snyk-security",
+      "category": "development"
+    },
+    {
+      "name": "sonarqube-analysis",
+      "description": "SonarQube code analysis patterns covering quality gates, code smells, security hotspots, coverage reporting, custom rules, branch analysis, and CI/CD integration.",
+      "source": "./sonarqube-analysis",
+      "category": "development"
+    },
+    {
+      "name": "datadog-monitoring",
+      "description": "Datadog monitoring patterns covering APM tracing, custom metrics, log management, dashboards, alerts, SLOs, RUM, and infrastructure monitoring configuration.",
+      "source": "./datadog-monitoring",
+      "category": "development"
+    },
+    {
+      "name": "newrelic-observability",
+      "description": "New Relic observability patterns covering APM instrumentation, custom events, NRQL queries, dashboards, alerts, SLIs, distributed tracing, and browser monitoring.",
+      "source": "./newrelic-observability",
+      "category": "development"
+    },
+    {
+      "name": "pagerduty-incidents",
+      "description": "PagerDuty incident management patterns covering service configuration, escalation policies, event rules, API integration, incident workflows, and on-call scheduling.",
+      "source": "./pagerduty-incidents",
+      "category": "development"
     }
   ]
 }
