@@ -89,6 +89,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Artifacts Builder](./artifacts-builder/) - Suite of tools for creating elaborate, multi-component Claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
 - [Auth Patterns](./auth-patterns/) - Authentication and authorization patterns covering JWT, OAuth 2.0, session management, RBAC, passwordless auth, MFA, and security best practices.
 - [Auth0 Integration](./auth0-integration/) - Auth0 with Universal Login, social connections, RBAC, organizations, M2M tokens, Next.js SDK, and Express middleware.
+- [AWS CDK](./aws-cdk/) - AWS CDK infrastructure as code covering constructs, stacks, Lambda, API Gateway, DynamoDB, S3, CloudFront, testing, and CI/CD pipelines.
 - [AWS Lambda](./aws-lambda/) - Serverless functions with API Gateway, S3/SQS/DynamoDB event sources, SAM/CDK deployment, and cold start optimization.
 - [aws-skills](https://github.com/zxkane/aws-skills) - AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.
 - [Astro Framework](./astro-framework/) - Astro with content collections, island architecture, partial hydration, View Transitions, and MDX integration.
@@ -113,6 +114,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes Claude Code chat history to identify coding patterns, development gaps, curates HackerNews resources, and sends personalized growth reports to Slack.
 - [Django Development](./django-development/) - Django web development with models, DRF, authentication, Celery background tasks, query optimization, and production deployment patterns.
 - [DNS & Networking](./dns-networking/) - DNS records, domain configuration, Cloudflare/Route 53, SSL/TLS, CDN setup, and network troubleshooting.
+- [Discord Bot](./discord-bot/) - Discord bot development with Discord.js v14 covering slash commands, event handling, embeds, buttons, select menus, modals, and permissions.
 - [Docker Compose Orchestration](./docker-compose-orchestration/) - Multi-container Docker orchestration with service dependencies, development environments, production deployments, and complete stack configurations.
 - [Docker & Kubernetes Production](./docker-kubernetes/) - Docker multi-stage builds, Docker Compose, Kubernetes Deployments, Helm charts, autoscaling, and CI/CD pipelines.
 - [Docker Development](./docker-development/) - Dockerfile best practices, multi-stage builds, layer caching, health checks, security hardening, and debugging containers.
@@ -130,6 +132,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Elasticsearch & Search](./elasticsearch-search/) - Elasticsearch and search engine patterns covering index management, full-text search, aggregations, autocomplete, fuzzy matching, and production search architecture.
 - [Claude Code Terminal Title](https://github.com/bluzername/claude-code-terminal-title) - Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.
 - [Caching Strategies](./caching-strategies/) - Caching with HTTP headers, CDN, Redis, React Query/SWR, invalidation patterns, and stampede prevention.
+- [Contentful CMS](./contentful-cms/) - Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, and Next.js integration.
 - [Convex Backend](./convex-backend/) - Convex BaaS with reactive queries, mutations, actions, real-time data, scheduled functions, and Clerk auth.
 - [Cron Jobs & Scheduling](./cron-jobs/) - Task scheduling with node-cron, BullMQ repeatable jobs, pg-boss, distributed locking, and serverless cron triggers.
 - [Cypress Testing](./cypress-testing/) - Cypress E2E testing with custom commands, API interception, authentication flows, CI configuration, and retry strategies.
@@ -150,6 +153,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
 - [FastAPI Development](./fastapi-development/) - FastAPI development with async/await, Pydantic v2, dependency injection, SQLAlchemy async, JWT auth, WebSockets, and testing with httpx/pytest.
 - [Feishu Automation](./feishu-automation/) - Automate Feishu workflows with bulk document operations, scheduled reports, document templates, data synchronization between bases, and smart notifications.
+- [Flask Development](./flask-development/) - Flask web development covering blueprints, SQLAlchemy models, Flask-Login authentication, REST APIs, Celery tasks, and pytest testing.
 - [Flutter Development](./flutter-development/) - Flutter mobile and web development covering Dart fundamentals, widgets, state management (Riverpod/Bloc), navigation (GoRouter), animations, testing, and production deployment to iOS and Android.
 - [Feishu Direct API](./feishu-direct-api/) - Search, read, modify, and manage Feishu documents, bases, wikis, and chats using direct API calls without requiring MCP server setup.
 - [Feishu MCP](./feishu-mcp/) - Comprehensive Feishu (Lark) integration with document search, Feishu Docs/Bases modification, wiki access, messaging, and data correction capabilities.
@@ -190,6 +194,8 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
 - [Nuxt Development](./nuxt-development/) - Nuxt 3 with auto-imports, server routes, composables, useFetch, Nitro, Pinia, and multi-platform deployment.
 - [NestJS Framework](./nestjs-framework/) - NestJS with module architecture, dependency injection, guards, interceptors, pipes, TypeORM, Swagger, and testing.
+- [Netlify Deployment](./netlify-deployment/) - Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects, forms, and CI/CD.
+- [Notion API](./notion-api/) - Notion API integration covering database queries, page creation, block manipulation, property types, pagination, and OAuth authentication.
 - [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [NextAuth.js Authentication](./nextauth-authentication/) - Auth.js v5 authentication with OAuth providers, credentials, JWT sessions, RBAC, middleware protection, and Prisma adapter.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
@@ -276,9 +282,11 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Webapp Testing](./webapp-testing/) - Tests local web applications using Playwright for verifying frontend functionality, debugging UI behavior, and capturing screenshots.
 - [Webpack Configuration](./webpack-config/) - Webpack 5 with loaders, code splitting, Module Federation, production optimization, and bundle analysis.
 - [Web Components](./web-components/) - Web Components with Custom Elements, Shadow DOM, Lit framework, slots, form-associated elements, and framework interop.
+- [Web Accessibility](./web-accessibility/) - Web accessibility (a11y) covering WCAG 2.2 compliance, ARIA attributes, keyboard navigation, screen reader optimization, focus management, and automated testing with axe-core.
 - [Web Animation](./web-animation/) - Web animation with Framer Motion, GSAP, CSS transitions, scroll effects, spring physics, and reduced-motion accessibility.
 - [Web Scraping](./web-scraping/) - Web scraping with Cheerio, Playwright, Beautiful Soup, rate limiting, structured data extraction, and ethical practices.
 - [Vercel Agent Skills](https://github.com/vercel-labs/agent-skills) - One-command Vercel deployment, React/Next.js performance optimization (40+ rules), and code auditing for 100+ accessibility/UX rules. *By [@vercel-labs](https://github.com/vercel-labs)*
+- [WebRTC Communication](./webrtc-communication/) - WebRTC real-time communication covering peer connections, media streams, data channels, signaling with WebSocket, and screen sharing.
 - [Webhooks Integration](./webhooks-integration/) - Webhook implementation with HMAC-SHA256 verification, idempotent processing, Stripe/GitHub patterns, and delivery systems.
 - [Zod Validation](./zod-validation/) - Zod schema validation with transforms, refinements, discriminated unions, React Hook Form integration, and shared client/server schemas.
 - [Zustand State Management](./zustand-state/) - Zustand with stores, selectors, persist/devtools/immer middleware, async actions, store composition, and testing.

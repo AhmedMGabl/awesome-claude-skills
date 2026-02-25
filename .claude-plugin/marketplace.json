@@ -1267,6 +1267,54 @@
       "description": "OpenTelemetry observability covering traces, metrics, and logs instrumentation for Node.js and Python, SDK configuration, span creation, context propagation, exporters for Jaeger and OTLP, auto-instrumentation, and integration with Grafana and Datadog.",
       "source": "./opentelemetry",
       "category": "development"
+    },
+    {
+      "name": "web-accessibility",
+      "description": "Web accessibility (a11y) covering WCAG 2.2 compliance, ARIA attributes, keyboard navigation, screen reader optimization, focus management, color contrast, semantic HTML, and automated testing with axe-core and Playwright.",
+      "source": "./web-accessibility",
+      "category": "development"
+    },
+    {
+      "name": "webrtc-communication",
+      "description": "WebRTC real-time communication covering peer connections, media streams, data channels, STUN/TURN servers, signaling with WebSocket, screen sharing, and integration with React and Node.js.",
+      "source": "./webrtc-communication",
+      "category": "development"
+    },
+    {
+      "name": "aws-cdk",
+      "description": "AWS CDK infrastructure as code covering constructs, stacks, L1/L2/L3 patterns, Lambda functions, API Gateway, DynamoDB, S3, CloudFront, custom resources, testing, and CI/CD pipelines.",
+      "source": "./aws-cdk",
+      "category": "development"
+    },
+    {
+      "name": "flask-development",
+      "description": "Flask web development covering blueprints, SQLAlchemy models, Flask-Login authentication, WTForms validation, REST APIs with Flask-RESTX, Celery task queues, testing with pytest, and production deployment.",
+      "source": "./flask-development",
+      "category": "development"
+    },
+    {
+      "name": "discord-bot",
+      "description": "Discord bot development with Discord.js v14 covering slash commands, event handling, embeds, buttons, select menus, modals, permissions, database integration, and deployment patterns.",
+      "source": "./discord-bot",
+      "category": "development"
+    },
+    {
+      "name": "notion-api",
+      "description": "Notion API integration covering database queries, page creation, block manipulation, property types, filters and sorts, pagination, OAuth authentication, and webhook-like polling patterns.",
+      "source": "./notion-api",
+      "category": "development"
+    },
+    {
+      "name": "contentful-cms",
+      "description": "Contentful CMS integration covering content modeling, Delivery and Management APIs, rich text rendering, image optimization, localization, webhooks, and Next.js integration with preview mode.",
+      "source": "./contentful-cms",
+      "category": "development"
+    },
+    {
+      "name": "netlify-deployment",
+      "description": "Netlify deployment covering build configuration, serverless functions, edge functions, environment variables, redirects and headers, forms, identity authentication, and CI/CD with deploy previews.",
+      "source": "./netlify-deployment",
+      "category": "development"
     }
   ]
 }
