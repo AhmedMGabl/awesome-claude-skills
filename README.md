@@ -107,6 +107,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Data Engineering & ETL](./data-engineering/) - Data engineering and ETL pipeline patterns with Kafka, dbt, Airflow, data validation, and modern Python data stack.
 - [Database Migrations](./database-migrations/) - Database migration strategies covering zero-downtime migrations, rollback patterns, and ORM-specific workflows with Prisma, Drizzle, Knex, and Alembic.
 - [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*
+- [Figma to Code](./figma-to-code/) - Figma-to-code translation with design tokens, auto-layout to flexbox/grid, variant-to-prop mapping, and responsive conversion.
 - [FFUF Web Fuzzing](https://github.com/jthack/ffuf_claude_skill) - Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*
 - [finishing-a-development-branch](https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch) - Guides completion of development work by presenting clear options and handling chosen workflow.
 - [FastAPI Development](./fastapi-development/) - FastAPI development with async/await, Pydantic v2, dependency injection, SQLAlchemy async, JWT auth, WebSockets, and testing with httpx/pytest.
@@ -130,11 +131,13 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [LLM Integration](./llm-integration/) - LLM and AI integration patterns covering Claude API, OpenAI API, structured outputs, function calling, RAG pipelines, embeddings, vector search, and production AI application patterns.
 - [MCP Builder](./mcp-builder/) - Guides creation of high-quality MCP (Model Context Protocol) servers for integrating external APIs and services with LLMs using Python or TypeScript.
 - [Message Queues & Events](./message-queues/) - Message queue and event-driven patterns with RabbitMQ, BullMQ, SQS, Kafka, dead letter queues, and idempotency.
+- [Markdown & Documentation](./markdown-documentation/) - Technical docs with README templates, JSDoc/TSDoc, Docusaurus, VitePress, ADRs, and changelog conventions.
 - [Microservices Architecture](./microservices-architecture/) - Microservices patterns with API gateways, service mesh, event-driven architecture, Saga pattern, circuit breakers, and distributed systems.
 - [MongoDB Operations](./mongodb-operations/) - MongoDB database operations including schema design, query optimization, aggregation pipelines, indexing strategies, and best practices.
 - [Monorepo Management](./monorepo-management/) - Monorepo management with Turborepo, Nx, and pnpm workspaces covering task pipelines, remote caching, and shared configurations.
 - [Monitoring & Observability](./monitoring-observability/) - Monitoring, logging, metrics, distributed tracing, alerting, and observability best practices for production applications.
 - [MySQL Operations](./mysql-operations/) - MySQL/MariaDB database operations including schema design, SQL queries, optimization, indexing, transactions, and best practices.
+- [Nginx Configuration](./nginx-configuration/) - Nginx reverse proxy, SSL/TLS, load balancing, caching, security headers, WebSocket proxying, and Docker deployment.
 - [Next.js Development](./nextjs-development/) - Next.js development covering App Router, Server/Client Components, SSR/SSG/ISR, API routes, middleware, authentication, and production deployment.
 - [OAuth & Authentication](./oauth-authentication/) - OAuth 2.0, JWT management, Auth.js/NextAuth, PKCE flow, social login, refresh token rotation, and RBAC patterns.
 - [Node.js API Development](./nodejs-api-development/) - Node.js API development with Express and Fastify, JWT authentication, rate limiting, WebSockets, input validation, and production patterns.
@@ -145,6 +148,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Prompt Engineering](./prompt-engineering/) - Prompt engineering patterns with structured prompting, chain-of-thought, few-shot examples, tool use design, and evaluation strategies.
 - [Prisma ORM](./prisma-orm/) - Prisma ORM for TypeScript covering schema design, migrations, relations, CRUD, transactions, raw queries, middleware, and production database patterns.
 - [move-code-quality-skill](https://github.com/1NickPappas/move-code-quality-skill) - Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.
+- [Rate Limiting & Throttling](./rate-limiting/) - Rate limiting with token bucket, sliding window, Redis distributed limits, Express middleware, and tiered API quotas.
 - [React Development](./react-development/) - React development with hooks, component patterns, state management (Zustand/Context), performance optimization, testing with React Testing Library, and modern React 18+ best practices.
 - [React Native Mobile](./react-native-mobile/) - React Native mobile development with Expo, React Navigation, Reanimated animations, push notifications, and cross-platform deployment patterns.
 - [Regex Patterns](./regex-patterns/) - Regular expression patterns for validation, extraction, lookaheads/lookbehinds, named groups, and performance optimization.

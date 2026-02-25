@@ -667,6 +667,30 @@
       "description": "Android development with Kotlin covering Jetpack Compose, ViewModel, Room, Retrofit, Hilt DI, Navigation Compose, and Material 3 theming.",
       "source": "./android-kotlin",
       "category": "development"
+    },
+    {
+      "name": "rate-limiting",
+      "description": "Rate limiting and throttling with token bucket, sliding window, Redis-based distributed limits, Express middleware, tiered API quotas, and client-side debouncing.",
+      "source": "./rate-limiting",
+      "category": "development"
+    },
+    {
+      "name": "nginx-configuration",
+      "description": "Nginx configuration covering reverse proxy, SSL/TLS, load balancing, caching, compression, security headers, WebSocket proxying, and Docker deployment.",
+      "source": "./nginx-configuration",
+      "category": "development"
+    },
+    {
+      "name": "markdown-documentation",
+      "description": "Technical documentation with Markdown, README templates, JSDoc/TSDoc, Docusaurus/VitePress, ADRs, changelog conventions, and docs-as-code workflows.",
+      "source": "./markdown-documentation",
+      "category": "development"
+    },
+    {
+      "name": "figma-to-code",
+      "description": "Figma-to-code translation with design token extraction, auto-layout to flexbox/grid, variant-to-prop mapping, responsive conversion, and pixel-perfect implementation.",
+      "source": "./figma-to-code",
+      "category": "development"
     }
   ]
 }
