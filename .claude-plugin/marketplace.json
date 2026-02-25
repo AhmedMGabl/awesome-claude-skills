@@ -2521,6 +2521,66 @@
       "description": "jsdom patterns covering DOM simulation in Node.js, document creation, element querying, event dispatching, form handling, window APIs, and testing with Jest/Vitest.",
       "source": "./jsdom-testing",
       "category": "development"
+    },
+    {
+      "name": "nock-mocking",
+      "description": "Nock HTTP mocking patterns covering request interception, response fixtures, scope management, query/body matching, recording, and testing with Jest/Vitest.",
+      "source": "./nock-mocking",
+      "category": "development"
+    },
+    {
+      "name": "faker-js",
+      "description": "Faker.js patterns covering realistic test data generation, locale support, seeded reproducibility, custom providers, factories, and database seeding workflows.",
+      "source": "./faker-js",
+      "category": "development"
+    },
+    {
+      "name": "valibot-validation",
+      "description": "Valibot validation patterns covering tree-shakeable schema definitions, type inference, transformations, custom validators, error formatting, and React form integration.",
+      "source": "./valibot-validation",
+      "category": "development"
+    },
+    {
+      "name": "typebox-validation",
+      "description": "TypeBox validation patterns covering JSON Schema-compatible type definitions, value checking, type compilation, default values, transformations, and Fastify integration.",
+      "source": "./typebox-validation",
+      "category": "development"
+    },
+    {
+      "name": "arktype-validation",
+      "description": "ArkType validation patterns covering 1:1 TypeScript syntax, type inference, morphs, scoped types, default values, discriminated unions, and runtime type checking.",
+      "source": "./arktype-validation",
+      "category": "development"
+    },
+    {
+      "name": "io-ts-validation",
+      "description": "io-ts validation patterns covering runtime type checking, codec composition, branded types, reporters, Either-based error handling, and fp-ts integration.",
+      "source": "./io-ts-validation",
+      "category": "development"
+    },
+    {
+      "name": "class-validator",
+      "description": "class-validator patterns covering decorator-based validation, custom validators, validation groups, conditional validation, nested objects, and NestJS integration.",
+      "source": "./class-validator",
+      "category": "development"
+    },
+    {
+      "name": "yup-validation",
+      "description": "Yup validation patterns covering schema definitions, type coercion, conditional validation, custom tests, error messages, and React Hook Form/Formik integration.",
+      "source": "./yup-validation",
+      "category": "development"
+    },
+    {
+      "name": "supertest-api",
+      "description": "Supertest API testing patterns covering HTTP assertions, request chaining, authentication flows, file upload testing, middleware testing, and Express/Fastify integration.",
+      "source": "./supertest-api",
+      "category": "development"
+    },
+    {
+      "name": "pactjs-contracts",
+      "description": "Pact.js contract testing patterns covering consumer-driven contracts, provider verification, matchers, message pacts, Pact Broker integration, and CI/CD workflows.",
+      "source": "./pactjs-contracts",
+      "category": "development"
     }
   ]
 }
