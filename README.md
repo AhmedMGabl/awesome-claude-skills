@@ -98,6 +98,7 @@ Claude Skills are customizable workflows that teach Claude how to perform specif
 - [Ark UI](./ark-ui/) - Ark UI headless component library with accessible primitives, state machines, React/Vue/Solid adapters, and WAI-ARIA interactions.
 - [Ark UI React](./ark-ui-react/) - Ark UI React headless accessible components with state machine-driven behavior, dialogs, menus, date pickers, and Panda CSS integration.
 - [ArkType Validation](./arktype-validation/) - ArkType runtime validation with 1:1 TypeScript syntax, type inference, morphs, scoped types, and discriminated unions.
+- [Argo CD GitOps](./argocd-gitops/) - Argo CD GitOps with application manifests, sync policies, Helm/Kustomize integration, ApplicationSets, and multi-cluster deployment.
 - [Ace Editor](./ace-editor/) - Ace code editor with syntax highlighting, language modes, themes, autocompletion, snippets, annotations, and React integration.
 - [Astro Content Collections](./astro-content/) - Astro Content Collections with type-safe schemas, Zod validation, MDX components, dynamic routing, RSS feeds, and static site generation.
 - [Astro DB](./astro-db/) - Astro DB with table definitions, seed data, drizzle-based queries, relationships, indexes, and API endpoints.
