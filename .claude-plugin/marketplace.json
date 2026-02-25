@@ -165,6 +165,12 @@
       "category": "development"
     },
     {
+      "name": "golang-development",
+      "description": "Go development covering project structure, error handling, concurrency with goroutines and channels, HTTP servers, testing, modules, interfaces, generics, and production-ready patterns for building performant applications.",
+      "source": "./golang-development",
+      "category": "development"
+    },
+    {
       "name": "github-actions-generator",
       "description": "Generates production-ready GitHub Actions workflows for CI/CD, testing, deployment, and automation following best practices.",
       "source": "./github-actions-generator",
@@ -252,6 +258,12 @@
       "name": "security-scanning",
       "description": "Security scanning for dependencies, SAST, secrets detection, vulnerability management, and security best practices in CI/CD pipelines.",
       "source": "./security-scanning",
+      "category": "development"
+    },
+    {
+      "name": "tailwindcss-styling",
+      "description": "Tailwind CSS styling covering utility-first workflow, responsive design, dark mode, custom themes, component patterns, animations, plugin creation, and production optimization for modern web applications.",
+      "source": "./tailwindcss-styling",
       "category": "development"
     },
     {
